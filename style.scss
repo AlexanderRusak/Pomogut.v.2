@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700&subset=cyrillic,hebrew,latin-ext,vietnamese');
 
+* {
+  overflow-x: hidden;
+}
+
 .header-color {
   background-color: #00AEEF;
   height: 60px;
@@ -239,29 +243,81 @@
 ///////////////////////////////
 
 .sections {
-  height: 673px;
   background-color: #F2F2F2;
 }
 
 .sections-pattern_one {
-  width: 294px;
-  height: 258px;
-  background-color: red;
+  width: 264px;
+  height: 232px;
+  //background-color: red;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .sections-pattern_two {
-  width: 294px;
-  height: 305px;
-  background-color: green;
+  width: 264px;
+  height: 274px;
+  padding-left: 0;
+  padding-right: 0;
+  //background-color: green;
 }
 
 .sections-pattern_three {
-  width: 294px;
-  height: 290px;
-  background-color: blue;
+  width: 264px;
+  height: 260px;
+  padding-left: 0;
+  padding-right: 0;
+  //background-color: blue;
+}
+
+.sections .container div:first-child,
+.sections .container div:nth-child(3) {
+  margin-top: 330px;
+}
+
+.sections .container div:nth-child(2) {
+  margin-top: 100px;
+  position: relative;
+  right: 44px;
+  z-index: 2;
+}
+
+.sections .container div:nth-child(3) {
+  position: relative;
+  right: 88px;
+}
+
+.container div:nth-child(4) {
+  right: 132px;
+  margin-top: 100px;
+  position: relative;
+  z-index: 2;
+}
+
+.container div:nth-child(5) {
+  bottom: 72px;
+  position: relative;
+}
+@media (min-width:769px) and (max-width:1024px) {
+  .sections .container div:first-child,
+  .sections .container div:nth-child(2),
+  .sections .container div:nth-child(3) {
+    margin-top: 100px;
+    position: static;
+  }
+
+  .sections .container div:nth-child(2),
+  .sections .container div:nth-child(3) {
+    margin-left: 74px;
+  }
+  .sections .container div:nth-child(5) {
+    position: static;
+    margin-bottom: 100px;
+  }
+
 }
 /////////////////////////////////
-@media (min-width:769px) and (max-width:1023px){
+@media (min-width:769px) and (max-width:1023px) {
   .block-1 div div img {
     height: 340px;
   }
@@ -269,14 +325,14 @@
   .block-1 .container div {
     margin-top: 100px;
   }
-  .block-1 .container div:nth-child(2){
+
+  .block-1 .container div:nth-child(2) {
     margin-top: 30px;
     width: 570px;
     margin-left: 35px;
-
   }
 }
-@media (min-width:361px) and (max-width:767px) {
+@media (min-width:361px) and (max-width:768px) {
   .block-1 div div img {
     height: 412px;
     width: 100%;
@@ -285,8 +341,9 @@
   .block-1 .container div {
     margin-top: 60px;
   }
-  .block-1 .container div:nth-child(2){
-  margin-left: 5px;
+
+  .block-1 .container div:nth-child(2) {
+    margin-left: 5px;
   }
 }
 @media (min-width:320px) and (max-width:360px) {
@@ -297,11 +354,17 @@
 
   .block-1 .container div {
     margin-top: 60px;
-
   }
-  .block-1 .container div:nth-child(2){
+
+  .block-1 .container div:nth-child(2) {
     margin-top: 30px;
-  margin-left: 5px;
+    margin-left: 5px;
+  }
+
+  .block-2 .container div:first-child img {
+    display: block;
+    height: 284px;
+    width: 294px;
   }
 }
 
@@ -314,6 +377,7 @@
   line-height: 42px;
   color: #000000;
 }
+
 .block-1 .container div {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -346,13 +410,16 @@
   padding-top: 12px;
 }
 /////////////////////////////////
-.block-2  {
-  background-color:#00A9E8;
+
+.block-2 {
+  background-image: url("../images/block-2/Rectangle.svg");
 }
-.block-2 .container div{
+
+.block-2 .container {
   margin-top: 105px;
   margin-bottom: 100px;
 }
+
 .block-2 .container div a .block-1-button {
   border: 5px solid #FFD456;
   border-radius: 30px;
@@ -369,7 +436,8 @@
   text-align: center;
   padding-top: 12px;
 }
-.block-2 .container div p  {
+
+.block-2 .container div p {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -378,7 +446,8 @@
   color: #fff;
   margin-top: 30px;
 }
-.block-2 .container div h2  {
+
+.block-2 .container div h2 {
   font-size: 30px;
   font-family: 'Amatic SC', cursive;
   font-style: normal;
@@ -387,6 +456,48 @@
   line-height: 42px;
   color: #fff;
 }
-.block-2 .container div a{
+
+.block-2 .container div a {
   text-decoration: none;
+}
+/////////////////////
+
+.footer {
+  background-color: #00AEEF;
+}
+
+.footer .container {
+  margin-top: 100px;
+}
+
+.footer .container div p:first-child,
+.footer .container div p:nth-child(2) {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: normal;
+  color: #FFFFFF;
+  line-height: 24px;
+}
+
+.footer .container div ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.footer .container div ul li:first-child {
+  margin-left: 0;
+}
+
+.footer .container div ul {
+  padding-left: 0;
+}
+
+.links_to_follow {
+  margin-top: 85px;
+}
+
+.links_to_navigation a p {
+  margin-bottom: 20px;
 }
