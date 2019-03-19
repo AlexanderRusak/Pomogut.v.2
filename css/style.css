@@ -197,42 +197,25 @@
   padding-left: 0;
   padding-right: 0; }
 
-.sections .container div:first-child,
-.sections .container div:nth-child(3) {
-  margin-top: 330px; }
+.sections .container .row:first-child {
+  margin-top: 100px; }
 
-.sections .container div:nth-child(2) {
-  margin-top: 100px;
+.sections .container .row:first-child {
   position: relative;
-  right: 44px;
-  z-index: 2; }
+  top: 84px;
+  left: 44px; }
 
-.sections .container div:nth-child(3) {
+.sections .container .row:nth-child(2) {
   position: relative;
-  right: 88px; }
+  padding-top: 40px; }
 
-.container div:nth-child(4) {
-  right: 132px;
-  margin-top: 100px;
+.sections .container .row:nth-child(2) div:nth-child(3) {
   position: relative;
-  z-index: 2; }
+  bottom: 40px; }
 
-.container div:nth-child(5) {
-  bottom: 72px;
-  position: relative; }
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .sections .container div:first-child,
-  .sections .container div:nth-child(2),
-  .sections .container div:nth-child(3) {
-    margin-top: 100px;
-    position: static; }
-  .sections .container div:nth-child(2),
-  .sections .container div:nth-child(3) {
-    margin-left: 74px; }
-  .sections .container div:nth-child(5) {
-    position: static;
-    margin-bottom: 100px; } }
+@media (min-width: 992px) and (max-width: 1200px) {
+  .sections .container .row:nth-child(1) div:nth-child(1) {
+    right: 40px; } }
 
 @media (min-width: 769px) and (max-width: 1023px) {
   .block-1 div div img {
