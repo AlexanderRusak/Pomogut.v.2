@@ -197,8 +197,17 @@
   padding-left: 0;
   padding-right: 0; }
 
+.sections-pattern_one a img:nth-child(2) {
+  position: absolute;
+  z-index: 2;
+  left: 22px;
+  top: 20px; }
+
 .sections .container .row:first-child {
   margin-top: 100px; }
+
+.sections .container {
+  margin-bottom: 85px; }
 
 .sections .container .row:first-child {
   position: relative;
@@ -212,9 +221,12 @@
 
 .sections .container .row:nth-child(2) div:nth-child(3) {
   position: relative;
-  bottom: 45px; }
+  bottom: 40px; }
 
 .sections_fake {
+  display: none; }
+
+.section-fake_xs {
   display: none; }
 
 .sections .container .row:nth-child(1) div:nth-child(1) {
@@ -225,9 +237,9 @@
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .sections .container .row:nth-child(1) div:nth-child(1) {
-    right: 40px; }
+    right: 15px; }
   .sections .container .row:nth-child(1) div:nth-child(2) {
-    right: 25px; } }
+    right: 15px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .sections .container div:first-child {
@@ -246,8 +258,61 @@
   .sections .container .row:nth-child(3) div:nth-child(2) {
     top: 30px; }
   .sections .container .row:nth-child(2) div:nth-child(3) {
-    right: 50px;
+    right: 80px;
     top: 105px; } }
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .sections_fake {
+    display: none; }
+  .section-fake_xs {
+    display: block; }
+  .sections .container .row:first-child,
+  .sections .container .row:nth-child(2) {
+    display: none; }
+  .sections .container .row:last-child {
+    margin-top: 70px;
+    margin-left: 70px; }
+  .sections .container .row:last-child div:not(first-child) {
+    margin-top: 30px; }
+  .sections-pattern_one a img:nth-child(2) {
+    position: absolute;
+    z-index: 2;
+    left: 40px;
+    top: 50px; } }
+
+@media (min-width: 375px) and (max-width: 424px) {
+  .sections_fake {
+    display: none; }
+  .section-fake_xs {
+    display: block; }
+  .sections .container .row:first-child,
+  .sections .container .row:nth-child(2) {
+    display: none; }
+  .sections .container .row:last-child {
+    margin-top: 70px;
+    margin-left: 40px; }
+  .sections .container .row:last-child div:not(first-child) {
+    margin-top: 30px; }
+  .sections-pattern_one a img:nth-child(2) {
+    position: absolute;
+    z-index: 2;
+    left: 40px;
+    top: 50px; } }
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .sections_fake {
+    display: none; }
+  .section-fake_xs {
+    display: block;
+    overflow-x: visible; }
+  .sections .container .row:first-child,
+  .sections .container .row:nth-child(2) {
+    display: none; }
+  .sections .container .row:last-child {
+    margin-top: 70px;
+    margin-left: 15px; }
+  .sections .container .row:last-child div:not(first-child) {
+    margin-top: 30px; } }
 
 @media (min-width: 769px) and (max-width: 1023px) {
   .block-1 div div img {
