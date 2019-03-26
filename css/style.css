@@ -104,6 +104,9 @@
 .header .row div {
   padding-left: 0; }
 
+.header .row div:nth-child(2) {
+  overflow-y: hidden; }
+
 .phone-btn {
   float: left;
   overflow-y: hidden;
@@ -114,8 +117,9 @@
   background-color: #EB3450; }
 
 .phone-btn .icon-phone {
-  margin-top: 6px;
-  margin-left: 9px;
+  position: relative;
+  top: 6px;
+  left: 9px;
   float: left; }
 
 .phone-btn div:nth-child(2) {
