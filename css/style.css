@@ -311,33 +311,14 @@ div .inside-block-section p {
     margin-top: 20px; }
   .sections .container .row:nth-child(2) div:nth-child(3) {
     position: relative;
-    top: 105px;
+    top: 70px;
     right: 85px; }
   .sections .container div:first-child {
     margin-top: 100px; }
   .sections .container .row:nth-child(2) {
     padding-bottom: 110px; } }
 
-@media (min-width: 375px) and (max-width: 424px) {
-  .sections_fake {
-    display: none; }
-  .section-fake_xs {
-    display: block; }
-  .sections .container .row:first-child,
-  .sections .container .row:nth-child(2) {
-    display: none; }
-  .sections .container .row:last-child {
-    margin-top: 70px;
-    margin-left: 40px; }
-  .sections .container .row:last-child div:not(first-child) {
-    margin-top: 30px; }
-  .sections-pattern_one a img:nth-child(2) {
-    position: absolute;
-    z-index: 2;
-    left: 40px;
-    top: 50px; } }
-
-@media (min-width: 320px) and (max-width: 374px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .sections_fake {
     display: none; }
   .section-fake_xs {
