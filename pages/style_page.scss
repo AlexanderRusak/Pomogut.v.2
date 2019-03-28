@@ -95,7 +95,7 @@
 .phone-btn {
   float: left;
   overflow-y: hidden;
-  width: 180px;
+  width: 180px ;
   height: 40px;
   border: 3px solid #F17185;
   border-radius: 30px;
@@ -345,18 +345,63 @@
 //////////////////////////////////////////////////////
 
 .articles div {
+  width: 362px;
   height: 550px;
-
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-left: 0;
+  padding-right: 0;
   background-color: red;
+  background: #F2F2F2;
+  border-radius: 6px;
+}
+
+.articles .left {
+  margin-left: 0;
+}
+
+.articles .right {
+  margin-right: 0;
 }
 
 .articles .breakdown-articles {
-
+  width: 1146px;
   height: 441px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
+.header-adults div:first-child,
+.header-kids div:first-child,
+.header-parents div:first-child,
+.header-schools div:first-child,
+.header-teenagers div:first-child {
+  width: 100%;
+  height: 260px !important;
+  margin-left: 0;
+  border-radius: 0;
+}
 
+.header-kids div:first-child {
+  background: #29D3B8;
+  overflow-y: hidden;
+}
 
+.header-teenagers div:first-child {
+  background: #F842A0;
+}
+
+.header-adults div:first-child {
+  background: #FFC20E;
+}
+
+.header-parents div:first-child {
+  background: #EB3450;
+}
+
+.header-schools div:first-child {
+  background: #00AEEF;
+}
 
 .articles div:nth-child(10),
 .articles div:nth-child(11),
@@ -372,6 +417,88 @@
 .articles div:nth-child(8),
 .articles div:nth-child(9) {
   margin-top: 30px;
+}
+
+.articles div div:nth-child(2) {
+  width: 302px;
+  height: 120px;
+  margin-left: 30px;
+  margin-top: 10px;
+  overflow-y: hidden;
+}
+
+.articles div div:nth-child(2) h3 {
+  font-family: Amatic SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  color: #000000;
+}
+
+.articles-button {
+  width: 166px !important;
+  height: 60px !important;
+  border: 5px solid #F17185 !important;
+  border-radius: 30px !important;
+  margin-left: 98px !important;
+  margin-top: 45px;
+}
+
+.articles-button p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: normal;
+  text-align: center;
+  color: #F17185;
+  margin-top: 13px;
+}
+
+.articles-button:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  background: #EB3450;
+}
+
+.articles-button:hover p {
+  color: #fff;
+}
+
+.breakdown-articles h2 {
+  font-family: Amatic SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 55px;
+  text-align: center;
+  color: #000000;
+  margin-top: 100px;
+}
+
+.breakdown-articles p {
+  display: inline-block;
+  width: 550px;
+  margin-left: 296px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: #292424;
+  margin-top: 50px;
+}
+.breakdown-articles .phone-btn{;
+  overflow-y: hidden;
+  width: 228px ;
+  height: 60px;
+  border: 3px solid #F17185;
+  border-radius: 30px;
+  background-color: #EB3450;
 }
 //////////////////////////////////////////////////////////////////////////
 
