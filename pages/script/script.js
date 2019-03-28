@@ -39,4 +39,14 @@ $(document).on('ready', function() {
     },
   ]
   });
+  $('.tags').slick({
+    dots: false,
+    arrows: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3,
+    centerMode: false,
+    variableWidth: true
+  });
+
 });
