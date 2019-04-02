@@ -102,6 +102,26 @@
   text-align: right;
   color: #FFFFFF; }
 
+.phone_number_header img {
+  float: left;
+  margin-top: 3px; }
+
+.phone_number_header p {
+  float: right;
+  width: 133px;
+  height: 40px;
+  position: relative;
+  text-decoration: none !important;
+  color: #fff !important;
+  display: block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: normal;
+  text-align: right;
+  cursor: pointer; }
+
 .search {
   width: 40px;
   height: 40px;
@@ -154,7 +174,7 @@
   overflow-y: hidden; }
 
 .slick-track {
-  width: 5000px !important; }
+  width: 500000px !important; }
 
 .slick-list {
   width: 992px;
@@ -287,7 +307,18 @@
   padding-right: 0;
   background-color: red;
   background: #F2F2F2;
-  border-radius: 6px; }
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden; }
+
+.articles div .articles-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%; }
 
 .articles .left {
   margin-left: 0; }
@@ -409,10 +440,10 @@
   margin-top: 50px; }
 
 .articles .breakdown-articles-buttons {
-  width: 500px !important;
+  width: 250px !important;
   height: 60px !important;
   overflow-y: hidden;
-  margin-left: 315px; }
+  margin-left: 450px; }
 
 .articles .breakdown-articles-buttons div img {
   margin-left: 15px;
@@ -583,6 +614,8 @@
     margin-left: 70px; }
   .col-sm-6 {
     margin-top: 30px; }
+  .breakdown-articles-buttons .phone-number {
+    margin-left: 25px; }
   .articles div:nth-child(3) {
     margin-left: 0; }
   .articles div:nth-child(4) {
@@ -640,6 +673,8 @@
     margin-right: 20px; }
   .tags {
     display: none; }
+  .articles div {
+    margin-left: 0px; }
   .breakdown-articles {
     display: none; } }
 
@@ -666,5 +701,7 @@
     margin-right: 20px; }
   .articles {
     margin-left: 10px; }
+  .icon-phone .phone_number_header p {
+    display: no; }
   .articles div {
     margin-left: 0px !important; } }

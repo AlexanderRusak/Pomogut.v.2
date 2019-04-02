@@ -135,6 +135,23 @@
   text-align: right;
   color: #FFFFFF; }
 
+.phone-number {
+  bottom: 30px;
+  left: 30px;
+  width: 131px;
+  height: 40px;
+  position: relative;
+  text-decoration: none !important;
+  color: #fff !important;
+  display: block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: normal;
+  text-align: right;
+  cursor: pointer; }
+
 .search {
   width: 40px;
   height: 40px;
