@@ -165,7 +165,7 @@
 .phone-btn div:nth-child(2) {
   width: 131px;
   height: 40px;
-  margin-top: 8px;
+  margin-top: 7px;
   float: left;
   margin-left: 5px;
 }
@@ -179,11 +179,13 @@
   text-align: right;
   color: #FFFFFF;
 }
-
-.phone-number {
-  bottom: 30px;
-  left: 30px;
-  width: 131px;
+.phone_number_header img{
+  float: left;
+  margin-top: 3px;
+}
+.phone_number_header p {
+  float: right;
+  width: 133px;
   height: 40px;
   position: relative;
   text-decoration: none !important;
@@ -249,7 +251,9 @@
   .phone-btn {
     width: 40px;
   }
-
+.phone_number_header p {
+    display: none;
+  }
   .header .row div .phone-btn {
     margin-left: 20px;
   }
