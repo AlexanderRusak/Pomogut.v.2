@@ -366,7 +366,7 @@
 }
 //////////////////////////////////////////////////////
 
-.articles div {
+.articles a{
   width: 362px;
   height: 550px;
   margin-left: 15px;
@@ -380,14 +380,8 @@
   overflow: hidden;
 }
 
-.articles div .articles-image {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  width: 100%;
+.articles a div  .articles-image {
+  display:block;
 }
 
 .articles .left {
@@ -437,23 +431,23 @@
   background: #00AEEF;
 }
 
-.articles div:nth-child(10),
-.articles div:nth-child(11),
-.articles div:nth-child(11),
-.articles div:nth-child(12),
-.articles div:nth-child(13),
-.articles div:nth-child(14),
-.articles div:nth-child(4),
-.articles div:nth-child(5),
-.articles div:nth-child(6),
-.articles div:nth-child(6),
-.articles div:nth-child(7),
-.articles div:nth-child(8),
-.articles div:nth-child(9) {
+.articles a:nth-child(10),
+.articles a:nth-child(11),
+.articles a:nth-child(11),
+.articles a:nth-child(12),
+.articles a:nth-child(13),
+.articles a:nth-child(14),
+.articles a:nth-child(4),
+.articles a:nth-child(5),
+.articles a:nth-child(6),
+.articles a:nth-child(6),
+.articles a:nth-child(7),
+.articles a:nth-child(8),
+.articles a:nth-child(9) {
   margin-top: 30px;
 }
 
-.articles div div:nth-child(2) {
+.articles a div:nth-child(2) {
   width: 302px;
   height: 120px;
   margin-left: 30px;
@@ -461,7 +455,7 @@
   overflow-y: hidden;
 }
 
-.articles div div:nth-child(2) h3 {
+.articles a div:nth-child(2) h3 {
   font-family: Amatic SC;
   font-style: normal;
   font-weight: bold;
@@ -527,18 +521,20 @@
   margin-top: 50px;
 }
 
-.articles .breakdown-articles-buttons {
-  width: 250px !important;
-  height: 60px !important;
-  overflow-y: hidden;
-  margin-left: 450px;
-  ///////////////////FAKE
+a:focus, a:hover{
+  text-decoration: none;
 }
-
-.articles .breakdown-articles-buttons div img {
+ .breakdown-articles-buttons {
+   text-decoration: none;
+   display: block;
+   overflow-y: hidden;
+ }
+.articles .breakdown-articles-buttons  div img {
   margin-left: 15px;
   margin-top: 15px;
   float: left;
+  width: 24px !important;
+  height: 24px !important;
 }
 
 .articles .breakdown-articles-buttons .phone-number {
@@ -560,8 +556,10 @@
   text-align: center;
   color: #FFFFFF;
   overflow-y: hidden;
-  margin-top: 13px;
+  margin-top: 14px;
   width: 155px;
+  float: right;
+  margin-right: 15px;
 }
 
 .articles .breakdown-articles-buttons .message {
@@ -673,30 +671,30 @@
     margin-left: 35px;
   }
 
-  .articles div {
+  .articles a {
     width: 264px;
   }
 
-  .articles div div:nth-child(2) {
+  .articles a div:nth-child(2) {
     width: 260px;
     margin-left: 15px;
   }
 
-  .articles div div:nth-child(2) h3 {
+  .articles a div:nth-child(2) h3 {
     text-align: left;
     margin-right: 10px;
   }
 
-  .articles div div:nth-child(3) {
+  .articles a div:nth-child(3) {
     margin-left: 50px !important;
   }
 
-  .articles div:nth-child(7) {
+  .articles a:nth-child(7) {
     width: 850px !important;
     height: 569px;
   }
 
-  .articles div:nth-child(7) p {
+  .articles a:nth-child(7) p {
     width: 295px;
     margin-bottom: 30px;
   }
@@ -783,47 +781,47 @@
     margin-left: 25px;
   }
 
-  .articles div:nth-child(3) {
+  .articles a:nth-child(3) {
     margin-left: 0;
   }
 
-  .articles div:nth-child(4) {
+  .articles a:nth-child(4) {
     margin-right: 0;
     margin-left: 30px;
   }
 
-  .articles div:nth-child(5) {
+  .articles a:nth-child(5) {
     margin-left: 0;
   }
 
-  .articles div:nth-child(10) {
+  .articles a:nth-child(10) {
     margin-left: 0;
     margin-right: 15px;
   }
 
-  .articles div:nth-child(11) {
+  .articles a:nth-child(11) {
     margin-left: 15px;
   }
 
-  .articles div:nth-child(12) {
+  .articles a:nth-child(12) {
     margin-left: 0;
   }
 
-  .articles div:nth-child(7) {
+  .articles a:nth-child(7) {
     width: 558px !important;
     height: 569px;
   }
 
-  .articles div:nth-child(7) div:nth-child(3) {
+  .articles a:nth-child(7) div:nth-child(3) {
     width: 250px !important;
     height: 160px !important;
   }
 
-  .articles div:nth-child(7) p {
+  .articles a:nth-child(7) p {
     margin-left: 140px;
   }
 
-  .articles div:nth-child(7) div:nth-child(3) div {
+  .articles a:nth-child(7) div:nth-child(3) div {
     top: 40px;
     right: 25px;
   }
@@ -883,7 +881,7 @@
     display: none;
   }
 
-  .articles div {
+  .articles a {
     margin-left: 0;
   }
 
@@ -936,7 +934,7 @@
     display: no;
   }
 
-  .articles div {
+  .articles a {
     margin-left: 0 !important;
   }
 }
