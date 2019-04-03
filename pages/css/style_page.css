@@ -674,14 +674,14 @@
   .tags {
     display: none; }
   .articles div {
-    margin-left: 0px; }
+    margin-left: 0; }
   .breakdown-articles {
     display: none; } }
 
 @media screen and (max-width: 479px) {
   .container {
     width: 310px; }
-  .phone-number {
+  .phone_number_header p {
     display: none; }
   .phone-btn {
     width: 40px; }
@@ -704,4 +704,4 @@
   .icon-phone .phone_number_header p {
     display: no; }
   .articles div {
-    margin-left: 0px !important; } }
+    margin-left: 0 !important; } }

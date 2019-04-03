@@ -125,10 +125,12 @@
   text-align: right;
   color: #FFFFFF;
 }
-.phone_number_header img{
+
+.phone_number_header img {
   float: left;
   margin-top: 3px;
 }
+
 .phone_number_header p {
   float: right;
   width: 133px;
@@ -375,17 +377,19 @@
   background: #F2F2F2;
   border-radius: 6px;
   position: relative;
-    overflow: hidden;
+  overflow: hidden;
 }
-.articles div  .articles-image{
+
+.articles div .articles-image {
   position: absolute;
-   left: 0;
-   right: 0;
-   top: 0;
-   bottom: 0;
-   margin: auto;
-   width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
 }
+
 .articles .left {
   margin-left: 0;
 }
@@ -527,7 +531,8 @@
   width: 250px !important;
   height: 60px !important;
   overflow-y: hidden;
-  margin-left: 450px;                                ///////////////////FAKE
+  margin-left: 450px;
+  ///////////////////FAKE
 }
 
 .articles .breakdown-articles-buttons div img {
@@ -773,9 +778,11 @@
   .col-sm-6 {
     margin-top: 30px;
   }
-  .breakdown-articles-buttons .phone-number{
+
+  .breakdown-articles-buttons .phone-number {
     margin-left: 25px;
   }
+
   .articles div:nth-child(3) {
     margin-left: 0;
   }
@@ -801,18 +808,22 @@
   .articles div:nth-child(12) {
     margin-left: 0;
   }
+
   .articles div:nth-child(7) {
     width: 558px !important;
     height: 569px;
   }
+
   .articles div:nth-child(7) div:nth-child(3) {
     width: 250px !important;
     height: 160px !important;
   }
-  .articles div:nth-child(7) p{
+
+  .articles div:nth-child(7) p {
     margin-left: 140px;
   }
-  .articles div:nth-child(7) div:nth-child(3) div{
+
+  .articles div:nth-child(7) div:nth-child(3) div {
     top: 40px;
     right: 25px;
   }
@@ -871,9 +882,11 @@
   .tags {
     display: none;
   }
+
   .articles div {
-    margin-left: 0px;
+    margin-left: 0;
   }
+
   .breakdown-articles {
     display: none;
   }
@@ -883,7 +896,7 @@
     width: 310px;
   }
 
-  .phone-number {
+  .phone_number_header p {
     display: none;
   }
 
@@ -914,13 +927,16 @@
     width: 166px !important;
     margin-right: 20px;
   }
-  .articles{
+
+  .articles {
     margin-left: 10px;
   }
-  .icon-phone .phone_number_header p{
-    display: no
+
+  .icon-phone .phone_number_header p {
+    display: no;
   }
-  .articles div{
-    margin-left: 0px !important;
+
+  .articles div {
+    margin-left: 0 !important;
   }
 }
