@@ -75,9 +75,5 @@ $(document).on('ready', function() {
     $(window).on('resize', fix_size);
     fix_size();
   });
-  $('.slick-next').click(function() {
-    var id_cat = $(this).children('p').attr('id')
-    var id_tag = $(this).children('label').attr('id')
-    if (id_tag){console.log(id_tag)}else{console.log(id_cat)}
-  });
+
 });
