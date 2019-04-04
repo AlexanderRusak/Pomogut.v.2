@@ -441,6 +441,15 @@ a:focus, a:hover {
   display: block;
   overflow-y: hidden; }
 
+.articles .breakdown-articles-buttons {
+  width: 228px;
+  height: 60px;
+  margin-left: 40%;
+  display: block; }
+
+.articles .breakdown-articles-buttons h2, .articles .breakdown-articles-buttons p {
+  display: block; }
+
 .articles .breakdown-articles-buttons div img {
   margin-left: 15px;
   margin-top: 15px;
@@ -569,10 +578,15 @@ a:focus, a:hover {
   .articles a:nth-child(7) p {
     width: 295px;
     margin-bottom: 30px; }
-  .breakdown-articles-buttons {
-    position: relative;
-    left: 120px;
-    height: 160px; } }
+  .breakdown-articles {
+    width: auto !important;
+    float: left;
+    margin-left: 50px; }
+  .breakdown-articles p {
+    width: auto !important;
+    margin-left: 0px; }
+  .breakdown-articles .breakdown-articles-buttons {
+    margin-left: 35%; } }
 
 @media screen and (max-width: 991px) {
   .container {
@@ -640,7 +654,17 @@ a:focus, a:hover {
     margin-left: 140px; }
   .articles a:nth-child(7) div:nth-child(3) div {
     top: 40px;
-    right: 25px; } }
+    right: 25px; }
+  .breakdown-articles {
+    width: auto !important;
+    margin-right: 100px !important; }
+  .breakdown-articles p {
+    width: auto !important;
+    margin-left: 0px; }
+  .breakdown-articles .breakdown-articles-buttons {
+    width: 260px;
+    margin-left: 22% !important;
+    background-color: #fff !important; } }
 
 @media screen and (max-width: 767px) {
   .container {
