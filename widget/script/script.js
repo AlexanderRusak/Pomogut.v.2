@@ -3,4 +3,6 @@ $(document).on('ready', function() {
     dots: true,
     infinite: false,
   });
+
+
 });
