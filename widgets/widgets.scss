@@ -280,6 +280,11 @@
 }
 ///////////////////////////////////////////////////////////////////////////// two-column
 
+.two-column {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 .two-column .row div .two-column-image {
   width: 558px;
   height: 363px;
@@ -303,7 +308,136 @@
   line-height: 28px;
   color: #292424;
 }
-///////////////////////////////////////////////////////////////////////////
+
+.two-column .fake-block {
+  display: none;
+}
+/////////////////////////////////////////////////////////////////////////// raiting
+
+.raiting .container .row {
+  background-color: #00AEEF;
+}
+
+.raiting .container .row div h3 {
+  margin-top: 80px;
+  font-family: Amatic SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.raiting .container .row div p {
+  margin-top: 40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.rating {
+  height: 143px;
+  margin-top: 30px;
+  margin-left: 35%;
+  display: inline-block;
+  position: relative;
+  overflow-y: hidden;
+  font-size: 85px;
+}
+
+.rating label {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  cursor: pointer;
+}
+
+.rating label:last-child {
+  position: static;
+}
+
+.rating label:nth-child(1) {
+  z-index: 5;
+}
+
+.rating label:nth-child(2) {
+  z-index: 4;
+}
+
+.rating label:nth-child(3) {
+  z-index: 3;
+}
+
+.rating label:nth-child(4) {
+  z-index: 2;
+}
+
+.rating label:nth-child(5) {
+  z-index: 1;
+}
+
+.rating label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.rating label .icon {
+  float: left;
+  color: transparent;
+}
+
+.rating label:last-child .icon {
+  background: url("../images/raiting-stars/star-bg.svg") no-repeat;
+}
+
+.rating:hover label:hover input ~ .icon,
+.rating:not(:hover) label input:checked ~ .icon {
+  background: url("../images/raiting-stars/star-full.svg") no-repeat;
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+  background: url("../images/raiting-stars/star-bg.svg") no-repeat;
+}
+//////////////////////////////////////////////////////////////////////////////// similars-articles
+
+.similar-articles .row div .similar-articles-image {
+  background: #FFC20E;
+  border-radius: 6px 6px 0 0;
+  width: 267px;
+  height: 200px;
+}
+
+.similar-articles .row div {
+  background: #F2F2F2;
+  padding: 0;
+  width: 267px;
+  height: 520px;
+}
+.similar-articles .row ul li {
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+
+}
+.similar-articles .row ul li:first-child {
+  margin-left: 0px;
+}
+.similar-articles .row ul li:last-child {
+  margin-right: 0px;
+
+}
+.similar-articles .row ul{
+  padding-left:  0px;
+}
+
+///////////////////////////////////////////////////////////////////////////////
 
 .footer {
   background-color: #00AEEF;
@@ -375,6 +509,28 @@
     margin-left: 10%;
     width: 20%;
   }
+
+  .rating {
+    margin-left: 32%;
+  }
+  .similar-articles .row ul li {
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .similar-articles .row ul li:first-child {
+    margin-left: 0px;
+  }
+  .similar-articles .row ul li:last-child {
+    margin-right: 0px;
+  }
+
+  .similar-articles .row div {
+    background: #F2F2F2;
+    padding: 0;
+    width: 239px;
+    height: 520px;
+  }
 }
 @media screen and (max-width: 991px) {
   .container {
@@ -439,6 +595,26 @@
     margin-left: 0;
     width: 50%;
   }
+
+  .two-column .original-block {
+    display: none;
+  }
+
+  .two-column .fake-block {
+    display: block;
+  }
+
+  .two-column .row div .two-column-image {
+    display: block;
+  }
+
+  .raiting {
+    background-color: #00AEEF;
+  }
+
+  .rating {
+    margin-left: 26%;
+  }
 }
 @media screen and (max-width: 767px) {
   .container {
@@ -489,6 +665,22 @@
     margin-left: 0;
     width: 100%;
   }
+
+  .two-column .fake-block {
+    display: block;
+  }
+
+  .two-column .row div .two-column-image {
+    display: block;
+  }
+
+  .raiting {
+    background-color: #00AEEF;
+  }
+
+  .rating {
+    margin-left: 10%;
+  }
 }
 @media screen and (max-width: 479px) {
   .container {
@@ -525,5 +717,28 @@
     width: 100%;
     height: 153px;
     background-color: #ccc;
+  }
+
+  .two-column .fake-block {
+    display: block;
+  }
+
+  .two-column .row div .two-column-image {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .two-column .row div .two-column-image {
+    width: 264px;
+    height: 171px;
+  }
+
+  .raiting {
+    background-color: #00AEEF;
+  }
+
+  .rating {
+    font-size: 60px;
+    margin-left: 6%;
   }
 }

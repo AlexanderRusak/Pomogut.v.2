@@ -82,4 +82,7 @@ $(document).on('ready', function() {
     $(window).on('resize', fix_size);
     fix_size();
   });
+  $(':radio').change(function() {
+  console.log('New star rating: ' + this.value);
+});
 });

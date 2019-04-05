@@ -258,7 +258,7 @@
   border-radius: 80px;
   padding-left: 3px;
   position: relative;
-  width: 147px;
+
 }
 
 .categories div a:focus {
@@ -320,11 +320,11 @@
   width: 333px!important;
 }
 
-.tags div input[type=button] {
+.tags div input[type=radio] {
   display: none;
 }
 
-.tags div input[type=button]+label {
+.tags div input[type=radio]+label {
   width: 100%;
   height: 100%;
   background: #EB3450;
