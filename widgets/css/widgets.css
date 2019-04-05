@@ -354,16 +354,58 @@
 .similar-articles .row ul li {
   display: inline-block;
   margin-left: 15px;
-  margin-right: 15px; }
+  margin-right: 15px;
+  margin-bottom: 30px; }
 
 .similar-articles .row ul li:first-child {
-  margin-left: 0px; }
+  margin-left: 0; }
 
 .similar-articles .row ul li:last-child {
-  margin-right: 0px; }
+  margin-right: 0; }
 
 .similar-articles .row ul {
-  padding-left: 0px; }
+  padding-left: 0; }
+
+.similar-articles-title {
+  margin-top: 80px;
+  margin-bottom: 60px; }
+
+.similar-articles .row h3 {
+  font-family: Amatic SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 42px;
+  margin-left: 20px;
+  color: #000000; }
+
+.similar-articles .row p {
+  width: 204px;
+  height: 105px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 28px;
+  color: #292424;
+  margin-left: 20px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow-y: hidden;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.similar-articles .row ul li div a {
+  float: right;
+  margin-right: 30px;
+  color: #EB3450;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: normal;
+  text-align: center;
+  color: #EB3450; }
 
 .footer {
   background-color: #00AEEF; }
@@ -419,12 +461,12 @@
     margin-left: 32%; }
   .similar-articles .row ul li {
     display: inline-block;
-    margin-left: 0px;
-    margin-right: 0px; }
+    margin-left: 0;
+    margin-right: 0; }
   .similar-articles .row ul li:first-child {
-    margin-left: 0px; }
+    margin-left: 0; }
   .similar-articles .row ul li:last-child {
-    margin-right: 0px; }
+    margin-right: 0; }
   .similar-articles .row div {
     background: #F2F2F2;
     padding: 0;
@@ -529,12 +571,14 @@
     margin-left: 10%; }
   .similar-articles .row ul li {
     display: inline-block;
-    margin-left: 0px;
-    margin-right: 0px; }
+    margin-left: 0;
+    margin-right: 0; }
   .similar-articles .row ul li:first-child {
-    margin-left: 0px; }
+    margin-left: 0; }
   .similar-articles .row ul li:last-child {
-    margin-right: 0px; } }
+    margin-right: 0; }
+  .similar-articles .row ul {
+    margin-left: 22%; } }
 
 @media screen and (max-width: 479px) {
   .container {
@@ -569,4 +613,6 @@
     background-color: #00AEEF; }
   .rating {
     font-size: 60px;
-    margin-left: 6%; } }
+    margin-left: 6%; }
+  .similar-articles .row ul {
+    margin-left: 8%; } }
