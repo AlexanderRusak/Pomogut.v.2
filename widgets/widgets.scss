@@ -170,7 +170,7 @@
   height: 2px;
   background-color: #F2F2F2;
 }
-//////////////////////////////////////////////////////////////////////////   SINLE-COLUMN
+//////////////////////////////////////////////////////////////////////////   SINGLE-COLUMN
 
 .single-column .row div h2 {
   font-family: Amatic SC;
@@ -247,7 +247,63 @@
   content: ' ';
 }
 ////////////////////////////////////////////////////////////////////////// three column
-/////////////////////////////////////////////////////////////////////////////
+
+.three-column .row .three-column-title h3 {
+  font-family: Amatic SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  color: #000000;
+}
+
+.three-column .row .three-column-group {
+  margin-top: 50px;
+}
+
+.three-column .row .three-column-group p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: #292424;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.three-column .row .three-column-group .three-column-image-section {
+  width: 166px;
+  height: 166px;
+}
+///////////////////////////////////////////////////////////////////////////// two-column
+
+.two-column .row div .two-column-image {
+  width: 558px;
+  height: 363px;
+  background-color: #FFC20E;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.two-column .row div .two-column-article {
+  width: 100%;
+  height: 363px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.two-column .row div .two-column-article p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 28px;
+  color: #292424;
+}
+///////////////////////////////////////////////////////////////////////////
 
 .footer {
   background-color: #00AEEF;
@@ -306,10 +362,18 @@
   .header .row div {
     padding-left: 0;
   }
+
   .single-column .row div .single-column-image {
     width: 100%;
     height: 550px;
     background-color: #ccc;
+  }
+
+  .three-column .row .three-column-group:nth-child(6),
+  .three-column .row .three-column-group:nth-child(7),
+  .three-column .row .three-column-group:nth-child(8) {
+    margin-left: 10%;
+    width: 20%;
   }
 }
 @media screen and (max-width: 991px) {
@@ -367,6 +431,14 @@
     height: 550px;
     background-color: #ccc;
   }
+
+  .three-column .row .three-column-group:nth-child(6),
+  .three-column .row .three-column-group:nth-child(7),
+  .three-column .row .three-column-group:nth-child(8) {
+    float: left;
+    margin-left: 0;
+    width: 50%;
+  }
 }
 @media screen and (max-width: 767px) {
   .container {
@@ -403,10 +475,19 @@
   .logo-small {
     display: none;
   }
+
   .single-column .row div .single-column-image {
     width: 100%;
     height: 323px;
     background-color: #ccc;
+  }
+
+  .three-column .row .three-column-group:nth-child(6),
+  .three-column .row .three-column-group:nth-child(7),
+  .three-column .row .three-column-group:nth-child(8) {
+    float: left;
+    margin-left: 0;
+    width: 100%;
   }
 }
 @media screen and (max-width: 479px) {
