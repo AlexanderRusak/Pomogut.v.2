@@ -271,7 +271,7 @@
 div .inside-block-section {
   position: relative !important;
   bottom: 210px !important;
-  left: 80px !important;
+  left: 20px !important;
   z-index: 5 !important;
   overflow-y: hidden !important; }
 
@@ -291,46 +291,66 @@ div .inside-block-section p {
   color: #000000;
   overflow-y: hidden; }
 
+.sections .container .row div a .inside-block-section p {
+  position: relative;
+  z-index: 50;
+  bottom: 20px; }
+
+.sections .container .row .section-kids a .inside-block-section {
+  position: relative;
+  right: 50px !important; }
+
+.sections .container .row .section-teenagers a .inside-block-section {
+  bottom: 220px  !important;
+  position: relative !important; }
+
+.sections .container .row .section-adults a .inside-block-section {
+  bottom: 200px  !important;
+  position: relative !important; }
+
 @media screen and (max-width: 991px) {
   .sections .container .row:first-child {
     display: none; }
-  .sections .container .row:nth-child(2) {
-    padding-top: 40px; }
   .sections .container .sections_fake {
     display: block; }
-  .sections .container .sections_fake div:nth-child(2) {
+  .sections .container {
+    margin-left: 11%; }
+  .sections .container .row:nth-child(2) {
+    padding-right: 0;
+    display: block;
+    position: relative;
+    z-index: 2;
+    bottom: 40px;
+    padding-top: 40px; }
+  .sections .container .row:nth-child(2) .section-adults {
+    margin-top: 55px; }
+  .sections .container .row:nth-child(2) .section-schools {
+    margin-right: 80px;
     margin-top: 45px; }
-  .sections .container .row:nth-child(2) div:nth-child(2) {
-    margin-top: 90px; }
-  .sections .container .row:nth-child(2) div:last-child {
-    margin-top: 98px;
-    float: left !important; }
-  .sections .container .row div a div img {
-    margin-bottom: 60px; }
-  .sections .container .row div a div p {
-    bottom: 60px; }
-  .sections .container .row div a div {
-    margin-top: 0 !important; } }
+  .sections .container .row:nth-child(3) .section-parents {
+    margin-top: 30px; } }
 
 @media screen and (max-width: 767px) {
   .sections .container .row:first-child {
     display: none; }
-  .sections .container .row:nth-child(2) {
-    padding-top: 40px; }
   .sections .container .sections_fake {
     display: block; }
-  .sections .container .row div:nth-child(2) {
-    margin-top: 50px; }
-  .sections .container .row:nth-child(2) div:nth-child(2) {
-    margin-top: 90px; }
-  .sections .container .row:nth-child(2) div:last-child {
-    margin-top: 98px; }
-  .sections .container .row div a div img {
-    margin-bottom: 60px; }
-  .sections .container .row div a div p {
-    bottom: 60px; }
-  .sections .container .row div a div {
-    margin-top: 0 !important; } }
+  .sections .container {
+    margin-left: 6%; }
+  .sections .container .row:nth-child(2) {
+    padding-right: 0;
+    display: block;
+    position: relative;
+    z-index: 2;
+    bottom: 40px;
+    padding-top: 40px; }
+  .sections .container .row:nth-child(2) .section-adults {
+    margin-top: 70px; }
+  .sections .container .row:nth-child(2) .section-schools {
+    margin-right: 65px;
+    margin-top: 45px; }
+  .sections .container .row:nth-child(3) .section-parents {
+    margin-top: 30px; } }
 
 @media screen and (max-width: 600px) {
   .sections .container .row:first-child {
@@ -340,7 +360,10 @@ div .inside-block-section p {
   .sections .container .sections_fake {
     display: none; }
   .sections .container .section-fake_xs {
-    display: block; } }
+    display: block; }
+  .sections .container .section-fake_xs div {
+    overflow-y: hidden;
+    margin-bottom: 30px; } }
 
 @media screen and (max-width: 427px) {
   .sections .container .row:first-child {
@@ -350,12 +373,7 @@ div .inside-block-section p {
   .sections .container .sections_fake {
     display: none; }
   .sections .container .section-fake_xs {
-    display: block; }
-  .col-xs-8 {
-    width: 100%;
-    padding-left: 15px; }
-  .col-xs-offset-2 {
-    margin-left: 16%; } }
+    display: block; } }
 
 @media screen and (max-width: 375px) {
   .sections .container .row:first-child {
@@ -365,12 +383,7 @@ div .inside-block-section p {
   .sections .container .sections_fake {
     display: none; }
   .sections .container .section-fake_xs {
-    display: block; }
-  .col-xs-8 {
-    width: 100%;
-    padding-left: 15px; }
-  .col-xs-offset-2 {
-    margin-left: 12%; } }
+    display: block; } }
 
 @media screen and (max-width: 375px) {
   .sections .container .row:first-child {
@@ -380,12 +393,7 @@ div .inside-block-section p {
   .sections .container .sections_fake {
     display: none; }
   .sections .container .section-fake_xs {
-    display: block; }
-  .col-xs-8 {
-    width: 100%;
-    padding-left: 15px; }
-  .col-xs-offset-2 {
-    margin-left: 2%; } }
+    display: block; } }
 
 @media (min-width: 769px) and (max-width: 1023px) {
   .block-1 .container div {
