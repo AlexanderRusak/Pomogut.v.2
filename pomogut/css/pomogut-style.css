@@ -1,14 +1,30 @@
 * {
   overflow-x: hidden; }
 
-header .row .header-image {
-  position: relative;
-  z-index: 1; }
+header .row .header-image .header-logo {
+  position: absolute;
+  top: 269px; }
 
-header .row .header-logo {
-  position: relative;
-  z-index: 2;
-  bottom: 900px; }
+header .row div {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+header .row .header-image .header-logo div h3 {
+  font-family: Gotham Pro;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  color: #28282B; }
+
+header .row .header-image .header-logo .btn-call {
+  margin-right: 30px;
+  width: 264px;
+  height: 56px; }
+
+header .row .header-image .header-logo .btn-write {
+  margin-left: 30px;
+  width: 264px;
+  height: 56px; }
 
 @media screen and (max-width: 1200px) {
   .container {
