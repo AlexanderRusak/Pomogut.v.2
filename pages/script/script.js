@@ -1,4 +1,11 @@
 $(document).on('ready', function() {
+  var $elems = [];
+  var $count = 30;
+  for (var $i = 0; $i < $count; $i++) {
+      $('.tags').append($('<div class="tag-primary"><input type="radio"  name="radios"><label for="radio1">Борьба с членами семьи</label></div>'));
+  }
+
+
   $('.categories').slick({
     lazyLoad: 'ondemand',
     slidesToShow: 5,
@@ -39,6 +46,7 @@ $(document).on('ready', function() {
       },
     ]
   });
+
   $('.tags').slick({
     dots: false,
     arrows: true,

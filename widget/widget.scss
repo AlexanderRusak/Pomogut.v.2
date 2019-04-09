@@ -56,6 +56,8 @@
 }
 //////////////////////////////////////////////////////////////////////
 
+
+
 .img-logo {
   margin-top: 35px;
 }
@@ -125,12 +127,10 @@
   text-align: right;
   color: #FFFFFF;
 }
-
-.phone_number_header img {
+.phone_number_header img{
   float: left;
   margin-top: 3px;
 }
-
 .phone_number_header p {
   float: right;
   width: 133px;
@@ -146,6 +146,7 @@
   line-height: normal;
   text-align: right;
   cursor: pointer;
+  margin-top: 1px;
 }
 
 .search {
@@ -162,6 +163,51 @@
   margin-top: 9px;
   margin-left: 9px;
   cursor: pointer;
+}
+@media screen and(max-width:1200px) {
+  .logo-big {
+    display: none;
+  }
+
+  .logo-small {
+    display: block;
+  }
+
+  .header .row div {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width:767px) {
+  .logo-big {
+    display: none;
+  }
+.col-xs-offset-6 {
+  width: 53%;
+}
+  .logo-small {
+    display: none;
+  }
+
+  .navbar-brand {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 479px) {
+  .phone-number {
+    display: none;
+  }
+
+  .phone-btn {
+    width: 40px;
+  }
+.phone_number_header p {
+    display: none;
+  }
+  .header .row div .phone-btn {
+    margin-left: 60px;
+  }
 }
 //////////////////////////////////////////////////////////////////////////
 .slider-title{

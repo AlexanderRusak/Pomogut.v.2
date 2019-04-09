@@ -146,6 +146,7 @@
   line-height: normal;
   text-align: right;
   cursor: pointer;
+  margin-top: 1px;
 }
 
 .search {
@@ -162,6 +163,55 @@
   margin-top: 9px;
   margin-left: 9px;
   cursor: pointer;
+}
+@media screen and(max-width:1200px) {
+  .logo-big {
+    display: none;
+  }
+
+  .logo-small {
+    display: block;
+  }
+
+  .header .row div {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width:767px) {
+  .logo-big {
+    display: none;
+  }
+
+  .col-xs-offset-6 {
+    width: 53%;
+  }
+
+  .logo-small {
+    display: none;
+  }
+
+  .navbar-brand {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 479px) {
+  .phone-number {
+    display: none;
+  }
+
+  .phone-btn {
+    width: 40px;
+  }
+
+  .phone_number_header p {
+    display: none;
+  }
+
+  .header .row div .phone-btn {
+    margin-left: 60px;
+  }
 }
 //////////////////////////////////////////////////////////////////////////
 
@@ -258,7 +308,6 @@
   border-radius: 80px;
   padding-left: 3px;
   position: relative;
-
 }
 
 .categories div a:focus {
@@ -302,9 +351,7 @@
   background-color: #fff;
 }
 
-.tags .tag_first,
-.tags .tag_second,
-.tags .tag_third {
+.tags .tag-primary:nth-child(3n+4), .tags .tag-primary:first-child {
   height: 60px;
   width: 264px !important;
   border-radius: 30px;
@@ -312,12 +359,20 @@
   overflow-y: hidden;
 }
 
-.tags .tag_second {
+.tags .tag-primary:nth-child(3n+2) {
   width: 188px !important;
+  height: 60px;
+  border-radius: 30px;
+  border: 3px solid #EB3450;
+  overflow-y: hidden;
 }
 
-.tags .tag_third {
+.tags .tag-primary:nth-child(3n+3) {
   width: 333px!important;
+  height: 60px;
+  border-radius: 30px;
+  border: 3px solid #EB3450;
+  overflow-y: hidden;
 }
 
 .tags div input[type=radio] {
@@ -367,7 +422,7 @@
 }
 //////////////////////////////////////////////////////
 
-.articles a{
+.articles a {
   width: 362px;
   height: 550px;
   margin-left: 15px;
@@ -381,8 +436,8 @@
   overflow: hidden;
 }
 
-.articles a div  .articles-image {
-  display:block;
+.articles a div .articles-image {
+  display: block;
 }
 
 .articles .left {
@@ -522,24 +577,30 @@
   margin-top: 50px;
 }
 
-a:focus, a:hover{
+a:focus,
+a:hover {
   text-decoration: none;
 }
- .breakdown-articles-buttons {
-   text-decoration: none;
-   display: block;
-   overflow-y: hidden;
- }
- .articles .breakdown-articles-buttons{
-   width: 228px;
-   height: 60px;
-   margin-left: 40%;
-   display: block;
- }
- .articles .breakdown-articles-buttons h2,.articles .breakdown-articles-buttons p{
-   display: block;
- }
-.articles .breakdown-articles-buttons  div img {
+
+.breakdown-articles-buttons {
+  text-decoration: none;
+  display: block;
+  overflow-y: hidden;
+}
+
+.articles .breakdown-articles-buttons {
+  width: 228px;
+  height: 60px;
+  margin-left: 40%;
+  display: block;
+}
+
+.articles .breakdown-articles-buttons h2,
+.articles .breakdown-articles-buttons p {
+  display: block;
+}
+
+.articles .breakdown-articles-buttons div img {
   margin-left: 15px;
   margin-top: 15px;
   float: left;
@@ -709,18 +770,20 @@ a:focus, a:hover{
     margin-bottom: 30px;
   }
 
-   .breakdown-articles{
-     width: auto !important;
-     float: left;
-     margin-left: 50px;
-   }
-   .breakdown-articles p{
-     width: auto !important;
-     margin-left: 0px;
-   }
-    .breakdown-articles  .breakdown-articles-buttons{
-      margin-left: 35%;
-    }
+  .breakdown-articles {
+    width: auto !important;
+    float: left;
+    margin-left: 50px;
+  }
+
+  .breakdown-articles p {
+    width: auto !important;
+    margin-left: 0;
+  }
+
+  .breakdown-articles .breakdown-articles-buttons {
+    margin-left: 35%;
+  }
 }
 @media screen and (max-width: 991px) {
   .container {
@@ -807,7 +870,6 @@ a:focus, a:hover{
     margin-left: 30px;
   }
 
-
   .articles a:nth-child(5) {
     margin-left: 0;
   }
@@ -843,20 +905,22 @@ a:focus, a:hover{
     top: 40px;
     right: 25px;
   }
-  .breakdown-articles{
-    width: auto !important;
 
+  .breakdown-articles {
+    width: auto !important;
     margin-right: 100px !important;
   }
-  .breakdown-articles p{
+
+  .breakdown-articles p {
     width: auto !important;
-    margin-left: 0px;
+    margin-left: 0;
   }
-   .breakdown-articles  .breakdown-articles-buttons{
-     width: 260px;
-     margin-left: 22% !important;
-     background-color: #fff !important;
-   }
+
+  .breakdown-articles .breakdown-articles-buttons {
+    width: 260px;
+    margin-left: 22% !important;
+    background-color: #fff !important;
+  }
 }
 @media screen and (max-width: 767px) {
   .container {

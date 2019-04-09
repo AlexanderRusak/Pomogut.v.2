@@ -67,8 +67,7 @@
 
 .header .row {
   margin-top: 15px;
-  margin-bottom: 35px;
-  margin-right: 20px; }
+  margin-bottom: 35px; }
 
 .header .row div {
   padding-left: 0; }
@@ -121,7 +120,8 @@
   font-size: 14px;
   line-height: normal;
   text-align: right;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-top: 1px; }
 
 .search {
   width: 40px;
@@ -136,6 +136,36 @@
   margin-top: 9px;
   margin-left: 9px;
   cursor: pointer; }
+
+@media screen and (max-width: 1200px) {
+  .logo-big {
+    display: none; }
+  .logo-small {
+    display: block; }
+  .header .row div {
+    padding-left: 0; } }
+
+@media screen and (max-width: 767px) {
+  .logo-big {
+    display: none; }
+  .col-xs-offset-6 {
+    width: 53%; }
+  .logo-small {
+    display: none; }
+  .navbar-brand {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 0; } }
+
+@media screen and (max-width: 479px) {
+  .phone-number {
+    display: none; }
+  .phone-btn {
+    width: 40px; }
+  .phone_number_header p {
+    display: none; }
+  .header .row div .phone-btn {
+    margin-left: 60px; } }
 
 .line {
   width: 100%;

@@ -120,7 +120,8 @@
   font-size: 14px;
   line-height: normal;
   text-align: right;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-top: 1px; }
 
 .search {
   width: 40px;
@@ -135,6 +136,36 @@
   margin-top: 9px;
   margin-left: 9px;
   cursor: pointer; }
+
+@media screen and (max-width: 1200px) {
+  .logo-big {
+    display: none; }
+  .logo-small {
+    display: block; }
+  .header .row div {
+    padding-left: 0; } }
+
+@media screen and (max-width: 767px) {
+  .logo-big {
+    display: none; }
+  .col-xs-offset-6 {
+    width: 53%; }
+  .logo-small {
+    display: none; }
+  .navbar-brand {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 0; } }
+
+@media screen and (max-width: 479px) {
+  .phone-number {
+    display: none; }
+  .phone-btn {
+    width: 40px; }
+  .phone_number_header p {
+    display: none; }
+  .header .row div .phone-btn {
+    margin-left: 60px; } }
 
 .categories_data .row:nth-child(1) div:nth-child(1) {
   margin-top: 100px; }
@@ -244,20 +275,26 @@
   color: #EB3450;
   background-color: #fff; }
 
-.tags .tag_first,
-.tags .tag_second,
-.tags .tag_third {
+.tags .tag-primary:nth-child(3n+4), .tags .tag-primary:first-child {
   height: 60px;
   width: 264px !important;
   border-radius: 30px;
   border: 3px solid #EB3450;
   overflow-y: hidden; }
 
-.tags .tag_second {
-  width: 188px !important; }
+.tags .tag-primary:nth-child(3n+2) {
+  width: 188px !important;
+  height: 60px;
+  border-radius: 30px;
+  border: 3px solid #EB3450;
+  overflow-y: hidden; }
 
-.tags .tag_third {
-  width: 333px !important; }
+.tags .tag-primary:nth-child(3n+3) {
+  width: 333px !important;
+  height: 60px;
+  border-radius: 30px;
+  border: 3px solid #EB3450;
+  overflow-y: hidden; }
 
 .tags div input[type=radio] {
   display: none; }
@@ -433,7 +470,8 @@
   color: #292424;
   margin-top: 50px; }
 
-a:focus, a:hover {
+a:focus,
+a:hover {
   text-decoration: none; }
 
 .breakdown-articles-buttons {
@@ -447,7 +485,8 @@ a:focus, a:hover {
   margin-left: 40%;
   display: block; }
 
-.articles .breakdown-articles-buttons h2, .articles .breakdown-articles-buttons p {
+.articles .breakdown-articles-buttons h2,
+.articles .breakdown-articles-buttons p {
   display: block; }
 
 .articles .breakdown-articles-buttons div img {
@@ -584,7 +623,7 @@ a:focus, a:hover {
     margin-left: 50px; }
   .breakdown-articles p {
     width: auto !important;
-    margin-left: 0px; }
+    margin-left: 0; }
   .breakdown-articles .breakdown-articles-buttons {
     margin-left: 35%; } }
 
@@ -660,7 +699,7 @@ a:focus, a:hover {
     margin-right: 100px !important; }
   .breakdown-articles p {
     width: auto !important;
-    margin-left: 0px; }
+    margin-left: 0; }
   .breakdown-articles .breakdown-articles-buttons {
     width: 260px;
     margin-left: 22% !important;
