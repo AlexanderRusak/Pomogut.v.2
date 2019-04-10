@@ -1,10 +1,42 @@
 $(document).on('ready', function() {
-  var $elems = [];
-  var $count = 30;
-  for (var $i = 0; $i < $count; $i++) {
-      $('.tags').append($('<div class="tag-primary"><input type="radio"  name="radios"><label for="radio1">Борьба с членами семьи</label></div>'));
+  var $girlsCount = $("#categories div a ").length;
+  var $countsTabs = []
+  var $totalTabs = 0;
+  var $categoriesBlock = $('.categories');
+  var $block = $categoriesBlock.children("div[counts]");
+  for (var i = 0; i < $block.length; i++) {
+    $countsTabs[i] = $($block[i]).attr("counts");
+    $totalTabs += parseInt($countsTabs[i]);
   }
 
+  function createTotalTabs() {
+    $(".categories_data .for-slick").append($('<div class="row tags totalTabs"></div>'));
+    for (var j = 0; j < $totalTabs - $girlsCount; j++) {
+      $('.tags').append($('<div class="tag-primary"><input type="radio"  name="radios"><label for="radio1">Проблемы с соблюдением правил </label></div>'));
+    }
+  }
+
+  function generateRows($rowsCount) {
+    for (var i = 0; i < $rowsCount; i++) {
+      $('<div class="row tags regularTabs"></div>').insertAfter($(".categories_data .for-slick"));
+      generateTabs($countsTabs);
+    }
+  }
+
+  function generateTabs($counts) {
+    for (var j = 0; j < $counts[j].length; j++) {
+      $('.tags').append($('<div class="tag-primary"><input type="radio"  name="radios"><label for="radio1">Проблемы с соблюдением правил </label></div>'));
+    }
+  }
+  createTotalTabs();
+  generateRows($girlsCount);
+  $(".regularTabs").css("display", "none");
+  $("#categories div ").click(function() {
+    var $count = $(this).index();
+    $(".regularTabs").css("display", "none");
+    $(".regularTabs").eq($count).css("display", "block");
+    $(".totalTabs").css("display", "none");
+  })
 
   $('.categories').slick({
     lazyLoad: 'ondemand',
@@ -82,6 +114,7 @@ $(document).on('ready', function() {
     }
     $(window).on('resize', fix_size);
     fix_size();
+
   });
 
 });
