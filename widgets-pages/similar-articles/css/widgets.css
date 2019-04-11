@@ -32,44 +32,43 @@
 
 .similar-articles-title {
   margin-top: 80px;
-  margin-bottom: 60px; }
-
-.similar-articles .row h3 {
+  margin-bottom: 60px;
   font-family: Amatic SC;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 42px;
-  margin-left: 20px;
+  text-align: center;
   color: #000000; }
 
-.similar-articles .row p {
+.similar-articles .row ul li div h3 {
   width: 204px;
-  height: 105px;
-  font-family: Roboto;
+  height: 170px;
+  font-family: Amatic SC;
   font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 28px;
-  color: #292424;
-  margin-left: 20px;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  overflow-y: hidden;
-  margin-top: 30px;
-  margin-bottom: 30px; }
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  color: #000000; }
 
 .similar-articles .row ul li div a {
-  float: right;
-  margin-right: 30px;
+  margin-top: 20px;
+  display: block;
+  border: 5px solid #F17185;
+  width: 166px;
+  height: 60px;
+  border-radius: 30px;
   color: #EB3450;
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 17px;
   line-height: normal;
   text-align: center;
-  color: #EB3450; }
+  color: rgba(255, 255, 255, 0.9);
+  padding-top: 13px;
+  background: #EB3450; }
 
 @media screen and (max-width: 1200px) {
   .container {
