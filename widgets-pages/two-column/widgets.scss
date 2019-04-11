@@ -4,21 +4,41 @@
 * {
   overflow-x: hidden;
 }
-
-
 ///////////////////////////////////////////////////////////////////////////// two-column
 
 .two-column {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+.two-column-image{
+  width: 558px;
+  height: 363px;
+}
+.two-column-title {
+  font-family: Amatic SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 60px;
+}
+
+.img-signature {
+  margin-top: 10PX;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: normal;
+  color: rgba(41, 36, 36, 0.5);
+  margin-bottom: 24px;
+}
 
 .two-column .row div .two-column-image {
   width: 558px;
   height: 363px;
-
-  display: table-cell;
-  vertical-align: middle;
 }
 
 .two-column .row div .two-column-article {
@@ -35,26 +55,27 @@
   font-size: 15px;
   line-height: 28px;
   color: #292424;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .two-column .fake-block {
   display: none;
 }
-
 @media screen and (max-width: 1200px) {
   .container {
     width: 970px;
   }
-
-
-
-
+  .two-column .row div .two-column-image {
+    margin-top: 30px;
+    width: 558px;
+    height: 362px;
+  }
 }
 @media screen and (max-width: 991px) {
   .container {
     width: 750px;
   }
-
 
   .two-column .original-block {
     display: none;
@@ -67,14 +88,15 @@
   .two-column .row div .two-column-image {
     display: block;
   }
-
+  .img-signature{
+    margin-left: 11.5%;
+  }
 
 }
 @media screen and (max-width: 767px) {
   .container {
-    width: 450px;
+    width: 558px;
   }
-
 
   .two-column .fake-block {
     display: block;
@@ -83,8 +105,20 @@
   .two-column .row div .two-column-image {
     display: block;
   }
+  .img-signature{
+    margin-left: 0%;
+  }
+  .two-column .row div .two-column-article p {
+    margin-bottom: 150px;
+    display: block;
 
-
+  }
+  .two-column .row div .two-column-image {
+    margin-left: -15px;
+    margin-top: 30px;
+    width: 100%;
+    height: 323px;
+  }
 }
 @media screen and (max-width: 479px) {
   .container {
@@ -99,9 +133,13 @@
     display: table-cell;
     vertical-align: middle;
   }
-
   .two-column .row div .two-column-image {
+    margin-top: 30px;
     width: 264px;
-    height: 171px;
+    height: 172px;
   }
+  .img-signature{
+    margin-left: 0%;
+  }
+
 }

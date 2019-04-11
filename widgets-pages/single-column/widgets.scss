@@ -7,7 +7,17 @@
 
 
 //////////////////////////////////////////////////////////////////////////   SINGLE-COLUMN
-
+.single-column .row .img-signature {
+  position: relative;
+  bottom: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: normal;
+  color: rgba(41, 36, 36, 0.5);
+  
+}
 .single-column .row div h2 {
   font-family: Amatic SC;
   font-style: normal;
