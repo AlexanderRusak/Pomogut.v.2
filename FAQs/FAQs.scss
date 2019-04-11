@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700&subset=cyrillic,hebrew,latin-ext,vietnamese");
 
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  display: none;
+  text-indent: -9999px;
+  background: url("../images/icon_top.png") no-repeat;
+}
+
 * {
   overflow-x: hidden;
 }
@@ -55,7 +67,6 @@
   border-color: #fff;
 }
 //////////////////////////////////////////////////////////////////////
-
 
 .img-logo {
   margin-top: 35px;
@@ -126,10 +137,12 @@
   text-align: right;
   color: #FFFFFF;
 }
-.phone_number_header img{
+
+.phone_number_header img {
   float: left;
   margin-top: 3px;
 }
+
 .phone_number_header p {
   float: right;
   width: 133px;
@@ -180,9 +193,11 @@
   .logo-big {
     display: none;
   }
-.col-xs-offset-6 {
-  width: 53%;
-}
+
+  .col-xs-offset-6 {
+    width: 53%;
+  }
+
   .logo-small {
     display: none;
   }
@@ -201,9 +216,11 @@
   .phone-btn {
     width: 40px;
   }
-.phone_number_header p {
+
+  .phone_number_header p {
     display: none;
   }
+
   .header .row div .phone-btn {
     margin-left: 60px;
   }
@@ -232,10 +249,11 @@
 .questions .row div {
   background-color: #F2F2F2;
 }
-.questions .row div{
-  margin-top: 10px;
 
+.questions .row div {
+  margin-top: 10px;
 }
+
 .questions .row div div h3 {
   font-family: Amatic SC;
   font-style: normal;
@@ -246,7 +264,7 @@
   /* title */
   border-radius: 5px;
   margin-top: 10px;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .questions .row div div p {
@@ -305,8 +323,6 @@
   .container {
     width: 970px;
   }
-
-
 }
 @media screen and (max-width: 991px) {
   .container {
@@ -385,14 +401,11 @@
     padding-top: 10px;
     padding-bottom: 0;
   }
-
 }
 @media screen and (max-width: 479px) {
   .container {
     width: 310px;
   }
-
-
 
   .links_to_follow {
     margin-top: 70px;

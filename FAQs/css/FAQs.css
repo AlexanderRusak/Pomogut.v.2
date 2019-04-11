@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700&subset=cyrillic,hebrew,latin-ext,vietnamese");
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  display: none;
+  text-indent: -9999px;
+  background: url("../images/icon_top.png") no-repeat; }
+
 * {
   overflow-x: hidden; }
 
@@ -199,7 +210,7 @@
   /* title */
   border-radius: 5px;
   margin-top: 10px;
-  padding-left: 0px; }
+  padding-left: 0; }
 
 .questions .row div div p {
   font-family: Roboto;

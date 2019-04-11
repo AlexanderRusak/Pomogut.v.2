@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700&subset=cyrillic,hebrew,latin-ext,vietnamese");
 
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  display: none;
+  text-indent: -9999px;
+  background: url("../images/icon_top.png") no-repeat;
+}
+
 * {
   overflow-x: hidden;
 }
@@ -215,8 +227,6 @@
 }
 //////////////////////////////////////////////////////////////////////////
 
-
-
 .categories .slick-prev {
   left: 14px;
   top: 80px;
@@ -349,7 +359,8 @@
   background-color: #fff;
 }
 
-.tags .tag-primary:nth-child(3n+4), .tags .tag-primary:first-child {
+.tags .tag-primary:first-child,
+.tags .tag-primary:nth-child(3n+4) {
   height: 60px;
   width: 264px !important;
   border-radius: 30px;
@@ -392,14 +403,10 @@
   cursor: pointer;
   background-color: #fff;
   text-align: center;
-  display:table-cell;
-  vertical-align:middle;
+  display: table-cell;
+  vertical-align: middle;
   padding-bottom: 10px;
-
 }
-
-
-
 
 .tags div input[type=radio]:checked+label {
   background-color: #EB3450;

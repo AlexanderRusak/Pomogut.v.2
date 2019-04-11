@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700&subset=cyrillic,hebrew,latin-ext,vietnamese");
 
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  display: none;
+  text-indent: -9999px;
+  background: url("../images/icon_top.png") no-repeat;
+}
+
 * {
   overflow-x: hidden;
 }
@@ -179,10 +191,12 @@
   text-align: right;
   color: #FFFFFF;
 }
-.phone_number_header img{
+
+.phone_number_header img {
   float: left;
   margin-top: 3px;
 }
+
 .phone_number_header p {
   float: right;
   width: 133px;
@@ -252,9 +266,11 @@
   .phone-btn {
     width: 40px;
   }
-.phone_number_header p {
+
+  .phone_number_header p {
     display: none;
   }
+
   .header .row div .phone-btn {
     margin-left: 60px;
   }
@@ -345,7 +361,6 @@
   overflow-y: hidden;
 }
 
-
 div .inside-block-section p {
   width: 156px;
   height: 47px;
@@ -360,34 +375,40 @@ div .inside-block-section p {
   color: #000000;
   overflow-y: hidden;
 }
-.sections .container .row div a .inside-block-section p{
+
+.sections .container .row div a .inside-block-section p {
   position: relative;
   z-index: 50;
   bottom: 60px;
   left: 30px;
 }
-.sections .container .row .section-kids a .inside-block-section{
+
+.sections .container .row .section-kids a .inside-block-section {
   position: relative;
   left: 20px;
   bottom: 210px;
 }
-.sections .container .row .section-teenagers a .inside-block-section{
-  bottom: 250px  !important;
+
+.sections .container .row .section-teenagers a .inside-block-section {
+  bottom: 250px !important;
   position: relative !important;
   left: 20px;
 }
-.sections .container .row .section-adults a .inside-block-section{
-  bottom: 215px  !important;
+
+.sections .container .row .section-adults a .inside-block-section {
+  bottom: 215px !important;
   position: relative !important;
   left: 20px;
 }
-.sections .container .row .section-parents a .inside-block-section{
-  bottom: 240px  !important;
+
+.sections .container .row .section-parents a .inside-block-section {
+  bottom: 240px !important;
   position: relative !important;
   left: 20px;
 }
-.sections .container .row .section-schools a .inside-block-section{
-  bottom: 250px  !important;
+
+.sections .container .row .section-schools a .inside-block-section {
+  bottom: 250px !important;
   position: relative !important;
   left: 20px;
 }
@@ -400,9 +421,11 @@ div .inside-block-section p {
   .sections .container .sections_fake {
     display: block;
   }
-  .sections .container{
+
+  .sections .container {
     margin-left: 11%;
   }
+
   .sections .container .row:nth-child(2) {
     padding-right: 0;
     display: block;
@@ -411,30 +434,33 @@ div .inside-block-section p {
     bottom: 40px;
     padding-top: 40px;
   }
-    .sections .container .row:nth-child(2) .section-adults{
-      margin-top: 55px;
-    }
-    .sections .container .row:nth-child(2) .section-schools{
-      margin-right: 80px;
-      margin-top: 45px;
-    }
-    .sections .container .row:nth-child(3) .section-parents{
-      margin-top: 30px;
-    }
+
+  .sections .container .row:nth-child(2) .section-adults {
+    margin-top: 55px;
+  }
+
+  .sections .container .row:nth-child(2) .section-schools {
+    margin-right: 80px;
+    margin-top: 45px;
+  }
+
+  .sections .container .row:nth-child(3) .section-parents {
+    margin-top: 30px;
+  }
 }
 @media screen and (max-width:767px) {
   .sections .container .row:first-child {
     display: none;
   }
 
-
   .sections .container .sections_fake {
     display: block;
   }
 
-  .sections .container{
+  .sections .container {
     margin-left: 6%;
   }
+
   .sections .container .row:nth-child(2) {
     padding-right: 0;
     display: block;
@@ -443,8 +469,6 @@ div .inside-block-section p {
     bottom: 40px;
     padding-top: 40px;
   }
-
-
 }
 @media screen and (max-width:700px) {
   .sections .container .row:first-child {
@@ -462,36 +486,43 @@ div .inside-block-section p {
   .sections .container .section-fake_xs {
     display: block;
   }
-  .sections .container .section-fake_xs div{
+
+  .sections .container .section-fake_xs div {
     overflow-y: hidden;
     margin-bottom: 30px;
   }
-  .sections .container .section-fake_xs div:nth-child(1) a .inside-block-section{
+
+  .sections .container .section-fake_xs div:nth-child(1) a .inside-block-section {
     position: relative;
     bottom: 210px;
     left: 20px;
   }
-  .sections .container .section-fake_xs div a .inside-block-section p{
+
+  .sections .container .section-fake_xs div a .inside-block-section p {
     position: relative;
     bottom: 60px;
     left: 30px;
   }
-  .sections .container .section-fake_xs div:nth-child(2) a .inside-block-section{
+
+  .sections .container .section-fake_xs div:nth-child(2) a .inside-block-section {
     position: relative;
     bottom: 250px;
     left: 20px;
   }
-  .sections .container .section-fake_xs div:nth-child(3) a .inside-block-section{
+
+  .sections .container .section-fake_xs div:nth-child(3) a .inside-block-section {
     position: relative;
     bottom: 210px;
     left: 20px;
   }
-  .sections .container .section-fake_xs div:nth-child(4) a .inside-block-section{
+
+  .sections .container .section-fake_xs div:nth-child(4) a .inside-block-section {
     position: relative;
     bottom: 240px;
     left: 20px;
   }
-  .sections .container .section-fake_xs div:nth-child(5) a .inside-block-section{
+
+  .sections .container .section-fake_xs div:nth-child(5) a .inside-block-section {
     position: relative;
     bottom: 250px;
     left: 20px;
@@ -513,10 +544,6 @@ div .inside-block-section p {
   .sections .container .section-fake_xs {
     display: block;
   }
-
-
-
-
 }
 @media screen and (max-width:375px) {
   .sections .container .row:first-child {
@@ -534,8 +561,6 @@ div .inside-block-section p {
   .sections .container .section-fake_xs {
     display: block;
   }
-
-
 }
 @media screen and (max-width:375px) {
   .sections .container .row:first-child {
@@ -553,7 +578,6 @@ div .inside-block-section p {
   .sections .container .section-fake_xs {
     display: block;
   }
-
 }
 ////////////////////////////////////////////////////////////
 //////////////////////////////////

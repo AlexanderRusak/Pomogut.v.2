@@ -1,6 +1,17 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700&subset=cyrillic,hebrew,latin-ext,vietnamese");
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  display: none;
+  text-indent: -9999px;
+  background: url("../images/icon_top.png") no-repeat; }
+
 * {
   overflow-x: hidden; }
 
@@ -292,22 +303,22 @@ div .inside-block-section p {
   bottom: 210px; }
 
 .sections .container .row .section-teenagers a .inside-block-section {
-  bottom: 250px  !important;
+  bottom: 250px !important;
   position: relative !important;
   left: 20px; }
 
 .sections .container .row .section-adults a .inside-block-section {
-  bottom: 215px  !important;
+  bottom: 215px !important;
   position: relative !important;
   left: 20px; }
 
 .sections .container .row .section-parents a .inside-block-section {
-  bottom: 240px  !important;
+  bottom: 240px !important;
   position: relative !important;
   left: 20px; }
 
 .sections .container .row .section-schools a .inside-block-section {
-  bottom: 250px  !important;
+  bottom: 250px !important;
   position: relative !important;
   left: 20px; }
 

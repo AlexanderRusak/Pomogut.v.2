@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700&subset=cyrillic,hebrew,latin-ext,vietnamese");
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  display: none;
+  text-indent: -9999px;
+  background: url("../images/icon_top.png") no-repeat; }
+
 * {
   overflow-x: hidden; }
 
@@ -272,7 +283,8 @@
   color: #EB3450;
   background-color: #fff; }
 
-.tags .tag-primary:nth-child(3n+4), .tags .tag-primary:first-child {
+.tags .tag-primary:first-child,
+.tags .tag-primary:nth-child(3n+4) {
   height: 60px;
   width: 264px !important;
   border-radius: 30px;

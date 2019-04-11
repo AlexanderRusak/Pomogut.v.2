@@ -32,9 +32,9 @@ $(document).on('ready', function() {
   generateRows($girlsCount);
   $(".regularTabs").css("display", "none");
   $("#categories div ").click(function() {
-    var $count = $(this).index();
+    var $count = $(this).attr("counts");
     $(".regularTabs").css("display", "none");
-    $(".regularTabs").eq($count).css("display", "block");
+    $(".regularTabs").eq(parseInt($count)-1).css("display", "block");
     $(".totalTabs").css("display", "none");
   })
 
