@@ -426,41 +426,13 @@ div .inside-block-section p {
   .sections .container .section-fake_xs {
     display: block; } }
 
-@media (min-width: 769px) and (max-width: 1023px) {
-  .block-1 .container div {
-    margin-top: 100px; }
-  .block-1 .container div:nth-child(2) {
-    margin-top: 30px;
-    width: 570px;
-    margin-left: 35px; } }
+.block-1 .col .block-1-img {
+  width: 558px;
+  height: 350px;
+  background-color: #ccc; }
 
-@media (min-width: 361px) and (max-width: 768px) {
-  .block-1 div div img {
-    width: 100%;
-    background-size: auto; }
-  .block-1 .container div {
-    margin-top: 60px; }
-  .block-1 .container div:nth-child(2) {
-    margin-left: 5px; } }
-
-@media (min-width: 320px) and (max-width: 360px) {
-  .block-1 div div img {
-    width: 294px; }
-  .block-1 .container div {
-    margin-top: 100px; }
-  .block-1 .container div:nth-child(2) {
-    margin-top: 30px;
-    margin-left: 5px; }
-  .block-2 .container div:first-child img {
-    display: block;
-    height: 284px;
-    width: 294px; } }
-
-.block-1-img {
-  border-radius: 5px;
-  /* Радиус скругления */
-  padding: 2%;
-  /* Поля */ }
+.block-1 .col .col-xs-12 {
+  float: none; }
 
 .block-1 .container div:nth-child(2) h2 {
   font-size: 30px;
@@ -472,7 +444,6 @@ div .inside-block-section p {
   color: #000000; }
 
 .block-1 {
-  margin-top: 100px;
   margin-bottom: 100px; }
 
 .block-1 .container div:nth-child(2) p {
@@ -499,6 +470,44 @@ div .inside-block-section p {
   line-height: normal;
   text-align: center;
   padding-top: 12px; }
+
+@media screen and (max-width: 1200px) {
+  .block-1 .col .block-1-img {
+    width: 460px; }
+  .block-1 .container {
+    margin-top: 100px; } }
+
+@media screen and (max-width: 992px) {
+  .block-1 .col .block-1-img {
+    width: 558px;
+    height: 350px;
+    background-color: #ccc; } }
+
+@media screen and (max-width: 768px) {
+  .block-1 .col .block-1-img {
+    width: 558px;
+    height: 350px;
+    background-color: #ccc; }
+  .block-1 .container div {
+    margin-top: 60px; } }
+
+@media screen and (max-width: 600px) {
+  .block-1 .col .block-1-img {
+    width: 264px;
+    height: 172px;
+    background-color: #ccc; } }
+
+@media (min-width: 320px) and (max-width: 360px) {
+  .block-1 div div img {
+    width: 294px; }
+  .block-1 .container div {
+    margin-top: 100px; }
+  .block-1 .container div:nth-child(2) {
+    margin-top: 30px; }
+  .block-2 .container div:first-child img {
+    display: block;
+    height: 284px;
+    width: 294px; } }
 
 .block-2 {
   background-image: url("../images/block-2/Rectangle.svg"); }
