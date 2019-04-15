@@ -1,4 +1,6 @@
 $(document).on('ready', function() {
+  var result='{"0":[1,2,3,4],"1":[6,7,8],"2":[10,11],"3":[13,14,15,16,17]}';
+  result=JSON.parse(result);
   var $girlsCount = $("#categories div a ").length;
   var $countsTabs = []
   var $totalTabs = 0;
@@ -11,30 +13,31 @@ $(document).on('ready', function() {
 
   function createTotalTabs() {
     $(".categories_data .for-slick").append($('<div class="row tags totalTabs"></div>'));
-    for (var j = 0; j < $totalTabs - $girlsCount; j++) {
-      $('.tags').append($('<div class="tag-primary"><input type="radio"  name="radios"><label for="radio1">Проблемы с соблюдением правил </label></div>'));
+    for (var j = 0; j < $totalTabs; j++) {
+    //  alert(`${result.toString(j)[j]}`);
+      $('.totalTabs').append($(`<div class="tag-primary"><input type="radio"   name="radios"><label for="radio1">Проблемы с соблюдением правил </label></div>`));
     }
   }
 
   function generateRows($rowsCount) {
     for (var i = 0; i < $rowsCount; i++) {
-      $('<div class="row tags regularTabs"></div>').insertAfter($(".categories_data .for-slick"));
-      generateTabs($countsTabs);
+      $(".categories_data .for-slick").append($('<div class="row tags regularTabs"></div>'));
+      var tabs = (parseInt($countsTabs[i]));
+      for (var j = 0; j < tabs; j++) {
+        $('.regularTabs').eq(i).append($('<div class="tag-primary"><input type="radio"  name="radios"><label for="radio1">Проблемы с соблюдением правил </label></div>'));
+      }
+
     }
   }
 
-  function generateTabs($counts) {
-    for (var j = 0; j < $counts[j].length; j++) {
-      $('.tags').append($('<div class="tag-primary"><input type="radio"  name="radios"><label for="radio1">Проблемы с соблюдением правил </label></div>'));
-    }
-  }
   createTotalTabs();
   generateRows($girlsCount);
   $(".regularTabs").css("display", "none");
   $("#categories div ").click(function() {
-    var $count = $(this).attr("counts");
+    var $count = $(this).index();
+    alert($count);
     $(".regularTabs").css("display", "none");
-    $(".regularTabs").eq(parseInt($count)-1).css("display", "block");
+    $(".regularTabs").eq($count).css("display", "block");
     $(".totalTabs").css("display", "none");
   })
 
