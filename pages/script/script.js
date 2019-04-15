@@ -59,16 +59,16 @@ $(document).on('ready', function() {
       {
         breakpoint: 991,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToShow: 3,
+          slidesToScroll: 3,
           infinite: false,
         }
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           infinite: false,
         }
       }, {
@@ -88,8 +88,26 @@ $(document).on('ready', function() {
     infinite: false,
     speed: 300,
     slidesToShow: 3,
+    slidesToScroll: 3,
     centerMode: false,
-    variableWidth: true
+    variableWidth: true,
+    responsive: [{
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: false,
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: false,
+        }
+      }
+    ]
   });
   jQuery(function($) {
     function fix_size() {
