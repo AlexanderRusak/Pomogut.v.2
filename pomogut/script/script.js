@@ -1,8 +1,7 @@
 $(document).on('ready', function() {
 
   $('.about-logos').slick({
-    lazyLoad: 'ondemand',
-    slidesToShow: 5,
+    slidesToShow: 3,
     infinite: false,
     slidesToScroll: 1,
     arrows: true,

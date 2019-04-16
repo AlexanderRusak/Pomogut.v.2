@@ -38,15 +38,35 @@ header .row .header-image .header-logo .btn-write {
   line-height: 25px;
   color: #28282B; }
 
-.about-logos div {
-  width: 200px;
-  height: 60px;
-  background-color: red; }
+.about-logos .row div {
+  height: 110px;
+  position: relative; }
 
-.about-logos div a {
-  height: 100%;
-  width: 100%;
-  display: block; }
+.about-logos .row div a img {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: hidden; }
+
+.slick-next:before,
+.slick-prev:before {
+  color: #5DB9E0;
+  font-size: 40px; }
+
+.slick-next {
+  right: 10px;
+  z-index: 5;
+  width: 40px;
+  height: 40px; }
+
+.slick-prev {
+  left: 10px;
+  z-index: 5;
+  width: 40px;
+  height: 40px; }
 
 @media screen and (max-width: 1200px) {
   .container {
