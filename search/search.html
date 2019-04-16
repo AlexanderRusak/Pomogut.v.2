@@ -35,17 +35,18 @@
           <li><a href="#">О нас</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="#">FAQs</a></li>
+          <li><a href="#">Энциклопедия знаний</a></li>
         </ul>
       </div>
     </div>
   </nav>
   <div class="container header">
     <div class="row">
-      <a class="col-lg-4 col-md-4 logo-big" href="#"><img src="./images/header/logo.svg" alt=""></a>
-      <a class=" col-md-4 col-sm-4  logo-small" href="#"><img src="./images/header/logo-mobile.svg" alt=""></a>
+      <a class="col-lg-4 col-md-4 logo-big" href="#"><img src="./images/header/pomogut-logo.svg" alt=""></a>
       <div class="col-lg-3 col-lg-offset-5 col-md-3 col-md-offset-5 col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-6">
-        <a href="tel:+375291234567" class="phone-btn">                                                                      <!--изменил блок на а--><!--CHANGED-->
+        <a href="tel:+375291234567" class="phone-btn">          <!--CHANGED-->                                                            <!--изменил блок на а-->
           <div class="icon-phone phone_number_header" ><img src="./images/header/icon-phone.svg" alt=""><p>+375(29) 123 45 67</p></div><!--CHANGED-->
+
         </a>
         <a href="" class="search">    <!--CHANGED-->
           <img src="./images/header/icon-search.svg" alt="">  <!--CHANGED-->
@@ -61,16 +62,15 @@
       <form class="container" action="#">
         <div class="col-lg-10 col-md-10 col-sm-9 col-xs-12">
           <input type="text" class="form-control " placeholder="Введите здесь то, что вы ищете..." name="search">
+          <datalist id="search">
+            <h3 class="search-result">Найдено результатов поиска:<text class="search-header-result">result</text> </h3>
+            <p>Заголовок статьи(<a href="#">ссылка на статью</a>)</p>
+          </datalist>
         </div>
           <div class=" col-lg-2 col-md-2 col-sm-3 col-xs-8 ">
-            <button class="btn btn-default btn-block btn-lg" type="submit">Искать</button>
+            <button id="search-btn" class="btn btn-default btn-block btn-lg" type="submit">Искать</button>
           </div>
       </form>
-
-      <div class="container result">
-
-      </div>
-
 
   <footer class="row footer">
     <div class="container">

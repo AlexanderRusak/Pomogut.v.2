@@ -22,13 +22,13 @@
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #fff;
-  font-family: "Roboto";
+  font-family: Roboto;
   font-style: normal;
-  font-weight: 500;
+  font-weight: normal;
   font-size: 13px;
   line-height: normal;
   text-align: center;
+  color: #FFFFFF;
 }
 
 .navbar-default .navbar-nav > li > a:focus,
@@ -38,6 +38,10 @@
 
 .navbar-default .navbar-nav > li:focus {
   background-color: blue;
+}
+
+.navbar-nav li:last-child {
+  margin-left: 215px;
 }
 
 .navbar .navbar-nav {
@@ -54,8 +58,70 @@
   background-color: #00AEEF;
   border-color: #fff;
 }
-//////////////////////////////////////////////////////////////////////
+@media screen and (max-width:1200px) {
+  .navbar-nav li:last-child {
+    margin-left: 0 !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
 
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+
+  .navbar-header .collapse,
+  .navbar-toggle {
+    display: block !important;
+  }
+
+  .navbar-header {
+    float: none;
+  }
+
+  .collapse {
+    display: none !important;
+  }
+
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar .navbar-nav > li {
+    float: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+
+  .navbar-header .collapse,
+  .navbar-toggle {
+    display: block !important;
+  }
+
+  .navbar-header {
+    float: none;
+  }
+}
+//////////////////////////////////////////////////////////////
+
+.header .row .col-lg-offset-5 {
+  margin-left: 38%;
+}
 
 .img-logo {
   margin-top: 35px;
@@ -78,6 +144,10 @@
 .button-search img {
   margin-top: 9px;
   margin-left: 9px;
+}
+
+.logo-big img {
+  margin-top: 10px;
 }
 
 .logo-small {
@@ -126,10 +196,12 @@
   text-align: right;
   color: #FFFFFF;
 }
-.phone_number_header img{
+
+.phone_number_header img {
   float: left;
   margin-top: 3px;
 }
+
 .phone_number_header p {
   float: right;
   width: 133px;
@@ -164,26 +236,25 @@
   cursor: pointer;
 }
 @media screen and(max-width:1200px) {
-  .logo-big {
-    display: none;
-  }
-
-  .logo-small {
-    display: block;
-  }
-
   .header .row div {
     padding-left: 0;
+  }
+
+  .header .row .col-lg-offset-5 {
+    margin-left: 70%;
+  }
+}
+@media screen and (max-width:991px) {
+  .header .row .col-lg-offset-5 {
+    margin-left: 62.5%;
+  }
+
+  .logo-big {
+    float: left;
   }
 }
 @media screen and (max-width:767px) {
   .logo-big {
-    display: none;
-  }
-.col-xs-offset-6 {
-  width: 53%;
-}
-  .logo-small {
     display: none;
   }
 
@@ -191,6 +262,15 @@
     display: block;
     padding-top: 10px;
     padding-bottom: 0;
+  }
+
+  .header .row .col-lg-offset-5 {
+    margin-left: 48%;
+  }
+}
+@media screen and (max-width:625px) {
+  .phone-btn {
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 479px) {
@@ -201,9 +281,11 @@
   .phone-btn {
     width: 40px;
   }
-.phone_number_header p {
+
+  .phone_number_header p {
     display: none;
   }
+
   .header .row div .phone-btn {
     margin-left: 60px;
   }
@@ -245,8 +327,9 @@
   margin-top: 30px;
   margin-bottom: 90px;
 }
-.col-md-3{
-  padding-right: 0px;
+
+.col-md-3 {
+  padding-right: 0;
 }
 /////////////////////////////////////////////////////////////////////////////// footer
 
@@ -357,6 +440,7 @@
     margin-top: 50px;
     margin-bottom: 50px;
   }
+
   .block-404 .row div .image-404 {
     margin-top: 100px;
     width: 357px;
@@ -371,11 +455,13 @@
   .navbar-collapse.collapse {
     display: none !important;
   }
+
   .header .row {
     margin-top: 15px;
     margin-bottom: 35px;
     margin-right: -5px;
   }
+
   .navbar-collapse.collapse.in {
     display: block !important;
   }
@@ -402,6 +488,7 @@
   .logo-small {
     display: none;
   }
+
   .block-404 .row div .image-404 {
     margin-top: 100px;
     width: 357px;
@@ -438,6 +525,7 @@
     margin-top: 50px;
     margin-bottom: 50px;
   }
+
   .block-404 .row div .image-404 {
     margin-top: 100px;
     width: 260px;

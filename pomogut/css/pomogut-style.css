@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i");
 * {
   overflow-x: hidden; }
 
@@ -6,8 +7,8 @@ header .row .header-image .header-logo {
   top: 269px; }
 
 header .row div {
-  padding-left: 0px;
-  padding-right: 0px; }
+  padding-left: 0;
+  padding-right: 0; }
 
 header .row .header-image .header-logo div h3 {
   font-family: Gotham Pro;
@@ -26,6 +27,17 @@ header .row .header-image .header-logo .btn-write {
   width: 264px;
   height: 56px; }
 
+.about {
+  margin-top: 100px; }
+
+.about-title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  color: #28282B; }
+
 @media screen and (max-width: 1200px) {
   .container {
     width: 970px; } }
@@ -40,4 +52,6 @@ header .row .header-image .header-logo .btn-write {
 
 @media screen and (max-width: 479px) {
   .container {
-    width: 310px; } }
+    width: 310px; }
+  .about {
+    margin-top: 70px; } }

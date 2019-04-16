@@ -22,13 +22,13 @@
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #fff;
-  font-family: "Roboto";
+  font-family: Roboto;
   font-style: normal;
-  font-weight: 500;
+  font-weight: normal;
   font-size: 13px;
   line-height: normal;
   text-align: center;
+  color: #FFFFFF;
 }
 
 .navbar-default .navbar-nav > li > a:focus,
@@ -38,6 +38,10 @@
 
 .navbar-default .navbar-nav > li:focus {
   background-color: blue;
+}
+
+.navbar-nav li:last-child {
+  margin-left: 215px;
 }
 
 .navbar .navbar-nav {
@@ -54,8 +58,71 @@
   background-color: #00AEEF;
   border-color: #fff;
 }
-//////////////////////////////////////////////////////////////////////
+@media screen and (max-width:1200px) {
+  .navbar-nav li:last-child {
+    margin-left: 0 !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
 
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+
+  .navbar-header .collapse,
+  .navbar-toggle {
+    display: block !important;
+  }
+
+  .navbar-header {
+    float: none;
+  }
+
+  .collapse {
+    display: none !important;
+  }
+
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar .navbar-nav > li {
+    float: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+
+  .navbar-header .collapse,
+  .navbar-toggle {
+    display: block !important;
+  }
+
+  .navbar-header {
+    float: none;
+  }
+}
+//////////////////////////////////////////////////////////////
+
+.header .row .col-lg-offset-5 {
+  margin-left: 38%;
+  padding-right: 0;
+}
 
 .img-logo {
   margin-top: 35px;
@@ -78,6 +145,10 @@
 .button-search img {
   margin-top: 9px;
   margin-left: 9px;
+}
+
+.logo-big img {
+  margin-top: 10px;
 }
 
 .logo-small {
@@ -126,10 +197,12 @@
   text-align: right;
   color: #FFFFFF;
 }
-.phone_number_header img{
+
+.phone_number_header img {
   float: left;
   margin-top: 3px;
 }
+
 .phone_number_header p {
   float: right;
   width: 133px;
@@ -163,27 +236,56 @@
   margin-left: 9px;
   cursor: pointer;
 }
+
+#search a,
+#search p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: normal;
+  color: #00AEEF;
+}
+.search-result{
+  font-family: Amatic SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 42px;
+  color: #000000;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+.search-header-result {
+  font-family: Amatic SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 42px;
+  color: #00AEEF;
+  text-transform: lowercase;
+  margin-left: 10px;
+}
 @media screen and(max-width:1200px) {
-  .logo-big {
-    display: none;
-  }
-
-  .logo-small {
-    display: block;
-  }
-
   .header .row div {
     padding-left: 0;
+  }
+
+  .header .row .col-lg-offset-5 {
+    margin-left: 70%;
+  }
+}
+@media screen and (max-width:991px) {
+  .header .row .col-lg-offset-5 {
+    margin-left: 62%;
+  }
+
+  .logo-big {
+    float: left;
   }
 }
 @media screen and (max-width:767px) {
   .logo-big {
-    display: none;
-  }
-.col-xs-offset-6 {
-  width: 53%;
-}
-  .logo-small {
     display: none;
   }
 
@@ -191,6 +293,15 @@
     display: block;
     padding-top: 10px;
     padding-bottom: 0;
+  }
+
+  .header .row .col-lg-offset-5 {
+    margin-left: 48%;
+  }
+}
+@media screen and (max-width:625px) {
+  .phone-btn {
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 479px) {
@@ -201,9 +312,11 @@
   .phone-btn {
     width: 40px;
   }
-.phone_number_header p {
+
+  .phone_number_header p {
     display: none;
   }
+
   .header .row div .phone-btn {
     margin-left: 60px;
   }
@@ -216,10 +329,12 @@
   background-color: #F2F2F2;
 }
 ////////////////////////////////////////////////////////////////////////// block-404
-form{
+
+form {
   margin-top: 109px;
   margin-bottom: 100px;
 }
+
 form div:nth-child(1) input {
   background: #F2F2F2;
   border-radius: 30px;
@@ -403,13 +518,13 @@ form div:nth-child(2) button:hover {
     display: none;
   }
 
-  form div:nth-child(2){
+  form div:nth-child(2) {
     margin-top: 30px;
     margin-left: 16.66666667%;
   }
-  form div:nth-child(1) input {
 
-    padding-left:15px;
+  form div:nth-child(1) input {
+    padding-left: 15px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -442,8 +557,8 @@ form div:nth-child(2) button:hover {
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  form div:nth-child(1) input {
 
-    padding-left:7px;
+  form div:nth-child(1) input {
+    padding-left: 7px;
   }
 }
