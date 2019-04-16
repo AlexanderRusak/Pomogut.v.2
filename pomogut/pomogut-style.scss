@@ -35,6 +35,7 @@ header .row .header-image .header-logo .btn-write {
   width: 264px;
   height: 56px;
 }
+///////////////////////////////////////////////////////////////////////////// about
 .about{
   margin-top: 100px;
 }
@@ -46,6 +47,17 @@ header .row .header-image .header-logo .btn-write {
   line-height: 25px;
   color: #28282B;
 }
+.about-logos div{
+  width: 200px;
+  height: 60px;
+  background-color: red;
+}
+.about-logos div a{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+////////////////////////////////////////////////////////////////////////////////////
 @media screen and (max-width: 1200px) {
   .container {
     width: 970px;

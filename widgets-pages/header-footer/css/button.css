@@ -1,0 +1,17 @@
+.scrollup {
+  width: 60px;
+  height: 60px;
+  opacity: 1;
+  position: fixed;
+  bottom: 50px;
+  right: 190px;
+  display: none;
+  text-indent: -9999px;
+  background: url("../images/button-up.svg") no-repeat;
+  color: #00AEEF;
+}
+@media (min-width:320px) and (max-width:991px){
+  .scrollup {
+    display: none !important;
+  }
+}
