@@ -4,9 +4,7 @@
 * {
   overflow-x: hidden;
 }
-
 //////////////////////////////////////////////////////////////////////////
-
 .line {
   width: 100%;
   height: 2px;
@@ -85,13 +83,20 @@ form div:nth-child(2) button:hover {
 .links_to_navigation a p {
   margin-bottom: 20px;
 }
-#search{
+
+#search {
   width: 100%;
 }
-#search a p{
-  
+
+#search a p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: normal;
+  color: #292424;
 }
-//////////////////////////////////////////////
+/////////////////////////////////////////////
 /////////////////////////////////////////////////////
 @media screen and (max-width: 1200px) {
   .container {

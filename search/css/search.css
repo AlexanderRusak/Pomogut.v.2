@@ -71,6 +71,14 @@ form div:nth-child(2) button:hover {
 #search {
   width: 100%; }
 
+#search a p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: normal;
+  color: #292424; }
+
 @media screen and (max-width: 1200px) {
   .container {
     width: 970px; }
