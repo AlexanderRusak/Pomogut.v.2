@@ -60,14 +60,15 @@
       <form class="container" action="#">
         <div class="col-lg-10 col-md-10 col-sm-9 col-xs-12">
           <input type="text" class="form-control " placeholder="Введите здесь то, что вы ищете..." name="search">
-          <datalist id="search">
-            <h3 class="search-result">Найдено результатов поиска:<text class="search-header-result">result</text> </h3>
-            <p>Заголовок статьи(<a href="#">ссылка на статью</a>)</p>
+          <datalist id="search ">
+            <a  href="/{{ p.slug }}"><p class="search-result">{{ p.title }}</p></a>
           </datalist>
         </div>
           <div class=" col-lg-2 col-md-2 col-sm-3 col-xs-8 ">
             <button id="search-btn" class="btn btn-default btn-block btn-lg" type="submit">Искать</button>
           </div>
+          <h3 class="search-result">Найдено результатов поиска:<text class="search-header-result">result</text> </h3>
+          <p>Заголовок статьи(<a href="#">ссылка на статью</a>)</p>
       </form>
 
   <footer class="row footer">
