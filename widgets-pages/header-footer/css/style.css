@@ -48,7 +48,7 @@
 
 @media screen and (max-width: 1200px) {
   .navbar-nav li:last-child {
-    margin-left: 0px !important; } }
+    margin-left: 0 !important; } }
 
 @media screen and (max-width: 991px) {
   .navbar-collapse.collapse {
@@ -82,8 +82,8 @@
   .navbar-header {
     float: none; } }
 
-.header .row .col-lg-offset-5 {
-  margin-left: 39%; }
+.header .row a .img-logo {
+  margin-top: 0; }
 
 .img-logo {
   margin-top: 35px; }
@@ -182,43 +182,50 @@
   margin-left: 9px;
   cursor: pointer; }
 
+.block-btn-phone-search a:last-child {
+  margin-right: 10%; }
+
 @media screen and (max-width: 1200px) {
-  .header .row div {
-    padding-left: 0; }
-  .header .row .col-lg-offset-5 {
-    margin-left: 38%; } }
+  .block-btn-phone-search a:first-child {
+    margin-left: 38%; }
+  .block-btn-phone-search a:last-child {
+    margin-right: 8%; } }
 
 @media screen and (max-width: 991px) {
-  .header .row .col-lg-offset-5 {
-    margin-left: 41%; }
   .logo-big {
-    float: left; } }
+    display: none; }
+  .logo-small {
+    display: block; }
+  .block-btn-phone-search a:first-child {
+    margin-left: 23%; }
+  .block-btn-phone-search a:last-child {
+    margin-right: 7%; } }
 
 @media screen and (max-width: 767px) {
   .logo-big {
     display: none; }
-  .navbar-brand {
+  .logo-small {
     display: block;
-    padding-top: 10px;
-    padding-bottom: 0; }
-  .header .row .col-lg-offset-5 {
-    margin-left: 49%; }
-  .phone-btn {
-    margin-left: 25%; } }
+    margin-left: 15px; }
+  .block-btn-phone-search a {
+    margin-bottom: 0px; }
+  .block-btn-phone-search a:first-child {
+    margin-left: 23%; }
+  .block-btn-phone-search a:last-child {
+    margin-right: 3%; } }
 
 @media screen and (max-width: 625px) {
-  .phone-btn {
-    margin-left: 0%; } }
-
-@media screen and (max-width: 479px) {
-  .phone-number {
+  .logo-big {
     display: none; }
-  .phone-btn {
-    width: 40px; }
-  .phone_number_header p {
+  .logo-small {
     display: none; }
-  .header .row div .phone-btn {
-    margin-left: 60px; } }
+  .block-btn-phone-search a:first-child {
+    margin-left: 35%; }
+  .phone-btn {
+    width: 40px;
+    height: 40px; }
+  .icon-phone p {
+    display: none; } }
 
 .footer {
   background-color: #00AEEF; }
