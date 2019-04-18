@@ -212,12 +212,16 @@
   .block-btn-phone-search a:first-child {
     margin-left: 23%; }
   .block-btn-phone-search a:last-child {
-    margin-right: 3%; } }
+    margin-right: 3%; }
+  .block-btn-phone-search {
+    display: none; } }
 
 @media screen and (max-width: 625px) {
   .logo-big {
     display: none; }
   .logo-small {
+    display: block; }
+  .block-btn-phone-search {
     display: none; }
   .block-btn-phone-search a:first-child {
     margin-left: 35%; }
