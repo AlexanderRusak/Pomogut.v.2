@@ -14,7 +14,6 @@ $(document).on('ready', function() {
     for (var i = 0; i < $arrId.length; i++) {
       for (var j = 0; j <$arrId[i].length; j++) {
         $idForTotalTabs.push($arrId[i][j]); //Запись общего количество табов
-
       }
     }
   }
@@ -47,11 +46,18 @@ $(document).on('ready', function() {
 
   $(".regularTabs").css("display", "none");
   $("#categories div ").click(function() {
-    var $count = $(this).index();
-    alert($count);
-    $(".regularTabs").css("display", "none");
-    $(".regularTabs").eq($count).css("display", "block");
-    $(".totalTabs").css("display", "none");
+    var width=screen.width;
+    if (width<=768) {
+      $(".categories_data .for-slick").css("display","none");
+    }
+    else {
+      var $count = $(this).index();
+      alert($count);
+      $(".regularTabs").css("display", "none");
+      $(".regularTabs").eq($count).css("display", "block");
+      $(".totalTabs").css("display", "none");
+    }
+
   })
     $(".tags div input[type=radio]+label ").click(function() {
       /////////////////////////////////////////////////////////////// styles
