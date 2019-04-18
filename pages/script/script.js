@@ -65,6 +65,7 @@ $(document).on('ready', function() {
     });
     $(".tag-primary ").click(function() {
       /////////////////////////////////////////////////////////////// styles
+        $(".tag-primary").css("background-color","#fff");
         $(this).css("background-color","#EB3450");
           ///////////////////////////////////////////////////////////////
         alert($(this).attr("id"));
