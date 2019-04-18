@@ -580,6 +580,8 @@ a:hover {
   .slick-list {
     width: 380px;
     margin-left: 6%; }
+  .categories_data .row .for-slick {
+    display: none; }
   .slick-slide {
     width: 160px !important;
     margin-right: 13px; }
@@ -599,6 +601,10 @@ a:hover {
     width: 40px; }
   .header .row div {
     padding-right: 0; }
+  .tags {
+    display: none; }
+  .categories_data .row .for-slick {
+    display: none; }
   .header .row div .phone-btn {
     margin-left: 40px; }
   .links_to_follow {
@@ -616,6 +622,6 @@ a:hover {
   .articles {
     margin-left: 10px; }
   .icon-phone .phone_number_header p {
-    display: no; }
+    display: none; }
   .articles a {
     margin-left: 0 !important; } }

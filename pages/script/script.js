@@ -1,37 +1,50 @@
 $(document).on('ready', function() {
-  var result='{"0":[1,2,3,4],"1":[6,7,8],"2":[10,11],"3":[13,14,15,16,17]}';
+  var result='{"0":[5,2,1,7],"1":[6,123,333],"2":[222,0],"3":[2334,23323232323,2,6,3],"4":[18,19]}';
   result=JSON.parse(result);
-  var $girlsCount = $("#categories div a ").length;
+  var $sectionsCount=Object.keys(result).length;  //количество элементов(категорий) в JSON с сервера
   var $countsTabs = []
   var $totalTabs = 0;
-  var $categoriesBlock = $('.categories');
-  var $block = $categoriesBlock.children("div[counts]");
-  for (var i = 0; i < $block.length; i++) {
-    $countsTabs[i] = $($block[i]).attr("counts");
-    $totalTabs += parseInt($countsTabs[i]);
+  var $idTabs=[];
+  var $idForTotalTabs=[];
+  for (var num in result ) {
+    $idTabs.push(result[num]); // запись массива с id для каждого из табов
+    $countsTabs.push(result[num].length); // запись количества табов для кажой категории
   }
+  function pushIdForTotalTabs($arrId){
+    for (var i = 0; i < $arrId.length; i++) {
+      for (var j = 0; j <$arrId[i].length; j++) {
+        $idForTotalTabs.push($arrId[i][j]); //Запись общего количество табов
 
-  function createTotalTabs() {
-    $(".categories_data .for-slick").append($('<div class="row tags totalTabs"></div>'));
-    for (var j = 0; j < $totalTabs; j++) {
-    //  alert(`${result.toString(j)[j]}`);
-      $('.totalTabs').append($(`<div class="tag-primary"><input type="radio"   name="radios"><label for="radio1">Проблемы с соблюдением правил </label></div>`));
+      }
     }
   }
-
+  function generateCategories($countCategories){
+    for (var i = 0; i < $countCategories; i++) {
+      ////Каждая категория помечается порядковым тэгом
+        $("#categories").append($(`<div id=${i}><a ><img data-lazy="./images/categories/girl.svg"></a><p>Личные данные это любая информация</p></div>`));
+    }
+  }
   function generateRows($rowsCount) {
     for (var i = 0; i < $rowsCount; i++) {
-      $(".categories_data .for-slick").append($('<div class="row tags regularTabs"></div>'));
-      var tabs = (parseInt($countsTabs[i]));
+      $(".categories_data .for-slick").append($('<div class="row tags regularTabs"></div>')); //генерирует количество строк для табов
+      var tabs =$countsTabs[i];
       for (var j = 0; j < tabs; j++) {
-        $('.regularTabs').eq(i).append($('<div class="tag-primary"><input type="radio"  name="radios"><label for="radio1">Проблемы с соблюдением правил </label></div>'));
+        //ДОБАВЛЯЕТ САМИ ТАБЫ С ПРИСВОЕНИЕМ ID СОГЛАСНО ПОЛУЧЕННОМУ json
+        $('.regularTabs').eq(i).append($(`<div id=${$idTabs[i][j]}  class="tag-primary"><input type="radio"  name="radios"><label for="radio1">Проблемы с соблюдением правил </label></div>`));
       }
-
+    }
+    createTotalTabs(); // функия которая генерирует строку с суммарным количеством табов в категорих с присвоением ему порядкового согласно полученного  json
+  }
+  function createTotalTabs() {
+    $(".categories_data .for-slick").append($('<div class="row tags totalTabs"></div>'));
+    for (var j = 0; j < $idForTotalTabs.length; j++) {
+      $('.totalTabs').append($(`<div id=${$idForTotalTabs[j]} class="tag-primary"><input type="radio"   name="radios"><label for="radio1">Проблемы с соблюдением правил </label></div>`));
     }
   }
+  pushIdForTotalTabs($idTabs);
+  generateCategories($sectionsCount);
+  generateRows($sectionsCount);
 
-  createTotalTabs();
-  generateRows($girlsCount);
   $(".regularTabs").css("display", "none");
   $("#categories div ").click(function() {
     var $count = $(this).index();
@@ -40,7 +53,22 @@ $(document).on('ready', function() {
     $(".regularTabs").eq($count).css("display", "block");
     $(".totalTabs").css("display", "none");
   })
+    $(".tags div input[type=radio]+label ").click(function() {
+      /////////////////////////////////////////////////////////////// styles
+        $(".tags div input[type=radio]+label ").css("background-color","#fff");
+        $(".tags div input[type=radio]+label ").css("color","#EB3450");
+        $(this).css("background-color","#EB3450");
+        $(this).css("color","#fff");
+        ////////////////////////////////////////////////////////////
 
+
+    });
+    $(".tag-primary ").click(function() {
+      /////////////////////////////////////////////////////////////// styles
+        $(this).css("background-color","#EB3450");
+          ///////////////////////////////////////////////////////////////
+        alert($(this).attr("id"));
+    });
   $('.categories').slick({
     lazyLoad: 'ondemand',
     slidesToShow: 5,
