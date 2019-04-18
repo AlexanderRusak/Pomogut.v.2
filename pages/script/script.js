@@ -51,7 +51,7 @@ $(document).on('ready', function() {
       $(".categories_data .for-slick").css("display","none");
     }
     else {
-      var $count = $(this).attr("id");
+      var $count = $(this).index();
       alert($count);
       $(".regularTabs").css("display", "none");
       $(".regularTabs").eq($count).css("display", "block");
