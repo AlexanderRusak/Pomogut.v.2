@@ -1,5 +1,5 @@
 $(document).on('ready', function() {
-  var result='{"0":[5,2,1,7],"1":[6,123,333],"2":[222,0],"3":[2334,23323232323,2,6,3],"4":[18,19]}';
+  var result='{"55":[5,2,1,7],"22":[6,123,333],"44":[222,0],"33":[2334,23323232323,2,6,3],"77":[18,19]}';
   result=JSON.parse(result);
   var $sectionsCount=Object.keys(result).length;  //количество элементов(категорий) в JSON с сервера
   var $countsTabs = []
@@ -20,7 +20,7 @@ $(document).on('ready', function() {
   function generateCategories($countCategories){
     for (var i = 0; i < $countCategories; i++) {
       ////Каждая категория помечается порядковым тэгом
-        $("#categories").append($(`<div id=${i}><a ><img data-lazy="./images/categories/girl.svg"></a><p>Личные данные это любая информация</p></div>`));
+        $("#categories").append($(`<div id=${Object.keys(result)[i]}><a ><img data-lazy="./images/categories/girl.svg"></a><p>Личные данные это любая информация</p></div>`));
     }
   }
   function generateRows($rowsCount) {
@@ -51,7 +51,7 @@ $(document).on('ready', function() {
       $(".categories_data .for-slick").css("display","none");
     }
     else {
-      var $count = $(this).index();
+      var $count = $(this).attr("id");
       alert($count);
       $(".regularTabs").css("display", "none");
       $(".regularTabs").eq($count).css("display", "block");
