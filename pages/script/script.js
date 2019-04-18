@@ -29,7 +29,7 @@ $(document).on('ready', function() {
       var tabs =$countsTabs[i];
       for (var j = 0; j < tabs; j++) {
         //ДОБАВЛЯЕТ САМИ ТАБЫ С ПРИСВОЕНИЕМ ID СОГЛАСНО ПОЛУЧЕННОМУ json
-        $('.regularTabs').eq(i).append($(`<div id=${$idTabs[i][j]}  class="tag-primary"><input type="radio"  name="radios"><label for="radio1">Проблемы с соблюдением правил </label></div>`));
+        $('.regularTabs').eq(i).append($(`<div id=${$idTabs[i][j]}  class="tag-primary"><input type="radio"  name="radios"><label for="radio1">Проблемы с соблдением правил </label></div>`));
       }
     }
     createTotalTabs(); // функия которая генерирует строку с суммарным количеством табов в категорих с присвоением ему порядкового согласно полученного  json

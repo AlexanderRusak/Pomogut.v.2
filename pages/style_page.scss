@@ -176,8 +176,9 @@
   cursor: pointer;
   background-color: #fff;
   text-align: center;
-  display: table-cell;
-  vertical-align: middle;
+  display: flex;
+    align-items: center;
+    justify-content: center;;
   padding-bottom: 10px;
 }
 
