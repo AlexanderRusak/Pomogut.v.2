@@ -47,16 +47,13 @@ $(document).on('ready', function() {
   $(".regularTabs").css("display", "none");
   $("#categories div ").click(function() {
     var width=screen.width;
-    if (width<=768) {
-      $(".categories_data .for-slick").css("display","none");
-    }
-    else {
+
       var $count = $(this).index();
       alert($count);
       $(".regularTabs").css("display", "none");
       $(".regularTabs").eq($count).css("display", "block");
       $(".totalTabs").css("display", "none");
-    }
+    
 
   })
     $(".tags div input[type=radio]+label ").click(function() {

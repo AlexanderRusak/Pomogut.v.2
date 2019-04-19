@@ -235,6 +235,12 @@
   .icon-phone p {
     display: none; } }
 
+@media screen and (max-width: 479px) {
+  .logo-small {
+    display: block; }
+  .logo-small img {
+    width: 100%; } }
+
 .footer {
   background-color: #00AEEF; }
 
