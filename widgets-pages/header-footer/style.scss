@@ -283,6 +283,9 @@
     margin-right: 3%;
   }
   .block-btn-phone-search{
+    display: block;
+  }
+  .block-btn-phone-search .phone-btn{
     display: none;
   }
 }
@@ -293,8 +296,11 @@
   .logo-small {
     display:block;
   }
+  .block-btn-phone-search .phone-btn{
+    display: none;
+  }
    .block-btn-phone-search{
-     display: none;
+     display: block;
    }
   .block-btn-phone-search a:first-child {
     margin-left: 35%;

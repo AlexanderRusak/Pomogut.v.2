@@ -214,6 +214,8 @@
   .block-btn-phone-search a:last-child {
     margin-right: 3%; }
   .block-btn-phone-search {
+    display: block; }
+  .block-btn-phone-search .phone-btn {
     display: none; } }
 
 @media screen and (max-width: 625px) {
@@ -221,8 +223,10 @@
     display: none; }
   .logo-small {
     display: block; }
-  .block-btn-phone-search {
+  .block-btn-phone-search .phone-btn {
     display: none; }
+  .block-btn-phone-search {
+    display: block; }
   .block-btn-phone-search a:first-child {
     margin-left: 35%; }
   .phone-btn {
