@@ -3,19 +3,11 @@ $(document).on('ready', function() {
   $('.about-logos').slick({
     slidesToShow: 3,
     infinite: false,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     arrows: true,
 
     responsive: [{
         breakpoint: 1199,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: false,
-        }
-      },
-      {
-        breakpoint: 991,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -23,10 +15,18 @@ $(document).on('ready', function() {
         }
       },
       {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: false,
+        }
+      },
+      {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           infinite: false,
         }
       }, {
