@@ -76,3 +76,83 @@
   margin-top: 34px !important;
   margin-bottom: 0 !important;
   margin-left: 7px; }
+
+@media screen and (max-width: 991px) {
+  .questions .row div {
+    width: 558px;
+    padding: 0 !important;
+    left: 20px; }
+  .questions .row div div h3 {
+    margin-top: 37px;
+    left: 15px; }
+  .questions .row div .questions-question:nth-child(2) {
+    width: 487px;
+    padding: 0; }
+  .questions .row div div p {
+    margin-left: 30px;
+    bottom: 30px;
+    margin-top: 3px; }
+  .questions .row div div .extra-p {
+    margin-top: 3px !important;
+    margin-left: 30px; }
+  .questions .row div div p:nth-child(2) {
+    margin-top: 14px !important; } }
+
+@media screen and (max-width: 767px) {
+  .questions .row div {
+    width: 75% !important;
+    padding: 0 !important;
+    left: 20px; }
+  .questions .row div div h3 {
+    margin-top: 37px;
+    left: 15px; }
+  .questions .row div .questions-question:nth-child(2) {
+    width: 487px;
+    padding: 0; }
+  .questions .row div div p {
+    margin-left: 30px;
+    bottom: 30px;
+    margin-top: 3px; }
+  .questions .row div div .extra-p {
+    margin-top: 3px !important;
+    margin-left: 30px; }
+  .questions .row div div p:nth-child(2) {
+    margin-top: 14px !important; } }
+
+@media screen and (max-width: 426px) {
+  .title {
+    margin-top: 105px;
+    height: 36px;
+    overflow-y: hidden; }
+  .title .row div h2 {
+    margin-left: 40px;
+    font-family: Amatic SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000; }
+  .questions .row div {
+    margin-top: 21px;
+    width: 264px !important;
+    left: 9px; }
+  .questions .row div div {
+    margin-top: auto; }
+  .questions .row div div h3 {
+    width: 198px;
+    padding: 0px;
+    margin-top: 10px !important;
+    left: 20px;
+    height: 78px; }
+  .questions .row div .questions-question:nth-child(2) {
+    width: 235px !important;
+    padding: 0; }
+  .questions .row div div p {
+    margin-left: 20px;
+    margin-top: 50px; }
+  .questions .row div div .extra-p {
+    margin-top: 3px !important;
+    margin-left: 30px; }
+  .questions .row div div p:nth-child(2) {
+    margin-top: 14px !important; } }

@@ -49,10 +49,16 @@
   border-color: #fff; }
 
 @media screen and (max-width: 1200px) {
+  .navbar-default{
+  height: 60px;
+}
   .navbar-nav li:last-child {
     margin-left: 0 !important; } }
 
 @media screen and (max-width: 991px) {
+  .navbar-default{
+  height: 60px;
+}
   .navbar-collapse.collapse {
     display: none !important; }
   .navbar-collapse.collapse.in {
@@ -74,6 +80,9 @@
     float: none; } }
 
 @media screen and (max-width: 768px) {
+  .navbar-default{
+  height: 60px;
+}
   .navbar-collapse.collapse {
     display: none !important; }
   .navbar-collapse.collapse.in {
