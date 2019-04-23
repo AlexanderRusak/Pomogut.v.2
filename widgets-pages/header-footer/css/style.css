@@ -6,6 +6,9 @@
 .navbar-default {
   background-color: #00AEEF; }
 
+.navbar-nav > li > a {
+  height: 60px; }
+
 .navbar-brand {
   display: none; }
 

@@ -1,23 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700&subset=cyrillic,hebrew,latin-ext,vietnamese");
 
-
 * {
   overflow-x: hidden;
 }
-
-
 //////////////////////////////////////////////////////////////////////////
-
 .line {
   width: 100%;
   height: 2px;
   background-color: #F2F2F2;
 }
 ////////////////////////////////////////////////////////////////////////// Questions
-.questions{
+
+.questions {
   margin-bottom: 100px;
 }
+
+.questions .row {
+  margin-top: 3px;
+  margin-left: 0;
+  padding-right: 10px;
+}
+
+.questions .row div {
+  border-radius: 6px !important;
+}
+
 .title .row div h2 {
   font-family: Amatic SC;
   font-style: normal;
@@ -31,7 +39,8 @@
 }
 
 .questions .row div {
-  background-color: #F2F2F2;
+  //background-color: #F2F2F2;
+  background-color: red;
 }
 
 .questions .row div {
@@ -44,11 +53,15 @@
   font-weight: bold;
   font-size: 30px;
   line-height: 42px;
-  color: #000000;
-  /* title */
+  color: #000000; /* title */
   border-radius: 5px;
-  margin-top: 10px;
-  padding-left: 0;
+  margin-top: 37px;
+  right: 35px;
+}
+
+.questions .row div .questions-question:nth-child(2) {
+  width: 606px;
+  padding: 0;
 }
 
 .questions .row div div p {
@@ -58,10 +71,26 @@
   font-size: 15px;
   line-height: 28px;
   color: #292424;
-  margin-top: 10px;
+  margin-top: 34px;
+  margin-bottom: 45px;
+  margin-left: 7px;
+}
+
+.questions .row div .questions-question p:nth-child(2) {
+  margin-top: 15px;
+}
+
+.questions .row div div .extra-p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 28px;
+  color: #292424;
+  margin-top: 34px !important;
+  margin-bottom: 0 !important;
+  margin-left: 7px;
 }
 /////////////////////////////////////////////////////////////////////////////// footer
-
-
 //////////////////////////////////////////////
 /////////////////////////////////////////////////////

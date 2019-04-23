@@ -11,6 +11,14 @@
 .questions {
   margin-bottom: 100px; }
 
+.questions .row {
+  margin-top: 3px;
+  margin-left: 0;
+  padding-right: 10px; }
+
+.questions .row div {
+  border-radius: 6px !important; }
+
 .title .row div h2 {
   font-family: Amatic SC;
   font-style: normal;
@@ -23,7 +31,7 @@
   margin-top: 80px; }
 
 .questions .row div {
-  background-color: #F2F2F2; }
+  background-color: red; }
 
 .questions .row div {
   margin-top: 10px; }
@@ -37,8 +45,12 @@
   color: #000000;
   /* title */
   border-radius: 5px;
-  margin-top: 10px;
-  padding-left: 0; }
+  margin-top: 37px;
+  right: 35px; }
+
+.questions .row div .questions-question:nth-child(2) {
+  width: 606px;
+  padding: 0; }
 
 .questions .row div div p {
   font-family: Roboto;
@@ -47,4 +59,20 @@
   font-size: 15px;
   line-height: 28px;
   color: #292424;
-  margin-top: 10px; }
+  margin-top: 34px;
+  margin-bottom: 45px;
+  margin-left: 7px; }
+
+.questions .row div .questions-question p:nth-child(2) {
+  margin-top: 15px; }
+
+.questions .row div div .extra-p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 28px;
+  color: #292424;
+  margin-top: 34px !important;
+  margin-bottom: 0 !important;
+  margin-left: 7px; }
