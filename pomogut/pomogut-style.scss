@@ -92,6 +92,7 @@ header .row .header-image .header-logo .btn-write {
 }
 
 .slick-next {
+  top:60px;
   right: 15px;
   z-index: 5;
   width: 40px;
@@ -99,6 +100,7 @@ header .row .header-image .header-logo .btn-write {
 }
 
 .slick-prev {
+  top:60px;
   left: 0;
   z-index: 5;
   width: 40px;
@@ -148,6 +150,13 @@ header .row .header-image .header-logo .btn-write {
       margin-left: auto;
       margin-right: auto;
     }
+    .about-logos  .slick-next {
+      top: 75px;
+      }
+
+    .about-logos  .slick-prev {
+        top: 75px;
+      }
 
 }
 @media screen and (max-width: 767px) {

@@ -8,6 +8,9 @@
   height: 2px;
   background-color: #F2F2F2; }
 
+.questions {
+  margin-bottom: 100px; }
+
 .title .row div h2 {
   font-family: Amatic SC;
   font-style: normal;
@@ -16,7 +19,7 @@
   line-height: 55px;
   text-align: center;
   color: #000000;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
   margin-top: 80px; }
 
 .questions .row div {
