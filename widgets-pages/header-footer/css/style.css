@@ -3,11 +3,20 @@
 * {
   overflow-x: hidden; }
 
+.navbar-collapse {
+  margin-right: -25px; }
+
 .navbar-default {
   background-color: #00AEEF; }
 
 .navbar-nav > li > a {
-  height: 60px; }
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 60px;
+  padding-top: 20px; }
+
+.navbar-nav > li {
+  margin-right: 50px; }
 
 .navbar-brand {
   display: none; }
@@ -35,7 +44,9 @@
   background-color: blue; }
 
 .navbar-nav li:last-child {
-  margin-left: 215px; }
+  position: relative;
+  z-index: 2;
+  left: 245px; }
 
 .navbar .navbar-nav {
   display: inline-block;
@@ -45,15 +56,39 @@
 .navbar .navbar-collapse {
   text-align: center; }
 
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  width: 1170px; }
+
 .navbar-default .navbar-toggle:hover {
   background-color: #00AEEF;
   border-color: #fff; }
 
 @media screen and (max-width: 1200px) {
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    width: 910px; }
   .navbar-nav li:last-child {
-    margin-left: 0 !important; } }
+    left: 150px; }
+  .navbar-nav > li {
+    margin-right: 30px; } }
 
 @media screen and (max-width: 991px) {
+  .navbar {
+    min-height: 60px  !important; }
+  .navbar-header {
+    overflow-y: hidden; }
+  .navbar-toggle {
+    top: 5px;
+    right: 80px;
+    border: none; }
+  .navbar-toggle .icon-bar {
+    width: 30px;
+    height: 3px; }
   .navbar-collapse.collapse {
     display: none !important; }
   .navbar-collapse.collapse.in {
@@ -72,32 +107,48 @@
   .navbar .navbar-collapse {
     text-align: center; }
   .navbar .navbar-nav > li {
-    float: none; } }
+    float: none; }
+  .navbar .navbar-nav li a {
+    display: inline-block; }
+  .navbar .navbar-nav li:last-child {
+    left: 0px !important; } }
 
 @media screen and (max-width: 768px) {
-  .navbar-collapse.collapse {
+  .navbar .navbar-nav {
+    width: 100%;
+    overflow-y: hidden !important; }
+  .navbar-collapse .collapse {
     display: none !important; }
+  .navbar .navbar-nav li a {
+    display: inline-block; }
+  .navbar .navbar-nav li:last-child {
+    left: 0px !important; }
   .navbar-collapse.collapse.in {
     display: block !important; }
   .navbar-header .collapse,
   .navbar-toggle {
     display: block !important; }
+  .navbar-toggle {
+    top: 5px;
+    right: 40px;
+    border: none; }
   .navbar-header {
     float: none; } }
 
+@media screen and (max-width: 425px) {
+  .navbar-toggle {
+    top: 5px;
+    right: -15px;
+    border: none; } }
+
+.header .row {
+  position: relative;
+  bottom: 10px; }
+
 .header .row a .img-logo {
-  margin-top: 0; }
-
-.img-logo {
-  margin-top: 35px; }
-
-.buttons {
-  width: 280px;
-  padding-left: 0;
-  padding-right: 0;
-  height: 40px;
-  margin-top: 30px;
-  margin-right: 30px; }
+  position: relative;
+  bottom: 10px;
+  left: 12px; }
 
 .button-search {
   background-color: #00AEEF;
@@ -156,7 +207,7 @@
 
 .phone_number_header p {
   float: right;
-  width: 133px;
+  width: 139px;
   height: 40px;
   position: relative;
   text-decoration: none !important;
@@ -185,8 +236,12 @@
   margin-left: 9px;
   cursor: pointer; }
 
-.block-btn-phone-search a:last-child {
-  margin-right: 10%; }
+.block-btn-phone-search {
+  margin-right: 0px; }
+
+.block-btn-phone-search a:first-child {
+  margin-left: 30px;
+  margin-top: 4.7px; }
 
 @media screen and (max-width: 1200px) {
   .block-btn-phone-search a:first-child {
