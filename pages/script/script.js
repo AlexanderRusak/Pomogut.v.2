@@ -1,5 +1,5 @@
 $(document).on('ready', function() {
-  var result='{"55":[5,2,1,7],"22":[6,123,333],"44":[222,0],"33":[2334,23323232323,2,6,3],"77":[18,19]}';
+  var result='{"55":[5,2,1,7],"22":[6,123,333],"44":[222,0],"33":[2334,23323232323,2,6,3],"77":[18,19],"88":[0,478]}';
   result=JSON.parse(result);
   var $sectionsCount=Object.keys(result).length;  //количество элементов(категорий) в JSON с сервера
   var $countsTabs = []
@@ -53,7 +53,7 @@ $(document).on('ready', function() {
       $(".regularTabs").css("display", "none");
       $(".regularTabs").eq($count).css("display", "block");
       $(".totalTabs").css("display", "none");
-    
+
 
   })
     $(".tags div input[type=radio]+label ").click(function() {
@@ -79,6 +79,7 @@ $(document).on('ready', function() {
     infinite: false,
     slidesToScroll: 1,
     arrows: true,
+    
 
     responsive: [{
         breakpoint: 1199,
@@ -104,7 +105,7 @@ $(document).on('ready', function() {
           infinite: false,
         }
       }, {
-        breakpoint: 480,
+        breakpoint: 590,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
