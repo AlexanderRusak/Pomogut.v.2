@@ -1,5 +1,82 @@
 $(document).on('ready', function() {
+  $('.project-1-slider').slick({
+    dots: false,
+    infinite: false,
+    speed: 200,
+    variableWidth: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
 
+    responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          dots: false,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+  $('.project-2-slider').slick({
+    dots: false,
+    infinite: false,
+    speed: 200,
+    variableWidth: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+
+    responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          dots: false,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
   $('.about-logos').slick({
     slidesToShow: 3,
     infinite: false,
@@ -39,59 +116,18 @@ $(document).on('ready', function() {
       },
     ]
   });
-jQuery(function($) {
-  function fix_size() {
-    var images = $('header .row .header-image img');
-    images.each(setsize);
+  $('.next-1').on('click', function() {
+    $('.project-1-slider').slick('slickPrev');
+  });
+  $('.prev-1').on('click', function() {
+    $('.project-1-slider').slick('slickNext');
+  });
+  $('.next-2').on('click', function() {
+    $('.project-2-slider').slick('slickPrev');
+  });
+  $('.prev-2').on('click', function() {
+    $('.project-2-slider').slick('slickNext');
+  });
 
-    function setsize() {
-      var img = $(this),
-        img_dom = img.get(0),
-        container = img.parents('header .row .header-image');
-      if (img_dom.complete) {
-        resize();
-      } else img.one('load', resize);
-
-      function resize() {
-        if ((container.width() / container.height()) < (img_dom.width / img_dom.height)) {
-          img.width('100%');
-          img.height('auto');
-          return;
-        }
-        img.height('100%');
-        img.width('auto');
-      }
-    }
-  }
-  $(window).on('resize', fix_size);
-  fix_size();
-});
-jQuery(function($) {
-  function fix_size() {
-    var images = $('header .row .header-logo img');
-    images.each(setsize);
-
-    function setsize() {
-      var img = $(this),
-        img_dom = img.get(0),
-        container = img.parents('header .row .header-logo');
-      if (img_dom.complete) {
-        resize();
-      } else img.one('load', resize);
-
-      function resize() {
-        if ((container.width() / container.height()) < (img_dom.width / img_dom.height)) {
-          img.width('100%');
-          img.height('auto');
-          return;
-        }
-        img.height('100%');
-        img.width('auto');
-      }
-    }
-  }
-  $(window).on('resize', fix_size);
-  fix_size();
-});
 
 });
