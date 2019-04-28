@@ -14,10 +14,11 @@ header .row .header-image .header-logo {
   top: 200px;
 }
 
-header .row div {
-  padding-left: 0;
-  padding-right: 0;
+.non-main {
+  display: none;
 }
+
+
 
 header .row .header-image .header-logo div h3 {
   font-family: Gotham Pro;
@@ -49,6 +50,10 @@ header .row .header-image .header-logo .btn-write {
   align-items: center;
   text-align: center;
   color: #FFFFFF;
+}
+
+header .row .header-image .header-logo .btn-write p {
+  margin-top: 3px;
 }
 ///////////////////////////////////////////////////////////////////////////// about
 
@@ -242,11 +247,10 @@ header .row .header-image .header-logo .btn-write {
 }
 
 .project-1-slider .main-section .title-link-1 p,
-.project-2-slider .main-section .title-link-1 p {
+.project-2-slider .main-section .title-link-2 p {
   font-family: Gotham Pro;
   font-size: 16px;
   line-height: 28px;
-  /* identical to box height */
   text-align: center;
   color: #28282B;
 }
@@ -319,7 +323,7 @@ header .row .header-image .header-logo .btn-write {
 }
 
 .feedback .row div .form-group {
-  margin-top: 35px;
+  margin-top: 40px;
   width: 558px !important;
   margin-left: 73px;
 }
@@ -346,7 +350,8 @@ textarea[placeholder] {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 25px; /* identical to box height */
+  line-height: 25px;
+  /* identical to box height */
   display: flex;
   align-items: center;
   padding-top: 20px;
@@ -355,7 +360,7 @@ textarea[placeholder] {
 }
 
 .feedback .row div .form-group .button-form {
-  margin-top: 29px;
+  margin-top: 25px;
   background: #B3D66E;
   border-radius: 8px;
   width: 230px;
@@ -401,6 +406,23 @@ footer .icons-social-networks a {
   margin-left: 26px;
 }
 @media screen and (max-width: 1200px) {
+  header .row .header-image .header-logo div h3 {
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+
+  header .row .header-image .header-logo .btn-write {
+    margin-top: 20px;
+    margin-left: 207px;
+  }
+
+  .about-logos .slick-next {
+    right: 40px!important;
+    z-index: 5;
+    width: 40px;
+    height: 40px;
+  }
+
   .about-logos .slick-list {
     width: 768px;
     margin-left: 90px;
@@ -419,11 +441,32 @@ footer .icons-social-networks a {
     height: 40px;
   }
 
+  .project-1 .arrows,
+  .project-2 .arrows {
+    width: 200px;
+    margin-top: 35px;
+    margin-left: 280px;
+    margin-bottom: 90px;
+  }
+
+  .project-1 .arrows img:first-child,
+  .project-2 .arrows img:first-child {
+    margin-right: 17px;
+  }
+
   .about-logos .slick-prev {
     left: 0;
     z-index: 5;
     width: 40px;
     height: 40px;
+  }
+
+  .feedback {
+    margin-left: 20%;
+  }
+
+  .feedback .row div h3 {
+    margin-left: -200px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -448,12 +491,159 @@ footer .icons-social-networks a {
   .about-logos .slick-prev {
     top: 75px;
   }
+
+  .col-sm-offset-1 {
+    margin-left: 16.333333%;
+  }
+
+  .project-1 .row .project-1-slider,
+  .project-1 .row .project-2-slider {
+    margin-top: 30px;
+    width: 580px;
+  }
+
+  .feedback .row div h3 {
+    margin-left: 55px;
+    margin-left: -66px;
+  }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+  header .row .header-image .header-logo {
+    position: absolute;
+    top: 297px;
+  }
+
+  header .row .header-image .header-logo div h3 {
+    width: 570px;
+    margin-left: -6px;
+    margin-top: 70px;
+  }
+
+  header .row .header-image .header-logo .btn-write {
+    margin-top: 90px;
+    margin-left: 147px;
+  }
+
+  .project-1 .container .row .col-lg-5 {
+    height: 175px!important;
+  }
+
+  .col-sm-offset-1 {
+    margin-left: 11%;
+  }
+
+  .non-main {
+    display: inline-block;
+  }
+
+  .project-1 .arrows,
+  .project-2 .arrows {
+    width: 200px;
+    margin-top: 39px;
+    margin-left: 385px;
+    margin-bottom: 0!important;
+  }
+
+  .col-sm-8 {
+    width: 70.666667%;
+  }
+
+  .col-sm-offset-2 {
+    margin-left: 15%;
+  }
+
   .about-logos .slick-list {
     width: 353px;
     margin-left: 23%;
     margin-top: 23px;
+  }
+
+  .about {
+    margin-top: 98px;
+    margin-bottom: 82px;
+    width: 590px;
+    margin-left: 94px;
+  }
+
+  .about-logos .slick-list {
+    width: 353px;
+    margin-left: 12%;
+    margin-top: 27px;
+  }
+
+  .col-sm-offset-2 {
+    margin-left: 11%;
+  }
+
+  .project-1 .container .row .col-lg-5 p {
+    margin-top: 20px;
+    width: 515px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #28282b;
+  }
+
+  .tablet {
+    margin-top: 50px!important;
+    margin-left: 5px;
+    width: 230px;
+    height: 48px;
+    background: #b3d66e;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+
+  .main {
+    display: none;
+  }
+
+  .tablet p {
+    width: auto;
+    margin-top: 15px;
+    margin-left: -2px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    vertical-align: middle;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+
+  .mobile {
+    margin-left: 46px;
+    height: 68px;
+    width: 68px;
+    background: #5db9e0;
+    display: inline-block;
+    border-radius: 35px;
+    position: relative;
+    top: 10px;
+    border: 6px solid #bbe2f1;
+  }
+
+  .project-1 a:last-child,
+  .project-2 a:last-child {
+    height: 125px;
+  }
+
+  .about-logos .slick-next {
+    right: 197px!important;
+    z-index: 5;
+    width: 40px;
+    height: 40px;
+  }
+
+  .about-logos {
+    margin-top: 0;
   }
 
   .about-logos .slick-slide:nth-child(3n+1),
@@ -477,16 +667,170 @@ footer .icons-social-networks a {
     width: 40px;
     height: 40px;
   }
-}
-@media screen and (max-width: 580px) {
-  .about-logos .slick-next {
-    right: 15px;
-    z-index: 5;
-    width: 40px;
-    height: 40px;
-    top: 250px !important;
+
+  .non-main {
+    margin-bottom: 50px;
   }
 
+  .feedback {
+    margin-left: 4%;
+    margin-top: -25px;
+  }
+
+  footer {
+    margin-top: 17px;
+    background-color: #5db9e0;
+  }
+}
+@media (min-width:320px) and (max-width: 767px) {
+  header .row .header-image .header-logo {
+    position: absolute;
+    top: 160px;
+}
+  header .row .header-image .header-logo div h3 {
+    font-family: Gotham Pro;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #28282B;
+    margin: auto !important;
+    width: auto !important;
+  }
+
+  header .row .header-image .header-logo .btn-write {
+    margin: auto !important;
+    margin-top: 48px !important;
+
+  }
+  .about-logos {
+      margin-top: -30px;
+  }
+  .about {
+    margin: auto !important;
+    margin-top: 65px !important;
+    margin-bottom: 70px!important;
+    width: auto !important;
+  }
+  .about-logos .slick-prev {
+    top: 90px;
+}
+.about-logos .slick-next {
+    top: 90px;
+    right: 30px!important;
+}
+  .about-title {
+    margin: 8.333333333333% !important;
+
+}
+.about-logos .slick-list {
+    /* width: 353px; */
+    margin-left: 0%;
+    margin-top: 0px;
+}
+.about-logos .slick-slide:nth-child(n){
+  width: 264px!important;
+margin-left: auto;
+margin-right: auto;
+margin-left: 35px;
+}
+.project-1 .container .row .col-lg-5 h2 {
+    margin-top: auto !important;
+    margin-left: auto !important;
+}
+.project-1 .container .row .col-lg-5 p {
+    margin-top: 20px;
+    width: auto !important;
+    height: auto !important;
+}
+.project-1 .container .row .col-lg-5  {
+    height: auto !important;
+    padding: 0px;
+    width: 264px;
+}
+.project-1 .row {
+    margin-top: 70px;
+}
+.project-1 .arrows, .project-2 .arrows {
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 35px;
+    margin-bottom: 0!important;
+}
+.tablet {
+    margin-top: 40px!important;
+    margin-left: 0px;
+    width: 264px;
+    height: 48px;
+    background: #b3d66e;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.mobile {
+    margin-left: 91px;
+    height: 68px;
+    width: 68px;
+    background: #5db9e0;
+    display: inline-block;
+    border-radius: 35px;
+    position: relative;
+    top: 10px;
+    border: 6px solid #bbe2f1;
+}
+.project-1 a:last-child, .project-2 a:last-child {
+    height: 140px;
+}
+
+.non-main{
+  margin-bottom: 0px !important;
+}
+.about-logos .slick-slide a img {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+  .project-1 .row .project-1-slider,
+  .project-1 .row .project-2-slider {
+    margin-top: 30px;
+    width: 264px !important;
+  }
+
+  .feedback .row div h3 {
+    margin: auto !important;
+  }
+
+  .feedback .row div p {
+    width: 259px !important;
+    margin: auto !important;
+  }
+  footer .icons-social-networks {
+    margin-bottom: 93px;
+    width: 264px;
+}
+footer .icons-social-networks a {
+    display: inline-block;
+    margin-left: 15px;
+}
+  .feedback .row div .form-group {
+    margin-top: 40px;
+    width: auto !important;
+    margin-left:auto !important;
+     padding-right: 15px;
+  }
+  .feedback .row div .form-group .button-form {
+    margin-top: 25px;
+    background: #b3d66e;
+    border-radius: 8px;
+    width: 230px;
+    height: 48px;
+    margin-left: auto !important;
+}
   .about-logos .slick-prev {
     left: 0;
     z-index: 5;

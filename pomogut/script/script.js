@@ -8,35 +8,12 @@ $(document).on('ready', function() {
     slidesToScroll: 1,
     arrows: false,
 
-    responsive: [{
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          dots: false
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          dots: false,
-          slidesToScroll: 1
-        }
-      }
+
+
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
-    ]
+
   });
   $('.project-2-slider').slick({
     dots: false,
@@ -47,35 +24,7 @@ $(document).on('ready', function() {
     slidesToScroll: 1,
     arrows: false,
 
-    responsive: [{
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          dots: false
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          dots: false,
-          slidesToScroll: 1
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
+
   });
   $('.about-logos').slick({
     slidesToShow: 3,
@@ -111,6 +60,7 @@ $(document).on('ready', function() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          variableWidth: true,
           infinite: false,
         }
       },
