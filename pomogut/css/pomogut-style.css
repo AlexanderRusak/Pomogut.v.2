@@ -745,6 +745,8 @@ footer .icons-social-networks a {
     overflow-y: hidden; }
   .about-logos .slick-prev {
     top: 110px !important; }
+  .about-logos {
+    overflow-y: hidden; }
   .about-logos .slick-next {
     top: 110px; }
   .project-1 .container {
@@ -804,7 +806,7 @@ footer .icons-social-networks a {
     margin-bottom: 0px !important; }
   .project-1 a:last-child,
   .project-2 a:last-child {
-    height: 66px !important;
+    height: 72px !important;
     margin-top: -20px !important;
     margin-left: 50px; }
   .project-1 a:first-child div,

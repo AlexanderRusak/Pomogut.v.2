@@ -901,7 +901,9 @@ footer .icons-social-networks a {
   .about-logos .slick-prev {
     top: 110px !important;
   }
-
+  .about-logos{
+    overflow-y: hidden;
+  }
   .about-logos .slick-next {
     top: 110px;
   }
@@ -997,7 +999,7 @@ footer .icons-social-networks a {
 
   .project-1 a:last-child,
   .project-2 a:last-child {
-    height: 66px!important;
+    height: 72px!important;
     margin-top: -20px!important;
     margin-left: 50px;
   }
