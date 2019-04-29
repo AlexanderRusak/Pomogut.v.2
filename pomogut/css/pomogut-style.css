@@ -697,7 +697,7 @@ footer .icons-social-networks a {
     color: #28282B;
     margin-top: 40px !important; }
   header .row .header-logo .btn-write {
-    padding-top: 12px;
+    padding-top: 6px;
     margin-top: 197px !important;
     height: 48px !important;
     background: #5DB9E0;
@@ -708,9 +708,6 @@ footer .icons-social-networks a {
     font-size: 16px;
     line-height: 22px;
     /* identical to box height */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
