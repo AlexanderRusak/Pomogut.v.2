@@ -4,9 +4,32 @@
 * {
   overflow-x: hidden;
 }
-
-
 //////////////////////////////////////////////////////////////////////////   SINGLE-COLUMN
+
+.main-title {
+  margin-top: 75px;
+}
+
+.main-title-style {
+  font-family: Amatic SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 55px;
+  text-align: center;
+  color: #EB3450;
+}
+
+.single-column .row div .single-column-title {
+  font-family: Amatic SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 42px;
+  color: #000000;
+  text-align: left;
+}
+
 .single-column .row .img-signature {
   position: relative;
   bottom: 20px;
@@ -16,8 +39,8 @@
   font-size: 13px;
   line-height: normal;
   color: rgba(41, 36, 36, 0.5);
-  
 }
+
 .single-column .row div h2 {
   font-family: Amatic SC;
   font-style: normal;
@@ -26,7 +49,7 @@
   line-height: 55px;
   text-align: center;
   color: #EB3450;
-  margin-top: 102px;
+  margin-top: 43px;
 }
 
 .single-column .row div h3 {
@@ -51,8 +74,7 @@
 }
 
 .single-column .row div p {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: -5px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -68,10 +90,15 @@
   font-size: 15px;
   line-height: 19px;
   color: #292424;
-  margin-bottom: 15px;
+  margin-top: 55px;
+}
+
+.single-column .list div ul {
+  padding-left: 0;
 }
 
 .single-column .list div ul li {
+  padding-left: 0 !important;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -92,40 +119,33 @@
   margin-right: 30px;
   content: ' ';
 }
-
 @media screen and (max-width: 1200px) {
   .container {
     width: 970px;
   }
 
-
-
   .single-column .row div .single-column-image {
     width: 100%;
     height: 550px;
     background-color: #ccc;
   }
-
-
 }
 @media screen and (max-width: 991px) {
   .container {
-    width: 750px;
+    width: 590px;
   }
-
-
 
   .single-column .row div .single-column-image {
     width: 100%;
-    height: 550px;
+    height: 323px;
     background-color: #ccc;
   }
-
 }
 @media screen and (max-width: 767px) {
   .container {
     width: 450px;
   }
+
   .single-column .row div .single-column-image {
     width: 100%;
     height: 323px;
@@ -136,11 +156,23 @@
   .container {
     width: 310px;
   }
+  .main-title {
+    margin-top: 45px;
+  }
+
+  .main-title-style {
+    font-family: Amatic SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+    color: #EB3450;
+  }
 
   .single-column .row div .single-column-image {
     width: 100%;
     height: 153px;
     background-color: #ccc;
   }
-
 }

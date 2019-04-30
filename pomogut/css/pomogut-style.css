@@ -374,12 +374,18 @@ header .row .header-logo .btn-write p {
   align-items: center;
   text-align: center;
   color: #7CA131;
-  display: none; }
+  display: none;
+  -webkit-transition: 0s  display;
+  -o-transition: 0s  display;
+  transition: 0s  display; }
 
 .project-1-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 a,
 .project-2-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 a {
   text-decoration: none;
-  display: block; }
+  display: block;
+  -webkit-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s; }
 
 .project-1-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 P,
 .project-2-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 P {

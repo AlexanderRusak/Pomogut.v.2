@@ -413,11 +413,15 @@ header .row .header-logo .btn-write p {
   text-align: center;
   color: #7CA131;
   display: none;
+  transition: 0s  display;
+
 }
 .project-1-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 a,
 .project-2-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 a {
 text-decoration: none;
 display: block;
+transition-delay:1s;
+
 }
 .project-1-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 P,
 .project-2-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 P {
@@ -430,9 +434,7 @@ display: block;
   height: 138px;
   width: 264px;
 }
-.project-1-slider .main-section-wave .image-wave .under-image-wave-background img{
 
-}
 ////////////////////////////////////////////////////////
 
 .feedback {
