@@ -332,7 +332,7 @@ header .row .header-logo .btn-write p {
 
 .project-1-slider .main-section-wave .image-wave .image-wave-background .title-link-1 p,
 .project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1 p {
-  margin-top: 30PX;
+  margin-top: 30PX !important;
   font-family: Gotham Pro;
   font-size: 16px;
   line-height: 28px;
@@ -383,7 +383,7 @@ header .row .header-logo .btn-write p {
 
 .project-1-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 P,
 .project-2-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 P {
-  margin-top: 0PX; }
+  margin-top: 0PX !important; }
 
 .project-1-slider .main-section-wave .image-wave .under-image-wave-background,
 .project-2-slider .main-section-wave .image-wave .under-image-wave-background {
@@ -906,6 +906,9 @@ footer .icons-social-networks a {
   .project-2 a:first-child div {
     margin-bottom: 0 !important;
     margin-right: 50px !important; }
+  .project-1-slider .main-section-wave .image-wave .image-wave-background .title-link-1 a,
+  .project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1 a {
+    margin-top: 20px !important; }
   .non-main:last-child {
     margin-bottom: 80px;
     overflow-y: hidden; }
