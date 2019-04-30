@@ -1,4 +1,66 @@
 $(document).on('ready', function() {
+
+  $('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
+ 	var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+         if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+ 	    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500); // анимируем скроолинг к элементу scroll_el
+         }
+ 	    return false; // выключаем стандартное действие
+     });
+     jQuery(function($) {
+       function fix_size() {
+         var images = $('.project-1-slider .main-section-wave .image-wave .under-image-wave-background img');
+         images.each(setsize);
+
+         function setsize() {
+           var img = $(this),
+             img_dom = img.get(0),
+             container = img.parents('.project-1-slider .main-section-wave .image-wave .under-image-wave-background');
+           if (img_dom.complete) {
+             resize();
+           } else img.one('load', resize);
+
+           function resize() {
+             if ((container.width() / container.height()) < (img_dom.width / img_dom.height)) {
+               img.width('100%');
+               img.height('auto');
+               return;
+             }
+             img.height('100%');
+             img.width('auto');
+           }
+         }
+       }
+       $(window).on('resize', fix_size);
+       fix_size();
+     });
+     jQuery(function($) {
+       function fix_size() {
+         var images = $('.project-2-slider .main-section-wave .image-wave .under-image-wave-background img');
+         images.each(setsize);
+
+         function setsize() {
+           var img = $(this),
+             img_dom = img.get(0),
+             container = img.parents('.project-2-slider .main-section-wave .image-wave .under-image-wave-background');
+           if (img_dom.complete) {
+             resize();
+           } else img.one('load', resize);
+
+           function resize() {
+             if ((container.width() / container.height()) < (img_dom.width / img_dom.height)) {
+               img.width('100%');
+               img.height('auto');
+               return;
+             }
+             img.height('100%');
+             img.width('auto');
+           }
+         }
+       }
+       $(window).on('resize', fix_size);
+       fix_size();
+     });
   $('.project-1-slider').slick({
     dots: false,
     infinite: false,

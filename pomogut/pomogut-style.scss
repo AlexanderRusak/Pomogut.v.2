@@ -340,6 +340,100 @@ header .row .header-logo .btn-write p {
 }
 /////////////////////////////////////////////////////
 
+.project-1-slider .main-section-wave,
+.project-2-slider .main-section-wave {
+  width: 264px;
+  height: 300px;
+  background-color: #ccc;
+  box-shadow: 0 4px 10px #D3ECF6;
+  border-radius: 8px;
+  outline: 0;
+}
+
+.project-1-slider .main-section-wave .image-wave .image-wave-background,
+.project-2-slider .main-section-wave .image-wave .image-wave-background {
+  height: 300px;
+  position: relative;
+  z-index: 3;
+}
+
+.project-1-slider .main-section-wave .image-wave .image-wave-background img,
+.project-2-slider .main-section-wave .image-wave .image-wave-background img
+ {
+  margin-top: 95px;
+}
+
+.project-1-slider .main-section-wave .image-wave,
+.project-2-slider .main-section-wave .image-wave {
+  height: 300px;
+}
+
+.project-1-slider .main-section-wave .image-wave .image-wave-background .title-link-1,
+.project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1
+ {
+  position: relative;
+  z-index: 5;
+  bottom: 100px;
+}
+
+.project-1-slider .main-section-wave .image-wave .image-wave-background .title-link-1 p,
+.project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1 p {
+  margin-top: 30PX;
+  font-family: Gotham Pro;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height */
+  text-align: center;
+  color: #28282B;
+}
+
+.project-1-slider .main-section-wave .image-wave .image-wave-background .title-link-1 a  {
+  margin-left: 0px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 25px; /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #54A9CA;
+  display: none;
+}
+.project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1 a  {
+  margin-left: 0px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 25px; /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #7CA131;
+  display: none;
+}
+.project-1-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 a,
+.project-2-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 a {
+text-decoration: none;
+display: block;
+}
+.project-1-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 P,
+.project-2-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 P {
+  margin-top: 0PX;
+}
+.project-1-slider .main-section-wave .image-wave .under-image-wave-background,
+.project-2-slider .main-section-wave .image-wave .under-image-wave-background  {
+  position: relative;
+  bottom: 300px;
+  height: 138px;
+  width: 264px;
+}
+.project-1-slider .main-section-wave .image-wave .under-image-wave-background img{
+
+}
+////////////////////////////////////////////////////////
+
 .feedback {
   margin-top: -16px;
 }
@@ -404,10 +498,12 @@ textarea {
   box-shadow: none !important; // убираем тень, если есть
   color: black !important;
 }
-.btn-success{
+
+.btn-success {
   border-color: #fff !important;
-  outline:0 !important;
+  outline: 0 !important;
 }
+
 textarea[placeholder] {
   font-family: Open Sans;
   font-style: normal;
@@ -439,7 +535,6 @@ textarea[placeholder] {
 .feedback .form-group .btn {
   margin-bottom: 81.5px;
 }
-
 ////////////////////
 
 footer {
@@ -846,7 +941,6 @@ footer .icons-social-networks a {
     font-size: 16px;
     line-height: 22px;
     /* identical to box height */
-
     align-items: center;
     text-align: center;
     color: #FFFFFF;
@@ -901,9 +995,11 @@ footer .icons-social-networks a {
   .about-logos .slick-prev {
     top: 110px !important;
   }
-  .about-logos{
+
+  .about-logos {
     overflow-y: hidden;
   }
+
   .about-logos .slick-next {
     top: 110px;
   }
@@ -1001,7 +1097,7 @@ footer .icons-social-networks a {
   .project-2 a:last-child {
     height: 72px!important;
     margin-top: -20px!important;
-    margin-left: 50px;
+    margin-left: 65px;
   }
 
   .project-1 a:first-child div,
@@ -1033,12 +1129,14 @@ footer .icons-social-networks a {
     height: 48px;
     margin-left: auto;
   }
-  .icons-social-networks a:nth-child(5){
-    margin-left: 0px !important;
+
+  .icons-social-networks a:nth-child(5) {
+    margin-left: 0 !important;
   }
+
   .icons-social-networks a:nth-child(5),
   .icons-social-networks a:nth-child(6),
-  .icons-social-networks a:nth-child(7){
+  .icons-social-networks a:nth-child(7) {
     margin-top: 20px;
   }
 }

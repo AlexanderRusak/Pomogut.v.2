@@ -299,6 +299,98 @@ header .row .header-logo .btn-write p {
 .project-2-slider .main-section .title-link-2 a {
   color: #7CA131; }
 
+.project-1-slider .main-section-wave,
+.project-2-slider .main-section-wave {
+  width: 264px;
+  height: 300px;
+  background-color: #ccc;
+  -webkit-box-shadow: 0 4px 10px #D3ECF6;
+  box-shadow: 0 4px 10px #D3ECF6;
+  border-radius: 8px;
+  outline: 0; }
+
+.project-1-slider .main-section-wave .image-wave .image-wave-background,
+.project-2-slider .main-section-wave .image-wave .image-wave-background {
+  height: 300px;
+  position: relative;
+  z-index: 3; }
+
+.project-1-slider .main-section-wave .image-wave .image-wave-background img,
+.project-2-slider .main-section-wave .image-wave .image-wave-background img {
+  margin-top: 95px; }
+
+.project-1-slider .main-section-wave .image-wave,
+.project-2-slider .main-section-wave .image-wave {
+  height: 300px; }
+
+.project-1-slider .main-section-wave .image-wave .image-wave-background .title-link-1,
+.project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1 {
+  position: relative;
+  z-index: 5;
+  bottom: 100px; }
+
+.project-1-slider .main-section-wave .image-wave .image-wave-background .title-link-1 p,
+.project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1 p {
+  margin-top: 30PX;
+  font-family: Gotham Pro;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height */
+  text-align: center;
+  color: #28282B; }
+
+.project-1-slider .main-section-wave .image-wave .image-wave-background .title-link-1 a {
+  margin-left: 0px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 25px;
+  /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  color: #54A9CA;
+  display: none; }
+
+.project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1 a {
+  margin-left: 0px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 25px;
+  /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  color: #7CA131;
+  display: none; }
+
+.project-1-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 a,
+.project-2-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 a {
+  text-decoration: none;
+  display: block; }
+
+.project-1-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 P,
+.project-2-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 P {
+  margin-top: 0PX; }
+
+.project-1-slider .main-section-wave .image-wave .under-image-wave-background,
+.project-2-slider .main-section-wave .image-wave .under-image-wave-background {
+  position: relative;
+  bottom: 300px;
+  height: 138px;
+  width: 264px; }
+
 .feedback {
   margin-top: -16px; }
 
@@ -808,7 +900,7 @@ footer .icons-social-networks a {
   .project-2 a:last-child {
     height: 72px !important;
     margin-top: -20px !important;
-    margin-left: 50px; }
+    margin-left: 65px; }
   .project-1 a:first-child div,
   .project-2 a:first-child div {
     margin-bottom: 0 !important;
@@ -839,7 +931,7 @@ footer .icons-social-networks a {
     height: 48px;
     margin-left: auto; }
   .icons-social-networks a:nth-child(5) {
-    margin-left: 0px !important; }
+    margin-left: 0 !important; }
   .icons-social-networks a:nth-child(5),
   .icons-social-networks a:nth-child(6),
   .icons-social-networks a:nth-child(7) {
