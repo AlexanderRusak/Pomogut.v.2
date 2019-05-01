@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomogut v.2</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/widgets.min.css">
+</head>
+
+<body>
+  <div class="feedback">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+          <h3  class="text-center title-feedback">Свяжитесь с нами</h3>
+          <form action="">
+            <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <label for="">Фамилия Имя Отчество*</label>
+              <input class="form-control" type="text" name="" value="">
+            </div>
+              <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <label for="">Цель сообщения*</label>
+                <select class="form-control" id="sel1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+              <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <label for="">Телефон*</label>
+                <input class="form-control" type="text" name="" value="">
+              </div>
+              <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <label for="">Адрес электронной почты*</label>
+                <input class="form-control" type="text" name="" value="">
+              </div>
+              <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <label for="comment">Текст сообщения</label>
+                <textarea class="form-control" rows="8" id="comment"></textarea>
+              </div>
+              <div class="checkbox-style col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <label for="checkbox" >Подтверждение конфиденциальности *</label>
+                <label for="checkbox-id"><input id="checkbox-id" type="checkbox" value="">Я принимаю условия обработки персональных данных</label>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12  captcha">
+                <div class="g-recaptcha " data-sitekey="your_site_key"></div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <button type="submit" class="btn center-block ">Отправить сообщение</button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var onloadCallback = function() {
+      alert("grecaptcha is ready!");
+    };
+  </script>
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+       async defer>
+   </script>
+</body>
+
+</html>

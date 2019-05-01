@@ -70,6 +70,7 @@ $(document).on('ready', function() {
     slidesToScroll: 1,
     arrows: false,
     responsive: [
+    
     {
       breakpoint: 768,
       settings: {
