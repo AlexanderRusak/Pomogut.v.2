@@ -17,7 +17,7 @@
   color: rgba(255, 255, 255, 0.9); }
 
 .raiting .container .row div p {
-  margin-top: 40px;
+  margin-top: 35px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -29,11 +29,11 @@
 .rating {
   height: 143px;
   margin-top: 30px;
-  margin-left: 35%;
+  margin-left: 37.5%;
   display: inline-block;
   position: relative;
   overflow-y: hidden;
-  font-size: 85px; }
+  font-size: 70px; }
 
 .rating label {
   position: absolute;
@@ -83,19 +83,19 @@
   .container {
     width: 970px; }
   .rating {
-    margin-left: 32%; } }
+    margin-left: 35%; } }
 
 @media screen and (max-width: 991px) {
   .container {
     width: 750px; }
   .rating {
-    margin-left: 26%; } }
+    margin-left: 30%; } }
 
 @media screen and (max-width: 767px) {
   .container {
     width: 450px; }
   .rating {
-    margin-left: 10%; } }
+    margin-left: 16%; } }
 
 @media screen and (max-width: 479px) {
   .container {

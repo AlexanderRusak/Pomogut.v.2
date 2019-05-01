@@ -24,7 +24,7 @@
 }
 
 .raiting .container .row div p {
-  margin-top: 40px;
+  margin-top: 35px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -37,11 +37,11 @@
 .rating {
   height: 143px;
   margin-top: 30px;
-  margin-left: 35%;
+  margin-left: 37.5%;
   display: inline-block;
   position: relative;
   overflow-y: hidden;
-  font-size: 85px;
+  font-size: 70px;
 }
 
 .rating label {
@@ -111,7 +111,7 @@
 
 
   .rating {
-    margin-left: 32%;
+    margin-left: 35%;
   }
 
 
@@ -123,7 +123,7 @@
 
 
   .rating {
-    margin-left: 26%;
+    margin-left: 30%;
   }
 
 
@@ -133,7 +133,7 @@
     width: 450px;
   }
   .rating {
-    margin-left: 10%;
+    margin-left: 16%;
   }
 }
 @media screen and (max-width: 479px) {
@@ -148,5 +148,10 @@
     font-size: 55px;
     margin-left: 9%;
   }
+  .rating label {
+    position: absolute;
+    top: 2px;
+    left: 0px !important;
+    cursor: pointer;
 
 }
