@@ -463,11 +463,16 @@ transition-delay:1s;
   color: #28282B;
 }
 
-.feedback .row div .form-group {
+.feedback .row div form .form-group   {
   margin-top: 40px;
   width: 557px !important;
 }
-
+.feedback .row div form textarea{
+    width: 557px !important;
+}
+.has-feedback label~.form-control-feedback {
+    top: 42px !important;
+}
 .feedback .row div {
   padding: 0;
 }
@@ -491,7 +496,7 @@ transition-delay:1s;
   align-items: center;
   color: #28282B;
   padding-left: 30px;
-  margin-bottom: 20px;
+
 }
 
 textarea {

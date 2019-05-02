@@ -27,13 +27,14 @@
   color: rgba(255, 255, 255, 0.9); }
 
 .rating {
-  height: 143px;
+  height: 45px;
   margin-top: 30px;
-  margin-left: 37.5%;
+  margin-left: 40%;
   display: inline-block;
   position: relative;
   overflow-y: hidden;
-  font-size: 70px; }
+  font-size: 53px;
+  margin-bottom: 100px; }
 
 .rating label {
   position: absolute;

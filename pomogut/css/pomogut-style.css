@@ -423,9 +423,15 @@ header .row .header-logo .btn-write p {
   text-align: center;
   color: #28282B; }
 
-.feedback .row div .form-group {
+.feedback .row div form .form-group {
   margin-top: 40px;
   width: 557px !important; }
+
+.feedback .row div form textarea {
+  width: 557px !important; }
+
+.has-feedback label ~ .form-control-feedback {
+  top: 42px !important; }
 
 .feedback .row div {
   padding: 0; }
@@ -452,8 +458,7 @@ header .row .header-logo .btn-write p {
   -ms-flex-align: center;
   align-items: center;
   color: #28282B;
-  padding-left: 30px;
-  margin-bottom: 20px; }
+  padding-left: 30px; }
 
 textarea {
   background-color: #ECEDF0 !important;

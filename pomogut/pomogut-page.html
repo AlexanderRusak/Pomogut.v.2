@@ -6,18 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pomogut v.2</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="./script/script.js"></script>
   <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/pomogut-style.min.css">
   <link rel="stylesheet" href="./fonts/stylesheet.css">
+  <link rel="stylesheet" href="./dist/css/bootstrapValidator.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+  </script>
+
+
 </head>
 
 
 <body>
+
+
+
 
   <header>
     <div class="row">
@@ -58,7 +65,7 @@
             другие вопросы вы найдете ответ на сайте.
           </p>
 
-          <a class="main" href=""><div class="buttons-number"><p>+375 (17) 311 00 00</p></div></a>
+          <a href="tel:+375173110000" class="main" href=""><div class="buttons-number"><p>+375 (17) 311 00 00</p></div></a>
           <a class="main" href=""><div class="buttons-chat "><img src="./images/project/chat-icon.svg" alt=""></div></a>
 
 
@@ -73,7 +80,7 @@
                     <p>Дети от 5 до 12</p><a href="">Подробнее</a>
                   </div>
                 </div>
-                  <div class="under-image-wave-background"><img class="center-block" src="./images/project/masks-group/mask-kids.svg" alt=""></div>
+                <div class="under-image-wave-background"><img class="center-block" src="./images/project/masks-group/mask-kids.svg" alt=""></div>
                 </div>
               </div>
               <div class="main-section-wave">
@@ -131,7 +138,7 @@
                         <img class="next-1" src="./images/project/arrows/arrow-prev.svg" alt="">
                         <img class="prev-1" src="./images/project/arrows/arrow-next.svg" alt="">
                       </div>
-                        <a class="center-block non-main" href=""><div class="buttons-number tablet"><p>+375 (17) 311 00 00</p></div></a>
+                        <a  href="tel:+375173110000" class="center-block non-main" href=""><div href="tel:+375173110000" class="buttons-number tablet"><p>+375 (17) 311 00 00</p></div></a>
                         <a class="non-main" href=""><div class="buttons-chat mobile"><img src="./images/project/chat-icon.svg" alt=""></div></a>
                       </div>
 
@@ -151,7 +158,7 @@
                           другие вопросы вы найдете ответ на сайте.
                         </p>
 
-                        <a class="main" href=""><div class="buttons-number"><p>+375 (17) 311 00 00</p></div></a>
+                        <a href="tel:+375173110000" class="main" href=""><div href="tel:+375173110000" class="buttons-number"><p>+375 (17) 311 00 00</p></div></a>
                         <a class="main" href=""><div class="buttons-chat"><img src="./images/project/chat-icon.svg" alt=""></div></a>
 
 
@@ -195,7 +202,7 @@
                                         <p>Дети от 5 до 12</p><a href="">Подробнее</a>
                                       </div>
                                     </div>
-                                      <div class="under-image-wave-background"><img class="center-block" src="./images/project/masks-group/mask-kids.svg" alt=""></div>
+                                    <div class="under-image-wave-background"><img class="center-block" src="./images/project/masks-group/mask-kids.svg" alt=""></div>
                                     </div>
                                   </div>
                                   <div class="main-section-wave">
@@ -227,40 +234,62 @@
                                   <p class="center-block">Не стесняйтесь говорить с нами, если у вас есть вопрос.
                                     Просто заполните форму, и мы свяжемся с вами в ближайшее время
                                   </p>
-                                  <div class="center-block form-group">
-                                    <label for="feedback-email">E-mail</label>
-                                    <input class="form-control input-lg" type="text" name="feedback-email" value="" placeholder="Набранный пользователем e-mail">
-                                    <label for="feedback-txt-msg">Текст сообщения</label>
-                                    <textarea class="form-control" rows="9" id="feedback-txt-msg" placeholder="Набранный пользователем текст сообщения"></textarea>
-                                    <input class="center-block btn btn-success button-form" type="submit" name="Отправить сообщение" value="Отправить сообщение">
-          </div>
+                                  <form class="center-block  " id="registerForm">
 
-                                  </div>
+                                    <div class="form-group center-block">
+                                      <label  name="email" for="email">E-mail</label>
+                                      <input class="form-control input-lg" type="text" name="email" value="" placeholder="Набранный пользователем e-mail">
+                                      </div>
+                                      <div class="form-group center-block">
+                                        <label for="feedback-txt-msg">Текст сообщения</label>
+                                        <textarea class="form-control" rows="9" id="feedback-txt-msg" placeholder="Набранный пользователем текст сообщения"></textarea>
+                                      </div>
+                                      <div class="form-group center-block">
+                                        <div class="g-recaptcha center-block" data-sitekey="your_site_key"></div>
+                                      </div>
+
+                                      <div class="form-group center-block">
+                                        <input class="center-block btn btn-success button-form" type="submit" name="Отправить сообщение" value="Отправить сообщение">
+                                      </div>
+
+
+
+                                  </form>
+
                                 </div>
                               </div>
-                              <footer>
-                                <div class="container">
-                                  <div class="row">
-                                    <div class="col-lg-5 col-md-8 col-sm-12 col-xs-12 ">
-                                      <p class="copyrights"> © 2019 Pomogut.by </p>
-                                      <div class="icons-social-networks">
-                                        <a href=""><img src="./images/footer/icon-google-plus.svg" alt=""></a>
-                                        <a href=""><img src="./images/footer/icon-youtube.svg" alt=""></a>
-                                        <a href=""><img src="./images/footer/icon-instagram.svg" alt=""></a>
-                                        <a href=""><img src="./images/footer/icon-facebook.svg" alt=""></a>
-                                        <a href=""><img src="./images/footer/icon-twitter.svg" alt=""></a>
-                                        <a href=""><img src="./images/footer/icon-vk.svg" alt=""></a>
-                                        <a href=""><img src="./images/footer/icon-viber.svg" alt=""></a>
-                                      </div>
+                            </div>
+                            <footer>
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-lg-5 col-md-8 col-sm-12 col-xs-12 ">
+                                    <p class="copyrights"> © 2019 Pomogut.by </p>
+                                    <div class="icons-social-networks">
+                                      <a href=""><img src="./images/footer/icon-google-plus.svg" alt=""></a>
+                                      <a href=""><img src="./images/footer/icon-youtube.svg" alt=""></a>
+                                      <a href=""><img src="./images/footer/icon-instagram.svg" alt=""></a>
+                                      <a href=""><img src="./images/footer/icon-facebook.svg" alt=""></a>
+                                      <a href=""><img src="./images/footer/icon-twitter.svg" alt=""></a>
+                                      <a href=""><img src="./images/footer/icon-vk.svg" alt=""></a>
+                                      <a href=""><img src="./images/footer/icon-viber.svg" alt=""></a>
                                     </div>
                                   </div>
                                 </div>
-                              </footer>
+                              </div>
+                            </footer>
 
-                              <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-                              <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-                              <script type="text/javascript" src="slick/slick.min.js"></script>
-                              <script type="text/javascript" src="script/script.js"></script>
+                            <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+                            <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+                            <script type="text/javascript" src="slick/slick.min.js"></script>
+                            <script type="text/javascript" src="./dist/js/bootstrapValidator.min.js"></script>
+                            <script type="text/javascript" src="script/script.js"></script>
+                            <script type="text/javascript">
+                              var onloadCallback = function() {
+                                alert("grecaptcha is ready!");
+                              };
+                            </script>
+
+
 </body>
 
 </html>
