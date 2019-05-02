@@ -131,11 +131,23 @@ input[type=checkbox] {
     float: left !important; }
   .feedback .container .row div form div:nth-child(n) {
     padding-left: 15px !important;
-    padding-right: 15px !important; } }
+    padding-right: 15px !important; }
+  .feedback .container .row div form div:nth-child(7) {
+    padding-left: 0px !important;
+    padding-right: 0px !important; }
+  .feedback .container .row div form div:nth-child(7) div {
+    padding-left: 0px !important;
+    padding-right: 0px !important; } }
 
 @media screen and (max-width: 479px) {
   .container {
-    width: 310px; }
+    width: 333px; }
   .feedback .container .row div form div:nth-child(n) {
     padding-left: 15px !important;
-    padding-right: 15px !important; } }
+    padding-right: 15px !important; }
+  .feedback .container .row div form div:nth-child(7) {
+    padding-left: 0px !important;
+    padding-right: 0px !important; }
+  .feedback .container .row div form div:nth-child(7) div {
+    padding-left: 0px !important;
+    padding-right: 0px !important; } }
