@@ -3,6 +3,30 @@
 * {
   overflow-x: hidden; }
 
+.scrollup {
+  width: 60px;
+  height: 60px;
+  opacity: 1;
+  position: fixed;
+  bottom: 50px;
+  right: 198.5px;
+  display: none !important;
+  text-indent: -9999px;
+  background: url("../images/button-up.svg") no-repeat;
+  color: #00AEEF; }
+
+@media (min-width: 320px) and (max-width: 990px) {
+  .scrollup {
+    display: block !important; } }
+
+.navbar {
+  width: 100%;
+  z-index: 99;
+  position: fixed; }
+
+.navbar {
+  border-radius: 0px; }
+
 .navbar-collapse {
   margin-right: -25px; }
 
@@ -142,6 +166,7 @@
     border: none; } }
 
 .header {
+  margin-top: 88px;
   height: 80px;
   overflow-y: hidden; }
 
@@ -185,8 +210,8 @@
   background-color: #EB3450; }
 
 .phone-btn .icon-phone {
-  margin-top: 6px;
-  margin-left: 9px;
+  margin-top: 6.5px;
+  margin-left: 10px;
   float: left; }
 
 .phone-btn div:nth-child(2) {

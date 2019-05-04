@@ -12,6 +12,6 @@
 }
 @media (min-width:320px) and (max-width:991px){
   .scrollup {
-    display: none !important;
+    display: block !important;
   }
 }
