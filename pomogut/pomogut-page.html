@@ -22,10 +22,6 @@
 
 
 <body>
-
-
-
-
   <header>
     <div class="row">
       <div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12 center-block header-logo">
@@ -244,12 +240,10 @@
                                         <label for="feedback-txt-msg">Текст сообщения</label>
                                         <textarea class="form-control" rows="9" id="feedback-txt-msg" placeholder="Набранный пользователем текст сообщения"></textarea>
                                       </div>
-                                      <div class="form-group center-block">
-                                        <div class="g-recaptcha center-block" data-sitekey="your_site_key"></div>
-                                      </div>
+                                    
 
                                       <div class="form-group center-block">
-                                        <input class="center-block btn btn-success button-form" type="submit" name="Отправить сообщение" value="Отправить сообщение">
+                                        <input data-toggle="modal" data-target="#myModal" class="center-block btn btn-success button-form" type="submit" name="Отправить сообщение" value="Отправить сообщение">
                                       </div>
 
 
@@ -283,13 +277,28 @@
                             <script type="text/javascript" src="slick/slick.min.js"></script>
                             <script type="text/javascript" src="./dist/js/bootstrapValidator.min.js"></script>
                             <script type="text/javascript" src="script/script.js"></script>
-                            <script type="text/javascript">
-                              var onloadCallback = function() {
-                                alert("grecaptcha is ready!");
-                              };
-                            </script>
 
 
+                            <!-- Modal -->
+                              <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog">
+
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title">Modal Header</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p>Some text in the modal.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
 </body>
 
 </html>
