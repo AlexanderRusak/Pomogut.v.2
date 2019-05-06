@@ -3,6 +3,10 @@
 * {
   overflow-x: hidden; }
 
+.multi-counter-widget .up-line {
+  height: 10px;
+  background: #33BEF2; }
+
 .multi-counter-widget {
   background: #00A9E8; }
 

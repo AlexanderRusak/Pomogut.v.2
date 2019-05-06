@@ -545,6 +545,11 @@ textarea[placeholder] {
 .feedback .form-group .btn {
   margin-bottom: 81.5px;
 }
+.g-recaptcha div{
+  margin-left: auto;
+    margin-right: auto;
+  height: 84px !important;
+}
 ////////////////////
 
 footer {
@@ -1123,8 +1128,10 @@ footer .icons-social-networks a {
     margin-bottom: 80px;
     overflow-y: hidden;
   }
-
-  .feedback .row div .form-group {
+.feedback .row div p {
+  width: auto;
+}
+  .feedback .row div form .form-group {
     margin-top: 40px;
     width: 264px!important;
   }

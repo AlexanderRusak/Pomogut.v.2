@@ -342,8 +342,8 @@ div .inside-block-section p {
   margin-left: 12px; }
 
 @media screen and (max-width: 1200px) {
-  .block-1 .col .block-1-img {
-    width: 460px;
+  .block-1 div .block-1-img {
+    margin-top: 25px;
     background-color: transparent; }
   .block-1 .col div:nth-child(2) {
     margin-left: 10px; }
