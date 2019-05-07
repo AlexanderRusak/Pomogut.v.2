@@ -1,9 +1,9 @@
+
+
 $(document).on('ready', function() {
   /////////////////////////////////////////////////////////////////   //for you
-  bogdanFunction=function(){
-    jQuery.noConflict();
-    $("#myModal").modal();
-  }
+
+
 ////////////////////////////////////////////////////////////////////////////////
   $('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
  	var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
@@ -155,6 +155,7 @@ $(document).on('ready', function() {
   });
   $('.next-1').on('click', function() {
     $('.project-1-slider').slick('slickPrev');
+
   });
   $('.prev-1').on('click', function() {
     $('.project-1-slider').slick('slickNext');
@@ -165,40 +166,6 @@ $(document).on('ready', function() {
   $('.prev-2').on('click', function() {
     $('.project-2-slider').slick('slickNext');
   });
-  $('#registerForm').bootstrapValidator({
-       message: 'This value is not valid',
-       feedbackIcons: {
-           valid: 'glyphicon glyphicon-ok',
-           invalid: 'glyphicon glyphicon-remove',
-           validating: 'glyphicon glyphicon-refresh'
-       },
-       fields: {
-           username: {
-               message: 'The username is not valid',
-               validators: {
 
-                   stringLength: {
-                       min: 6,
-                       max: 30,
-                       message: 'The username must be more than 6 and less than 30 characters long'
-                   },
-                   regexp: {
-                       regexp: /^[a-zA-Z0-9_]+$/,
-                       message: 'The username can only consist of alphabetical, number and underscore'
-                   }
-               }
-           },
-           email: {
-               validators: {
-                   notEmpty: {
-                       message: 'The email is required and cannot be empty'
-                   },
-                   emailAddress: {
-                       message: 'The input is not a valid email address'
-                   }
-               }
-           }
-       }
-   });
-   bogdanFunction();
+
 });

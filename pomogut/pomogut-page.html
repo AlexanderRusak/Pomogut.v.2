@@ -5,18 +5,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pomogut v.2</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/pomogut-style.min.css">
-  <link rel="stylesheet" href="./fonts/stylesheet.css">
-  <link rel="stylesheet" href="./dist/css/bootstrapValidator.min.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
- <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-
+  <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pomogut v.2</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+   <link rel="stylesheet" href="./css/normalize.css">
+   <link rel="stylesheet" href="./css/pomogut-style.min.css">
+   <link rel="stylesheet" href="./fonts/stylesheet.css">
+   <link rel="stylesheet" href="./dist/css/bootstrapValidator.min.css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 
@@ -239,10 +240,10 @@
                                         <label for="feedback-txt-msg">Текст сообщения</label>
                                         <textarea class=" form-control" rows="9" id="feedback-txt-msg" placeholder="Набранный пользователем текст сообщения"></textarea>
                                       </div>
-                                      <div class = " form-group g-recaptcha center-block " data-sitekey = "your_site_key" > </div> 
+                                      <div class = " form-group g-recaptcha center-block " data-sitekey = "your_site_key" > </div>
 
                                       <div class="form-group center-block">
-                                        <input data-toggle="modal" data-target="#myModal" class="center-block btn btn-success button-form" type="submit" name="Отправить сообщение" value="Отправить сообщение">
+                                        <input data-toggle="modal" data-target="#myModal" type="button"  class="center-block btn btn-success button-form"  name="Отправить сообщение" value="Отправить сообщение">
                                       </div>
 
 
@@ -271,33 +272,28 @@
                               </div>
                             </footer>
 
-                            <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-                            <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-                            <script type="text/javascript" src="slick/slick.min.js"></script>
-                            <script type="text/javascript" src="./dist/js/bootstrapValidator.min.js"></script>
-                            <script type="text/javascript" src="script/script.js"></script>
+
 
 
                             <!-- Modal -->
-                              <div class="modal fade" id="myModal" role="dialog">
-                                <div class="modal-dialog">
+                            <div class="modal fade" id="myModal" role="dialog">
+                              <div class="modal-dialog">
 
-                                  <!-- Modal content-->
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                      <h4 class="modal-title">Modal Header</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                      <p>Some text in the modal.</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
-                                  </div>
-
+                                <!-- Modal content-->
+                                <div class="modal-content modal-window">
+                                    <h1 >Спасибо!</h1>
+                                    <h2> Ваше сообщение отправлено</h2>
+                                    <img  src="./images/modal/check-mark.svg" alt="">
+                                    <label data-dismiss="modal"><img src="./images/modal/cross.svg" alt=""></label>
                                 </div>
+
                               </div>
+                            </div>
+                              <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+                              <script type="text/javascript" src="slick/slick.min.js"></script>
+                              <script type="text/javascript" src="script/script.js"></script>
+
+
 </body>
 
 </html>

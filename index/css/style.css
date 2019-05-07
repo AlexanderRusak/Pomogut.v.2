@@ -1,22 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700&subset=cyrillic,hebrew,latin-ext,vietnamese");
-.scrollup {
-  width: 60px;
-  height: 60px;
-  opacity: 1;
-  position: fixed;
-  bottom: 50px;
-  right: 190px;
-  display: none;
-  text-indent: -9999px;
-  background: url("../images/button-up.svg") no-repeat;
-  color: #00AEEF; }
-
-@media (min-width: 320px) and (max-width: 991px) {
-  .scrollup {
-    display: none !important; } }
-
 * {
   overflow-x: hidden; }
 
@@ -484,7 +468,7 @@ div .inside-block-section p {
   .block-2 .container .block-2-img {
     width: 100%; }
   .block-2 .container .block-2-img img {
-    width: 100%; } }
+    width: 264px; } }
 
 .counter .container .row {
   margin-top: 100px;

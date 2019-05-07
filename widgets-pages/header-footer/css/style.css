@@ -4,20 +4,19 @@
   overflow-x: hidden; }
 
 .scrollup {
+  right: 100px;
   width: 60px;
   height: 60px;
   opacity: 1;
   position: fixed;
   bottom: 50px;
-  right: 198.5px;
-  display: none !important;
   text-indent: -9999px;
   background: url("../images/button-up.svg") no-repeat;
   color: #00AEEF; }
 
 @media (min-width: 320px) and (max-width: 990px) {
   .scrollup {
-    display: block !important; } }
+    display: none !important; } }
 
 .navbar {
   width: 100%;
@@ -167,7 +166,8 @@
 
 .vertical {
   display: inline-block;
-  margin-left: 20px; }
+  margin-left: 10px;
+  margin-right: 10px; }
 
 .header {
   margin-top: 88px;
