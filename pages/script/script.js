@@ -1,4 +1,37 @@
 $(document).on('ready', function() {
+  var ajaxResult='{"id_for_girl1, title_for_girl1, href_for_img_for_girl1":[["id_for_tab1","title for_tab1"], ["id_for_tab2","title for_tab2"],["id_for_tab3","title for_tab3"]],"id_for_girl2, title_for_girl2, href_for_img_for_girl2":[["id_for_tab1","title for_tab1"], ["id_for_tab2","title for_tab2"],["id_for_tab3","title for_tab3"]],"id_for_girl3, title_for_girl3, href_for_img_for_girl3":[["id_for_tab1","title for_tab1"], ["id_for_tab2","title for_tab2"],["id_for_tab3","title for_tab3"]],"id_for_girl4, title_for_girl4, href_for_img_for_girl4":[["id_for_tab1","title for_tab1"], ["id_for_tab2","title for_tab2"],["id_for_tab3","title for_tab3"]]}';
+  ajaxResult=JSON.parse(ajaxResult);
+  var $countKeysAfterResult=Object.keys(ajaxResult).length;
+  var $keysForCategories=[];
+  for (var keys in   ajaxResult) {
+     $keysForCategories.push(keys.split(","));
+  }
+  var id_for_categories=[];
+  var title_for_categories=[];
+  var href_for_categories=[];
+  for (var i = 0; i < $keysForCategories.length; i++) { //Запись ключей по значениям их в логике
+  //  alert($keysForCategories[i][0]);
+    id_for_categories.push($keysForCategories[i][0]);
+  //  alert($keysForCategories[i][1]);
+    title_for_categories.push($keysForCategories[i][1]);
+  //  alert($keysForCategories[i][2]);
+    href_for_categories.push($keysForCategories[i][2]);
+  }
+
+  var $countValuesAfterResult=Object.values(ajaxResult).length;
+  alert($countValuesAfterResult);
+
+
+
+
+
+
+
+
+
+
+
+
   var result='{"55":[5,2,1,7],"22":[6,123,333],"44":[222,0],"33":[2334,23323232323,2,6,3],"77":[18,19],"88":[0,478]}';
   result=JSON.parse(result);
   var $sectionsCount=Object.keys(result).length;  //количество элементов(категорий) в JSON с сервера
@@ -79,7 +112,7 @@ $(document).on('ready', function() {
     infinite: false,
     slidesToScroll: 1,
     arrows: true,
-    
+
 
     responsive: [{
         breakpoint: 1199,

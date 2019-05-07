@@ -8,7 +8,10 @@
   overflow-x: hidden;
 }
 ///////////////////////////////////////header
+.feedback .row .feedback-column{
 
+  float: none !important;
+}
 header {
   background-image: url("../images/header/background.svg");
   background-size: cover;
@@ -1128,12 +1131,13 @@ footer .icons-social-networks a {
     margin-bottom: 80px;
     overflow-y: hidden;
   }
+
 .feedback .row div p {
   width: auto;
 }
   .feedback .row div form .form-group {
     margin-top: 40px;
-    width: 264px!important;
+    width: 304px!important;
   }
 
   .feedback .row div .form-group .form-control::placeholder,
@@ -1228,5 +1232,13 @@ footer .icons-social-networks a {
     padding-top: 0px;
     position: absolute;
 
+  }
+}
+@media (min-width:320px) and (max-width:397px){
+  .feedback .row .feedback-column{
+    width: 304px !important;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important;
   }
 }
