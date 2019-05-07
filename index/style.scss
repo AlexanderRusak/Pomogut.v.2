@@ -531,7 +531,9 @@ div .inside-block-section p {
   .block-1 .container {
     width: 360px;
   }
-
+  .block-1 .container div:nth-child(2) a .block-1-button {
+    width: 280px;
+  }
   .block-1 .col .block-1-img {
     width: 264px;
     height: auto;
