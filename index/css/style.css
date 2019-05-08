@@ -434,7 +434,9 @@ div .inside-block-section p {
   font-size: 17px;
   line-height: normal;
   text-align: center;
-  padding-top: 12px; }
+  padding-top: 12px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .block-2 .container div p {
   font-family: "Roboto", sans-serif;
@@ -464,7 +466,7 @@ div .inside-block-section p {
 
 @media screen and (max-width: 660px) {
   .block-2 .container {
-    width: 360px; }
+    width: 310px; }
   .block-2 .container {
     margin-top: 65px !important; }
   .block-2 .container .block-2-img {

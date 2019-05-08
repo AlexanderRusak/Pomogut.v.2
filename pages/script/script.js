@@ -1,5 +1,5 @@
 $(document).on('ready', function() {
-  var ajaxResult='{"id_for_girl1, title_for_girl1,./images/categories/girl.svg":[["id_for_tab1","title_for_tab1"], ["id_for_tab2","title_for_tab2"],["id_for_tab3","title_for_tab3"]],"id_for_girl2, title_for_girl2, ./images/categories/girl.svg":[["id_for_tab4","title_for_tab4"], ["id_for_tab5","title_for_tab5"],["id_for_tab6","title_for_tab6"]],"id_for_girl3, title_for_girl3, ./images/categories/girl.svg":[["id_for_tab7","title_for_tab7"], ["id_for_tab8","title_for_tab8"],["id_for_tab9","title for_tab9"]],"id_for_girl4, title_for_girl4,./images/categories/girl.svg":[["id_for_tab10","title_for_tab10"], ["id_for_ta11","title_for_tab11"],["id_for_tab12","title_for_tab12"]],"id_for_girl5, title_for_girl5,./images/categories/girl.svg":[["id_for_tab13","title_for_tab13"], ["id_for_tab14","title_for_tab14"],["id_for_tab15","title_for_tab15"]]}';
+  var ajaxResult='{"id_for_girl1, title_for_girl1,./images/categories/girl.svg":[["id_for_tab1","title_for_tab1"], ["id_for_tab2","title_for_tab2"],["id_for_tab3","title_for_tab3"]],"id_for_girl2, title_for_girl2, ./images/categories/girl.svg":[["id_for_tab4","title_for_tab4"], ["id_for_tab5","title_for_tab5"],["id_for_tab6","title_for_tab6"]],"id_for_girl3, title_for_girl3, ./images/categories/girl.svg":[["id_for_tab7","title_for_tab7"], ["id_for_tab8","title_for_tab8"],["id_for_tab9","title for_tab9"]],"id_for_girl4, title_for_girl4,./images/categories/girl.svg":[["id_for_tab10","title_for_tab10"], ["id_for_ta11","title_for_tab11"],["id_for_tab12","title_for_tab12"]],"id_for_girl5, title_for_girl5,./images/categories/girl.svg":[["id_for_tab13","title_for_tab13"], ["id_for_tab14","title_for_tab14"],["id_for_tab15","title_for_tab15"],["id_for_extra1","title_for_extra1"],["id_for_extra2","title_for_extra2"]]}';
   ajaxResult=JSON.parse(ajaxResult);
   var $countKeysAfterResult=Object.keys(ajaxResult).length;
   var $keysForCategories=[];
@@ -77,7 +77,7 @@ generateCategariesTabs()
 
 
 
-  var result='{"55":[5,2,1,7],"22":[6,123,333],"44":[222,0],"33":[2334,23323232323,2,6,3],"77":[18,19],"88":[0,478]}';
+/*  var result='{"55":[5,2,1,7],"22":[6,123,333],"44":[222,0],"33":[2334,23323232323,2,6,3],"77":[18,19],"88":[0,478]}';
   result=JSON.parse(result);
   var $sectionsCount=Object.keys(result).length;  //количество элементов(категорий) в JSON с сервера
   var $countsTabs = []
@@ -117,17 +117,20 @@ generateCategariesTabs()
     for (var j = 0; j < $idForTotalTabs.length; j++) {
       $('.totalTabs').append($(`<div id=${$idForTotalTabs[j]} class="tag-primary"><input type="radio"   name="radios"><label for="radio1">Проблемы с соблюдением правил </label></div>`));
     }
-  }
+  }*/
 //  pushIdForTotalTabs($idTabs);
 //  generateCategories($sectionsCount);
 //  generateRows($sectionsCount);
 
   $(".regularTabs").css("display", "none");
+
   $("#categories div ").click(function() {
     var width=screen.width;
 
       var $count = $(this).index();
-      alert($count);
+      if (width<'590') {
+          $('.categories_data .tags').css("display","none");
+      }
       $(".regularTabs").css("display", "none");
       $(".regularTabs").eq($count).css("display", "block");
       $(".totalTabs").css("display", "none");
@@ -149,8 +152,11 @@ generateCategariesTabs()
         $(".tag-primary").css("background-color","#fff");
         $(this).css("background-color","#EB3450");
           ///////////////////////////////////////////////////////////////
-        alert($(this).attr("id"));
+      //  alert($(this).attr("id"));
     });
+    if ($(window).width()<'590') {
+        $('.categories_data .tags').css("display","none");
+    }
   $('.categories').slick({
     slidesToShow: 5,
     infinite: false,
