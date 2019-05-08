@@ -1,27 +1,72 @@
 $(document).on('ready', function() {
-  var ajaxResult='{"id_for_girl1, title_for_girl1, href_for_img_for_girl1":[["id_for_tab1","title for_tab1"], ["id_for_tab2","title for_tab2"],["id_for_tab3","title for_tab3"]],"id_for_girl2, title_for_girl2, href_for_img_for_girl2":[["id_for_tab1","title for_tab1"], ["id_for_tab2","title for_tab2"],["id_for_tab3","title for_tab3"]],"id_for_girl3, title_for_girl3, href_for_img_for_girl3":[["id_for_tab1","title for_tab1"], ["id_for_tab2","title for_tab2"],["id_for_tab3","title for_tab3"]],"id_for_girl4, title_for_girl4, href_for_img_for_girl4":[["id_for_tab1","title for_tab1"], ["id_for_tab2","title for_tab2"],["id_for_tab3","title for_tab3"]]}';
+  var ajaxResult='{"id_for_girl1, title_for_girl1,./images/categories/girl.svg":[["id_for_tab1","title_for_tab1"], ["id_for_tab2","title_for_tab2"],["id_for_tab3","title_for_tab3"]],"id_for_girl2, title_for_girl2, ./images/categories/girl.svg":[["id_for_tab1","title_for_tab1"], ["id_for_tab2","title_for_tab2"],["id_for_tab3","title_for_tab3"]],"id_for_girl3, title_for_girl3, ./images/categories/girl.svg":[["id_for_tab1","title_for_tab1"], ["id_for_tab2","title_for_tab2"],["id_for_tab3","title for_tab3"]],"id_for_girl4, title_for_girl4,./images/categories/girl.svg":[["id_for_tab1","title_for_tab1"], ["id_for_tab2","title_for_tab2"],["id_for_tab3","title_for_tab3"]],"id_for_girl5, title_for_girl5,./images/categories/girl.svg":[["id_for_tab1","title_for_tab1"], ["id_for_tab2","title_for_tab2"],["id_for_tab3","title_for_tab3"]]}';
   ajaxResult=JSON.parse(ajaxResult);
   var $countKeysAfterResult=Object.keys(ajaxResult).length;
   var $keysForCategories=[];
-  for (var keys in   ajaxResult) {
+  var keysFullNames=[];
+  for (var keys in ajaxResult) {
      $keysForCategories.push(keys.split(","));
+     keysFullNames.push(keys);
   }
   var id_for_categories=[];
   var title_for_categories=[];
   var href_for_categories=[];
   for (var i = 0; i < $keysForCategories.length; i++) { //Запись ключей по значениям их в логике
-  //  alert($keysForCategories[i][0]);
-    id_for_categories.push($keysForCategories[i][0]);
-  //  alert($keysForCategories[i][1]);
-    title_for_categories.push($keysForCategories[i][1]);
-  //  alert($keysForCategories[i][2]);
-    href_for_categories.push($keysForCategories[i][2]);
+//  alert($keysForCategories[i][0]);
+  id_for_categories.push($keysForCategories[i][0]);
+   //alert($keysForCategories[i][1]);
+   title_for_categories.push($keysForCategories[i][1]);
+//  alert($keysForCategories[i][2]);
+   href_for_categories.push($keysForCategories[i][2]);
   }
 
-  var $countValuesAfterResult=Object.values(ajaxResult).length;
-  alert($countValuesAfterResult);
 
+var $valuesForCategories=[];
+var id_for_tab=[];
+var title_for_tab=[];
+var common=[];
 
+  $.each(ajaxResult,function(key,val){
+     //alert(val[0].length);
+     common.push(val[0].length);
+  });
+
+function generateAllCategories(){
+  for (var i = 0; i < $countKeysAfterResult; i++) {
+    ////Каждая категория помечается порядковым тэгом
+      $("#categories").append($(`<div id=${$keysForCategories[i][0]} title=${$keysForCategories[i][1]} ><a ><img src=${$keysForCategories[i][2]}></a><p>Личные данные это любая информация</p></div>`));
+  }
+}
+function generateAllTabs(){
+  $(".categories_data .for-slick").append($('<div class="row tags totalTabs"></div>'));
+  $.each(ajaxResult,function(key,val){
+    // alert(val[0].length);
+    // common.push(val[0].length);
+
+    for (var i = 0; i < val.length; i++) {
+      for (var j = 0; j <val[i].length; j++) {
+          $('.totalTabs').append($(`<div id=${val[i][0]} title=${val[i][1]} class="tag-primary"><input type="radio"   name="radios"><label for="radio1">Проблемы с соблюдением правил </label></div>`));
+      }
+    }
+  });
+
+}
+
+function generateCategariesTabs(){
+
+var counter=0;
+  $.each(ajaxResult,function(key,val){
+    counter++;
+    $(".categories_data .for-slick").append($('<div class="row tags regularTabs"></div>'));
+        for (var j = 0; j <val.length; j++) {
+          $('.regularTabs').eq(counter-1).append($(`<div id=${val[j][0]} title=${val[j][1]}  class="tag-primary"><input type="radio"  name="radios"><label for="radio1">Проблемы с соблдением правил </label></div>`));
+
+          }
+  });
+}
+ generateAllCategories();
+// generateAllTabs();
+generateCategariesTabs()
 
 
 
@@ -73,9 +118,9 @@ $(document).on('ready', function() {
       $('.totalTabs').append($(`<div id=${$idForTotalTabs[j]} class="tag-primary"><input type="radio"   name="radios"><label for="radio1">Проблемы с соблюдением правил </label></div>`));
     }
   }
-  pushIdForTotalTabs($idTabs);
-  generateCategories($sectionsCount);
-  generateRows($sectionsCount);
+//  pushIdForTotalTabs($idTabs);
+//  generateCategories($sectionsCount);
+//  generateRows($sectionsCount);
 
   $(".regularTabs").css("display", "none");
   $("#categories div ").click(function() {
@@ -107,7 +152,6 @@ $(document).on('ready', function() {
         alert($(this).attr("id"));
     });
   $('.categories').slick({
-    lazyLoad: 'ondemand',
     slidesToShow: 5,
     infinite: false,
     slidesToScroll: 1,
