@@ -65,7 +65,7 @@ var counter=0;
   });
 }
  generateAllCategories();
-// generateAllTabs();
+generateAllTabs();
 generateCategariesTabs()
 
 
