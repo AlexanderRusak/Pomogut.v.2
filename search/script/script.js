@@ -29,31 +29,16 @@ $(document).on('ready', function() {
   });
 
   $( function() {
-      var availableTags = [
-        "ActionScript",
-        "AppleScript",
-        "Asp",
-        "BASIC",
-        "C",
-        "C++",
-        "Clojure",
-        "COBOL",
-        "ColdFusion",
-        "Erlang",
-        "Fortran",
-        "Groovy",
-        "Haskell",
-        "Java",
-        "JavaScript",
-        "Lisp",
-        "Perl",
-        "PHP",
-        "Python",
-        "Ruby",
-        "Scala",
-        "Scheme",
-        "Ашот"
-      ];
+    var availableTags = [];
+    $.ajax({
+  url: 'search.txt',
+  dataType: 'text',
+
+  success: function (data) {
+    console.log(data);
+  }
+});
+
       $( "#search-input" ).autocomplete({
         source: availableTags
 
