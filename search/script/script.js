@@ -51,7 +51,8 @@ $(document).on('ready', function() {
         "Python",
         "Ruby",
         "Scala",
-        "Scheme"
+        "Scheme",
+        "Ашот"
       ];
       $( "#search-input" ).autocomplete({
         source: availableTags

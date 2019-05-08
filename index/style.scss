@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700&subset=cyrillic,hebrew,latin-ext,vietnamese");
 
-
 * {
   overflow-x: hidden;
 }
@@ -430,6 +429,8 @@ div .inside-block-section p {
   line-height: normal;
   text-align: center;
   padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .block-1 .col div div:nth-child(2) {
@@ -515,40 +516,41 @@ div .inside-block-section p {
   }
 }
 @media screen and (max-width: 700px) {
-  .block-1{
+  .block-1 {
     margin-top: auto !important;
   }
+
   .block-1 .col {
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-      margin-bottom: auto;
-      padding-right:15px;
-      padding-left: 15px;
+    margin: auto;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 @media screen and (max-width: 660px) {
   .block-1 .container {
     width: 360px;
   }
+
   .block-1 .container div:nth-child(2) a .block-1-button {
     width: 280px;
   }
+
   .block-1 .col .block-1-img {
     width: 264px;
     height: auto;
     margin: auto;
   }
+
   .block-1 .col div:nth-child(2) {
-   width: auto;
-   height: auto;
+    width: auto;
+    height: auto;
     float: left;
     padding-left: 0;
     margin-left: 0;
-}
+  }
+
   .block-1 .container div:nth-child(2) p {
     width: auto;
-
   }
 }
 //////////////
@@ -587,7 +589,7 @@ div .inside-block-section p {
   text-align: center;
   padding-top: 12px;
   margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
 }
 
 .block-2 .container div p {
@@ -623,18 +625,22 @@ div .inside-block-section p {
   .block-2 .container {
     width: 310px;
   }
+
   .block-2 .container {
     margin-top: 65px !important;
   }
-  .block-2 .container .block-2-img{
+
+  .block-2 .container .block-2-img {
     width: 100%;
   }
-  .block-2 .container .block-2-img img{
+
+  .block-2 .container .block-2-img img {
     width: 264px;
   }
 }
 //////////////////////////////
 /////////////////////////////////////////////// counter
+
 .counter .container .row {
   margin-top: 100px;
   margin-bottom: 100px;
