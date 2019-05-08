@@ -1,5 +1,5 @@
 $(document).on('ready', function() {
-  var ajaxResult='{"id_for_girl1, title_for_girl1,./images/categories/girl.svg":[["id_for_tab1","title_for_tab1"], ["id_for_tab2","title_for_tab2"],["id_for_tab3","title_for_tab3"]],"id_for_girl2, title_for_girl2, ./images/categories/girl.svg":[["id_for_tab1","title_for_tab1"], ["id_for_tab2","title_for_tab2"],["id_for_tab3","title_for_tab3"]],"id_for_girl3, title_for_girl3, ./images/categories/girl.svg":[["id_for_tab1","title_for_tab1"], ["id_for_tab2","title_for_tab2"],["id_for_tab3","title for_tab3"]],"id_for_girl4, title_for_girl4,./images/categories/girl.svg":[["id_for_tab1","title_for_tab1"], ["id_for_tab2","title_for_tab2"],["id_for_tab3","title_for_tab3"]],"id_for_girl5, title_for_girl5,./images/categories/girl.svg":[["id_for_tab1","title_for_tab1"], ["id_for_tab2","title_for_tab2"],["id_for_tab3","title_for_tab3"]]}';
+  var ajaxResult='{"id_for_girl1, title_for_girl1,./images/categories/girl.svg":[["id_for_tab1","title_for_tab1"], ["id_for_tab2","title_for_tab2"],["id_for_tab3","title_for_tab3"]],"id_for_girl2, title_for_girl2, ./images/categories/girl.svg":[["id_for_tab4","title_for_tab4"], ["id_for_tab5","title_for_tab5"],["id_for_tab6","title_for_tab6"]],"id_for_girl3, title_for_girl3, ./images/categories/girl.svg":[["id_for_tab7","title_for_tab7"], ["id_for_tab8","title_for_tab8"],["id_for_tab9","title for_tab9"]],"id_for_girl4, title_for_girl4,./images/categories/girl.svg":[["id_for_tab10","title_for_tab10"], ["id_for_ta11","title_for_tab11"],["id_for_tab12","title_for_tab12"]],"id_for_girl5, title_for_girl5,./images/categories/girl.svg":[["id_for_tab13","title_for_tab13"], ["id_for_tab14","title_for_tab14"],["id_for_tab15","title_for_tab15"]]}';
   ajaxResult=JSON.parse(ajaxResult);
   var $countKeysAfterResult=Object.keys(ajaxResult).length;
   var $keysForCategories=[];
@@ -34,7 +34,7 @@ var common=[];
 function generateAllCategories(){
   for (var i = 0; i < $countKeysAfterResult; i++) {
     ////Каждая категория помечается порядковым тэгом
-      $("#categories").append($(`<div id=${$keysForCategories[i][0]} title=${$keysForCategories[i][1]} ><a ><img src=${$keysForCategories[i][2]}></a><p>Личные данные это любая информация</p></div>`));
+      $("#categories").append($(`<div id=${$keysForCategories[i][0]} ><a ><img src=${$keysForCategories[i][2]}></a><p>${$keysForCategories[i][1]}</p></div>`));
   }
 }
 function generateAllTabs(){
@@ -44,9 +44,9 @@ function generateAllTabs(){
     // common.push(val[0].length);
 
     for (var i = 0; i < val.length; i++) {
-      for (var j = 0; j <val[i].length; j++) {
-          $('.totalTabs').append($(`<div id=${val[i][0]} title=${val[i][1]} class="tag-primary"><input type="radio"   name="radios"><label for="radio1">Проблемы с соблюдением правил </label></div>`));
-      }
+
+          $('.totalTabs').append($(`<div id=${val[i][0]} title=${val[i][1]} class="tag-primary"><input type="radio"   name="radios"><label for="radio1">${val[i][1]} </label></div>`));
+
     }
   });
 
@@ -59,7 +59,7 @@ var counter=0;
     counter++;
     $(".categories_data .for-slick").append($('<div class="row tags regularTabs"></div>'));
         for (var j = 0; j <val.length; j++) {
-          $('.regularTabs').eq(counter-1).append($(`<div id=${val[j][0]} title=${val[j][1]}  class="tag-primary"><input type="radio"  name="radios"><label for="radio1">Проблемы с соблдением правил </label></div>`));
+          $('.regularTabs').eq(counter-1).append($(`<div id=${val[j][0]} title=${val[j][1]}  class="tag-primary"><input type="radio"  name="radios"><label for="radio1">${val[j][1]} </label></div>`));
 
           }
   });
