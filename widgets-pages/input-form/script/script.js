@@ -1,4 +1,5 @@
-$(document).on('ready', function() {
-		alert("dsfdsg");
 
+$(document).ready(function() {
+	alert("dsfdsg");
+$('#btn-hidden-for-modal').trigger( "click" );
 });
