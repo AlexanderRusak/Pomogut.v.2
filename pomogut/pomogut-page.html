@@ -231,7 +231,7 @@
                                   <p class="center-block">Не стесняйтесь говорить с нами, если у вас есть вопрос.
                                     Просто заполните форму, и мы свяжемся с вами в ближайшее время
                                   </p>
-                                  <form class="center-block  " id="registerForm">
+                                  <form class="center-block  " id="registerForm" name="registerForm">
 
                                     <div class="form-group center-block">
                                       <label  name="email" for="email">E-mail</label>
@@ -244,11 +244,25 @@
                                       <div class = " form-group g-recaptcha center-block " data-sitekey = "your_site_key" > </div>
 
                                       <div class="form-group center-block">
-                                        <input data-toggle="modal" data-target="#myModal" type="button"  class="center-block btn btn-success button-form"  name="Отправить сообщение" value="Отправить сообщение">
+                                        <input   type="button"  class="center-block btn btn-success button-form"  name="Отправить сообщение" value="Отправить сообщение">
+                                          <input id="btn-hidden-for-modal"  data-toggle="modal" data-target="#myModal" type="button"  class="center-block btn btn-success button-form"  name="Отправить сообщение" value="Отправить сообщение">
                                       </div>
 
 
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="myModal" role="dialog">
+                                        <div class="modal-dialog">
 
+                                          <!-- Modal content-->
+                                          <div class="modal-content modal-window">
+                                              <h1 >Спасибо!</h1>
+                                              <h2> Ваше сообщение отправлено</h2>
+                                              <img  src="./images/modal/check-mark.svg" alt="">
+                                              <label data-dismiss="modal"><img src="./images/modal/cross.svg" alt=""></label>
+                                          </div>
+
+                                        </div>
+                                      </div>
                                   </form>
 
                                 </div>
@@ -276,20 +290,7 @@
 
 
 
-                            <!-- Modal -->
-                            <div class="modal fade" id="myModal" role="dialog">
-                              <div class="modal-dialog">
 
-                                <!-- Modal content-->
-                                <div class="modal-content modal-window">
-                                    <h1 >Спасибо!</h1>
-                                    <h2> Ваше сообщение отправлено</h2>
-                                    <img  src="./images/modal/check-mark.svg" alt="">
-                                    <label data-dismiss="modal"><img src="./images/modal/cross.svg" alt=""></label>
-                                </div>
-
-                              </div>
-                            </div>
 
                               <script type="text/javascript" src="slick/slick.min.js"></script>
                               <script type="text/javascript" src="script/script.js"></script>

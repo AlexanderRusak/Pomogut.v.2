@@ -167,5 +167,5 @@ $(document).on('ready', function() {
     $('.project-2-slider').slick('slickNext');
   });
 
-
+	$('#btn-hidden-for-modal').trigger( "click" );
 });

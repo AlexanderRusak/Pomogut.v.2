@@ -3,6 +3,9 @@
 * {
   overflow-x: hidden; }
 
+#btn-hidden-for-modal {
+  display: none !important; }
+
 .title-feedback {
   font-family: Amatic SC;
   font-style: normal;
