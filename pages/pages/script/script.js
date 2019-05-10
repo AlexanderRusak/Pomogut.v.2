@@ -128,6 +128,7 @@ generateCategariesTabs()
     var width=screen.width;
 
       var $count = $(this).index();
+      alert($(this).attr("id"));
       if (width<'590') {
           $('.categories_data .tags').css("display","none");
       }
@@ -151,6 +152,7 @@ generateCategariesTabs()
       /////////////////////////////////////////////////////////////// styles
         $(".tag-primary").css("background-color","#fff");
         $(this).css("background-color","#EB3450");
+        alert($(this).attr("id"));
           ///////////////////////////////////////////////////////////////
       //  alert($(this).attr("id"));
     });
