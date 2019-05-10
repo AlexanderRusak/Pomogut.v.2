@@ -51,7 +51,31 @@ width: 920px !important;
 
 }
 .search-result{
-  display: none !important;
+  display: block !important;
+  font-family: Amatic SC;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 42px;
+margin-bottom: 30px;
+}
+.search-header-result{
+  color: #00AEEF;
+}
+.search-text p, .search-text p a{
+
+  font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 20px;/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #000;
+}
+.search-text p a:hover{
+  color: #00AEEF;
 }
 .ui-menu-item{
   height: 100%;

@@ -429,8 +429,7 @@ div .inside-block-section p {
   line-height: normal;
   text-align: center;
   padding-top: 15px;
-  margin-left: auto;
-  margin-right: auto;
+
 }
 
 .block-1 .col div div:nth-child(2) {
@@ -548,6 +547,11 @@ div .inside-block-section p {
     padding-left: 0;
     margin-left: 0;
   }
+  .block-1 .container div:nth-child(2) a .block-1-button {
+
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .block-1 .container div:nth-child(2) p {
     width: auto;
@@ -588,8 +592,6 @@ div .inside-block-section p {
   line-height: normal;
   text-align: center;
   padding-top: 12px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .block-2 .container div p {
@@ -636,6 +638,11 @@ div .inside-block-section p {
 
   .block-2 .container .block-2-img img {
     width: 264px;
+  }
+  .block-2 .container div a .block-1-button {
+
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 //////////////////////////////

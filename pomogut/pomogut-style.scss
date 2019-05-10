@@ -3,7 +3,9 @@
   font-family: Gotham Pro;
   src: url("./fonts/GothamPro.ttf")format("opentype");
 }
-
+.g-recaptcha div div:first-child iframe{
+  border: 2px solid red !important;
+}
 * {
   overflow-x: hidden;
 }

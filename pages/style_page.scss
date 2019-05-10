@@ -203,8 +203,9 @@
   overflow: hidden;
 }
 
-.articles a div .articles-image {
+.articles a div .articles-image { 
   display: block;
+  width: 100% !important;
 }
 
 .articles .left {
@@ -488,15 +489,7 @@ a:hover {
     width: 970px;
   }
 
-  .header .row .col-lg-offset-5 {
-    margin-left: 100px;
-    float: right;
-    margin-right: 18px;
-  }
 
-  .header .row div {
-    padding-left: 0;
-  }
 
   .slick-list {
     width: 795px;
@@ -590,42 +583,10 @@ a:hover {
     width: 585px;
   }
 
-  .navbar-header .collapse,
-  .navbar-toggle {
-    display: block !important;
-  }
 
-  .navbar-header {
-    float: none;
-  }
 
-  .collapse {
-    display: none !important;
-  }
 
-  .navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
-  }
 
-  .navbar .navbar-collapse {
-    text-align: center;
-  }
-
-  .navbar .navbar-nav > li {
-    float: none;
-  }
-
-  .links_to_follow {
-    margin-top: 70px;
-    margin-bottom: 50px;
-  }
-
-  .footer .container div:nth-child(4) {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
 
   .slick-list {
     width: 660px;
@@ -736,32 +697,6 @@ a:hover {
     width: 590px;
   }
 
-  .navbar-collapse.collapse {
-    display: none !important;
-  }
-
-  .navbar-collapse.collapse.in {
-    display: block !important;
-  }
-
-  .navbar-header .collapse,
-  .navbar-toggle {
-    display: block !important;
-  }
-
-  .navbar-header {
-    float: none;
-  }
-
-  .navbar-brand {
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 0;
-  }
-
-  .logo-big {
-    display: none;
-  }
 
   .categories_data .row .col-lg-offset-1 {
     margin-left: 3.33333333%;
@@ -793,13 +728,7 @@ a:hover {
     width: 53%;
   }
 
-  .logo-small {
-    display: none;
-  }
 
-  .header .row div {
-    padding-right: 0;
-  }
 
   .categories_data .for-slick {
     margin-top: -25px;
@@ -939,17 +868,7 @@ a:hover {
     height: 100%;
   }
 
-  .phone_number_header p {
-    display: none;
-  }
 
-  .phone-btn {
-    width: 40px;
-  }
-
-  .header .row div {
-    padding-right: 0;
-  }
 
   .tags {
     display: none !important;
@@ -959,19 +878,6 @@ a:hover {
     display: none;
   }
 
-  .header .row div .phone-btn {
-    margin-left: 40px;
-  }
-
-  .links_to_follow {
-    margin-top: 70px;
-    margin-bottom: 50px;
-  }
-
-  .footer .container div:nth-child(4) {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
 
   .slick-list {
     width: 122px;
@@ -1067,9 +973,7 @@ a:hover {
     margin-left: 10px;
   }
 
-  .icon-phone .phone_number_header p {
-    display: none;
-  }
+
 
   .articles a {
     margin-left: auto !important;

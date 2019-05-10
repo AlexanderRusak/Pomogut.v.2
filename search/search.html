@@ -9,9 +9,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/search.min.css">
-  <link rel="stylesheet" href="./css/header-footer.css">
+  <link rel="stylesheet" href="./search/css/normalize.css">
+  <link rel="stylesheet" href="./search/css/search.min.css">
 </head>
 
 <body>
@@ -27,15 +26,17 @@
       <div class=" col-lg-2 col-md-2 col-sm-4 col-xs-12 ">
         <button id="search-btn" class="btn btn-default btn-block btn-lg" type="submit">Искать</button>
       </div>
-      <h3 class="search-result">Найдено результатов поиска:<text class="search-header-result">result</text> </h3>
-      <p><a href="#"></a></p>
+      <div class="col-lg-10 col-md-10 col-sm-8 col-xs-12 search-text" >
+        <h3 class="search-result">Найдено результатов поиска:<text class="search-header-result">result</text> </h3>
+        <p>Заголовок статьи<a href="#">(ссылка на статью)</a></p>
+      </div>
   </form>
 
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script type="text/javascript" src="script/script.js"></script>
+  <script type="text/javascript" src="./search/script/script.js"></script>
 </body>
 
 </html>
