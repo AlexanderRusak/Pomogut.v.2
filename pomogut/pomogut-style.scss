@@ -8,13 +8,15 @@
   overflow-x: hidden;
 }
 ///////////////////////////////////////header
-.form-group #btn-hidden-for-modal{
+
+.form-group #btn-hidden-for-modal {
   display: none !important;
 }
-.feedback .row .feedback-column{
 
+.feedback .row .feedback-column {
   float: none !important;
 }
+
 header {
   background-image: url("../images/header/background.svg");
   background-size: cover;
@@ -35,9 +37,11 @@ header .row .header-logo {
   color: #5db9e0;
   font-size: 46px !important;
 }
-.bv-form .help-block{
+
+.bv-form .help-block {
   display: none !important;
 }
+
 .non-main {
   display: none;
 }
@@ -69,11 +73,11 @@ header .row .header-logo .btn-write {
   color: #FFFFFF;
   overflow-y: hidden;
   outline: 0;
-
 }
 
 header .row .header-logo .btn-write p {
   margin-top: 7px;
+  font-family: Open Sans;
 }
 ///////////////////////////////////////////////////////////////////////////// about
 
@@ -309,7 +313,9 @@ header .row .header-logo .btn-write p {
 }
 
 .project-1 .arrows img:first-child,
-.project-2 .arrows img:first-child {
+.project-1 .arrows img:nth-child(3),
+.project-2 .arrows img:first-child,
+.project-2 .arrows img:nth-child(3) {
   margin-right: 27px;
 }
 
@@ -368,8 +374,7 @@ header .row .header-logo .btn-write p {
 }
 
 .project-1-slider .main-section-wave .image-wave .image-wave-background img,
-.project-2-slider .main-section-wave .image-wave .image-wave-background img
- {
+.project-2-slider .main-section-wave .image-wave .image-wave-background img {
   margin-top: 95px;
 }
 
@@ -379,8 +384,7 @@ header .row .header-logo .btn-write p {
 }
 
 .project-1-slider .main-section-wave .image-wave .image-wave-background .title-link-1,
-.project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1
- {
+.project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1 {
   position: relative;
   z-index: 5;
   bottom: 100px;
@@ -397,55 +401,57 @@ header .row .header-logo .btn-write p {
   color: #28282B;
 }
 
-.project-1-slider .main-section-wave .image-wave .image-wave-background .title-link-1 a  {
-  margin-left: 0px;
+.project-1-slider .main-section-wave .image-wave .image-wave-background .title-link-1 a {
+  margin-left: 0;
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 25px; /* identical to box height */
+  line-height: 25px;
+  /* identical to box height */
   display: flex;
   align-items: center;
   text-align: center;
   color: #54A9CA;
   display: none;
 }
-.project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1 a  {
-  margin-left: 0px;
+
+.project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1 a {
+  margin-left: 0;
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 25px; /* identical to box height */
+  line-height: 25px;
+  /* identical to box height */
   display: flex;
   align-items: center;
   text-align: center;
   color: #7CA131;
   display: none;
-  transition: 0s  display;
-
+  transition: 0s display;
 }
+
 .project-1-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 a,
 .project-2-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 a {
-text-decoration: none;
-display: block;
-transition-delay:1s;
-
+  text-decoration: none;
+  display: block;
+  transition-delay: 1s;
 }
+
 .project-1-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 P,
 .project-2-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 P {
   margin-top: 0PX !important;
 }
+
 .project-1-slider .main-section-wave .image-wave .under-image-wave-background,
-.project-2-slider .main-section-wave .image-wave .under-image-wave-background  {
+.project-2-slider .main-section-wave .image-wave .under-image-wave-background {
   position: relative;
   bottom: 300px;
   height: 138px;
   width: 264px;
 }
-
 ////////////////////////////////////////////////////////
-
 .feedback {
   margin-top: -16px;
 }
@@ -472,16 +478,19 @@ transition-delay:1s;
   color: #28282B;
 }
 
-.feedback .row div form .form-group   {
+.feedback .row div form .form-group {
   margin-top: 40px;
   width: 557px !important;
 }
-.feedback .row div form textarea{
-    width: 557px !important;
+
+.feedback .row div form textarea {
+  width: 557px !important;
 }
+
 .has-feedback label~.form-control-feedback {
-    top: 42px !important;
+  top: 42px !important;
 }
+
 .feedback .row div {
   padding: 0;
 }
@@ -505,7 +514,6 @@ transition-delay:1s;
   align-items: center;
   color: #28282B;
   padding-left: 30px;
-
 }
 
 textarea {
@@ -547,19 +555,18 @@ textarea[placeholder] {
   width: 230px;
   height: 48px;
   margin-left: 158px;
+  font-family: Open Sans;
 }
 
 .feedback .form-group .btn {
   margin-bottom: 81.5px;
 }
-.g-recaptcha div{
 
-  height: 84px !important;
-  width: 264px !important;
-}
-.g-recaptcha{
+.g-recaptcha div {
+  width: auto;
   margin-left: auto !important;
-    margin-right: auto !important;
+  margin-right: auto !important;
+  overflow-y: hidden !important;
 }
 ////////////////////
 
@@ -1131,18 +1138,21 @@ footer .icons-social-networks a {
     margin-bottom: 0 !important;
     margin-right: 50px !important;
   }
+
   .project-1-slider .main-section-wave .image-wave .image-wave-background .title-link-1 a,
-  .project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1 a  {
+  .project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1 a {
     margin-top: 20px !important;
-}
+  }
+
   .non-main:last-child {
     margin-bottom: 80px;
     overflow-y: hidden;
   }
 
-.feedback .row div p {
-  width: auto;
-}
+  .feedback .row div p {
+    width: auto;
+  }
+
   .feedback .row div form .form-group {
     margin-top: 40px;
     width: 264px!important;
@@ -1157,7 +1167,7 @@ footer .icons-social-networks a {
     margin-top: 25px;
     background: #b3d66e;
     border-radius: 8px;
-    width:264px;
+    width: 264px;
     height: 48px;
     margin-left: auto;
     margin-right: auto;
@@ -1173,15 +1183,17 @@ footer .icons-social-networks a {
     margin-top: 20px;
   }
 }
-
 /////////////////////////////////////////////////////////////////////////////
-.modal-window{
+
+.modal-window {
   width: 558px;
   height: 259px;
   margin-left: auto;
   margin-right: auto;
 }
-.modal-window h1,.modal-window h2{
+
+.modal-window h1,
+.modal-window h2 {
   width: 438px;
   margin-left: 60px;
   margin-top: 50px;
@@ -1192,31 +1204,35 @@ footer .icons-social-networks a {
   text-align: center;
   color: #28282B;
 }
-.modal-window h2{
-  margin-top: 0px;
+
+.modal-window h2 {
+  margin-top: 0;
 }
-.modal-window img{
+
+.modal-window img {
   margin-top: 44px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.modal-window label{
 
-  padding-top: 0px;
+.modal-window label {
+  padding-top: 0;
   position: absolute;
   bottom: 220px;
   left: 520px;
 }
-@media screen and (max-width:768px){
-  .modal-window{
+@media screen and (max-width:768px) {
+  .modal-window {
     width: 320px;
     height: 320px;
     margin-left: auto;
     margin-right: auto;
   }
-  .modal-window h1,.modal-window h2{
-    width:auto;
+
+  .modal-window h1,
+  .modal-window h2 {
+    width: auto;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -1226,28 +1242,37 @@ footer .icons-social-networks a {
     text-align: center;
     color: #28282B;
   }
-  .modal-window h2{
-    margin-top: 0px;
+
+  .modal-window h2 {
+    margin-top: 0;
   }
-  .modal-window img{
+
+  .modal-window img {
     margin-top: 44px;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  .modal-window label{
-    bottom:280px;
-    left: 280px;
-    padding-top: 0px;
-    position: absolute;
 
+  .modal-window label {
+    bottom: 280px;
+    left: 280px;
+    padding-top: 0;
+    position: absolute;
   }
-  .form-group iframe{
+
+  .feedback .row div p {
     width: 264px;
   }
+
+  .g-recaptcha,
+  .g-recaptcha div {
+    transform:scale(0.9);
+    } 
+
 }
-@media (min-width:320px) and (max-width:397px){
-  .feedback .row .feedback-column{
+@media (min-width:320px) and (max-width:397px) {
+  .feedback .row .feedback-column {
     width: 304px !important;
     margin-left: auto;
     margin-right: auto;

@@ -153,20 +153,64 @@ $(document).on('ready', function() {
       },
     ]
   });
+  var countSlidersProject_1= ($('.project-1-slider .slick-slide .image-wave').length-1).toString();
+  var countSlidersProject_2= ($('.project-2-slider .slick-slide .image-wave').length-1).toString();
+  var childrenOfProject_1=$(".project-1-slider .slick-list .slick-track").children();
+    var childrenOfProject_2=$(".project-2-slider .slick-list .slick-track").children();
+    $(".arrows .next-1").css("opacity","0.3");// имитация неактивной кнопик
+    $(".arrows .next-2").css("opacity","0.3");//
+
+
   $('.next-1').on('click', function() {
     $('.project-1-slider').slick('slickPrev');
-
+    $(".arrows .prev-1").css("opacity","1.0");
+    for (var i = 0; i < childrenOfProject_1.length; i++) {
+      if($('.project-1-slider .slick-slide').eq(i).attr("data-slick-index")=="0" && $('.project-1-slider .slick-slide').eq(i).attr("aria-hidden")=="false" ){
+        $(".arrows .next-1").css("opacity","0.3");
+      }
+    }
   });
   $('.prev-1').on('click', function() {
     $('.project-1-slider').slick('slickNext');
+    $(".arrows .next-1").css("opacity","1");
+      for (var i = 0; i < childrenOfProject_1.length; i++) {
+        if($('.project-1-slider .slick-slide').eq(i).attr("data-slick-index")==countSlidersProject_1 && $('.project-1-slider .slick-slide').eq(i).attr("aria-hidden")=="false" ){
+
+          $(".arrows .prev-1").css("opacity","0.3");
+        }
+
+      }
+
+
   });
   $('.next-2').on('click', function() {
     $('.project-2-slider').slick('slickPrev');
+    $(".arrows .prev-2").css("opacity","1.0");
+    for (var i = 0; i < childrenOfProject_2.length; i++) {
+      if($('.project-2-slider .slick-slide').eq(i).attr("data-slick-index")=="0" && $('.project-2-slider .slick-slide').eq(i).attr("aria-hidden")=="false" ){
+        $(".arrows .next-2").css("opacity","0.3");
+      }
+
+
+    }
   });
   $('.prev-2').on('click', function() {
     $('.project-2-slider').slick('slickNext');
+    $(".arrows .next-2").css("opacity","1");
+      for (var i = 0; i < childrenOfProject_2.length; i++) {
+        if($('.project-2-slider .slick-slide').eq(i).attr("data-slick-index")==countSlidersProject_2 && $('.project-2-slider .slick-slide').eq(i).attr("aria-hidden")=="false" ){
+
+          $(".arrows .prev-2").css("opacity","0.3");
+        }
+
+      }
   });
 
 	$('#btn-hidden-for-modal').trigger( "click" );
   $('.g-recaptcha div div:first-child iframe').attr('style',' border:2px solid red !important');
+
+  ///////////////////////////////////////////
+$(".arrows .next-light").css("display","none");
+$(".arrows .prev-light").css("display","none");
+
 });
