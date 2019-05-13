@@ -172,6 +172,8 @@ header .row .header-logo .btn-write p {
   overflow-y: hidden;
 }
 
+.project-1 .container {}
+
 .project-1 .container .row .col-lg-5 h2 {
   margin-top: -4px;
   margin-left: -2px;
@@ -261,6 +263,7 @@ header .row .header-logo .btn-write p {
 .project-1-slider .slick-list .slick-track,
 .project-2-slider .slick-list .slick-track {
   width: 264000px!important;
+  height: 302px;
 }
 
 .project-1-slider .slick-list .slick-slide:first-child,
@@ -293,7 +296,7 @@ header .row .header-logo .btn-write p {
 
 .project-1-slider .slick-list .slick-slide,
 .project-2-slider .slick-list .slick-slide {
-  margin-left: 30px;
+  margin-left: 26px;
 }
 
 .project-1-slider .main-section .title-link-1 p,
@@ -360,8 +363,17 @@ header .row .header-logo .btn-write p {
 .project-2-slider .main-section-wave {
   width: 264px;
   height: 300px;
-  background-color: #ccc;
+  background: #FFFFFF;
   box-shadow: 0 4px 10px #D3ECF6;
+  border-radius: 8px;
+  outline: 0;
+}
+
+.project-2-slider .main-section-wave {
+  width: 264px;
+  height: 300px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 10px #DFE1DA;
   border-radius: 8px;
   outline: 0;
 }
@@ -452,6 +464,7 @@ header .row .header-logo .btn-write p {
   width: 264px;
 }
 ////////////////////////////////////////////////////////
+
 .feedback {
   margin-top: -16px;
 }
@@ -481,6 +494,10 @@ header .row .header-logo .btn-write p {
 .feedback .row div form .form-group {
   margin-top: 40px;
   width: 557px !important;
+}
+
+.feedback .row div form .form-group:nth-child(4) {
+  margin-top: 0 !important;
 }
 
 .feedback .row div form textarea {
@@ -1153,9 +1170,15 @@ footer .icons-social-networks a {
     width: auto;
   }
 
-  .feedback .row div form .form-group {
+  .feedback .row div form .form-group:first-child,
+  .feedback .row div form .form-group:nth-child(2),
+  .feedback .row div form .form-group:nth-child(4) {
     margin-top: 40px;
     width: 264px!important;
+  }
+
+  .feedback .row div form .form-group:nth-child(3) {
+    width: 304px !important;
   }
 
   .feedback .row div .form-group .form-control::placeholder,
@@ -1265,11 +1288,15 @@ footer .icons-social-networks a {
     width: 264px;
   }
 
+  .form-group .g-recaptcha {}
+
   .g-recaptcha,
   .g-recaptcha div {
-    transform:scale(0.9);
-    } 
-
+    width: 304px !important;
+    transform: scale(0.95);
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
 }
 @media (min-width:320px) and (max-width:397px) {
   .feedback .row .feedback-column {
