@@ -41,7 +41,8 @@
   background-color: #F2F2F2; }
 
 .questions .row div {
-  margin-top: 10px; }
+  margin-top: 5px;
+  margin-bottom: 5px; }
 
 .questions .row div div h3 {
   font-family: Amatic SC;
