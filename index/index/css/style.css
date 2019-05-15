@@ -288,6 +288,7 @@ div .inside-block-section p {
   padding-right: 0; }
 
 .block-1 .container div:nth-child(2) h2 {
+  margin-left: 20px;
   font-size: 30px;
   font-family: 'Amatic SC', cursive;
   font-style: normal;
@@ -300,15 +301,17 @@ div .inside-block-section p {
   margin-bottom: 106px; }
 
 .block-1 .container div:nth-child(2) p {
+  margin-left: 20px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 28px;
   color: #292424;
   margin-top: 14px; }
 
 .block-1 .container div:nth-child(2) a .block-1-button {
+  margin-left: 20px;
   border: 5px solid #F17185;
   border-radius: 30px;
   width: 250px;
@@ -357,7 +360,14 @@ div .inside-block-section p {
     margin-left: 0; }
   .block-1 .col div div:nth-child(2) {
     margin-left: 0;
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  .block-1 .container div p,
+  .block-1 .container div h2,
+  .block-1 .container div a .block-1-button,
+  .block-2 .container div p,
+  .block-2 .container div h2,
+  .block-2 .container div a .block-1-button {
+    margin-left: 0px !important; } }
 
 @media screen and (max-width: 768px) {
   .block-1 {
@@ -377,7 +387,14 @@ div .inside-block-section p {
     margin-top: 25px !important; }
   .block-1 .col div div:nth-child(2) {
     margin-left: 0;
-    margin-top: 25px !important; } }
+    margin-top: 25px !important; }
+  .block-1 .container div p,
+  .block-1 .container div h2,
+  .block-1 .container div a .block-1-button,
+  .block-2 .container div p,
+  .block-2 .container div h2,
+  .block-2 .container div a .block-1-button {
+    margin-left: 0px !important; } }
 
 @media screen and (max-width: 700px) {
   .block-1 {
@@ -385,7 +402,14 @@ div .inside-block-section p {
   .block-1 .col {
     margin: auto;
     padding-right: 15px;
-    padding-left: 15px; } }
+    padding-left: 15px; }
+  .block-1 .container div p,
+  .block-1 .container div h2,
+  .block-1 .container div a .block-1-button,
+  .block-2 .container div p,
+  .block-2 .container div h2,
+  .block-2 .container div a .block-1-button {
+    margin-left: 0px !important; } }
 
 @media screen and (max-width: 660px) {
   .block-1 .container {
@@ -406,11 +430,25 @@ div .inside-block-section p {
     margin-left: auto;
     margin-right: auto; }
   .block-1 .container div:nth-child(2) p {
-    width: auto; } }
+    width: auto; }
+  .block-1 .container div p,
+  .block-1 .container div h2,
+  .block-1 .container div a .block-1-button,
+  .block-2 .container div p,
+  .block-2 .container div h2,
+  .block-2 .container div a .block-1-button {
+    margin-left: 0px !important; } }
+
+.under-section {
+  background-image: url("../images/sections/Polygon.svg");
+  background-repeat: repeat-x;
+  height: 15px; }
 
 .block-2 {
-  background-image: url("../images/block-2/Rectangle.svg");
-  background-size: cover !important; }
+  background-color: #00A9E8;
+  background-image: url("../images/block-2/pattern.svg");
+  background-size: contain !important;
+  background-repeat: repeat-x; }
 
 .block-2-img {
   border-radius: 5px;
@@ -424,6 +462,7 @@ div .inside-block-section p {
   margin-bottom: 95px; }
 
 .block-2 .container div a .block-1-button {
+  margin-left: 20px;
   border: 5px solid #FFD456;
   border-radius: 30px;
   width: 250px;
@@ -437,19 +476,21 @@ div .inside-block-section p {
   font-size: 17px;
   line-height: normal;
   text-align: center;
-  padding-top: 12px; }
+  padding-top: 14px; }
 
 .block-2 .container div p {
+  margin-left: 20px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 28px;
   color: #fff;
   margin-top: 15px;
   margin-bottom: 37px; }
 
 .block-2 .container div h2 {
+  margin-left: 20px;
   font-size: 30px;
   font-family: 'Amatic SC', cursive;
   font-style: normal;

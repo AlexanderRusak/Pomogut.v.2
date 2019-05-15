@@ -70,7 +70,7 @@
   display: block;
   border: 3px solid #f2f2f2 !important;
   border-radius: 80px;
-  padding-left: 3px;
+  padding: 3px;
   position: relative; }
 
 .categories div a:focus {
@@ -632,37 +632,43 @@ a:hover {
     padding-left: 15px !important;
     margin-left: auto !important;
     margin-right: auto !important; }
-  .categories div a {
-    display: block;
-    border: 3px solid #ccc !important;
-    border-radius: 80px;
-    padding-left: 3px;
-    position: relative;
-    width: 122px;
-    height: 122px; }
-  .categories div a img {
-    display: block;
-    width: 100%;
-    height: 100%; }
   .tags {
     display: none !important; }
   .categories_data .row .for-slick {
     display: none; }
   .slick-list {
-    width: 122px;
-    margin-left: 80px; }
+    width: 128px;
+    margin-left: 75px; }
   .slick-slide {
-    width: 122px !important;
+    margin-top: 5px;
+    width: 128px !important;
     margin-right: 0 !important;
     margin-left: 0 !important; }
+  .slick-slide a {
+    overflow-y: hidden; }
+  .slick-slide a img {
+    width: 122px !important;
+    height: 122px;
+    overflow-y: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    vertical-align: middle; }
+  .categories div a:focus {
+    height: 128px !important;
+    width: 128px;
+    display: block;
+    border: 3px solid #EB3450 !important;
+    border-radius: 70px;
+    position: relative; }
   .categories .slick-next {
-    right: 80px;
+    right: 75px;
     z-index: 2;
-    top: 78px; }
+    top: 87px; }
   .categories .slick-prev {
-    left: 10px;
+    left: 7px;
     z-index: 2;
-    top: 78px; }
+    top: 87px; }
   .categories_data {
     width: 290px; }
   .categories_data .row div h2 {
