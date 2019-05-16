@@ -527,7 +527,17 @@ textarea[placeholder] {
   width: 230px;
   height: 48px;
   margin-left: 158px;
-  font-family: Open Sans; }
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF; }
 
 .feedback .form-group .btn {
   margin-bottom: 81.5px; }
