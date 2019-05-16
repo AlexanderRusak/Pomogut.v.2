@@ -297,6 +297,8 @@
 .articles .breakdown-articles {
   background: #00A9E8;
   border-radius: 6px;
+  background-image:url("../images/pattern.svg");
+  background-repeat: repeat-x;
 }
 
 .articles .breakdown-articles h2 {
@@ -884,8 +886,8 @@ a:hover {
     overflow-y: hidden;
   }
   .slick-slide a img{
-    width: 122px !important;
-    height: 122px;
+    width: 115px !important;
+    height: 115px;
 
     overflow-y: hidden;
     display: flex;
@@ -988,4 +990,10 @@ a:hover {
     margin-left: auto !important;
     margin-right: auto !important;
   }
+}
+.tooth{
+  background-image: url("../images/categories/Polygon.svg");
+  height: 13px;
+  width: 100%;
+  background-repeat: repeat-x;
 }

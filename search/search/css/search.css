@@ -21,6 +21,13 @@
   background: #fff;
   /* new css */ }
 
+input:active, :hover, :focus {
+  outline: 0 !important;
+  outline-offset: 0 !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: none; }
+
 .ui-menu .ui-menu-item-wrapper:hover {
   /* the selector */
   position: relative;
@@ -82,9 +89,6 @@
   align-items: center;
   color: #000; }
 
-.search-text p a:hover {
-  color: #00AEEF; }
-
 .ui-menu-item {
   height: 100%; }
 
@@ -117,7 +121,8 @@ form div:nth-child(1) input {
   background: #F2F2F2;
   border-radius: 30px;
   height: 60px;
-  padding-left: 30px; }
+  padding-left: 30px;
+  outline: 0; }
 
 form div:nth-child(2) button {
   -webkit-box-sizing: border-box;
@@ -130,15 +135,14 @@ form div:nth-child(2) button {
   font-size: 17px;
   line-height: normal;
   text-align: center;
-  background: #F2F2F2; }
-
-form div:nth-child(2) button:hover {
   background: #00AEEF;
   border: 5px solid #4DC6F4;
-  color: rgba(255, 255, 255, 0.9); }
+  color: rgba(255, 255, 255, 0.9);
+  outline: 0; }
 
 form div:nth-child(1) input {
-  padding-left: 7px; }
+  padding-left: 7px;
+  outline: 0; }
 
 @media screen and (max-width: 1200px) {
   .ui-helper-hidden-accessible {
@@ -222,8 +226,6 @@ form div:nth-child(1) input {
     width: 100% !important;
     display: none; }
   form div:nth-child(2) button {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     border-radius: 30px;
     height: 60px;
     font-family: Roboto;
@@ -232,8 +234,8 @@ form div:nth-child(1) input {
     font-size: 17px;
     line-height: normal;
     text-align: center;
-    background: #f2f2f2;
     width: 50% !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    margin-top: 50px !important; } }
+    margin-top: 50px !important;
+    outline: 0; } }
