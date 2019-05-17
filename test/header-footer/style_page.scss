@@ -447,7 +447,7 @@ a:hover {
 
 }
 @media screen and (max-width: 1200px) {
-   .wrapper  .container {
+   .content .container {
  width: 970px;
 }
 
@@ -528,7 +528,7 @@ a:hover {
   }
 }
 @media screen and (max-width: 991px) {
-   .wrapper  .container {
+   .content .container {
    width: 750px;
  }
 
@@ -646,7 +646,7 @@ a:hover {
   }
 }
 @media screen and (max-width: 768px) {
-   .wrapper .container {
+   .content .container {
     width: 590px;
   }
   .categories_data .row .col-lg-offset-1 {
@@ -793,7 +793,7 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
   }
-  .categories-block .container{
+  .content .container{
     width: 340px !important;
   }
   .categories {

@@ -49,15 +49,14 @@
 
 .slick-list {
   width: 992px;
-  margin-left: 75px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .slick-slide {
   width: 167px !important;
   margin-right: 32px;
 }
-
-
 
 .slick-slide {
   &:focus,
@@ -204,9 +203,8 @@
 }
 
 .articles a div .articles-image {
-    display: block;
-
-    overflow-y: hidden !important;
+  display: block;
+  overflow-y: hidden !important;
 }
 
 .articles .left {
@@ -297,7 +295,7 @@
 .articles .breakdown-articles {
   background: #00A9E8;
   border-radius: 6px;
-  background-image:url("../images/pattern.svg");
+  background-image: url("../images/pattern.svg");
   background-repeat: repeat-x;
 }
 
@@ -414,7 +412,6 @@ a:hover {
   margin-bottom: 100px;
 }
 //////////////////////////////////////////////////////////////////////////
-
 /////////////////////////////////////////////////////
 @media (min-width: 1201px) {
   .tags .tag-primary:first-child,
@@ -444,13 +441,11 @@ a:hover {
     overflow-y: hidden;
     padding-left: 15px;
   }
-
 }
 @media screen and (max-width: 1200px) {
-   .container {
- width: 970px;
-}
-
+  .content .container {
+    width: 970px;
+  }
 
   .slick-list {
     width: 795px;
@@ -528,18 +523,13 @@ a:hover {
   }
 }
 @media screen and (max-width: 991px) {
-  .container {
-   width: 750px;
- }
+  .content .container {
+    width: 750px;
+  }
 
   .tags .slick-list .slick-slide {
     width: 585px;
   }
-
-
-
-
-
 
   .slick-list {
     width: 660px;
@@ -646,9 +636,10 @@ a:hover {
   }
 }
 @media screen and (max-width: 768px) {
-  .container {
+  .content .container {
     width: 590px;
   }
+
   .categories_data .row .col-lg-offset-1 {
     margin-left: 3.33333333%;
   }
@@ -678,8 +669,6 @@ a:hover {
     margin-left: 46%;
     width: 53%;
   }
-
-
 
   .categories_data .for-slick {
     margin-top: -25px;
@@ -793,21 +782,17 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
   }
-  .categories-block .container{
+
+  .content .container {
     width: 340px !important;
   }
+
   .categories {
     margin-top: -10px;
     padding-left: 15px !important;
-    margin-left:auto !important;
+    margin-left: auto !important;
     margin-right: auto !important;
-    }
-
-
-
-
-
-
+  }
 
   .tags {
     display: none !important;
@@ -817,7 +802,6 @@ a:hover {
     display: none;
   }
 
-
   .slick-list {
     width: 128px;
     margin-left: 75px;
@@ -825,23 +809,23 @@ a:hover {
 
   .slick-slide {
     margin-top: 5px;
-    width:128px !important;
+    width: 128px !important;
     margin-right: 0 !important;
     margin-left: 0 !important;
-
   }
-  .slick-slide a {
 
+  .slick-slide a {
     overflow-y: hidden;
   }
-  .slick-slide a img{
+
+  .slick-slide a img {
     width: 115px !important;
     height: 115px;
-
     overflow-y: hidden;
     display: flex;
     vertical-align: middle;
   }
+
   .categories div a:focus {
     height: 128px !important;
     width: 128px;
@@ -850,8 +834,9 @@ a:hover {
     border-radius: 70px;
     position: relative;
   }
+
   .categories .slick-next {
-    right:75px;
+    right: 75px;
     z-index: 2;
     top: 87px;
   }
@@ -933,14 +918,13 @@ a:hover {
     margin-left: 10px;
   }
 
-
-
   .articles a {
     margin-left: auto !important;
     margin-right: auto !important;
   }
 }
-.tooth{
+
+.tooth {
   background-image: url("../images/categories/Polygon.svg");
   height: 13px;
   width: 100%;

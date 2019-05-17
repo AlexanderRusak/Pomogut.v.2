@@ -382,7 +382,7 @@ a:hover {
     padding-left: 15px; } }
 
 @media screen and (max-width: 1200px) {
-  .wrapper .container {
+  .content .container {
     width: 970px; }
   .slick-list {
     width: 795px;
@@ -431,7 +431,7 @@ a:hover {
     margin-left: 35%; } }
 
 @media screen and (max-width: 991px) {
-  .wrapper .container {
+  .content .container {
     width: 750px; }
   .tags .slick-list .slick-slide {
     width: 585px; }
@@ -495,7 +495,7 @@ a:hover {
     margin-left: 22% !important; } }
 
 @media screen and (max-width: 768px) {
-  .wrapper .container {
+  .content .container {
     width: 590px; }
   .categories_data .row .col-lg-offset-1 {
     margin-left: 3.33333333%; }
@@ -591,7 +591,7 @@ a:hover {
     margin-top: 67px;
     margin-left: auto;
     margin-right: auto; }
-  .categories-block .container {
+  .content .container {
     width: 340px !important; }
   .categories {
     margin-top: -10px;
