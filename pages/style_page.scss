@@ -447,7 +447,9 @@ a:hover {
 
 }
 @media screen and (max-width: 1200px) {
-
+   .wrapper  .container {
+ width: 970px;
+}
 
 
   .slick-list {
@@ -526,7 +528,9 @@ a:hover {
   }
 }
 @media screen and (max-width: 991px) {
-
+   .wrapper  .container {
+   width: 750px;
+ }
 
   .tags .slick-list .slick-slide {
     width: 585px;
@@ -642,7 +646,9 @@ a:hover {
   }
 }
 @media screen and (max-width: 768px) {
-
+   .wrapper .container {
+    width: 590px;
+  }
   .categories_data .row .col-lg-offset-1 {
     margin-left: 3.33333333%;
   }

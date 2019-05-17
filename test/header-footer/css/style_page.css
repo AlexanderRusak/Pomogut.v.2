@@ -429,10 +429,6 @@ a:hover {
     margin-left: 35%; } }
 
 @media screen and (max-width: 991px) {
-  .navbar-collapse.collapse {
-    display: none !important; }
-  .navbar-collapse.collapse.in {
-    display: block !important; }
   .tags .slick-list .slick-slide {
     width: 585px; }
   .slick-list {
