@@ -5,7 +5,10 @@
   overflow-x: hidden;
 }
 //////////////////////////////////////////////////////////////////////////////// similars-articles
-
+.similar-articles ul {
+  display: flex;
+  justify-content: space-between;
+}
 .similar-articles .row div .similar-articles-image {
   background: #F2F2F2;
   border-radius: 6px 6px 0 0;
@@ -20,20 +23,8 @@
   height: 520px;
 }
 
-.similar-articles .row ul li {
-  display: inline-block;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 30px;
-}
 
-.similar-articles .row ul li:first-child {
-  margin-left: 0;
-}
 
-.similar-articles .row ul li:last-child {
-  margin-right: 0;
-}
 
 .similar-articles .row ul {
   padding-left: 0;
@@ -41,7 +32,7 @@
 
 .similar-articles-title {
   margin-top: 80px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   font-family: Amatic SC;
   font-style: normal;
   font-weight: bold;
@@ -86,86 +77,44 @@
 //////////////////////////////////////////////
 /////////////////////////////////////////////////////
 @media screen and (max-width: 1200px) {
-  .container {
-    width: 970px;
+
+  .similar-articles ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
   }
 
-  .similar-articles .row ul li {
-    display: inline-block;
-    margin-left: 0;
-    margin-right: 0;
-  }
 
-  .similar-articles .row ul li:first-child {
-    margin-left: 0;
-  }
-
-  .similar-articles .row ul li:last-child {
-    margin-right: 0;
-  }
-
-  .similar-articles .row div {
-    background: #F2F2F2;
-    padding: 0;
-    width: 239px;
-    height: 520px;
-  }
 }
 @media screen and (max-width: 991px) {
-  .container {
-    width: 750px;
+
+  .similar-articles ul {
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: space-around;
+
   }
 
-  .similar-articles .row ul li {
-    display: inline-block;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
-  .similar-articles .row ul li:first-child {
-    margin-left: 50px;
-  }
-
-  .similar-articles .row ul li:last-child {
-    margin-right: 50px;
-  }
+    .similar-articles ul li {
+      margin-top: 30px;
+    }
 
   .similar-articles .row div {
+
     background: #F2F2F2;
-    padding: 0;
     width: 267px;
     height: 520px;
   }
 }
 @media screen and (max-width: 767px) {
-  .container {
-    width: 450px;
-  }
 
-  .similar-articles .row ul li {
-    display: inline-block;
-    margin-left: 0;
-    margin-right: 0;
-  }
 
-  .similar-articles .row ul li:first-child {
-    margin-left: 0;
-  }
 
-  .similar-articles .row ul li:last-child {
-    margin-right: 0;
-  }
 
-  .similar-articles .row ul {
-    margin-left: 22%;
-  }
 }
 @media screen and (max-width: 479px) {
-  .container {
-    width: 310px;
-  }
 
-  .similar-articles .row ul {
-    margin-left: 8%;
-  }
+
+
 }

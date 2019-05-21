@@ -99,61 +99,60 @@
   line-height: 28px;
   text-align: center;
   width: 850px;
-  margin-left: 140px;
   margin-top: 26px;
   margin-bottom: 53px; }
 
 @media screen and (max-width: 1200px) {
   .single-item div div p {
     margin-top: 30px;
-    width: 850px;
-    margin-left: 40px; } }
+    width: 850px; } }
 
 @media screen and (max-width: 991px) {
   .slick-slide img {
     width: 362px;
     height: 365px; }
   .single-item div div p {
-    width: 558px;
-    margin-left: 80px; } }
+    width: 558px; } }
 
 @media screen and (max-width: 767px) {
   .slick-slide img {
-    width: 264px;
-    height: 265px; }
+    width: 264px !important;
+    height: 265px !important; }
   .single-item div div h3 {
-    width: 264px;
-    margin-left: 70px; }
-  .single-item div div p {
-    margin-top: 30px;
-    width: 242px;
-    margin-left: 80px; }
+    width: 264px !important;
+    margin-left: auto !important;
+    margin-right: auto !important; }
+  .single-item div div h3 p {
+    margin-top: 30px !important;
+    width: 242px !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
   .slick-next,
   .slick-prev {
-    top: 35%; }
+    top: 35% !important; }
   .slick-prev {
     left: 100px;
-    z-index: 3; } }
+    z-index: 3 !important; } }
 
 @media screen and (max-width: 479px) {
   .slick-slide img {
-    width: 264px;
-    height: 265px; }
+    width: 264px !important;
+    height: 265px !important; }
   .single-item div div h3 {
-    width: 264px;
-    margin-left: 10px; }
+    width: 264px !important; }
   .single-item div div p {
-    margin-top: 30px;
-    width: 242px;
-    margin-left: 20px; }
+    margin-top: 30px !important;
+    width: 242px !important;
+    margin-left: 20px !important; }
   .slick-next,
   .slick-prev {
-    top: 35%; }
+    top: 35%  !important; }
   .slick-prev {
-    left: 30px;
+    left: 30px  !important;
     z-index: 3; }
   .slick-next {
-    right: 50px;
+    right: 50px  !important;
     z-index: 3; }
   .title {
     margin-top: 50px !important; }
@@ -166,11 +165,11 @@
     text-align: center;
     color: #EB3450; }
   .single-item {
-    margin-top: 30px; }
+    margin-top: 30px  !important; }
   .slick-next,
   .slick-prev {
-    top: 37.5%; }
+    top: 37.5%  !important; }
   .single-item div div h3 {
-    margin-top: 100px; }
+    margin-top: 100px  !important; }
   .single-item div div p {
-    margin-top: 10px; } }
+    margin-top: 10px !important; } }

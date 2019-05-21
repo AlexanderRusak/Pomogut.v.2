@@ -92,6 +92,7 @@ input[type=checkbox] {
 }
 .feedback .container .row div form div:nth-child(8)  {
   margin-top:40px;
+  margin-bottom: 80px;
 
 }
 .feedback .container .row div form div button {
@@ -117,17 +118,13 @@ input[type=checkbox] {
   margin-top: 53px;
 }
 @media screen and (max-width: 1200px) {
-  .container {
-    width: 970px;
-  }
+
   .captcha div{
     float: right!important;
   }
 }
 @media screen and (max-width: 991px) {
-  .container {
-    width: 590px;
-  }
+
   .captcha{
     padding-left: 0px !important;
   }
@@ -136,9 +133,7 @@ input[type=checkbox] {
   }
 }
 @media screen and (max-width: 767px) {
-  .container {
-    width: 450px;
-  }
+
   .captcha{
     padding-left: 0px !important;
   }
@@ -160,9 +155,7 @@ input[type=checkbox] {
   }
 }
 @media screen and (max-width: 479px) {
-  .container {
-    width: 333px;
-  }
+
   .feedback .container .row div form div:nth-child(n){
     padding-left: 15px !important;
     padding-right: 15px !important;
