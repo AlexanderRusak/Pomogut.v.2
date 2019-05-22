@@ -5,11 +5,11 @@
   overflow-x: hidden;
 }
 
-.content .title {
+ .title {
   margin-top: 82px;
 }
 
- .content .title-text-style {
+  .title-text-style {
   font-family: Amatic SC;
   font-style: normal;
   font-weight: bold;
@@ -20,11 +20,11 @@
 }
 //////////////////////////////////////////////////////////////////////////
 
-.content  .single-item {
+  .single-item {
   margin-top: 60px;
 }
 
-.content  .slider-title .row .col h2 {
+  .slider-title .row .col h2 {
   font-family: Amatic SC;
   font-style: normal;
   font-weight: bold;
@@ -35,70 +35,70 @@
   margin-bottom: 70px;
 }
 
-.content  .slick-prev::before {
+  .slick-prev::before {
   background: red;
   z-index: 3;
 }
-.content  .slick-slider {
+  .slick-slider {
   overflow-y: hidden;
 }
-.content  .slick-next,
-.content  .slick-prev {
+  .slick-next,
+  .slick-prev {
   top: 28.3%;
 }
 
-.content  .slick-prev {
+  .slick-prev {
   left: 107px;
   z-index: 3;
 }
 
-.content  .slick-next {
+  .slick-next {
   right: 133px;
   z-index: 3;
 }
 
-.content  .slick-slide {
+  .slick-slide {
   &:focus,
   a {
     outline: none;
   }
 }
 
-.content  .slick-dots {
+  .slick-dots {
   position: relative;
   bottom: 0;
 }
 
-.content  .slick-next:before,
-.content  .slick-prev:before {
+  .slick-next:before,
+  .slick-prev:before {
   font-size: 45px !important;
 }
 
-.content  .slick-dots li,
-.content  .slick-dots li button {
+  .slick-dots li,
+  .slick-dots li button {
   height: 30px;
   width: 30px;
 }
 
-.content  .slick-dots li button:before {
+  .slick-dots li button:before {
   font-size: 30px;
   color: #F2F2F2;
   line-height: 31px;
   opacity: 1;
 }
 
-.content  .slick-dots li.slick-active button:before {
+  .slick-dots li.slick-active button:before {
   color: #00AEEF;
 }
 
-   .content .slick-next:before,
-   .content .slick-prev:before {
+    .slick-next:before,
+    .slick-prev:before {
   font-size: 30px;
   color: #EB3450;
   background-color: transparent;
 }
 
-  .content  .single-item div div h3 {
+    .single-item div div h3 {
   font-family: Amatic SC;
   font-style: normal;
   font-weight: bold;
@@ -106,10 +106,27 @@
   line-height: 42px;
   text-align: center;
   color: #000000;
-  margin-top: 50px;
+  margin-top: 24px;
 }
-
-  .content  .single-item div div p {
+.slick-list{
+  width: 850px;
+  margin-left: 145px;
+}
+.slider-signature{
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  position: relative;
+  right:160px;
+  opacity: 0.5;
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 13px !important;
+line-height: 15px;
+display: flex;
+align-items: center;
+}
+    .single-item div div p {
   display: inline-block;
   font-family: Roboto;
   font-style: normal;
@@ -118,7 +135,7 @@
   line-height: 28px;
   text-align: center;
   width: 850px;
-  margin-top: 26px;
+  margin-top: 40px;
   margin-bottom: 53px;
 }
 //////////////////////////////////////////////////////////////////////////
@@ -127,11 +144,12 @@
 //////////////////////////////////////////////
 /////////////////////////////////////////////////////
 @media screen and (max-width: 1200px) {
+  .slick-list{
+    width: 850px;
+    margin-left: 50px;
+  }
 
-
-
-
-  .content   .single-item div div p {
+     .single-item div div p {
     margin-top: 30px;
     width: 850px;
 
@@ -139,34 +157,47 @@
 }
 @media screen and (max-width: 991px) {
 
+  .slick-list{
+    width: 558px;
+    margin-left: 85px;
+  }
+  .slider-signature{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    position: relative;
+    right:100px;
+    opacity: 0.5;
+  }
 
-
-
-  .content   .slick-slide img {
+     .slick-slide img {
     width: 362px;
     height: 365px;
   }
 
-  .content   .single-item div div p {
+     .single-item div div p {
     width: 558px;
 
   }
 }
 @media screen and (max-width: 767px) {
 
-
-  .content .slick-slide img {
+  .slick-list{
+    width: 558px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+   .slick-slide img {
     width: 264px !important;
     height: 265px !important;
   }
 
-  .content   .single-item div div h3 {
+     .single-item div div h3 {
     width: 264px !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
 
-  .content   .single-item div div h3 p {
+     .single-item div div h3 p {
     margin-top: 30px !important;
     width: 242px !important;
     margin-left: auto;
@@ -176,49 +207,67 @@
 
   }
 
-  .content  .slick-next,
-  .content   .slick-prev {
+    .slick-next,
+     .slick-prev {
     top: 35% !important;
   }
 
-  .content  .slick-prev {
+    .slick-prev {
     left: 100px;
     z-index: 3 !important;
   }
+  .slider-signature{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    position: relative;
+    right:60px;
+    opacity: 0.5;
+  }
 }
-@media screen and (max-width: 479px) {
-.content   .slick-slide img {
+@media screen and (max-width: 600px) {
+   .slick-slide img {
     width: 264px !important;
     height: 265px !important;
   }
-
-  .content   .single-item div div h3 {
+  .slick-list{
+    width: 264px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .slider-signature{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    position: relative;
+    right:45px;
+    opacity: 0.5;
+  }
+     .single-item div div h3 {
     width: 264px !important;
   }
 
-  .content  .single-item div div p {
+    .single-item div div p {
     margin-top: 30px !important;
-    width: 242px !important;
-    margin-left: 20px !important;
+    width: 264px !important;
+
   }
 
-  .content  .slick-prev {
+    .slick-prev {
     top: 35%  !important;
   }
 
-.content  .slick-prev {
+  .slick-prev {
     left: 30px  !important;
     z-index: 3;
   }
 
-.content    .slick-next {
+    .slick-next {
     right: 50px  !important;
     z-index: 3;
   }
-.content     .title {
+     .title {
       margin-top: 50px !important;
   }
-.content    .title-text-style {
+    .title-text-style {
     font-family: Amatic SC;
     font-style: normal;
     font-weight: bold;
@@ -227,17 +276,17 @@
     text-align: center;
     color: #EB3450;
   }
-  .content      .single-item {
+        .single-item {
         margin-top: 30px  !important;
     }
-  .content    .slick-next,
-  .content    .slick-prev {
+      .slick-next,
+      .slick-prev {
       top: 37.5%  !important;
     }
-  .content    .single-item div div h3 {
+      .single-item div div h3 {
     margin-top: 100px  !important;
     }
-  .content      .single-item div div p{
+        .single-item div div p{
           margin-top: 10px !important;
       }
 }

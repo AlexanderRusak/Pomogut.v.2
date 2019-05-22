@@ -88,7 +88,29 @@
   line-height: 42px;
   text-align: center;
   color: #000000;
-  margin-top: 50px; }
+  margin-top: 24px; }
+
+.slick-list {
+  width: 850px;
+  margin-left: 145px; }
+
+.slider-signature {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  position: relative;
+  right: 160px;
+  opacity: 0.5;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px !important;
+  line-height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .single-item div div p {
   display: inline-block;
@@ -99,15 +121,27 @@
   line-height: 28px;
   text-align: center;
   width: 850px;
-  margin-top: 26px;
+  margin-top: 40px;
   margin-bottom: 53px; }
 
 @media screen and (max-width: 1200px) {
+  .slick-list {
+    width: 850px;
+    margin-left: 50px; }
   .single-item div div p {
     margin-top: 30px;
     width: 850px; } }
 
 @media screen and (max-width: 991px) {
+  .slick-list {
+    width: 558px;
+    margin-left: 85px; }
+  .slider-signature {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    position: relative;
+    right: 100px;
+    opacity: 0.5; }
   .slick-slide img {
     width: 362px;
     height: 365px; }
@@ -115,6 +149,10 @@
     width: 558px; } }
 
 @media screen and (max-width: 767px) {
+  .slick-list {
+    width: 558px;
+    margin-left: auto;
+    margin-right: auto; }
   .slick-slide img {
     width: 264px !important;
     height: 265px !important; }
@@ -133,19 +171,33 @@
     top: 35% !important; }
   .slick-prev {
     left: 100px;
-    z-index: 3 !important; } }
+    z-index: 3 !important; }
+  .slider-signature {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    position: relative;
+    right: 60px;
+    opacity: 0.5; } }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 600px) {
   .slick-slide img {
     width: 264px !important;
     height: 265px !important; }
+  .slick-list {
+    width: 264px;
+    margin-left: auto;
+    margin-right: auto; }
+  .slider-signature {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    position: relative;
+    right: 45px;
+    opacity: 0.5; }
   .single-item div div h3 {
     width: 264px !important; }
   .single-item div div p {
     margin-top: 30px !important;
-    width: 242px !important;
-    margin-left: 20px !important; }
-  .slick-next,
+    width: 264px !important; }
   .slick-prev {
     top: 35%  !important; }
   .slick-prev {
