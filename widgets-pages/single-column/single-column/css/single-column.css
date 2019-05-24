@@ -4,9 +4,10 @@
   overflow-x: hidden; }
 
 .main-title {
-  margin-top: 75px; }
+  margin-top: 100px; }
 
 .main-title-style {
+  margin-top: 0px;
   font-family: Amatic SC;
   font-style: normal;
   font-weight: bold;

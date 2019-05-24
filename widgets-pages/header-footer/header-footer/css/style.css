@@ -143,7 +143,8 @@ html {
     display: none !important;
     padding-left: 0px; }
   .navbar-collapse.collapse.in {
-    display: block !important; }
+    display: block !important;
+    margin-left: 15px; }
   .navbar-header .collapse,
   .navbar-toggle {
     display: block !important; }

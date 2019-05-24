@@ -4,7 +4,7 @@
   overflow-x: hidden; }
 
 .title {
-  margin-top: 82px; }
+  margin-top: 100px; }
 
 .title-text-style {
   font-family: Amatic SC;
@@ -14,10 +14,14 @@
   line-height: 55px;
   /* identical to box height */
   text-align: center;
-  color: #EB3450; }
+  color: #EB3450;
+  margin-top: 0px; }
 
 .single-item {
   margin-top: 60px; }
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0px; }
 
 .slider-title .row .col h2 {
   font-family: Amatic SC;
@@ -36,9 +40,16 @@
 .slick-slider {
   overflow-y: hidden; }
 
-.slick-next,
-.slick-prev {
-  top: 28.3%; }
+.slick-next, .slick-prev {
+  width: 40px;
+  top: 28.3%;
+  height: 40px; }
+
+.slider-img-container {
+  width: 505px;
+  height: 460px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .slick-prev {
   left: 107px;
@@ -133,6 +144,11 @@
     width: 850px; } }
 
 @media screen and (max-width: 991px) {
+  .slider-img-container {
+    width: 362px;
+    height: 330px;
+    margin-left: auto;
+    margin-right: auto; }
   .slick-list {
     width: 558px;
     margin-left: 85px; }
@@ -149,6 +165,11 @@
     width: 558px; } }
 
 @media screen and (max-width: 767px) {
+  .slider-img-container {
+    width: 264px;
+    height: 265px;
+    margin-left: auto;
+    margin-right: auto; }
   .slick-list {
     width: 558px;
     margin-left: auto;

@@ -8,6 +8,9 @@
 #btn-hidden-for-modal{
   display: none !important;
 }
+.feedback{
+  margin-top: 80px;
+}
 .title-feedback {
   font-family: Amatic SC;
   font-style: normal;
@@ -51,8 +54,17 @@ input[type=checkbox] {
   font-size: 15px;
   line-height: 28px;
   color: #292424;
-  outline: 0 !important;
   outline-color: #fff;
+}
+label[for="checkbox-id"]{
+  text-decoration: underline;
+}
+.feedback .container .row div form div input, .feedback .container .row div form div input,
+.feedback .container .row div form div textarea, .feedback .container .row div form div textarea{
+  outline: 0 !important;
+  outline-offset: 0;
+  box-shadow: none;
+  border-color: #fff;
 }
 .feedback .container .row div form div:nth-child(1)  {
   padding-left: 0px !important;
@@ -92,7 +104,6 @@ input[type=checkbox] {
 }
 .feedback .container .row div form div:nth-child(8)  {
   margin-top:40px;
-  margin-bottom: 80px;
 
 }
 .feedback .container .row div form div button {
@@ -157,8 +168,8 @@ input[type=checkbox] {
 @media screen and (max-width: 479px) {
 
   .feedback .container .row div form div:nth-child(n){
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
   .feedback .container .row div form div:nth-child(7){
     padding-left: 0px !important;
@@ -207,7 +218,7 @@ input[type=checkbox] {
 }
 @media screen and (max-width:768px){
   .modal-window{
-    width: 320px;
+    width: 280px;
     height: 320px;
     margin-left: auto;
     margin-right: auto;
@@ -234,7 +245,7 @@ input[type=checkbox] {
   }
   .modal-window label{
     bottom:280px;
-    left: 280px;
+    left: 240px;
     padding-top: 0px;
     position: absolute;
 
