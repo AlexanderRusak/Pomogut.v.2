@@ -45,59 +45,74 @@
   justify-content: center; //выравнивает по горизонтали
 }
 
-.rating label {
+#reviewStars-input input:checked ~ label, #reviewStars-input label, #reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
+  background: url('../images/raiting-stars/stars.png') no-repeat;
+}
+
+
+
+#reviewStars-input {
+
+  /*fix floating problems*/
+  overflow: hidden;
+  *zoom: 1;
+  /*end of fix floating problems*/
+
+  position: relative;
+  float: left;
+}
+
+#reviewStars-input input {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+
+  width: 43px;
+  height: 40px;
+
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: 0;
+  z-index: 0;
+}
+
+#reviewStars-input input:checked ~ label {
+  background-position: 0 -40px;
+  height: 40px;
+  width: 43px;
+}
+
+#reviewStars-input label {
+  background-position: 0 0;
+  height: 42px;
+  width: 43px;
+  float: right;
   cursor: pointer;
-}
+  margin-right: 10px;
 
-.rating label:last-child {
-  position: static;
-}
-
-.rating label:nth-child(1) {
-  z-index: 5;
-}
-
-.rating label:nth-child(2) {
-  z-index: 4;
-}
-
-.rating label:nth-child(3) {
-  z-index: 3;
-}
-
-.rating label:nth-child(4) {
-  z-index: 2;
-}
-
-.rating label:nth-child(5) {
+  position: relative;
   z-index: 1;
 }
 
-.rating label input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
+#reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
+  background-position: 0 -40px;
+  height: 40px;
+  width: 43px;
 }
 
-.rating label .icon {
-  float: left;
-  color: transparent;
+#reviewStars-input #star-0 {
+  left: 0px;
 }
-
-.rating label:last-child .icon {
-  background: url("../images/raiting-stars/star-bg.svg") no-repeat;
+#reviewStars-input #star-1 {
+  left: 53px;
 }
-
-.rating:hover label:hover input ~ .icon,
-.rating:not(:hover) label input:checked ~ .icon {
-  background: url("../images/raiting-stars/star-full.svg") no-repeat;
+#reviewStars-input #star-2 {
+  left: 106px;
 }
-
-.rating label input:focus:not(:checked) ~ .icon:last-child {
-  background: url("../images/raiting-stars/star-bg.svg") no-repeat;
+#reviewStars-input #star-3 {
+  left: 159px;
 }
-//////////////////////////////////////////////////////////////////////////////// similars-articles
+#reviewStars-input #star-4 {
+  left: 212px;
+}
+#reviewStars-input #star-5 {
+  left: 265px;
+}

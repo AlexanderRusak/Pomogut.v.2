@@ -7,7 +7,6 @@
 
 .two-column {
   margin-top: 100px;
-  margin-bottom: 100px;
 }
 
 .two-column-image {
@@ -24,6 +23,7 @@
   text-align: center;
   color: #000000;
   margin-bottom: 60px;
+  margin-top: 0px;
 }
 
 .img-signature {
@@ -112,7 +112,7 @@
   }
 
   .two-column .row div .two-column-article p {
-    
+
     display: block;
   }
 
