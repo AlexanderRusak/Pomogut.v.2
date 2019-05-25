@@ -6,6 +6,13 @@
 .title {
   margin-top: 100px; }
 
+.slider-img-container img {
+  width: 100% !important;
+  height: 100% !important;
+  -o-object-fit: cover;
+  object-fit: cover;
+  overflow-x: hidden; }
+
 .title-text-style {
   font-family: Amatic SC;
   font-style: normal;
