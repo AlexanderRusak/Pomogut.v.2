@@ -25,7 +25,8 @@
   border-radius: 6px; }
 
 .similar-articles .row ul {
-  padding-left: 0; }
+  padding-left: 0;
+  margin-bottom: 100px; }
 
 ul {
   margin-bottom: 0px; }
