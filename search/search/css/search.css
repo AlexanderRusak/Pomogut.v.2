@@ -167,15 +167,10 @@ form div:nth-child(2) button {
   font-size: 17px;
   line-height: normal;
   text-align: center;
-  color: #000 !important;
-  border: 5px solid #ccc;
-  color: rgba(255, 255, 255, 0.9);
-  outline: 0; }
-
-form div:nth-child(2) button:hover {
   background: #00AEEF;
   border: 5px solid #4DC6F4;
-  color: #fff !important; }
+  color: #fff !important;
+  outline: 0; }
 
 form div:nth-child(1) input {
   padding-left: 7px;
