@@ -4,7 +4,8 @@
   overflow-x: hidden; }
 
 .categories_data {
-  margin-top: 80px; }
+  margin-top: 80px;
+  margin-bottom: 100px; }
 
 .categories_data .row div:nth-child(1) h2 {
   font-family: "Amatic SC";
