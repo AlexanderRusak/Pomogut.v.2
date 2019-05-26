@@ -38,6 +38,9 @@ html {
 .navbar-nav:first-child li:last-child {
   display: none; }
 
+.navbar-nav > li {
+  margin-right: 47px; }
+
 .navbar {
   width: 100%;
   z-index: 99;
@@ -45,9 +48,6 @@ html {
 
 .navbar {
   border-radius: 0; }
-
-.navbar-collapse {
-  margin-right: -25px; }
 
 .navbar-default {
   background-color: #00AEEF; }
@@ -59,7 +59,7 @@ html {
   padding-top: 21px; }
 
 .navbar-nav > li {
-  margin-right: 50px; }
+  margin-right: 47px; }
 
 .navbar-brand {
   display: none; }
@@ -123,7 +123,7 @@ html {
 
 @media screen and (max-width: 1200px) {
   .navbar-nav > li {
-    margin-right: 30px; } }
+    margin-right: 27px; } }
 
 @media screen and (max-width: 1038px) {
   nav .navbar-collapse ul:first-child {
@@ -141,8 +141,7 @@ html {
 
 @media screen and (max-width: 798px) {
   .navbar-collapse.collapse {
-    display: none !important;
-    padding-left: 0; }
+    display: none !important; }
   .navbar-collapse.collapse.in {
     display: block !important; }
   .navbar-header .collapse,

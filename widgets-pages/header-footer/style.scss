@@ -47,7 +47,9 @@ html {
 .navbar-nav:first-child li:last-child {
   display: none;
 }
-
+.navbar-nav>li {
+    margin-right: 47px;
+}
 .navbar {
   width: 100%;
   z-index: 99;
@@ -71,7 +73,7 @@ html {
 }
 
 .navbar-nav > li {
-  margin-right: 50px;
+  margin-right: 47px;
 }
 
 .navbar-brand {
@@ -149,7 +151,7 @@ html {
 }
 @media screen and (max-width:1200px) {
   .navbar-nav > li {
-    margin-right: 30px;
+    margin-right: 27px;
   }
 }
 @media screen and (max-width:1038px) {

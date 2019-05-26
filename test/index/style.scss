@@ -7,6 +7,9 @@
 a{
   text-decoration: none !important;
 }
+.stripe_under-header{
+  display: none !important;
+}
 ///////////////////////////////////////////////
 .sections {
   background-color: #F2F2F2;
@@ -21,7 +24,9 @@ a{
   padding-left: 0;
   padding-right: 0;
 }
-
+.block-1 .container{
+  padding-left: 0px !important;
+}
 .sections-pattern_two {
   width: 264px;
   height: 274px;
@@ -117,10 +122,10 @@ div .inside-block-section p {
 }
 
 .section-teenagers .inside-block-section p {
-  margin-left: 28px;
-  margin-top: -15px;
-  width: 75px;
-  height: 60px;
+  margin-left: 4px;
+  margin-top: -3px;
+  width: 131px;
+  height: 53px;
 }
 
 .section-parents .inside-block-section p {
@@ -131,10 +136,10 @@ div .inside-block-section p {
 }
 
 .section-kids .inside-block-section p {
-  margin-left: 45px;
-  margin-top: 5px;
-  width: 75px;
-  height: 100px;
+  margin-left: 40px;
+  margin-top: 25px;
+  width: 95px;
+  height: 25px;
 }
 
 .section-adults .inside-block-section p {
@@ -160,38 +165,28 @@ div .inside-block-section p {
 .sections .container .row .section-parents a .inside-block-section p {
   position: relative;
   z-index: 50;
-  bottom: 55px !important;
+  bottom: 55px !important;  
   left: 30px;
   height: 30px;
 }
-.sections .container .row .section-adults a .inside-block-section p {
-  position: relative;
-  z-index: 50;
-  bottom: 55px !important;
-  left: 30px !important;
-  height: 30px;
-}
+
 .sections .container .row .section-adults a .inside-block-section p:last-child {
   position: relative;
-  z-index: 50;
-  bottom: 55px !important;
-  left: 30px !important;
-  height: 30px;
+    z-index: 50;
+    bottom: 25px!important;
+    left: -5px!important;
+    height: 25px!important;
+    width: 140px;
 }
 .sections .container .row .section-kids  a .inside-block-section p {
-  position: relative;
-  z-index: 50;
-  bottom: 75px !important;
-  left: 40px !important;
-  height: 30px;
+  width: 100px;
+      position: relative;
+      z-index: 50;
+      bottom: 45px!important;
+      left: 23px!important;
+      height: 30px;
 }
-.sections .container .row .section-kids  a .inside-block-section p:last-child {
-  position: relative;
-  z-index: 50;
-  bottom: 85px !important;
-  left: 40px !important;
-  height: 30px;
-}
+
 .sections .container .row .section-schools  a .inside-block-section p {
   position: relative;
   z-index: 50;
@@ -206,13 +201,7 @@ div .inside-block-section p {
   left: 30px;
   height: 30px;
 }
-.sections .container .row div a .inside-block-section p:last-child {
-  position: relative;
-  z-index: 50;
-  bottom: 85px;
-  left: 30px;
-  height: 30px;
-}
+
 .sections .container .row .section-kids a .inside-block-section {
   position: relative;
   left: 20px;
@@ -242,6 +231,7 @@ div .inside-block-section p {
   position: relative !important;
   left: 20px;
 }
+
 @media screen and (max-width:1200px) {
   .sections .container .section-adults {
     top: 13px;
@@ -436,18 +426,19 @@ div .inside-block-section p {
 //////////////////////////////////
 
 .block-1 {
-  margin-top: 35px;
+  margin-top: 100px;
 }
 
 .block-1 .col .block-1-img {
   width: 558px;
   height: 336px;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .block-1 .container div:nth-child(2) h2 {
-  margin-left: 20px;
+  margin-top: 28px;
+  margin-left: 8px;
   font-size: 30px;
   font-family: 'Amatic SC', cursive;
   font-style: normal;
@@ -458,11 +449,12 @@ div .inside-block-section p {
 }
 
 .block-1 {
-  margin-bottom: 106px;
+  margin-bottom: 97px;
 }
 
 .block-1 .container div:nth-child(2) p {
-  margin-left: 20px;
+  width: 558px;
+  margin-left: 7px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -473,12 +465,12 @@ div .inside-block-section p {
 }
 
 .block-1 .container div:nth-child(2) a .block-1-button {
-  margin-left: 20px;
+  margin-left: 10px;
   border: 5px solid #F17185;
   border-radius: 30px;
   width: 250px;
   height: 60px;
-  margin-top: 40px;
+  margin-top: 30px;
   background-color: #EB3450;
   color: #fff;
   font-family: Roboto;
@@ -495,12 +487,23 @@ div .inside-block-section p {
   margin-top: 10px;
   margin-left: 12px;
 }
+.block-1 div .block-1-img {
+  padding-left: 5px ;
+  padding-right: 15px;
+}
 @media screen and (max-width: 1200px) {
   .block-1 div .block-1-img {
     margin-top: 25px;
     background-color: transparent;
+    padding-left: 15px ;
+    padding-right: 30px ;
   }
-
+  .block-1 .container div:nth-child(2) p {
+    width: auto;
+  }
+  .block-2 .container div p {
+    width: auto !important;
+  }
   .block-1 .col div:nth-child(2) {
     margin-left: 10px;
   }
@@ -511,9 +514,34 @@ div .inside-block-section p {
   }
 }
 @media screen and (max-width: 991px) {
+  .block-1 {
+    margin-top: 33px;
+    margin-bottom: 60px;
+}
   .block-1 .container{
     width: 558px !important;
-    padding: 0px;
+    padding: 0px !important;
+  }
+  .block-1 .container div:nth-child(2) a .block-1-button {
+    margin-left: 10px;
+    border: 5px solid #f17185;
+    border-radius: 30px;
+    width: 250px;
+    height: 60px;
+    margin-top: 37px;
+    background-color: #eb3450;
+    color: #fff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: normal;
+    text-align: center;
+    padding-top: 15px;
+}
+  .block-1 div .block-1-img {
+    padding-left: 0px ;
+    padding-right: 0px;
   }
     .block-1 .container .center-block div{
       padding-left: 0px;
@@ -558,9 +586,7 @@ div .inside-block-section p {
   }
 }
 @media screen and (max-width: 768px) {
-  .block-1 {
-    margin-bottom: 63px;
-  }
+
 
   .block-1 .col {
     margin-left: 15%;
@@ -600,22 +626,24 @@ div .inside-block-section p {
 }
 @media screen and (max-width: 700px) {
   .section-kids .inside-block-section p {
-      margin-left: 55px;
-      margin-top: -8px;
-      width: 75px;
-      height: 25px;
-  }
-  .section-teenagers .inside-block-section p {
-    margin-left: 28px;
-    margin-top: -15px;
-    width: 75px;
-    height: 35px;
+    margin-left: 40px;
+  margin-top: 35px;
+  height: 25px;
+  width: 100px;
 }
+
+  .section-teenagers .inside-block-section p {
+    margin-left: 5px;
+  margin-top: -5px;
+  width: 131px;
+  height: 53px;
+}
+
 .section-adults .inside-block-section p {
-    margin-left: 42px;
-    margin-top: -12px;
-    width: 77px;
-    height: 30px;
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 140px;
+  height: 50px;
 }.section-parents .inside-block-section p {
     margin-left: 52px;
     margin-top: 20px;
@@ -712,7 +740,7 @@ div .inside-block-section p {
 .block-2 .container {
   padding-left: 0;
   margin-top: 105px;
-  margin-bottom: 95px;
+  margin-bottom: 50px;
 }
 
 
@@ -735,7 +763,8 @@ div .inside-block-section p {
 }
 
 .block-2 .container div p {
-  margin-left: 20px;
+  width: 558px;
+  margin-left: 0px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -747,7 +776,7 @@ div .inside-block-section p {
 }
 
 .block-2 .container div h2 {
-  margin-left: 20px;
+  margin-left: 0px;
   font-size: 30px;
   font-family: 'Amatic SC', cursive;
   font-style: normal;
@@ -756,7 +785,23 @@ div .inside-block-section p {
   line-height: 42px;
   color: #fff;
 }
-
+.block-2 .container div a .block-1-button{
+  margin-left: 0px;
+    border: 5px solid #ffd456;
+    border-radius: 30px;
+    width: 250px;
+    height: 60px;
+    margin-top: 0PX;
+    background-color: #ffc005;
+    color: #fff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: normal;
+    text-align: center;
+    padding-top: 14px;
+}
 .block-2 .container div a {
   text-decoration: none;
 }
@@ -767,7 +812,7 @@ div .inside-block-section p {
 }
 @media screen and (max-width:660px) {
   .block-2 .container {
-    width: 310px;
+    width: 297px;
   }
 
   .block-2 .container {
@@ -782,7 +827,7 @@ div .inside-block-section p {
     width: 264px;
   }
   .block-2 .container div a .block-1-button {
-    width: 280px;
+    width: 267px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -821,4 +866,14 @@ div .inside-block-section p {
   line-height: 28px;
   text-align: center;
   color: #FFFFFF;
+}
+.section-kids{
+  margin: auto;
+  position: relative;
+}
+.section-kids a img{
+  transition: d 2.5s ease;
+}
+ img:hover .section-kids a img{
+  d: path("M252.65 134.464C242.385 167.561 221.407 197.813 189.912 216.293C158.441 234.692 117.772 236.903 90.1654 223.05C62.5926 209.248 54.655 176.624 39.7776 147.143C24.9 117.661 8.10431 87.9516 2.43074 68.523C-6.87776 36.6468 11.6275 8.92423 39.5511 1.39403C85.1445 -5.69633 97.5763 16.1676 134.78 24.1397C171.95 32.0619 213.941 -1.63483 252.504 40.3118C272.027 61.5484 262.948 101.415 252.65 134.464Z");
 }
