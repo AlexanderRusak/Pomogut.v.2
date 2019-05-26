@@ -12,6 +12,9 @@
 .feedback .row .feedback-column {
   float: none !important; }
 
+.btn {
+  border: none; }
+
 header {
   background-image: url("../images/header/background.svg");
   background-size: cover;
@@ -536,8 +539,7 @@ textarea[placeholder] {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  text-align: center;
-  color: #FFFFFF; }
+  text-align: center; }
 
 .feedback .form-group .btn {
   margin-bottom: 81.5px; }

@@ -104,10 +104,10 @@ div .inside-block-section p {
   overflow-y: hidden; }
 
 .section-teenagers .inside-block-section p {
-  margin-left: 28px;
-  margin-top: -15px;
-  width: 75px;
-  height: 60px; }
+  margin-left: 4px;
+  margin-top: -3px;
+  width: 131px;
+  height: 53px; }
 
 .section-parents .inside-block-section p {
   margin-left: 50px;
@@ -116,10 +116,10 @@ div .inside-block-section p {
   height: 60px; }
 
 .section-kids .inside-block-section p {
-  margin-left: 45px;
-  margin-top: 5px;
-  width: 75px;
-  height: 100px; }
+  margin-left: 40px;
+  margin-top: 25px;
+  width: 95px;
+  height: 25px; }
 
 .section-adults .inside-block-section p {
   margin-left: 45px;
@@ -150,23 +150,17 @@ div .inside-block-section p {
 .sections .container .row .section-adults a .inside-block-section p:last-child {
   position: relative;
   z-index: 50;
-  bottom: 55px !important;
-  left: 30px !important;
-  height: 55px !important;
-  width: 72px; }
+  bottom: 25px !important;
+  left: -5px !important;
+  height: 20px !important;
+  width: 140px; }
 
 .sections .container .row .section-kids a .inside-block-section p {
+  width: 100px;
   position: relative;
   z-index: 50;
-  bottom: 75px !important;
-  left: 40px !important;
-  height: 30px; }
-
-.sections .container .row .section-kids a .inside-block-section p:last-child {
-  position: relative;
-  z-index: 50;
-  bottom: 85px !important;
-  left: 40px !important;
+  bottom: 45px !important;
+  left: 23px !important;
   height: 30px; }
 
 .sections .container .row .section-schools a .inside-block-section p {
@@ -182,14 +176,6 @@ div .inside-block-section p {
   bottom: 60px;
   left: 30px;
   height: 30px; }
-
-.sections .container .row div a .inside-block-section p:last-child {
-  position: relative;
-  z-index: 50;
-  bottom: 85px;
-  left: 35px;
-  height: 56px;
-  width: 68px; }
 
 .sections .container .row .section-kids a .inside-block-section {
   position: relative;
@@ -494,20 +480,20 @@ div .inside-block-section p {
 
 @media screen and (max-width: 700px) {
   .section-kids .inside-block-section p {
-    margin-left: 55px;
-    margin-top: -8px;
-    width: 75px;
-    height: 25px; }
+    margin-left: 40px;
+    margin-top: 35px;
+    height: 25px;
+    width: 100px; }
   .section-teenagers .inside-block-section p {
-    margin-left: 28px;
-    margin-top: -15px;
-    width: 75px;
+    margin-left: 5px;
+    margin-top: -5px;
+    width: 131px;
     height: 53px; }
   .section-adults .inside-block-section p {
-    margin-left: 42px;
-    margin-top: -12px;
-    width: 77px;
-    height: 55px; }
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 140px;
+    height: 50px; }
   .section-parents .inside-block-section p {
     margin-left: 52px;
     margin-top: 20px;
@@ -655,7 +641,7 @@ div .inside-block-section p {
   .block-2 .container .block-2-img img {
     width: 264px; }
   .block-2 .container div a .block-1-button {
-    width: 280px;
+    width: 267px;
     margin-left: auto;
     margin-right: auto; } }
 
@@ -688,3 +674,15 @@ div .inside-block-section p {
   line-height: 28px;
   text-align: center;
   color: #FFFFFF; }
+
+.section-kids {
+  margin: auto;
+  position: relative; }
+
+.section-kids a img {
+  -webkit-transition: d 2.5s ease;
+  -o-transition: d 2.5s ease;
+  transition: d 2.5s ease; }
+
+img:hover .section-kids a img {
+  d: path("M252.65 134.464C242.385 167.561 221.407 197.813 189.912 216.293C158.441 234.692 117.772 236.903 90.1654 223.05C62.5926 209.248 54.655 176.624 39.7776 147.143C24.9 117.661 8.10431 87.9516 2.43074 68.523C-6.87776 36.6468 11.6275 8.92423 39.5511 1.39403C85.1445 -5.69633 97.5763 16.1676 134.78 24.1397C171.95 32.0619 213.941 -1.63483 252.504 40.3118C272.027 61.5484 262.948 101.415 252.65 134.464Z"); }

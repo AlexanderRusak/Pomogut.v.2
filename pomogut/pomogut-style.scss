@@ -17,6 +17,10 @@
   float: none !important;
 }
 
+.btn {
+  border: none;
+}
+
 header {
   background-image: url("../images/header/background.svg");
   background-size: cover;
@@ -578,9 +582,9 @@ textarea[placeholder] {
   font-size: 16px;
   line-height: 22px;
   /* identical to box height */
+  //display: flex;
   align-items: center;
   text-align: center;
-  color: #FFFFFF;
 }
 
 .feedback .form-group .btn {
