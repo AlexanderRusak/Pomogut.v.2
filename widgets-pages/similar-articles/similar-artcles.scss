@@ -15,7 +15,9 @@
   width: 267px;
   height: 200px;
 }
-
+.similar-articles .row ul li div a{
+  text-decoration: none;
+}
 .similar-articles .row div {
   background: #F2F2F2;
   padding: 0;
@@ -29,7 +31,7 @@
 
 .similar-articles .row ul {
   padding-left: 0;
-  margin-bottom: 100px;
+
 }
 ul{
   margin-bottom: 0px;
