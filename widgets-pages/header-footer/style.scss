@@ -125,7 +125,7 @@ html {
 
 .navbar .navbar-nav:last-child {
   float: right;
-  margin-right: 105px;
+  margin-right: 60px;
 }
 
 .navbar .navbar-collapse {
@@ -151,7 +151,7 @@ html {
 }
 @media screen and (max-width:1200px) {
   .navbar-nav > li {
-    margin-right: 27px;
+    margin-right: 20px;
   }
 }
 @media screen and (max-width:1038px) {
@@ -160,7 +160,7 @@ html {
   }
 
   nav .navbar-collapse ul:last-child {
-    margin-right: 20px !important;
+    margin-right: 15px !important;
   }
 }
 @media screen and (max-width:852px) {
