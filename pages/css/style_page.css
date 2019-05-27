@@ -176,7 +176,7 @@
 .articles a div .articles-image {
   display: block;
   overflow-y: hidden !important;
-  width: 100%;
+  width: 100% !important;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center;

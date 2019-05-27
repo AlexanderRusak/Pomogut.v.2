@@ -208,7 +208,7 @@
 .articles a div .articles-image {
   display: block;
   overflow-y: hidden !important;
-  width: 100%;
+  width: 100% !important;
   object-fit: cover;
   object-position: center;
 }

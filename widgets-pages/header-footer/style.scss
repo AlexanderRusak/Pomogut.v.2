@@ -445,9 +445,14 @@ html {
 }
 
 .footer .container div ul {
-  margin-bottom: 90px;
+  margin-bottom: 0px !important;
 }
-
+.links_to_follow {
+    margin-left: 0!important;
+    margin-bottom: 0px !important;
+    height: 85px;
+    overflow-y: hidden;
+}
 .footer .container div ul li {
   display: inline-block;
   margin-left: 26px;
@@ -603,20 +608,25 @@ html {
 }
 @media screen and (max-width:479px) {
   .links_to_follow {
-    margin-top: 70px;
+    margin-top: 50px;
     margin-bottom: 50px;
   }
 
   .footer .container div:nth-child(4) {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
 
   .footer .container {
+    margin-top: 70px;
     margin-left: -32px !important;
     bottom: 5px;
-  }
+  }  
+  .links_to_follow {
 
+      height: 85px !important;
+
+  }
   .footer .container div p:first-child,
   .footer .container div p:nth-child(2) {
     width: 260px;
