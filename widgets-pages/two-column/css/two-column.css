@@ -19,7 +19,7 @@
   text-align: center;
   color: #000000;
   margin-bottom: 60px;
-  margin-top: 0px; }
+  margin-top: 0; }
 
 .img-signature {
   margin-top: 10PX;
@@ -84,7 +84,9 @@
   .two-column .row div .two-column-image {
     display: block; }
   .img-signature {
-    margin-left: 11%; }
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto; }
   .two-column .row div .two-column-article p {
     display: block; }
   .two-column .row div .two-column-image {
@@ -106,4 +108,4 @@
     height: auto !important;
     display: block !important; }
   .img-signature {
-    margin-left: 65px; } }
+    width: 267px; } }

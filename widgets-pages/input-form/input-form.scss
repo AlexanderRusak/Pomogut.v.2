@@ -167,12 +167,15 @@ label[for="checkbox-id"] a {
   .captcha div {
     float: left!important;
   }
+  .col-xs-offset-1{
+    margin-left: auto;
+  }
 }
 @media screen and (max-width: 767px) {
-  .captcha {
 
+  .col-xs-offset-1{
+    margin-left:8.33333333333333333333%;
   }
-
   .captcha div {
     float: left!important;
   }
@@ -212,6 +215,15 @@ label[for="checkbox-id"] a {
     right: 13px
   }
 
+}
+@media screen and (max-width: 360px) {
+  .feedback .container .row div form div button {
+
+    height: 60px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
 }
 /////////////////////////////////////////////////////////////////////////////
 

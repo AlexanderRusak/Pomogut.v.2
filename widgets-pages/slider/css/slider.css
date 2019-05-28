@@ -208,6 +208,10 @@
     opacity: 0.5; } }
 
 @media screen and (max-width: 600px) {
+  .slick-dotted.slick-slider {
+    width: 264px;
+    margin-bottom: 0;
+    padding: 0px; }
   .slick-slide img {
     width: 264px !important;
     height: 241px !important; }
@@ -229,10 +233,10 @@
   .slick-prev {
     top: 35%  !important; }
   .slick-prev {
-    left: 60px  !important;
+    left: -3px  !important;
     z-index: 3; }
   .slick-next {
-    right: 65px  !important;
+    right: 2px  !important;
     z-index: 3; }
   .title {
     margin-top: 50px !important; }
