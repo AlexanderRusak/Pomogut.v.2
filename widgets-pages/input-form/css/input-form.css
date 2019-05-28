@@ -7,7 +7,7 @@
   display: none !important; }
 
 .feedback {
-  margin-top: 80px; }
+  margin-top: 100px; }
 
 .title-feedback {
   font-family: Amatic SC;
@@ -132,7 +132,7 @@ label[for="checkbox-id"] a {
   float: right !important; }
 
 .container .row div form {
-  margin-top: 53px; }
+  margin-top: 33px; }
 
 @media screen and (max-width: 1200px) {
   .captcha div {
@@ -145,15 +145,12 @@ label[for="checkbox-id"] a {
     float: left !important; } }
 
 @media screen and (max-width: 767px) {
-  .captcha {
-    padding-left: 0 !important; }
   .captcha div {
     float: left !important; }
   .feedback .container .row div form div:nth-child(n) {
     padding-left: 15px !important;
     padding-right: 15px !important; }
   .feedback .container .row div form div:nth-child(7) {
-    padding-left: 0 !important;
     padding-right: 0 !important; }
   .feedback .container .row div form div:nth-child(7) div {
     padding-left: 0 !important;
@@ -167,11 +164,15 @@ label[for="checkbox-id"] a {
     padding-left: 0 !important;
     padding-right: 0 !important; }
   .feedback .container .row div form div:nth-child(7) div {
+    position: relative;
     padding-left: 0 !important;
-    padding-right: 0 !important; } }
+    padding-right: 0 !important;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    right: 13px; } }
 
 .modal-window {
-  width: 558px;
   height: 259px;
   margin-left: auto;
   margin-right: auto; }

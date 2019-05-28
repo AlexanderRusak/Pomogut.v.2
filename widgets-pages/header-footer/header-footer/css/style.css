@@ -101,7 +101,7 @@ html {
 
 .navbar .navbar-nav:last-child {
   float: right;
-  margin-right: 60px; }
+  margin-right: 95px; }
 
 .navbar .navbar-collapse {
   text-align: center; }
@@ -167,7 +167,7 @@ html {
 
 @media screen and (max-width: 425px) {
   .navbar-toggle {
-    top: 5px;
+    top: 2px;
     right: -15px;
     border: none; } }
 

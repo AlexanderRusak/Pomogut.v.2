@@ -101,7 +101,7 @@ html {
 
 .navbar .navbar-nav:last-child {
   float: right;
-  margin-right: 105px; }
+  margin-right: 95px; }
 
 .navbar .navbar-collapse {
   text-align: center; }
@@ -123,13 +123,13 @@ html {
 
 @media screen and (max-width: 1200px) {
   .navbar-nav > li {
-    margin-right: 27px; } }
+    margin-right: 20px; } }
 
 @media screen and (max-width: 1038px) {
   nav .navbar-collapse ul:first-child {
     margin-left: 35px !important; }
   nav .navbar-collapse ul:last-child {
-    margin-right: 20px !important; } }
+    margin-right: 15px !important; } }
 
 @media screen and (max-width: 852px) {
   nav .navbar-collapse ul:first-child {
@@ -167,7 +167,7 @@ html {
 
 @media screen and (max-width: 425px) {
   .navbar-toggle {
-    top: 5px;
+    top: 2px;
     right: -15px;
     border: none; } }
 
@@ -327,6 +327,7 @@ html {
   width: 100%; }
 
 .footer {
+  margin-top: 100px;
   background-color: #00AEEF; }
 
 .footer .container {
@@ -349,7 +350,13 @@ html {
   margin-left: 0 !important; }
 
 .footer .container div ul {
-  margin-bottom: 90px; }
+  margin-bottom: 0px !important; }
+
+.links_to_follow {
+  margin-left: 0 !important;
+  margin-bottom: 0px !important;
+  height: 85px;
+  overflow-y: hidden; }
 
 .footer .container div ul li {
   display: inline-block;
@@ -463,14 +470,17 @@ html {
 
 @media screen and (max-width: 479px) {
   .links_to_follow {
-    margin-top: 70px;
+    margin-top: 50px;
     margin-bottom: 50px; }
   .footer .container div:nth-child(4) {
     margin-top: 50px;
-    margin-bottom: 50px; }
+    margin-bottom: 0px; }
   .footer .container {
+    margin-top: 70px;
     margin-left: -32px !important;
     bottom: 5px; }
+  .links_to_follow {
+    height: 85px !important; }
   .footer .container div p:first-child,
   .footer .container div p:nth-child(2) {
     width: 260px; } }

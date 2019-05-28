@@ -125,7 +125,7 @@ html {
 
 .navbar .navbar-nav:last-child {
   float: right;
-  margin-right: 60px;
+  margin-right: 95px;
 }
 
 .navbar .navbar-collapse {
@@ -222,8 +222,8 @@ html {
   }
 }
 @media screen and (max-width:425px) {
-  .navbar-toggle {
-    top: 5px;
+  .navbar-toggle {   
+    top: 2px;
     right: -15px;
     border: none;
   }
@@ -621,7 +621,7 @@ html {
     margin-top: 70px;
     margin-left: -32px !important;
     bottom: 5px;
-  }  
+  }
   .links_to_follow {
 
       height: 85px !important;

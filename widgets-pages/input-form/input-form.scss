@@ -11,7 +11,7 @@
 }
 
 .feedback {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .title-feedback {
@@ -152,7 +152,7 @@ label[for="checkbox-id"] a {
 }
 
 .container .row div form {
-  margin-top: 53px;
+  margin-top: 33px;
 }
 @media screen and (max-width: 1200px) {
   .captcha div {
@@ -170,7 +170,7 @@ label[for="checkbox-id"] a {
 }
 @media screen and (max-width: 767px) {
   .captcha {
-    padding-left: 0 !important;
+
   }
 
   .captcha div {
@@ -183,7 +183,6 @@ label[for="checkbox-id"] a {
   }
 
   .feedback .container .row div form div:nth-child(7) {
-    padding-left: 0 !important;
     padding-right: 0 !important;
   }
 
@@ -204,15 +203,20 @@ label[for="checkbox-id"] a {
   }
 
   .feedback .container .row div form div:nth-child(7) div {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    position: relative;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    -webkit-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9);
+    right: 13px
   }
+
 }
 /////////////////////////////////////////////////////////////////////////////
 
 .modal-window {
-  width: 558px;
-  height: 259px;
+     height: 259px;
   margin-left: auto;
   margin-right: auto;
 }
