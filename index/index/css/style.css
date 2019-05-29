@@ -45,11 +45,11 @@ a {
 
 .sections .container .section-kids {
   top: 13px;
-  left: 0px; }
+  left: -8px; }
 
 .sections .container .section-adults {
   top: 13px;
-  left: -28px; }
+  left: -20px; }
 
 .sections .container .row:nth-child(2) {
   overflow-y: hidden;
@@ -78,11 +78,11 @@ a {
   display: none; }
 
 .sections .container .row:nth-child(1) div:nth-child(1) {
-  right: 10px;
+  right: 0px;
   overflow-y: hidden; }
 
 .sections .container .row:nth-child(1) div:nth-child(2) {
-  right: 20px;
+  right: 10px;
   overflow-y: hidden; }
 
 .sections .container .row div a {
@@ -143,14 +143,14 @@ div .inside-block-section p {
 .sections .container .row .section-parents a .inside-block-section p {
   position: relative;
   z-index: 50;
-  bottom: 90px !important;
+  bottom: 50px !important;
   left: 30px;
   height: 30px; }
 
 .sections .container .row .section-adults a .inside-block-section p:last-child {
   position: relative;
   z-index: 50;
-  bottom: 25px !important;
+  bottom: 22px !important;
   left: -5px !important;
   height: 25px !important;
   width: 140px; }
@@ -166,7 +166,7 @@ div .inside-block-section p {
 .sections .container .row .section-schools a .inside-block-section p {
   position: relative;
   z-index: 50;
-  bottom: 57px !important;
+  bottom: 50px !important;
   left: 30px !important;
   height: 30px; }
 
@@ -677,4 +677,10 @@ div .inside-block-section p {
 
 @media screen and (max-width: 991px) {
   .sections .container .row .section-teenagers a .inside-block-section p {
-    bottom: 90px !important; } }
+    bottom: 90px !important; }
+  .sections .container .row .section-parents a .inside-block-section p {
+    position: relative;
+    z-index: 50;
+    bottom: 90px !important;
+    left: 30px;
+    height: 30px; } }
