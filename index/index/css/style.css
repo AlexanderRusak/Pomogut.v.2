@@ -643,7 +643,12 @@ div .inside-block-section p {
   .block-2 .container div a .block-1-button {
     width: 267px;
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+  .block-2 {
+    background-color: #00a9e8;
+    background-image: url(../images/block-2/pattern.svg);
+    background-size: contain !important;
+    background-repeat: repeat-y; } }
 
 .counter .container .row {
   margin-top: 100px;

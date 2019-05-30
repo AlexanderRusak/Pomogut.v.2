@@ -48,7 +48,8 @@
   overflow-y: hidden; }
 
 .slick-next, .slick-prev {
-  width: 40px;
+  padding-top: 2px;
+  width: 41px;
   top: 28.3%;
   height: 40px; }
 
@@ -238,7 +239,7 @@
     right: 2px  !important;
     z-index: 3; }
   .title {
-    margin-top: 50px !important; }
+    margin-top: 65px !important; }
   .title-text-style {
     font-family: Amatic SC;
     font-style: normal;
@@ -248,7 +249,7 @@
     text-align: center;
     color: #EB3450; }
   .single-item {
-    margin-top: 30px  !important; }
+    margin-top: 43px  !important; }
   .slick-next,
   .slick-prev {
     top: 37%  !important; }
