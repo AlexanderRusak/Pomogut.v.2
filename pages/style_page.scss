@@ -28,7 +28,6 @@
 .categories {
   margin-top: 15px;
   margin-bottom: 90px;
-  left: 14px;
   padding-left: 20px;
 }
 
@@ -161,7 +160,8 @@
 }
 
 .tags div input[type=radio]+label {
-  word-break: break-all;
+  overflow-y: hidden;
+  word-break: break-word;
   width: 236px;
   height: 54px;
   margin-left: auto;
@@ -199,10 +199,10 @@ label {
 }
 
 .tags .slick-next {
-  width: 45px;
-  height: 41px;
+  width: 46px;
+  height: 54px;
   top: 30px;
-  right: 12px;
+  right: 14px;
 }
 
 .tags .slick-list {

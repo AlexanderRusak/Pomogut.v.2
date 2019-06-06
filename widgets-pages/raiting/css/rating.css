@@ -99,7 +99,35 @@
 .rating label input:focus:not(:checked) ~ .icon:last-child {
   background: url("../images/raiting-stars/star-bg.svg") no-repeat; }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 1200px) {
+  .raiting {
+    width: 558px;
+    margin-left: auto;
+    margin-right: auto; }
+  .raiting .container {
+    width: 558px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px; }
+  .raiting .container .row {
+    margin-left: 0px;
+    margin-right: 0px; } }
+
+@media screen and (max-width: 767px) {
+  .raiting {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto; }
+  .raiting .container {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px; }
+  .raiting .container .row {
+    margin-left: 0px;
+    margin-right: 0px; }
+  .raiting .container .row div {
+    padding: 0px; }
   .raiting .container .row div h3 {
     margin-top: 66px; }
   .raiting .container .row div p {
@@ -126,3 +154,14 @@
     cursor: pointer; }
   .raiting {
     background-color: #00AEEF; } }
+
+@media screen and (max-width: 360px) {
+  .raiting {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto; }
+  .raiting .container {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px; } }

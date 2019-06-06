@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomogut v.2</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script type="text/javascript" src="./input-form/script/script.js"></script>
+  <link rel="stylesheet" href="./input-form/css/normalize.css">
+  <link rel="stylesheet" href="./input-form/css/input-form.min.css">
+</head>
+
+<body>
+  <div class="feedback">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-10 col-xs-offset-1">
+          <h3  class="text-center title-feedback">Свяжитесь с нами</h3>
+          <form  id="feedback-form">
+            <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <label for="username">Фамилия Имя Отчество*</label>
+              <input class="form-control" type="text" name="username" value="">
+            </div>
+              <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <label for="">Цель сообщения*</label>
+                <select class="form-control" id="sel1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+              <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <label for="">Телефон*</label>
+                <input class="form-control" type="text" name="" value="">
+              </div>
+              <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <label for="">Адрес электронной почты*</label>
+                <input class="form-control" type="text" name="" value="">
+              </div>
+              <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <label for="comment">Текст сообщения</label>
+                <textarea class="form-control" rows="8" id="comment"></textarea>
+              </div>
+              <div class="checkbox-style col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <label for="checkbox" >Подтверждение конфиденциальности *</label>
+                <label for="checkbox-id"><input id="checkbox-id" type="checkbox" value=""><a href="">Я принимаю условия обработки персональных данных</a></label>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12  captcha">
+                <div class="g-recaptcha " data-sitekey="6LcmVKEUAAAAAPQ1nmTuylCUKg0rI1Qu28sf8Ive"></div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <button   type="button" class="btn center-block ">Отправить сообщение</button>
+                  <input id="btn-hidden-for-modal"  data-toggle="modal" data-target="#myModal" type="button"  class="center-block btn btn-success button-form"  name="Отправить сообщение" value="Отправить сообщение">
+              </div>
+
+              <!-- Modal -->
+              <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content modal-window">
+                      <h1 >Спасибо!</h1>
+                      <h2> Ваше сообщение отправлено</h2>
+                      <img  src="./input-form/images/modal/check-mark.svg" alt="">
+                      <label data-dismiss="modal"><img src="./input-form/images/modal/cross.svg" alt=""></label>
+                  </div>
+
+                </div>
+              </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+       async defer>
+   </script>
+
+</body>
+
+</html>

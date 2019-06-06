@@ -4,12 +4,12 @@
 * {
   overflow-x: hidden;
 }
-
-
 ////////////////////////////////////////////////////////////////////////// three column
-.three-column{
+
+.three-column {
   margin-top: 100px;
 }
+
 .three-column .row .three-column-title h3 {
   font-family: Amatic SC;
   font-style: normal;
@@ -18,21 +18,21 @@
   line-height: 42px;
   text-align: center;
   color: #000000;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .three-column .row .three-column-group {
   margin-top: 50px;
 }
 
-.three-column .row:nth-child(2) div
- {
+.three-column .row:nth-child(2) div {
   margin-top: 20px;
+}
 
+.three-column .row:nth-child(2) .col-lg-offset-1 {
+  margin-left: 12.5%;
 }
-.three-column .row:nth-child(2) .col-lg-offset-1{
-      margin-left: 12.5%;
-}
+
 .three-column .row .three-column-group p {
   font-family: Roboto;
   font-style: normal;
@@ -52,20 +52,23 @@
   width: 166px;
   height: 166px;
 }
+
+.three-column .row .three-column-group .three-column-image-section img {
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
 ///////////////////////////////////////////////////////////////////////////// two-column
-
 @media screen and (max-width: 1200px) {
-
-
-  .three-column .row:nth-child(2) .col-lg-offset-1{
-        margin-left: auto;
+  .three-column .row:nth-child(2) .col-lg-offset-1 {
+    margin-left: auto;
   }
-
-
 }
 @media screen and (max-width: 991px) {
-  .three-column .row:nth-child(2) .col-lg-offset-1{
-        margin-left: auto;
+  .three-column .row:nth-child(2) .col-lg-offset-1 {
+    margin-left: auto;
   }
 
   .three-column .row .three-column-group:nth-child(6),
@@ -75,12 +78,8 @@
     margin-left: 0;
     width: 50%;
   }
-
-
 }
 @media screen and (max-width: 767px) {
-
-
   .three-column .row .three-column-group:nth-child(6),
   .three-column .row .three-column-group:nth-child(7),
   .three-column .row .three-column-group:nth-child(8) {
@@ -88,11 +87,5 @@
     margin-left: 0;
     width: 100%;
   }
-
-
 }
-@media screen and (max-width: 479px) {
-
-
-
-}
+@media screen and (max-width: 479px) {}
