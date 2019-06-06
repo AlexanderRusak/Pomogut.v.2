@@ -476,8 +476,8 @@ a:hover {
   .content .container {
     width: 970px;
   }
-.tags div input[type=radio]+label{
-  width: 200px;
+.tags div input[type=radio]+label {
+  width: 200px !important;
 }
   .articles-button {
     margin-top: 30px;
@@ -621,7 +621,7 @@ a:hover {
     margin: 0;
     text-align: center;
   }
-.tags div input[type=radio]+label{
+.tags div input[type=radio]+label {
   width: 200px;
 }
   .categories {
@@ -692,10 +692,6 @@ a:hover {
 
   .tags .slick-slide {
     width: 260px !important;
-  }
-
-  .tags div input[type=radio]+label {
-    width: 100%!important;
   }
 
   .categories .slick-prev {
@@ -798,9 +794,9 @@ a:hover {
   .content .container {
     width: 558px;
   }
-  .tags div input[type=radio]+label{
-    width: 200px;
-  }
+.tags div input[type=radio]+label {
+  width: 200px !important;
+}
   .slick-slide a img {
     border-radius: 100px;
     object-fit: cover;

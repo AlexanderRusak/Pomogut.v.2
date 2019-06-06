@@ -417,7 +417,7 @@ a:hover {
   .content .container {
     width: 970px; }
   .tags div input[type=radio] + label {
-    width: 200px; }
+    width: 200px !important; }
   .articles-button {
     margin-top: 30px; }
   .articles a {
@@ -572,8 +572,6 @@ a:hover {
     margin-right: auto; }
   .tags .slick-slide {
     width: 260px !important; }
-  .tags div input[type=radio] + label {
-    width: 100% !important; }
   .categories .slick-prev {
     position: relative;
     width: 42px;
@@ -639,7 +637,7 @@ a:hover {
   .content .container {
     width: 558px; }
   .tags div input[type=radio] + label {
-    width: 200px; }
+    width: 200px !important; }
   .slick-slide a img {
     border-radius: 100px;
     -o-object-fit: cover;
