@@ -8,6 +8,7 @@
 
 .categories_data {
   margin-top: 80px;
+  overflow-y:hidden;
 }
 
 .categories_data .row div:nth-child(1) h2 {
@@ -132,6 +133,7 @@
 
 .for-slick {
   margin-top: -19px;
+
 }
 ///////////////////
 
@@ -234,7 +236,9 @@ label {
   width: 100% !important;
   height: 100%;
   max-height: 260px;
-  object-position: top;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position:center;
 }
 
 .articles .right {
@@ -257,6 +261,7 @@ label {
   margin-left: 0;
   border-radius: 0;
   background: #F2F2F2;
+  height: 260px;
 }
 
 .articles a:nth-child(10),
@@ -584,8 +589,9 @@ a:hover {
     width: 100%!important;
     height:100%;
     max-height: 200px;
-    -o-object-position: top;
-    object-position: top;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position:center;
 }
 }
 @media screen and (max-width: 991px) {
@@ -778,8 +784,9 @@ a:hover {
     width: 100% !important;
     height:100%;
     max-height: 200px;
-
-    object-position: top;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position:center;
   }
   .categories {
     margin-top: 37px;

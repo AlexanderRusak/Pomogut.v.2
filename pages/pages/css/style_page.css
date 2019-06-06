@@ -4,7 +4,8 @@
   overflow-x: hidden; }
 
 .categories_data {
-  margin-top: 80px; }
+  margin-top: 80px;
+  overflow-y: hidden; }
 
 .categories_data .row div:nth-child(1) h2 {
   font-family: "Amatic SC";
@@ -36,6 +37,15 @@
 
 .slick-track {
   width: 500000px !important; }
+
+.slick-slide a img {
+  border-radius: 100px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+  width: 154px;
+  height: 154px; }
 
 .slick-list {
   width: 992px;
@@ -192,6 +202,8 @@ label {
   display: block;
   overflow-y: hidden !important;
   width: 100% !important;
+  height: 100%;
+  max-height: 260px;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center;
@@ -214,7 +226,8 @@ label {
 .header-teenagers div:first-child {
   margin-left: 0;
   border-radius: 0;
-  background: #F2F2F2; }
+  background: #F2F2F2;
+  height: 260px; }
 
 .articles a:nth-child(10),
 .articles a:nth-child(11),
@@ -479,28 +492,44 @@ a:hover {
     margin-right: 151px; }
   .breakdown-articles .breakdown-articles-buttons {
     margin-left: auto !important;
-    margin-right: auto !important; } }
+    margin-right: auto !important; }
+  .articles a div .articles-image {
+    display: block;
+    overflow-y: hidden !important;
+    width: 100% !important;
+    height: 100%;
+    max-height: 200px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center; } }
 
 @media screen and (max-width: 991px) {
   .articles a div:nth-child(2) h3 {
     margin: 0;
     text-align: center; }
+  .categories {
+    margin-top: 20px;
+    left: 0; }
   .articles a:nth-child(1),
   .articles a:nth-child(10),
   .articles a:nth-child(12),
   .articles a:nth-child(3),
   .articles a:nth-child(5),
   .articles a:nth-child(8) {
-    margin-left: 0 !important;
-    margin-right: 15px !important; }
+    margin-left: 0;
+    margin-right: 15px; }
+  .articles a:nth-child(7) a {
+    margin-left: auto !important;
+    margin-right: auto !important; }
   .articles a:nth-child(2),
   .articles a:nth-child(4),
   .articles a:nth-child(6),
   .articles a:nth-child(9),
   .articles a:nth-child(11),
   .articles a:nth-child(13) {
-    margin-left: 15px !important;
-    margin-right: 0 !important; }
+    margin-left: 15px;
+    margin-right: 0; }
   .categories_data {
     padding: 0; }
   .content .container {
@@ -512,12 +541,13 @@ a:hover {
   .tags .slick-list .slick-slide {
     width: 585px; }
   .categories-block .slick-list {
-    width: 362px;
+    width: 388px;
     margin-left: auto;
     margin-right: auto; }
   .categories-block .slick-slide {
     width: 166px !important;
-    margin-right: 18px !important; }
+    margin-right: 14px !important;
+    margin-left: 14px !important; }
   .tags .slick-list {
     width: 260px;
     margin-left: auto;
@@ -532,30 +562,29 @@ a:hover {
     height: 40px;
     left: -3px;
     z-index: 2;
-    top: 103px; }
+    top: 123px; }
   .categories .slick-next {
     width: 43px;
     height: 41px;
     z-index: 2;
-    top: 104px;
-    right: 12px; }
+    top: 123px;
+    right: 0px; }
   .articles {
     margin-left: auto;
     margin-right: auto; }
   .breakdown-articles-buttons .phone-number {
-    margin-left: 25px; }
+    margin-left: auto;
+    margin-left: auto; }
   .articles a:nth-child(3) {
     margin-top: 30px;
     margin-left: 0; }
   .articles a:nth-child(4) {
-    margin-right: 0;
-    margin-left: 30px; }
+    margin-right: 0; }
   .articles a:nth-child(5) {
     margin-left: 0; }
   .articles a:nth-child(10) {
     margin-left: 0; }
   .articles a:nth-child(11) {
-    margin-left: 30px;
     margin-right: 0; }
   .articles a:nth-child(12) {
     margin-left: 0; }
@@ -577,7 +606,8 @@ a:hover {
     right: 25px; }
   .breakdown-articles {
     width: 558px !important;
-    margin-right: 66px !important; }
+    margin-left: 0px !important;
+    margin-right: 0px !important; }
   .breakdown-articles p {
     width: auto !important;
     margin-left: auto !important;
@@ -589,7 +619,26 @@ a:hover {
 
 @media screen and (max-width: 767px) {
   .content .container {
-    width: 590px; }
+    width: 558px; }
+  .slick-slide a img {
+    border-radius: 100px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+    width: 112px;
+    height: 112px; }
+  .articles a div .articles-image {
+    height: 200px;
+    display: block;
+    overflow-y: hidden !important;
+    width: 100% !important;
+    height: 100%;
+    max-height: 200px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center; }
   .categories {
     margin-top: 37px;
     margin-bottom: 94px;
@@ -645,7 +694,7 @@ a:hover {
     right: 2px;
     z-index: 2;
     top: 96px;
-    width: 41px;
+    width: 42px;
     height: 40px; }
   .tags .slick-list .slick-slide {
     margin-top: 20px; }
@@ -672,10 +721,12 @@ a:hover {
     margin-right: 0 !important;
     height: 520px; }
   .articles a div:nth-child(2) {
-    width: 175px;
+    width: 204px;
     margin-left: auto;
     margin-right: auto;
-    height: 185px; }
+    height: 160px;
+    word-break: break-word;
+    text-align: center; }
   .articles a div:nth-child(3) {
     margin-top: 27px;
     margin-left: auto !important;
@@ -746,7 +797,7 @@ a:hover {
     margin-top: 39px !important;
     margin-left: auto; } }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) {
   .categories-block h1 {
     font-family: Amatic SC;
     font-style: normal;
@@ -760,10 +811,11 @@ a:hover {
     margin-left: auto;
     margin-right: auto; }
   .content .container {
-    width: 324px !important; }
+    width: 264px !important; }
   .categories-block .slick-slide {
     width: 124px !important;
-    margin-right: 0 !important; }
+    margin-right: 0 !important;
+    margin-left: 0 !important; }
   .categories {
     width: 264px;
     margin-top: -10px;
@@ -826,7 +878,8 @@ a:hover {
     width: 264px !important;
     text-align: center !important;
     margin-left: 16px;
-    margin-top: 19px; }
+    margin-top: 19px;
+    word-break: break-word; }
   .breakdown-articles {
     width: 264px !important;
     height: 415px !important;
@@ -866,5 +919,5 @@ a:hover {
 .tooth {
   background-image: url("../images/categories/Polygon.svg");
   height: 13px;
-  width: 103%;
+  width: 107%;
   background-repeat: repeat-x; }
