@@ -405,7 +405,7 @@ a:hover {
     border-radius: 30px;
     border: 3px solid #EB3450;
     overflow-y: hidden;
-    padding-left: 0px; }
+    padding-left: 0; }
   .tags .tag-primary:nth-child(3n+3) {
     width: 296px !important;
     height: 60px;
@@ -472,7 +472,7 @@ a:hover {
     height: 160px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px; }
+    margin-top: 0; }
   .articles a div:nth-child(2) h3 {
     text-align: center; }
   .articles a div:nth-child(3) {
@@ -525,12 +525,12 @@ a:hover {
   .articles a:nth-child(7) a {
     margin-left: auto !important;
     margin-right: auto !important; }
+  .articles a:nth-child(11),
+  .articles a:nth-child(13),
   .articles a:nth-child(2),
   .articles a:nth-child(4),
   .articles a:nth-child(6),
-  .articles a:nth-child(9),
-  .articles a:nth-child(11),
-  .articles a:nth-child(13) {
+  .articles a:nth-child(9) {
     margin-left: 15px;
     margin-right: 0; }
   .categories_data {
@@ -571,7 +571,7 @@ a:hover {
     height: 41px;
     z-index: 2;
     top: 123px;
-    right: 0px; }
+    right: 0; }
   .articles {
     margin-left: auto;
     margin-right: auto; }
@@ -609,8 +609,8 @@ a:hover {
     right: 25px; }
   .breakdown-articles {
     width: 558px !important;
-    margin-left: 0px !important;
-    margin-right: 0px !important; }
+    margin-left: 0 !important;
+    margin-right: 0 !important; }
   .breakdown-articles p {
     width: auto !important;
     margin-left: auto !important;
@@ -730,7 +730,7 @@ a:hover {
     height: 160px;
     word-break: break-word;
     text-align: center;
-    margin-top: 0px; }
+    margin-top: 30px; }
   .articles a div:nth-child(3) {
     margin-top: 30px;
     margin-left: auto !important;
@@ -814,6 +814,15 @@ a:hover {
     margin-top: 67px;
     margin-left: auto;
     margin-right: auto; }
+  .header-adults div:first-child,
+  .header-kids div:first-child,
+  .header-parents div:first-child,
+  .header-schools div:first-child,
+  .header-teenagers div:first-child {
+    margin-left: 0;
+    border-radius: 0;
+    background: #f2f2f2;
+    height: 200px; }
   .content .container {
     width: 264px !important; }
   .categories-block .slick-slide {
