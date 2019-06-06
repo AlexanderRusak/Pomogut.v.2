@@ -476,7 +476,9 @@ a:hover {
   .content .container {
     width: 970px;
   }
-
+.tags div input[type=radio]+label{
+  width: 200px;
+}
   .articles-button {
     margin-top: 30px;
   }
@@ -619,7 +621,9 @@ a:hover {
     margin: 0;
     text-align: center;
   }
-
+.tags div input[type=radio]+label{
+  width: 200px;
+}
   .categories {
     margin-top: 20px;
     left: 0;
@@ -794,7 +798,9 @@ a:hover {
   .content .container {
     width: 558px;
   }
-
+  .tags div input[type=radio]+label{
+    width: 200px;
+  }
   .slick-slide a img {
     border-radius: 100px;
     object-fit: cover;
