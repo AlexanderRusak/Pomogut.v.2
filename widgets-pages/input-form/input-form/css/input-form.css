@@ -35,6 +35,11 @@
   padding-left: 0;
   display: inherit; }
 
+.captcha {
+  float: right;
+  position: relative;
+  bottom: 40px; }
+
 input[type=checkbox] {
   transform: scale(1.4);
   -ms-transform: scale(1.4);
@@ -171,37 +176,53 @@ label[for="checkbox-id"] a {
     margin-left: auto;
     margin-right: auto;
     padding: 0; }
-  .captcha div {
-    float: right !important; } }
+  .captcha {
+    margin-top: 8px;
+    padding-left: 0 !important;
+    margin-right: auto;
+    position: static;
+    float: none;
+    margin-left: auto; } }
 
 @media screen and (max-width: 767px) {
   .feedback {
     width: 264px; }
   .feedback .container {
     width: 264px; }
-  .captcha div {
-    float: left !important; }
+  .captcha {
+    -webkit-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    transform: scale(0.85); }
+  .captcha {
+    margin-top: 8px;
+    padding-left: 0 !important;
+    /* margin-right: auto; */
+    /* position: static; */
+    float: none;
+    /* margin-left: auto; */
+    /* padding: 0!important; */
+    position: relative;
+    bottom: 0px;
+    right: 23px;
+    width: 304px; }
   .feedback .container .row div form div:nth-child(7) {
     padding-right: 0 !important; }
   .feedback .container .row div form div:nth-child(7) div {
     padding-left: 0 !important;
     padding-right: 0 !important; }
   .feedback .container .row div form div:nth-child(n) {
-    padding-left: 0 !important;
-    padding-right: 0 !important; }
+    padding-left: 0;
+    padding-right: 0; }
   .feedback .container .row div form div:nth-child(7) {
     padding-left: 0 !important;
     padding-right: 0 !important; }
-  .feedback .container .row div form div:nth-child(7) div {
-    position: relative;
+  .captcha {
+    margin-top: 8px;
     padding-left: 0 !important;
-    padding-right: 0 !important;
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.95);
-    right: 7px;
+    margin-right: auto;
+    float: none;
     margin-left: auto;
-    margin-right: auto; } }
+    padding: 0 !important; } }
 
 @media screen and (max-width: 360px) {
   .feedback .container .row div form div button {
