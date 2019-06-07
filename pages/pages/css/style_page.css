@@ -134,7 +134,7 @@
 .tags div input[type=radio] + label {
   overflow-y: hidden;
   word-break: break-word;
-  width: 236px;
+  width: 248px;
   height: 54px;
   margin-left: auto;
   margin-right: auto;
@@ -417,7 +417,7 @@ a:hover {
   .content .container {
     width: 970px; }
   .tags div input[type=radio] + label {
-    width: 200px !important; }
+    width: 248px !important; }
   .articles-button {
     margin-top: 30px; }
   .articles a {
@@ -525,7 +525,8 @@ a:hover {
     margin: 0;
     text-align: center; }
   .tags div input[type=radio] + label {
-    width: 200px; }
+    width: 248px;
+    word-break: normal; }
   .categories {
     margin-top: 20px;
     left: 0; }
@@ -636,8 +637,6 @@ a:hover {
 @media screen and (max-width: 767px) {
   .content .container {
     width: 558px; }
-  .tags div input[type=radio] + label {
-    width: 200px !important; }
   .slick-slide a img {
     border-radius: 100px;
     -o-object-fit: cover;
@@ -947,5 +946,6 @@ a:hover {
 .tooth {
   background-image: url("../images/categories/Polygon.svg");
   height: 13px;
-  width: 107%;
-  background-repeat: repeat-x; }
+  width: 100%;
+  background-repeat: repeat-x;
+  background-size: cover; }

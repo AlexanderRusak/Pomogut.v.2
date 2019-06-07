@@ -67,6 +67,22 @@ label[for="checkbox-id"] a {
   box-shadow: none;
   border-color: #fff; }
 
+.feedback {
+  width: 950x;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0; }
+
+.feedback .container .row {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.feedback .container {
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0; }
+
 .feedback .container .row div form div:nth-child(1) {
   padding-left: 0 !important; }
 
@@ -135,32 +151,38 @@ label[for="checkbox-id"] a {
   margin-top: 33px; }
 
 @media screen and (max-width: 1200px) {
+  .feedback .container .row div form div:nth-child(7) {
+    margin-top: 18px;
+    float: left;
+    /* padding-right: 0!important; */ }
+  .feedback {
+    width: 558px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0; }
+  .feedback .container .row {
+    margin-left: 0px;
+    margin-right: 0px; }
+  .feedback .container {
+    width: 558px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0; }
   .captcha div {
     float: right !important; } }
 
-@media screen and (max-width: 991px) {
-  .captcha {
-    padding-left: 0 !important; }
-  .captcha div {
-    float: left !important; }
-  .col-xs-offset-1 {
-    margin-left: auto; } }
-
 @media screen and (max-width: 767px) {
-  .col-xs-offset-1 {
-    margin-left: 8.33333333333333333333%; }
+  .feedback {
+    width: 264px; }
+  .feedback .container {
+    width: 264px; }
   .captcha div {
     float: left !important; }
-  .feedback .container .row div form div:nth-child(n) {
-    padding-left: 15px !important;
-    padding-right: 15px !important; }
   .feedback .container .row div form div:nth-child(7) {
     padding-right: 0 !important; }
   .feedback .container .row div form div:nth-child(7) div {
     padding-left: 0 !important;
-    padding-right: 0 !important; } }
-
-@media screen and (max-width: 479px) {
+    padding-right: 0 !important; }
   .feedback .container .row div form div:nth-child(n) {
     padding-left: 0 !important;
     padding-right: 0 !important; }
@@ -173,8 +195,10 @@ label[for="checkbox-id"] a {
     padding-right: 0 !important;
     -webkit-transform: scale(0.9);
     -ms-transform: scale(0.9);
-    transform: scale(0.9);
-    right: 13px; } }
+    transform: scale(0.95);
+    right: 7px;
+    margin-left: auto;
+    margin-right: auto; } }
 
 @media screen and (max-width: 360px) {
   .feedback .container .row div form div button {

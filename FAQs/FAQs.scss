@@ -14,8 +14,7 @@
 ////////////////////////////////////////////////////////////////////////// Questions
 
 .questions {
-  padding-left: 0px;
-
+  padding-left: 0;
 }
 
 .questions .row {
@@ -27,12 +26,13 @@
 .questions .row div {
   border-radius: 6px !important;
   width: 1146px;
-  margin:  auto;
-  margin-left: 12px;
+  margin: auto auto auto 12px;
 }
-.questions .row div div:first-child{
+
+.questions .row div div:first-child {
   width: 450px;
 }
+
 .title .row div h2 {
   font-family: Amatic SC;
   font-style: normal;
@@ -46,9 +46,7 @@
 }
 
 .questions .row div {
- background-color: #F2F2F2;
-//background-color: red;
-
+  background-color: #F2F2F2; //background-color: red;
 }
 
 .questions .row div {
@@ -101,54 +99,24 @@
   margin-bottom: 0 !important;
   margin-left: 1px;
 }
-@media screen and (max-width:1200px) {
-  .questions .row div div h3 {
-    margin-top: 37px;
-    right: 30px;
-  }
-
-  .questions .row div .questions-question:nth-child(2) {
-    width: 606px;
+@media screen and (max-width: 1201px) {
+  .questions {
+    width: 558px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
   }
 
-  .questions .row div div p {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 28px;
-    color: #292424;
-    margin-top: 34px;
-    margin-bottom: 45px;
-    margin-left: 1px;
+  .questions .row {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
   }
 
-  .questions .row div .questions-question p:nth-child(2) {
-    margin-top: 15px;
-  }
-
-  .questions .row div div .extra-p {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 28px;
-    color: #292424;
-    margin-top: 34px !important;
-    margin-bottom: 0 !important;
-    margin-left: 1px;
-  }
-}
-@media screen and (max-width: 991px) {
   .questions .row div {
-    width: 558px;
-    padding: 0 !important;
-    left: 20px;
+    padding: 0;
   }
-.questions .row{
-  margin-left: 60px;
-}
+
   .questions .row div div h3 {
     margin-top: 37px;
     left: 7px;
@@ -175,100 +143,40 @@
   }
 }
 @media screen and (max-width: 767px) {
-  .questions .row div {
-    width: 75% !important;
-    padding: 0 !important;
-
-  }
-
-
-  .questions .row div div h3 {
-    margin-top: 37px;
-    left: 15px;
-  }
-
-  .questions .row div .questions-question:nth-child(2) {
-    width: 487px;
+  .title{
+    width: 264px;
     padding: 0;
   }
-
-  .questions .row div div p {
-    margin-left: 30px;
-    bottom: 30px;
-    margin-top: 3px;
-  }
-
-  .questions .row div div .extra-p {
-    margin-top: 3px !important;
-    margin-left: 30px;
-  }
-
-  .questions .row div div p:nth-child(2) {
-    margin-top: 14px !important;
-  }
-}
-@media screen and (max-width: 426px) {
-  .title .row div h2 {
-    margin-top: 80px;
-    margin-bottom: 10px;
-    font-family: Amatic SC;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 42px;
-    text-align: center;
-    color: #000000;
-  }
-  .questions .row{
-    margin-top: 28px;
-  }
-    .questions{
-      padding-right: 0px;
-    }
-  .questions .row, .questions{
-    width: 300px;
+  .questions {
+    width: 264px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
   }
-  .questions .row div{
-    width: 264px !important;
-
-    margin-bottom: 10px;
+  .questions .row div {
+      padding: 0;
+      width: 264px;
+      margin-left:0px;
+      margin-right: 0px;
   }
-  .questions .row div div{
-    width: 212px !important;
-    margin-left: 0px;
+  .questions .row {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
   }
-  .questions .row div div h3{
-    width: 250px !important;
-    padding-left: 0px;
-    top: -20px;
-    margin-left: -6px;
-
+  .questions .row div div {
+    padding: 0;
+    width: 264px;
   }
-  .questions-question{
-      top: -20px;
-  }
-  .questions-question p{
-    margin-left: 10px !important;
-    margin-bottom: 0px !important;
-
-  }
-
+  .questions .row div div:first-child {
+    width: 264px;
 }
-@media screen and (max-width: 376px){
-  .questions .row div{
-
-    margin-left: auto;
-    margin-right: auto;
-
-  }
+.questions .row div .questions-question:nth-child(2) {
+    width: 264px;
+    padding: 0;
 }
-@media screen and (max-width: 321px){
-  .questions .row div{
-
-    margin-left: auto;
-    margin-right: auto;
+  .questions .row div {
+    padding: 0;
   }
 }
 /////////////////////////////////////////////////////////////////////////////// footer

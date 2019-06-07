@@ -12,60 +12,7 @@ $(document).on('ready', function() {
          }
  	    return false; // выключаем стандартное действие
      });
-     jQuery(function($) {
-       function fix_size() {
-         var images = $('.project-1-slider .main-section-wave .image-wave .under-image-wave-background img');
-         images.each(setsize);
 
-         function setsize() {
-           var img = $(this),
-             img_dom = img.get(0),
-             container = img.parents('.project-1-slider .main-section-wave .image-wave .under-image-wave-background');
-           if (img_dom.complete) {
-             resize();
-           } else img.one('load', resize);
-
-           function resize() {
-             if ((container.width() / container.height()) < (img_dom.width / img_dom.height)) {
-               img.width('100%');
-               img.height('auto');
-               return;
-             }
-             img.height('100%');
-             img.width('auto');
-           }
-         }
-       }
-       $(window).on('resize', fix_size);
-       fix_size();
-     });
-     jQuery(function($) {
-       function fix_size() {
-         var images = $('.project-2-slider .main-section-wave .image-wave .under-image-wave-background img');
-         images.each(setsize);
-
-         function setsize() {
-           var img = $(this),
-             img_dom = img.get(0),
-             container = img.parents('.project-2-slider .main-section-wave .image-wave .under-image-wave-background');
-           if (img_dom.complete) {
-             resize();
-           } else img.one('load', resize);
-
-           function resize() {
-             if ((container.width() / container.height()) < (img_dom.width / img_dom.height)) {
-               img.width('100%');
-               img.height('auto');
-               return;
-             }
-             img.height('100%');
-             img.width('auto');
-           }
-         }
-       }
-       $(window).on('resize', fix_size);
-       fix_size();
-     });
   $('.project-1-slider').slick({
     dots: false,
     infinite: false,

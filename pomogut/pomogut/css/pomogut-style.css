@@ -15,6 +15,16 @@
 .btn {
   border: none; }
 
+.project-1 .slick-slide img,
+.project-2 .slick-slide img {
+  display: block;
+  height: 138px;
+  width: 264px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top; }
+
 header {
   background-image: url("../images/header/background.svg");
   background-size: cover;
