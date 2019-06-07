@@ -792,15 +792,19 @@ a:hover {
   }
 }
 @media screen and (max-width: 767px) {
+
   .content .container {
     width: 558px;
+  }
+  .categories div a {
+    border: none !important;
   }
 .tags div input[type=radio]+label {
 }
   .slick-slide a img {
     border-radius: 100px;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
     width: 112px;
     height: 112px;
   }
@@ -1131,11 +1135,11 @@ a:hover {
   }
 
   .categories div a:focus {
-    height: 128px !important;
-    width: 128px;
+    height: 124px !important;
+    width: 124px;
     display: block;
     border: 3px solid #EB3450 !important;
-    border-radius: 70px;
+    border-radius: 80px;
     position: relative;
   }
 

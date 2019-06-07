@@ -637,12 +637,14 @@ a:hover {
 @media screen and (max-width: 767px) {
   .content .container {
     width: 558px; }
+  .categories div a {
+    border: none !important; }
   .slick-slide a img {
     border-radius: 100px;
     -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: top;
-    object-position: top;
+    -o-object-position: center;
+    object-position: center;
     width: 112px;
     height: 112px; }
   .articles a div .articles-image {
@@ -873,11 +875,11 @@ a:hover {
     display: flex;
     vertical-align: middle; }
   .categories div a:focus {
-    height: 128px !important;
-    width: 128px;
+    height: 124px !important;
+    width: 124px;
     display: block;
     border: 3px solid #EB3450 !important;
-    border-radius: 70px;
+    border-radius: 80px;
     position: relative; }
   .slick-next {
     right: 2px;

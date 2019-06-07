@@ -23,7 +23,11 @@
   text-align: center;
   color: #000000;
 }
-
+.captcha div {
+    /* float: right!important; */
+    margin-left: auto;
+    margin-right: auto;
+}
 .feedback .container .row div form div label {
   font-family: Roboto;
   font-style: normal;
@@ -35,6 +39,7 @@
 
 .feedback .container .row div form div label[for="checkbox"] {
   padding-left: 0;
+  display: inherit;
 }
 
 input[type=checkbox] {
@@ -160,10 +165,6 @@ label[for="checkbox-id"] a {
   text-align: center;
   color: rgba(255, 255, 255, 0.9);
   background: #00AEEF;
-}
-
-.captcha div {
-  float: right!important;
 }
 
 .container .row div form {
