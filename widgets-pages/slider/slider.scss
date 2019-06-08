@@ -229,7 +229,7 @@
     margin-bottom: 0 !important;
     opacity: 0.5;
   }
-    
+
   .slick-slide img {
     width: 362px;
     height: 365px;
@@ -244,6 +244,9 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .title {
+    margin-top: 70px;
+  }
   .slider-img-container {
     width: 264px;
     height: 241px;

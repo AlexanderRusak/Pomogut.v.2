@@ -137,6 +137,10 @@
 }
 @media screen and (max-width: 991px) {}
 @media screen and (max-width: 767px) {
+  .raiting .container .row div h3 {
+    margin-top: 70px;
+  }
+
   .raiting{
     width: 360px;
     margin-left:auto;

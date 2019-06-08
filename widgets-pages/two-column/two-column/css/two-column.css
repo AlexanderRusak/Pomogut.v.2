@@ -99,6 +99,8 @@
     line-height: 28px; } }
 
 @media screen and (max-width: 767px) {
+  .two-column {
+    margin-top: 70px; }
   .two-column-image img {
     width: 264px;
     height: 172px;
