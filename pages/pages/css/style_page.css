@@ -715,7 +715,8 @@ a:hover {
     width: 42px;
     height: 42px; }
   .slick-next:before, .slick-prev:before {
-    padding-top: 2px; }
+    position: relative;
+    top: 2px; }
   .tags .slick-list .slick-slide {
     margin-top: 20px; }
   .tags {
@@ -946,9 +947,18 @@ a:hover {
     margin-left: auto !important;
     margin-right: auto !important; } }
 
-.tooth {
-  background-image: url("../images/categories/Polygon.svg");
-  height: 13px;
-  width: 100%;
-  background-repeat: repeat-x;
-  background-size: cover; }
+@media screen and (max-width: 1440px) {
+  .tooth {
+    background-image: url("../images/categories/Polygon.svg");
+    height: 13px;
+    width: 100%;
+    background-repeat: repeat-x;
+    background-size: cover; } }
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .tooth {
+    background-image: url("../images/categories/Polygon.svg");
+    height: 13px;
+    width: 100%;
+    background-repeat: repeat-x;
+    background-size: contain; } }
