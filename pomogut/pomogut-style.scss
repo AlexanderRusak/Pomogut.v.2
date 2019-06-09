@@ -20,14 +20,25 @@
 .btn {
   border: none;
 }
-.project-1 .slick-slide img,
- .project-2 .slick-slide img{
-    display: block;
-    height: 138px;
-    width: 264px;
-    object-fit: cover;
-    object-position: top;
+.feedback {
+    margin-top: -23px;
+    margin-bottom: 95px;
 }
+
+.project-1 .slick-slide img,
+.project-2 .slick-slide img {
+  display: block;
+  height: 138px;
+  width: 264px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.project-1-title {
+  height: 302px;
+  margin-bottom: 30px;
+}
+
 header {
   background-image: url("../images/header/background.svg");
   background-size: cover;
@@ -40,7 +51,8 @@ header {
 header .row .header-logo {
   position: absolute;
   top: 200px;
-  left: 3px;
+  left: 0;
+  right: 0;
 }
 
 .slick-next:before,
@@ -58,12 +70,18 @@ header .row .header-logo {
 }
 
 header .row .header-logo h3 {
+  word-break: break-word;
+  width: 558px;
+  height: 66px;
+  padding: 0;
   font-family: Gotham Pro;
   font-size: 20px;
   line-height: 33px;
   text-align: center;
   color: #28282B;
   margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header .row .header-logo .btn-write {
@@ -93,7 +111,7 @@ header .row .header-logo .btn-write p {
 ///////////////////////////////////////////////////////////////////////////// about
 
 .about {
-  margin-top: 98px;
+  margin-top: 93px;
   margin-bottom: 100px;
 }
 
@@ -107,7 +125,7 @@ header .row .header-logo .btn-write p {
 }
 
 .about-logos {
-  margin-top: 55px;
+  margin-top: 45px;
 }
 
 .about-logos .slick-slide:nth-child(3n+1) {
@@ -154,16 +172,23 @@ header .row .header-logo .btn-write p {
   top: 50px;
   right: 30px;
   z-index: 5;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
 }
 
 .slick-prev {
   top: 50px;
   left: 0;
   z-index: 5;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
+}
+
+.slick-next::before,
+.slick-prev::before {
+  position: relative;
+  top: 2px;
+  right: 2px;
 }
 
 .about-logos .slick-slide a img {
@@ -209,7 +234,7 @@ header .row .header-logo .btn-write p {
 }
 
 .project-1 .container .row .col-lg-5 .buttons-number {
-  margin-top: 31px !important;
+  margin-top: 34px !important;
   margin-left: -3px;
   width: 230px;
   height: 48px;
@@ -234,14 +259,14 @@ header .row .header-logo .btn-write p {
 }
 
 .project-1 .container .row .col-lg-5 .buttons-chat {
-  margin-left: 46px;
+  margin-left: 45px;
   height: 68px;
   width: 68px;
   background: #5DB9E0;
   display: inline-block;
   border-radius: 35px;
   position: relative;
-  top: 5px;
+  top: 10px;
   border: 6px solid #BBE2F1;
 }
 
@@ -307,7 +332,7 @@ header .row .header-logo .btn-write p {
 
 .project-1-slider .slick-list .slick-slide,
 .project-2-slider .slick-list .slick-slide {
-  margin-left: 26px;
+  margin-left: 30px;
 }
 
 .project-1-slider .main-section .title-link-1 p,
@@ -321,8 +346,8 @@ header .row .header-logo .btn-write p {
 
 .project-1 .arrows,
 .project-2 .arrows {
-  margin-top: 35px;
-  margin-left: 366px;
+  margin-top: 37px;
+  margin-left: 375px;
   margin-bottom: 90px;
 }
 
@@ -477,7 +502,7 @@ header .row .header-logo .btn-write p {
 ////////////////////////////////////////////////////////
 
 .feedback {
-  margin-top: -38px;
+  margin-top: 80px;
 }
 
 .feedback .row div h3 {
@@ -491,7 +516,8 @@ header .row .header-logo .btn-write p {
 }
 
 .feedback .row div p {
-  width: 438px;
+  width: 558px;
+  height: 51px;
   margin-top: 20px;
   font-family: Open Sans;
   font-style: normal;
@@ -503,8 +529,8 @@ header .row .header-logo .btn-write p {
 }
 
 .feedback .row div form .form-group {
-  margin-top: 40px;
-  width: 546px !important;
+  margin-top: 22px;
+  width: 558px !important;
 }
 
 .feedback .row div form .form-group:nth-child(4) {
@@ -512,7 +538,8 @@ header .row .header-logo .btn-write p {
 }
 
 .feedback .row div form textarea {
-  width: 557px !important;
+  width: 558px!important;
+  height: 259px;
 }
 
 .has-feedback label~.form-control-feedback {
@@ -577,25 +604,28 @@ textarea[placeholder] {
 }
 
 .feedback .row div .form-group .button-form {
-  margin-top: 25px;
-  background: #B3D66E;
+  padding: 0;
+  margin-top: 4px;
+  background: #b3d66e;
   border-radius: 8px;
   width: 230px;
   height: 48px;
   margin-left: 158px;
   font-family: Open Sans;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 22px;
-  /* identical to box height */
-  //display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .feedback .form-group .btn {
-  margin-bottom: 81.5px;
+  margin-bottom: 0;
 }
 
 .g-recaptcha div {
@@ -615,7 +645,7 @@ footer .row .col-lg-5 {
 }
 
 footer .row .col-lg-5 .copyrights {
-  margin-top: 100px;
+  margin-top: 70px;
   font-family: Open Sans;
   font-size: 14px;
   line-height: 25px;
@@ -639,6 +669,73 @@ footer .icons-social-networks a {
   margin-left: 26px;
 }
 @media screen and (max-width: 1200px) {
+  footer {
+    margin-top: -5px;
+    background-color: #5db9e0;
+  }
+
+  .feedback {
+      margin-top: -23px;
+      margin-bottom: 95px;
+  }
+  .tablet {
+    margin-top: 50px!important;
+    margin-left: 0;
+    width: 230px;
+    height: 48px;
+    background: #b3d66e;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+
+  .project-1 .row .project-1-slider,
+  .project-1 .row .project-2-slider {
+    margin-top: 4px;
+    width: 570px;
+  }
+
+  .about {
+    margin-top: 98px;
+    margin-bottom: 68px;
+
+  }
+
+  header .row .header-logo {
+    position: absolute;
+    top: 295px;
+    left: 0;
+    right: 0;
+  }
+
+  .about-logos .slick-slide:nth-child(3n+1) {
+    margin-top: 15px;
+    width: 353px !important;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 34px;
+  }
+
+  header .row .header-logo .btn-write {
+    margin-top: 91px;
+  }
+
+  .about-title {
+    width: 583px;
+    padding-left: 25px;
+    padding-right: 0;
+  }
+
+  .about-title p {
+    width: 558px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #28282b;
+  }
+
   header .row .header-image .header-logo div h3 {
     margin-left: 50px;
     margin-top: 20px;
@@ -681,7 +778,7 @@ footer .icons-social-networks a {
   .project-1 .arrows,
   .project-2 .arrows {
     width: 200px;
-    margin-top: 35px;
+    margin-top: 37px;
     margin-left: 280px;
     margin-bottom: 90px;
   }
@@ -707,7 +804,7 @@ footer .icons-social-networks a {
 
   .tablet {
     margin-top: 50px!important;
-    margin-left: 5px;
+    margin-left: 0;
     width: 230px;
     height: 48px;
     background: #b3d66e;
@@ -754,6 +851,11 @@ footer .icons-social-networks a {
     display: inline-block;
   }
 
+  .feedback {
+      margin-top: -23px;
+      margin-bottom: 95px;
+  }
+
   .about-logos .slick-slide:nth-child(3n+1),
   .about-logos .slick-slide:nth-child(3n+2),
   .about-logos .slick-slide:nth-child(3n+3) {
@@ -776,7 +878,7 @@ footer .icons-social-networks a {
 
   .project-1 .row .project-1-slider,
   .project-1 .row .project-2-slider {
-    margin-top: 30px;
+    margin-top: 4px;
     width: 570px;
   }
 
@@ -854,7 +956,7 @@ footer .icons-social-networks a {
 
   .about {
     margin-top: 98px;
-    margin-bottom: 103px;
+    margin-bottom: 68px;
     width: 590px;
     margin-left: 94px;
   }
@@ -877,9 +979,9 @@ footer .icons-social-networks a {
   }
 
   .tablet {
-    margin-top: 38px!important;
-    margin-left: 0px !important;
-    width: 100%;
+    margin-top: 50px!important;
+    margin-left: 0;
+    width: 230px;
     height: 48px;
     background: #b3d66e;
     border-radius: 8px;
@@ -959,8 +1061,8 @@ footer .icons-social-networks a {
   }
 
   .non-main {
-    width: 264px;
-    margin-bottom: 50px;
+    width: 239px;
+    margin-bottom: 47px;
   }
 
   .project-1-slider .main-section .title-link-1 a,
@@ -980,14 +1082,58 @@ footer .icons-social-networks a {
     text-align: center;
   }
 
+  .feedback {
+      margin-top: -23px;
+      margin-bottom: 95px;
+  }
+
+  .feedback .row div p {
+    width: 558px;
+  }
+
+  .feedback .form-group .btn {
+    margin-bottom: 0;
+  }
+
   footer {
-    margin-top: 17px;
+    margin-top: -5px;
     background-color: #5db9e0;
   }
 }
 @media screen and (max-width:767px) {
   header {
     height: 630px;
+  }
+  .tablet {
+      margin-top: 38px!important;
+      margin-left: 0;
+      width: 264px;
+      height: 48px;
+      background: #b3d66e;
+      border-radius: 8px;
+      display: inline-block;
+      margin-bottom: 50px;
+  }
+  header .row .header-logo {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+  }
+
+  header .row .header-logo h3 {
+    word-break: break-word;
+    width: 264px;
+    height: 99px;
+    padding: 0;
+    font-family: Gotham Pro;
+    font-size: 20px;
+    line-height: 25px !important;
+    text-align: center;
+    color: #28282b;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   header .header-logo h3 {
@@ -999,9 +1145,24 @@ footer .icons-social-networks a {
     margin-top: 40px !important;
   }
 
+  .about .about-title {
+    margin: auto;
+    width: 278px!important;
+  }
+  .about-title p {
+      width: 264px;
+      padding-left: 0px;
+      padding-right: 0;
+  }
+  .about-title {
+
+    padding-left: 14px;
+    padding-right: 0;
+  }
+
   header .row .header-logo .btn-write {
     padding-top: 6px;
-    margin-top: 197px !important;
+    margin-top: 58px !important;
     height: 48px !important;
     background: #5DB9E0;
     border-radius: 8px;
@@ -1075,7 +1236,7 @@ footer .icons-social-networks a {
   }
 
   .project-1 .container {
-    margin-top: 70px;
+    margin-top: 25px;
   }
 
   .project-1 .container .main {
@@ -1083,7 +1244,8 @@ footer .icons-social-networks a {
   }
 
   .project-1-title {
-    margin-bottom: 30px;
+    height: 300px;
+    margin-bottom: 23px;
   }
 
   .project-1 .row .project-1-slider,
@@ -1091,7 +1253,10 @@ footer .icons-social-networks a {
     margin-top: 0 !important;
     width: 264px;
   }
-
+  .non-main {
+      width: 264px;
+      margin-bottom: 47px;
+  }
   .project-1-slider .main-section .title-link-1,
   .project-2-slider .main-section .title-link-2 {
     margin-top: 65px !important;
@@ -1147,7 +1312,7 @@ footer .icons-social-networks a {
 
   .tablet {
     margin-bottom: 0 !important;
-    margin-left: 0px !important;
+    margin-left: 0 !important;
   }
 
   .mobile {
@@ -1182,7 +1347,7 @@ footer .icons-social-networks a {
   }
 
   .non-main:last-child {
-    margin-bottom: 80px;
+    margin-bottom: 8px;
     overflow-y: hidden;
   }
 
@@ -1200,7 +1365,28 @@ footer .icons-social-networks a {
   .feedback .row div form .form-group:nth-child(3) {
     width: 304px !important;
   }
-
+.project-1 .container .row .col-lg-5 h2{
+  width: 264px;
+  word-break: break-word;
+}
+.feedback {
+     margin-top: 35px;
+}
+.feedback .row div  p {
+  width: 264px;
+  height: 100px;
+}
+footer {
+    margin-top: 0px;
+    background-color: #5db9e0;
+}
+.feedback .row .feedback-column {
+    width: 304px!important;
+    margin-left: auto;
+    margin-right: auto;
+    float: none!important;
+    margin-bottom: 55px;
+}
   .feedback .row div .form-group .form-control::placeholder,
   .feedback .row div .form-group .input-lg[placeholder]::placeholder {
     opacity: 0;
