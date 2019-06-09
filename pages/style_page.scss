@@ -894,7 +894,7 @@ a:hover {
     z-index: 2;
     top: 103px;
     width: 42px;
-    height: 40px;
+    height: 42px;
   }
 
   .categories .slick-next {
@@ -902,9 +902,11 @@ a:hover {
     z-index: 2;
     top: 96px;
     width: 42px;
-    height: 40px;
+    height: 42px;
   }
-
+  .slick-next:before, .slick-prev:before {
+      padding-top: 2px;
+  }
   .tags .slick-list .slick-slide {
     margin-top: 20px;
   }
