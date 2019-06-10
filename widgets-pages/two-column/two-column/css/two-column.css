@@ -29,6 +29,9 @@
   margin-bottom: 60px;
   margin-top: 0; }
 
+.col-xs-12 {
+  padding: 0; }
+
 .img-signature {
   margin-top: 10PX;
   font-family: Roboto;

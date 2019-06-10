@@ -4,8 +4,7 @@
   overflow-x: hidden; }
 
 .page-in-developement {
-  margin-top: 102px;
-  margin-bottom: 90px; }
+  margin-top: 102px; }
 
 .page-in-developement .row div .page-in-developement-image {
   width: 456px;
@@ -48,6 +47,8 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0px; }
+  .page-in-developement {
+    margin-top: 70px; }
   .page-in-developement .col {
     margin-left: 0px;
     margin-right: 0px;

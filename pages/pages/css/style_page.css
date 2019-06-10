@@ -19,9 +19,8 @@
   background-color: #F2F2F2; }
 
 .categories {
-  margin-top: 15px;
-  margin-bottom: 90px;
-  padding-left: 20px; }
+  margin-top: 10px;
+  margin-bottom: 90px; }
 
 .categories-block h1 {
   font-family: Amatic SC;
@@ -47,13 +46,13 @@
   height: 154px; }
 
 .slick-list {
-  width: 992px;
+  width: 950px;
   margin-left: auto;
   margin-right: auto; }
 
 .slick-slide {
   width: 167px !important;
-  margin-right: 32px; }
+  margin-right: 29px; }
 
 .slick-slide:focus,
 .slick-slide a {
@@ -63,16 +62,16 @@
   position: relative;
   width: 42px;
   height: 40px;
-  left: -23px;
+  left: -5px;
   z-index: 2;
-  top: 122px; }
+  top: 124px; }
 
 .categories .slick-next {
   width: 43px;
   height: 41px;
   z-index: 2;
-  top: 122px;
-  right: 26px; }
+  top: 124px;
+  right: 10px; }
 
 .slick-next:before,
 .slick-prev:before {
@@ -94,7 +93,7 @@
   position: relative; }
 
 .categories div p {
-  margin-top: 15px;
+  margin-top: 22px;
   margin-bottom: 0;
   font-family: Roboto;
   font-style: normal;
@@ -174,7 +173,7 @@ label {
 .tags .slick-next {
   width: 46px;
   height: 54px;
-  top: 30px;
+  top: 35px;
   right: 14px; }
 
 .tags .slick-list {
@@ -457,8 +456,9 @@ a:hover {
     border: 3px solid #EB3450 !important;
     overflow-y: hidden !important; }
   .tags .slick-list {
-    width: 580px;
-    margin-left: 195px; }
+    width: 558px;
+    margin-left: auto;
+    margin-right: auto; }
   .articles {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -559,7 +559,7 @@ a:hover {
   .tags .slick-list .slick-slide {
     width: 585px; }
   .categories-block .slick-list {
-    width: 388px;
+    width: 362px;
     margin-left: auto;
     margin-right: auto; }
   .categories-block .slick-slide {

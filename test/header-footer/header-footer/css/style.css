@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700&subset=cyrillic,hebrew,latin-ext,vietnamese");
 * {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; }
 
 * {
   margin: 0;
@@ -385,7 +386,8 @@ nav .container .navbar-collapse {
   background-color: #00AEEF; }
 
 .footer .container {
-  margin-top: 100px; }
+  margin-top: 100px;
+  margin-bottom: 30px; }
 
 .footer .container div {
   padding-left: 0; }

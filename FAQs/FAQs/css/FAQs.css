@@ -19,7 +19,7 @@
 .questions .row div {
   border-radius: 6px !important;
   width: 1146px;
-  margin: auto auto auto 12px; }
+  margin: 0; }
 
 .questions .row div div:first-child {
   width: 450px; }

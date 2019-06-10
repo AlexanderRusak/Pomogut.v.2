@@ -4,16 +4,20 @@
 * {
   overflow-x: hidden;
 }
-a{
+
+a {
   text-decoration: none !important;
 }
-.stripe_under-header{
+
+.stripe_under-header {
   display: none !important;
 }
 ///////////////////////////////////////////////
+
 .sections {
   background-color: #F2F2F2;
 }
+
 .sections .container {
   margin-top: 100px;
 }
@@ -24,9 +28,11 @@ a{
   padding-left: 0;
   padding-right: 0;
 }
-.block-1 .container{
-  padding-left: 0px !important;
+
+.block-1 .container {
+  padding-left: 0 !important;
 }
+
 .sections-pattern_two {
   width: 264px;
   height: 274px;
@@ -91,7 +97,7 @@ a{
 }
 
 .sections .container .row:nth-child(1) div:nth-child(1) {
-  right: 0px;
+  right: 0;
   overflow-y: hidden;
 }
 
@@ -151,10 +157,11 @@ div .inside-block-section p {
 
 .section-schools .inside-block-section p {
   margin-left: 42px;
-  margin-top: 0px;
+  margin-top: 0;
   width: 75px;
   height: 30px;
 }
+
 .sections .container .row .section-teenagers a .inside-block-section p {
   position: relative;
   z-index: 50;
@@ -162,6 +169,7 @@ div .inside-block-section p {
   left: 30px;
   height: 30px;
 }
+
 .sections .container .row .section-parents a .inside-block-section p {
   position: relative;
   z-index: 50;
@@ -172,28 +180,30 @@ div .inside-block-section p {
 
 .sections .container .row .section-adults a .inside-block-section p:last-child {
   position: relative;
-    z-index: 50;
-    bottom: 22px!important;
-    left: -5px!important;
-    height: 25px!important;
-    width: 140px;
-}
-.sections .container .row .section-kids  a .inside-block-section p {
-  width: 100px;
-      position: relative;
-      z-index: 50;
-      bottom: 45px!important;
-      left: 23px!important;
-      height: 30px;
+  z-index: 50;
+  bottom: 22px!important;
+  left: -5px!important;
+  height: 25px!important;
+  width: 140px;
 }
 
-.sections .container .row .section-schools  a .inside-block-section p {
+.sections .container .row .section-kids a .inside-block-section p {
+  width: 100px;
+  position: relative;
+  z-index: 50;
+  bottom: 45px!important;
+  left: 23px!important;
+  height: 30px;
+}
+
+.sections .container .row .section-schools a .inside-block-section p {
   position: relative;
   z-index: 50;
   bottom: 50px !important;
   left: 30px !important;
   height: 30px;
 }
+
 .sections .container .row div a .inside-block-section p {
   position: relative;
   z-index: 50;
@@ -231,7 +241,6 @@ div .inside-block-section p {
   position: relative !important;
   left: 20px;
 }
-
 @media screen and (max-width:1200px) {
   .sections .container .section-adults {
     top: 13px;
@@ -466,50 +475,53 @@ div .inside-block-section p {
 
 .block-1 .container div:nth-child(2) a .block-1-button {
   margin-left: 10px;
-  border: 5px solid #F17185;
+  border: 5px solid #f17185;
   border-radius: 30px;
   width: 250px;
   height: 60px;
-  margin-top: 30px;
-  background-color: #EB3450;
+  margin-top: 33px;
+  background-color: #eb3450;
   color: #fff;
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 17px;
   line-height: normal;
   text-align: center;
   padding-top: 15px;
-
+  margin-bottom: 33px;
 }
 
 .block-1 .col div div:nth-child(2) {
   margin-top: 10px;
   margin-left: 12px;
 }
+
 .block-1 div .block-1-img {
-  padding-left: 5px ;
+  padding-left: 5px;
   padding-right: 15px;
 }
 @media screen and (max-width: 1200px) {
   .block-1 div .block-1-img {
     margin-top: 25px;
     background-color: transparent;
-    padding-left: 15px ;
-    padding-right: 30px ;
+    padding-left: 15px;
+    padding-right: 30px;
   }
+
   .block-1 .container div:nth-child(2) p {
     width: auto;
   }
+
   .block-2 .container div p {
     width: auto !important;
   }
+
   .block-1 .col div:nth-child(2) {
     margin-left: 10px;
   }
 
   .block-1 .col div:nth-child(2) h2 {
-
     margin-top: 0 !important;
   }
 }
@@ -517,11 +529,13 @@ div .inside-block-section p {
   .block-1 {
     margin-top: 33px;
     margin-bottom: 60px;
-}
-  .block-1 .container{
-    width: 558px !important;
-    padding: 0px !important;
   }
+
+  .block-1 .container {
+    width: 558px !important;
+    padding: 0 !important;
+  }
+
   .block-1 .container div:nth-child(2) a .block-1-button {
     margin-left: 10px;
     border: 5px solid #f17185;
@@ -538,15 +552,18 @@ div .inside-block-section p {
     line-height: normal;
     text-align: center;
     padding-top: 15px;
-}
-  .block-1 div .block-1-img {
-    padding-left: 0px ;
-    padding-right: 0px;
   }
-    .block-1 .container .center-block div{
-      padding-left: 0px;
-      padding-right: 0px;
-    }
+
+  .block-1 div .block-1-img {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .block-1 .container .center-block div {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .block-1 .col {
     margin-left: 20%;
     padding-left: 0;
@@ -576,18 +593,17 @@ div .inside-block-section p {
     margin-left: 0;
     margin-top: 20px;
   }
-  .block-1 .container div p,
-  .block-1 .container div h2,
+
   .block-1 .container div a .block-1-button,
-  .block-2 .container div p,
+  .block-1 .container div h2,
+  .block-1 .container div p,
+  .block-2 .container div a .block-1-button,
   .block-2 .container div h2,
-  .block-2 .container div a .block-1-button{
-    margin-left: 0px !important;
+  .block-2 .container div p {
+    margin-left: 0 !important;
   }
 }
 @media screen and (max-width: 768px) {
-
-
   .block-1 .col {
     margin-left: 15%;
   }
@@ -615,47 +631,52 @@ div .inside-block-section p {
     margin-left: 0;
     margin-top: 25px !important;
   }
-  .block-1 .container div p,
-  .block-1 .container div h2,
+
   .block-1 .container div a .block-1-button,
-  .block-2 .container div p,
+  .block-1 .container div h2,
+  .block-1 .container div p,
+  .block-2 .container div a .block-1-button,
   .block-2 .container div h2,
-  .block-2 .container div a .block-1-button{
-    margin-left: 0px !important;
+  .block-2 .container div p {
+    margin-left: 0 !important;
   }
 }
 @media screen and (max-width: 700px) {
   .section-kids .inside-block-section p {
     margin-left: 40px;
-margin-top: -10px;
-width: 95px;
-height: 25px;
-}
+    margin-top: -10px;
+    width: 95px;
+    height: 25px;
+  }
 
-.section-schools .inside-block-section p {
-  margin-left: 40px;
-  margin-top: 18px;
-  width: 75px;
-  height: 30px;
-}
+  .section-schools .inside-block-section p {
+    margin-left: 40px;
+    margin-top: 18px;
+    width: 75px;
+    height: 30px;
+  }
+
   .section-teenagers .inside-block-section p {
     margin-left: 5px;
-  margin-top: -15px;
-  width: 131px;
-  height: 53px;
-}
+    margin-top: -15px;
+    width: 131px;
+    height: 53px;
+  }
 
-.section-adults .inside-block-section p {
-  margin-left: 10px;
-  margin-top: -15px;
-  width: 140px;
-  height: 50px;
-}.section-parents .inside-block-section p {
+  .section-adults .inside-block-section p {
+    margin-left: 10px;
+    margin-top: -15px;
+    width: 140px;
+    height: 50px;
+  }
+
+  .section-parents .inside-block-section p {
     margin-left: 52px;
     margin-top: 20px;
     width: 75px;
     height: 60px;
-}
+  }
+
   .block-1 {
     margin-top: auto !important;
   }
@@ -665,13 +686,14 @@ height: 25px;
     padding-right: 15px;
     padding-left: 15px;
   }
-  .block-1 .container div p,
-  .block-1 .container div h2,
+
   .block-1 .container div a .block-1-button,
-  .block-2 .container div p,
+  .block-1 .container div h2,
+  .block-1 .container div p,
+  .block-2 .container div a .block-1-button,
   .block-2 .container div h2,
-  .block-2 .container div a .block-1-button{
-    margin-left: 0px !important;
+  .block-2 .container div p {
+    margin-left: 0 !important;
   }
 }
 @media screen and (max-width: 660px) {
@@ -696,8 +718,8 @@ height: 25px;
     padding-left: 0;
     margin-left: 0;
   }
-  .block-1 .container div:nth-child(2) a .block-1-button {
 
+  .block-1 .container div:nth-child(2) a .block-1-button {
     margin-left: auto;
     margin-right: auto;
   }
@@ -705,35 +727,36 @@ height: 25px;
   .block-1 .container div:nth-child(2) p {
     width: auto;
   }
-  .block-1 .container div p,
-  .block-1 .container div h2,
+
   .block-1 .container div a .block-1-button,
-  .block-2 .container div p,
+  .block-1 .container div h2,
+  .block-1 .container div p,
+  .block-2 .container div a .block-1-button,
   .block-2 .container div h2,
-  .block-2 .container div a .block-1-button{
-    margin-left: 0px !important;
+  .block-2 .container div p {
+    margin-left: 0 !important;
   }
 }
 @media screen and (max-width: 479px) {
   .block-1 .container {
     width: 264px !important;
   }
-
 }
 //////////////
-.under-section{
+
+.under-section {
   background-image: url("../images/sections/Polygon.svg");
-  background-repeat:repeat-x;
+  background-repeat: repeat-x;
   height: 15px;
   width: 107%;
-
 }
 ////////
+
 .block-2 {
   background-color: #00A9E8;
   background-image: url("../images/block-2/pattern.svg");
   background-size: contain !important;
-  background-repeat:repeat-x;
+  background-repeat: repeat-x;
 }
 
 .block-2-img {
@@ -748,7 +771,6 @@ height: 25px;
   margin-top: 105px;
   margin-bottom: 50px;
 }
-
 
 .block-2 .container div a .block-1-button {
   margin-left: 20px;
@@ -766,11 +788,12 @@ height: 25px;
   line-height: normal;
   text-align: center;
   padding-top: 14px;
+  margin-bottom: 83px;
 }
 
 .block-2 .container div p {
   width: 558px;
-  margin-left: 0px;
+  margin-left: 0;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -782,7 +805,7 @@ height: 25px;
 }
 
 .block-2 .container div h2 {
-  margin-left: 0px;
+  margin-left: 0;
   font-size: 30px;
   font-family: 'Amatic SC', cursive;
   font-style: normal;
@@ -791,23 +814,25 @@ height: 25px;
   line-height: 42px;
   color: #fff;
 }
-.block-2 .container div a .block-1-button{
-  margin-left: 0px;
-    border: 5px solid #ffd456;
-    border-radius: 30px;
-    width: 250px;
-    height: 60px;
-    margin-top: 0PX;
-    background-color: #ffc005;
-    color: #fff;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: normal;
-    text-align: center;
-    padding-top: 14px;
+
+.block-2 .container div a .block-1-button {
+  margin-left: 0;
+  border: 5px solid #ffd456;
+  border-radius: 30px;
+  width: 250px;
+  height: 60px;
+  margin-top: 0PX;
+  background-color: #ffc005;
+  color: #fff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: normal;
+  text-align: center;
+  padding-top: 14px;
 }
+
 .block-2 .container div a {
   text-decoration: none;
 }
@@ -832,18 +857,19 @@ height: 25px;
   .block-2 .container .block-2-img img {
     width: 264px;
   }
+
   .block-2 .container div a .block-1-button {
     width: 267px;
     margin-left: auto;
     margin-right: auto;
   }
+
   .block-2 {
     background-color: #00a9e8;
-    background-image: url(../images/block-2/pattern.svg);
+    background-image: url("../images/block-2/pattern.svg");
     background-size: contain!important;
-    background-repeat:repeat-y;
-}
-
+    background-repeat: repeat-y;
+  }
 }
 //////////////////////////////
 /////////////////////////////////////////////// counter
@@ -880,11 +906,12 @@ height: 25px;
   text-align: center;
   color: #FFFFFF;
 }
-@media screen and (max-width:991px){
-  .sections .container .row .section-teenagers a .inside-block-section p{
+@media screen and (max-width:991px) {
+  .sections .container .row .section-teenagers a .inside-block-section p {
     bottom: 90px!important;
   }
-  .sections .container .row .section-parents a .inside-block-section p{
+
+  .sections .container .row .section-parents a .inside-block-section p {
     position: relative;
     z-index: 50;
     bottom: 90px!important;

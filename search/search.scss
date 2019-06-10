@@ -202,11 +202,11 @@ form div:nth-child(1) input {
   padding-left: 7px;
   outline: 0;
 }
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1199px) {
   .ui-helper-hidden-accessible {
     margin-left: auto;
     margin-right: auto;
-    width: 960px;
+    width: 950px;
     display: none;
   }
   .search-page {

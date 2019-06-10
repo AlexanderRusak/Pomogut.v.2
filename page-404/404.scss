@@ -35,7 +35,7 @@
 }
 
 .block-404 .row div p {
-
+    width: 850px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -44,8 +44,9 @@
   text-align: center;
   color: #292424;
   margin-top: 25px;
-
-  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
 }
 
 .col-md-3 {
@@ -61,6 +62,11 @@
     margin-right: auto;
     padding: 0px;
   }
+  .block-404 .row div p {
+      width: 558px;
+      padding: 0;
+  }
+
   .block-404 .col{
     margin-left: 0px;
     margin-right: 0px;
@@ -99,6 +105,15 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
+  }
+  .block-404 .row div p {
+    width: 264px;
+    padding: 0;
+}
+.block-404 .row div .image-404 {
+    margin-top: 70px;
+    width: 357px;
+    height: 259px;
   }
   .block-404 .col{
     margin-left: 0px;
