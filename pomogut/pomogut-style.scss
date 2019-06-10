@@ -13,14 +13,7 @@
 .form-group #btn-hidden-for-modal {
   display: none !important;
 }
-.slick-track {
-    position: relative;
-    top: 0;
-    left: 4px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .feedback .row .feedback-column {
   float: none !important;
 }
@@ -32,10 +25,7 @@
     margin-top: -23px;
     margin-bottom: 95px;
 }
-.slick-slider {
-    width: 580px;
-    margin-left: 10px;
-  }
+
 .project-1 .slick-slide img,
 .project-2 .slick-slide img {
   display: block;
@@ -310,12 +300,12 @@ header .row .header-logo .btn-write p {
 .project-1-slider .slick-list .slick-track,
 .project-2-slider .slick-list .slick-track {
   width: 264000px!important;
-  height: 311px;
+  height: 302px;
 }
 
 .project-1-slider .slick-list .slick-slide:first-child,
 .project-2-slider .slick-list .slick-slide:first-child {
-  margin-left: 6px;
+  margin-left: 0;
 }
 
 .project-1-slider .main-section .title-link-1 a,
@@ -343,7 +333,7 @@ header .row .header-logo .btn-write p {
 
 .project-1-slider .slick-list .slick-slide,
 .project-2-slider .slick-list .slick-slide {
-  margin-left: 22px;
+  margin-left: 30px;
 }
 
 .project-1-slider .main-section .title-link-1 p,
@@ -375,11 +365,11 @@ header .row .header-logo .btn-write p {
 }
 
 .project-1-slider .main-section:hover .title-link-1 {
-  margin-top: 0px !important;
+  margin-top: 67px !important;
 }
 
 .project-2-slider .main-section:hover .title-link-2 {
-  margin-top: 0px !important;
+  margin-top: 67px !important;
 }
 
 .project-1-slider .main-section .title-link-1 a,
@@ -410,7 +400,6 @@ header .row .header-logo .btn-write p {
 .project-2-slider .main-section-wave {
   width: 264px;
   height: 300px;
-
   background: #FFFFFF;
   box-shadow: 0 4px 10px #D3ECF6;
   border-radius: 8px;
@@ -420,7 +409,6 @@ header .row .header-logo .btn-write p {
 .project-2-slider .main-section-wave {
   width: 264px;
   height: 300px;
-
   background: #FFFFFF;
   box-shadow: 0 4px 10px #DFE1DA;
   border-radius: 8px;
@@ -453,7 +441,7 @@ header .row .header-logo .btn-write p {
 
 .project-1-slider .main-section-wave .image-wave .image-wave-background .title-link-1 p,
 .project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1 p {
-  margin-top: 95PX !important;
+  margin-top: 30PX !important;
   font-family: Gotham Pro;
   font-size: 16px;
   line-height: 28px;
@@ -502,7 +490,7 @@ header .row .header-logo .btn-write p {
 
 .project-1-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 P,
 .project-2-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 P {
-  margin-top:66PX !important;
+  margin-top: 0PX !important;
 }
 
 .project-1-slider .main-section-wave .image-wave .under-image-wave-background,
