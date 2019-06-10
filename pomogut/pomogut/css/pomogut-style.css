@@ -4,7 +4,8 @@
   src: url("./fonts/GothamPro.ttf") format("opentype"); }
 
 * {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; }
 
 .form-group #btn-hidden-for-modal {
   display: none !important; }
