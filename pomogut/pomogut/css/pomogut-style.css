@@ -10,6 +10,14 @@
 .form-group #btn-hidden-for-modal {
   display: none !important; }
 
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
 .feedback .row .feedback-column {
   float: none !important; }
 
@@ -19,6 +27,10 @@
 .feedback {
   margin-top: -23px;
   margin-bottom: 95px; }
+
+.slick-slider {
+  width: 580px;
+  margin-left: 10px; }
 
 .project-1 .slick-slide img,
 .project-2 .slick-slide img {
@@ -266,11 +278,11 @@ header .row .header-logo .btn-write p {
 .project-1-slider .slick-list .slick-track,
 .project-2-slider .slick-list .slick-track {
   width: 264000px !important;
-  height: 302px; }
+  height: 311px; }
 
 .project-1-slider .slick-list .slick-slide:first-child,
 .project-2-slider .slick-list .slick-slide:first-child {
-  margin-left: 0; }
+  margin-left: 6px; }
 
 .project-1-slider .main-section .title-link-1 a,
 .project-2-slider .main-section .title-link-2 a {
@@ -292,7 +304,7 @@ header .row .header-logo .btn-write p {
 
 .project-1-slider .slick-list .slick-slide,
 .project-2-slider .slick-list .slick-slide {
-  margin-left: 30px; }
+  margin-left: 22px; }
 
 .project-1-slider .main-section .title-link-1 p,
 .project-2-slider .main-section .title-link-2 p {
@@ -319,10 +331,10 @@ header .row .header-logo .btn-write p {
   margin-top: 90px; }
 
 .project-1-slider .main-section:hover .title-link-1 {
-  margin-top: 67px !important; }
+  margin-top: 0px !important; }
 
 .project-2-slider .main-section:hover .title-link-2 {
-  margin-top: 67px !important; }
+  margin-top: 0px !important; }
 
 .project-1-slider .main-section .title-link-1 a,
 .project-2-slider .main-section .title-link-2 a {
@@ -446,7 +458,7 @@ header .row .header-logo .btn-write p {
 
 .project-1-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 P,
 .project-2-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 P {
-  margin-top: 0PX !important; }
+  margin-top: 66PX !important; }
 
 .project-1-slider .main-section-wave .image-wave .under-image-wave-background,
 .project-2-slider .main-section-wave .image-wave .under-image-wave-background {
