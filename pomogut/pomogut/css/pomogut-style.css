@@ -10,6 +10,14 @@
 .form-group #btn-hidden-for-modal {
   display: none !important; }
 
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
 .feedback .row .feedback-column {
   float: none !important; }
 
@@ -19,6 +27,10 @@
 .feedback {
   margin-top: -23px;
   margin-bottom: 95px; }
+
+.slick-slider {
+  width: 570px;
+  margin-left: 10px; }
 
 .project-1 .slick-slide img,
 .project-2 .slick-slide img {
@@ -121,7 +133,7 @@ header .row .header-logo .btn-write p {
   margin-right: 34px; }
 
 .about-logos .slick-slide:nth-child(3n+2) {
-  margin-top: 23px;
+  margin-top: -2px;
   padding-left: 0;
   padding-right: 0;
   margin-left: 33px;
@@ -266,11 +278,11 @@ header .row .header-logo .btn-write p {
 .project-1-slider .slick-list .slick-track,
 .project-2-slider .slick-list .slick-track {
   width: 264000px !important;
-  height: 302px; }
+  height: 311px; }
 
 .project-1-slider .slick-list .slick-slide:first-child,
 .project-2-slider .slick-list .slick-slide:first-child {
-  margin-left: 0; }
+  margin-left: 6px; }
 
 .project-1-slider .main-section .title-link-1 a,
 .project-2-slider .main-section .title-link-2 a {
@@ -292,7 +304,7 @@ header .row .header-logo .btn-write p {
 
 .project-1-slider .slick-list .slick-slide,
 .project-2-slider .slick-list .slick-slide {
-  margin-left: 30px; }
+  margin-left: 22px; }
 
 .project-1-slider .main-section .title-link-1 p,
 .project-2-slider .main-section .title-link-2 p {
@@ -319,10 +331,10 @@ header .row .header-logo .btn-write p {
   margin-top: 90px; }
 
 .project-1-slider .main-section:hover .title-link-1 {
-  margin-top: 67px !important; }
+  margin-top: 0 !important; }
 
 .project-2-slider .main-section:hover .title-link-2 {
-  margin-top: 67px !important; }
+  margin-top: 0 !important; }
 
 .project-1-slider .main-section .title-link-1 a,
 .project-2-slider .main-section .title-link-2 a {
@@ -389,7 +401,7 @@ header .row .header-logo .btn-write p {
 
 .project-1-slider .main-section-wave .image-wave .image-wave-background .title-link-1 p,
 .project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1 p {
-  margin-top: 30PX !important;
+  margin-top: 95PX !important;
   font-family: Gotham Pro;
   font-size: 16px;
   line-height: 28px;
@@ -446,7 +458,7 @@ header .row .header-logo .btn-write p {
 
 .project-1-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 P,
 .project-2-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 P {
-  margin-top: 0PX !important; }
+  margin-top: 66PX !important; }
 
 .project-1-slider .main-section-wave .image-wave .under-image-wave-background,
 .project-2-slider .main-section-wave .image-wave .under-image-wave-background {
@@ -621,6 +633,9 @@ footer .icons-social-networks a {
   footer {
     margin-top: -5px;
     background-color: #5db9e0; }
+  .slick-slider {
+    width: 970px;
+    margin-left: 10px; }
   .feedback {
     margin-top: -23px;
     margin-bottom: 95px; }
@@ -679,8 +694,9 @@ footer .icons-social-networks a {
   .col-sm-offset-1 {
     margin-left: 0; }
   .about-logos .slick-list {
-    width: 768px;
-    margin-left: 90px; }
+    width: 780px;
+    margin-left: auto;
+    margin-right: auto; }
   .about-logos .slick-prev:before,
   .about-logos.slick-next:before {
     color: #5DB9E0;
@@ -705,7 +721,7 @@ footer .icons-social-networks a {
     width: 40px;
     height: 40px; } }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .about-logos .slick-list {
     width: 353px;
     margin-left: 180px;
@@ -774,7 +790,7 @@ footer .icons-social-networks a {
     margin-left: 375px;
     margin-bottom: 0; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .container {
     width: 558px;
     padding: 0; }
@@ -816,14 +832,25 @@ footer .icons-social-networks a {
   .col-sm-8 {
     width: 70.666667%; }
   .about-logos .slick-list {
-    width: 353px;
-    margin-left: 23%;
-    margin-top: 23px; }
+    width: 355px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 23px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center; }
   .about {
     margin-top: 98px;
     margin-bottom: 68px;
-    width: 590px;
-    margin-left: 94px; }
+    width: 590px; }
+  .about-logos .slick-slide a img {
+    margin: 0 auto;
+    -webkit-transform: scale(0.97);
+    -ms-transform: scale(0.97);
+    transform: scale(0.97); }
+  .slick-slider {
+    margin-left: 0px; }
   .about-logos .slick-list {
     width: 353px;
     margin-left: 12%;
@@ -850,7 +877,7 @@ footer .icons-social-networks a {
     display: none; }
   .tablet p {
     width: auto;
-    margin-top: 15px;
+    margin-top: 13px;
     margin-left: -2px;
     font-family: Open Sans;
     font-style: normal;
@@ -970,7 +997,7 @@ footer .icons-social-networks a {
     width: 278px !important; }
   .about-title p {
     width: 264px;
-    padding-left: 0px;
+    padding-left: 0;
     padding-right: 0; }
   .about-title {
     padding-left: 14px;
@@ -1009,7 +1036,11 @@ footer .icons-social-networks a {
   .about-logos .slick-slide a img {
     margin-right: 90px !important;
     width: 264px !important;
-    height: 45px !important; }
+    height: 107px !important;
+    -o-object-fit: cover;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center; }
   .about-logos .slick-slide:nth-child(3n+1),
   .about-logos .slick-slide:nth-child(3n+2),
   .about-logos .slick-slide:nth-child(3n+3) {
@@ -1029,6 +1060,7 @@ footer .icons-social-networks a {
   .about-logos .slick-next {
     top: 110px; }
   .project-1 .container {
+    width: 276px !important;
     margin-top: 25px; }
   .project-1 .container .main {
     display: none; }
@@ -1061,7 +1093,7 @@ footer .icons-social-networks a {
   .project-1 .row .project-1-slider,
   .project-1 .row .project-2-slider {
     margin-top: -20px;
-    width: 264px; }
+    width: 276px; }
   .project-1 a:last-child,
   .project-2 a:last-child {
     height: 15px !important;
@@ -1120,7 +1152,7 @@ footer .icons-social-networks a {
     width: 264px;
     height: 100px; }
   footer {
-    margin-top: 0px;
+    margin-top: 0;
     background-color: #5db9e0; }
   .feedback .row .feedback-column {
     width: 304px !important;
