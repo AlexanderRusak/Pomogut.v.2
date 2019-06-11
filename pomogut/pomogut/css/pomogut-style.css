@@ -132,7 +132,7 @@ header .row .header-logo .btn-write p {
   margin-right: 34px; }
 
 .about-logos .slick-slide:nth-child(3n+2) {
-  margin-top: -2px;
+  margin-top: 20px;
   padding-left: 0;
   padding-right: 0;
   margin-left: 33px;
