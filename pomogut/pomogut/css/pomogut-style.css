@@ -29,14 +29,13 @@
   margin-bottom: 95px; }
 
 .slick-slider {
-  width: 570px;
-  margin-left: 10px; }
+  margin-left: -4px; }
 
 .project-1 .slick-slide img,
 .project-2 .slick-slide img {
   display: block;
   height: 138px;
-  width: 264px;
+  width: 264px !important;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: top;
