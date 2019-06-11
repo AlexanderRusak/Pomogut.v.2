@@ -308,7 +308,7 @@ div .inside-block-section p {
     margin-top: -20px;
   }
 }
-@media screen and (max-width:700px) {
+@media screen and (max-width:768px) {
   .sections .container {
     margin-top: 35px;
   }
@@ -608,45 +608,8 @@ div .inside-block-section p {
     margin-left: 0 !important;
   }
 }
+
 @media screen and (max-width: 768px) {
-  .block-1 .col {
-    margin-left: 15%;
-  }
-
-  .block-1 .col .block-1-img {
-    width: 558px;
-    height: 363px;
-    background-color: #ccc;
-  }
-
-  .block-1 .col div div:nth-child(2) {
-    margin-left: 0;
-  }
-
-  .block-1 .col div:nth-child(2) {
-    width: 540px;
-  }
-
-  .block-1 .col div div:nth-child(2) {
-    margin-left: 0 !important;
-    margin-top: 25px !important;
-  }
-
-  .block-1 .col div div:nth-child(2) {
-    margin-left: 0;
-    margin-top: 25px !important;
-  }
-
-  .block-1 .container div a .block-1-button,
-  .block-1 .container div h2,
-  .block-1 .container div p,
-  .block-2 .container div a .block-1-button,
-  .block-2 .container div h2,
-  .block-2 .container div p {
-    margin-left: 0 !important;
-  }
-}
-@media screen and (max-width: 700px) {
   .section-kids .inside-block-section p {
     margin-left: 40px;
     margin-top: -10px;
@@ -864,7 +827,7 @@ div .inside-block-section p {
   }
 
   .block-2 .container div a .block-1-button {
-    width: 267px;
+    width: 264px;
     margin-left: auto;
     margin-right: auto;
   }
