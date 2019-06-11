@@ -5,7 +5,9 @@
   overflow-x: hidden;
 }
 //////////////////////////////////////////////////////////////////////////
-
+.row .articles{
+  margin-bottom: 100px;
+}
 .categories_data {
   margin-top: 80px;
   overflow-y: hidden;
@@ -791,7 +793,9 @@ a:hover {
   }
 }
 @media screen and (max-width: 767px) {
-
+  .row .articles{
+    margin-bottom: 100px;
+  }
   .content .container {
     width: 558px;
   }
