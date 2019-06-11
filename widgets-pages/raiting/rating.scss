@@ -5,7 +5,8 @@
   overflow-x: hidden;
 }
 .raiting{
-    margin-top: 100px;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 .raiting .container .row {
   background-color: #00AEEF;
@@ -120,7 +121,7 @@
 }
 @media screen and (max-width: 1200px) {
   .raiting{
-  
+
       background-color: #00AEEF;
   }
   .raiting .container{
@@ -156,7 +157,10 @@
   }
   .raiting .container .row div h3 {
     margin-top: 66px;
-  }
+    margin-left: auto;
+    width: 264px;
+    margin-right: auto;
+}
 
   .raiting .container .row div p {
     margin-top: 38px;

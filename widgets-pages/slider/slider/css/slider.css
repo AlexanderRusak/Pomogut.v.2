@@ -4,7 +4,8 @@
   overflow-x: hidden; }
 
 .title {
-  margin-top: 100px; }
+  margin-top: 35px;
+  margin-bottom: 35px; }
 
 .slider-img-container img {
   width: 505px !important;
@@ -27,7 +28,8 @@
   margin-top: 0; }
 
 .single-item {
-  margin-top: 60px; }
+  margin-top: 35px;
+  margin-bottom: 35px !important; }
 
 .slick-dotted.slick-slider {
   margin-bottom: 0; }
@@ -232,7 +234,7 @@
     right: 3px !important;
     z-index: 3; }
   .title {
-    margin-top: 65px !important; }
+    margin-top: 35px !important; }
   .title-text-style {
     font-family: Amatic SC;
     font-style: normal;
@@ -242,7 +244,7 @@
     text-align: center;
     color: #EB3450; }
   .single-item {
-    margin-top: 43px !important; }
+    margin-top: 35px !important; }
   .slick-next,
   .slick-prev {
     top: 37% !important; }

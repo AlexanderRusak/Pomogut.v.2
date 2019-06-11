@@ -4,7 +4,7 @@
   overflow-x: hidden; }
 
 .three-column {
-  margin-top: 100px; }
+  margin-bottom: 35px; }
 
 .three-column .row .three-column-title h3 {
   font-family: Amatic SC;
@@ -14,10 +14,11 @@
   line-height: 42px;
   text-align: center;
   color: #000000;
-  margin-top: 0; }
+  margin-top: 35px;
+  margin-bottom: 35px; }
 
 .three-column .row .three-column-group {
-  margin-top: 50px; }
+  margin-top: 15px; }
 
 .three-column .row:nth-child(2) div {
   margin-top: 20px; }
@@ -77,7 +78,7 @@
 
 @media screen and (max-width: 767px) {
   .three-column {
-    margin-top: 70px; }
+    margin-bottom: 35px; }
   .three-column {
     width: 264px !important;
     margin-left: auto;

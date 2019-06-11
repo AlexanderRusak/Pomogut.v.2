@@ -4,8 +4,8 @@
   overflow-x: hidden; }
 
 .two-column {
-  margin-top: 100px;
-  margin-bottom: 76px; }
+  margin-top: 0px;
+  margin-bottom: 35px; }
 
 .two-column-image {
   width: 558px;
@@ -27,8 +27,8 @@
   line-height: 42px;
   text-align: center;
   color: #000000;
-  margin-bottom: 60px;
-  margin-top: 0; }
+  margin-bottom: 15px;
+  margin-top: 35px; }
 
 .img-signature {
   margin-top: 10PX;
@@ -37,8 +37,7 @@
   font-weight: normal;
   font-size: 13px;
   line-height: normal;
-  color: rgba(41, 36, 36, 0.5);
-  margin-bottom: 24px; }
+  color: rgba(41, 36, 36, 0.5); }
 
 .two-column .row div .two-column-article {
   width: 100%;
@@ -61,7 +60,7 @@
 
 @media screen and (max-width: 1200px) {
   .two-column .row div .two-column-image {
-    margin-top: 30px;
+    margin-top: 35px;
     width: auto !important;
     height: 296px; }
   .two-column-image img {
@@ -81,7 +80,6 @@
     -o-object-position: center;
     object-position: center; }
   .two-column {
-    margin-top: 100px;
     width: 558px;
     padding: 0; }
   .two-column .row {
@@ -107,8 +105,6 @@
     line-height: 28px; } }
 
 @media screen and (max-width: 767px) {
-  .two-column {
-    margin-top: 70px; }
   .two-column-image img {
     width: 264px;
     height: 172px;
@@ -117,7 +113,6 @@
     -o-object-position: center;
     object-position: center; }
   .two-column {
-    margin-top: 100px;
     width: 264px;
     padding: 0; }
   .two-column .row div {
@@ -130,7 +125,7 @@
   .two-column .fake-block {
     display: block; }
   .two-column .row div .two-column-image {
-    margin-top: 30px;
+    margin-top: 35px;
     width: 264px !important;
     height: 172px; }
   .two-column-article {

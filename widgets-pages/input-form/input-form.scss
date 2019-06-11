@@ -11,7 +11,8 @@
 }
 
 .feedback {
-  margin-top: 100px;
+margin-top: 0px;
+margin-bottom: 35px;
 }
 
 .title-feedback {
@@ -22,6 +23,9 @@
   line-height: 42px;
   text-align: center;
   color: #000000;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 .captcha div {
     /* float: right!important; */
@@ -173,7 +177,7 @@ label[for="checkbox-id"] a {
 }
 
 .container .row div form {
-  margin-top: 33px;
+  margin-top: 35px;
 }
 @media screen and (max-width: 1200px) {
   .feedback .container .row div form div:nth-child(7) {

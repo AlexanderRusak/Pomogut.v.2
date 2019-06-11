@@ -4,8 +4,8 @@
   overflow-x: hidden; }
 
 .page-in-developement {
-  margin-top: 102px;
-  margin-bottom: 90px; }
+  margin-top: 35px !important;
+  margin-bottom: 35px !important; }
 
 .page-in-developement .row div .page-in-developement-image {
   width: 456px;
@@ -29,7 +29,8 @@
   font-size: 15px;
   line-height: 28px;
   text-align: center;
-  color: #292424; }
+  color: #292424;
+  margin-bottom: 0px; }
 
 @media screen and (max-width: 1200px) {
   .page-in-developement {

@@ -154,7 +154,9 @@ header .row .header-logo .btn-write p {
   padding-right: 0;
   margin-right: 34px;
 }
-
+.about-logos .slick-slide a{
+  outline: 0;
+}
 .about-logos .slick-slide:nth-child(3n+2) {
   margin-top: 20px;
   padding-left: 0;

@@ -12,7 +12,7 @@
   justify-content: space-between; }
 
 .similar-articles {
-  margin-bottom: 100px; }
+  margin-bottom: 35px; }
 
 .similar-articles .row div .similar-articles-image {
   background: #F2F2F2;
@@ -45,7 +45,8 @@ ul {
   margin-bottom: 0px; }
 
 .similar-articles-title {
-  margin-top: 100px;
+  margin-top: 35px;
+  margin-bottom: 15px;
   font-family: Amatic SC;
   font-style: normal;
   font-weight: bold;
@@ -55,7 +56,7 @@ ul {
   color: #000000; }
 
 .similar-articles .row ul li {
-  margin-top: 30px; }
+  margin-top: 35px; }
 
 .similar-articles .row ul li div h3 {
   width: 204px;
@@ -111,7 +112,7 @@ ul {
 
 @media screen and (max-width: 767px) {
   .similar-articles-title {
-    margin-top: 70px; }
+    margin-top: 35px; }
   .similar-articles {
     width: 264px;
     margin-left: auto;
