@@ -15,6 +15,10 @@ a{
 .form-group #btn-hidden-for-modal {
   display: none !important;
 }
+.feedback {
+  margin-top: -23px;
+  margin-bottom: 95px;
+}
 
 .slick-track {
   position: relative;
@@ -104,7 +108,7 @@ header .row .header-logo h3 {
 }
 
 header .row .header-logo .btn-write {
-  margin-top: 224px;
+  margin-top: 70px;
   color: #fff;
   width: 264px;
   height: 56px;
@@ -1120,7 +1124,7 @@ footer .icons-social-networks a {
 
   .feedback {
     margin-top: -23px;
-    margin-bottom: 95px;
+    margin-bottom: 55px;
   }
 
   .feedback .row div p {
@@ -1140,7 +1144,9 @@ footer .icons-social-networks a {
   header {
     height: 630px;
   }
-
+  about-logos .slick-slide:nth-child(3n+2) {
+      margin-top: -8px !important;
+    }
   .tablet {
     margin-top: 38px!important;
     margin-left: 0;
@@ -1251,13 +1257,17 @@ footer .icons-social-networks a {
   }
 
   .about-logos .slick-slide:nth-child(3n+1),
-  .about-logos .slick-slide:nth-child(3n+2),
   .about-logos .slick-slide:nth-child(3n+3) {
     width: 264px!important;
     margin-left: auto;
     margin-right: auto;
   }
-
+  .about-logos .slick-slide:nth-child(3n+2) {
+    width: 264px!important;
+    margin-left: auto;
+    margin-right: auto;
+      margin-top: -8px !important;
+    }
   .about-logos .slick-list {
     width: 264px !important;
     margin-left: auto !important;
