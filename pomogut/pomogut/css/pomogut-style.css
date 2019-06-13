@@ -413,6 +413,10 @@ header .row .header-logo .btn-write p {
 .project-1-slider .main-section-wave .image-wave .image-wave-background .title-link-1 p,
 .project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1 p {
   margin-top: 95PX !important;
+  width: 264px;
+  padding-left: 15px;
+  padding-right: 15px;
+  word-break: break-word;
   font-family: Gotham Pro;
   font-size: 16px;
   line-height: 28px;
