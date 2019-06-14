@@ -51,7 +51,7 @@ margin-right: auto;
 .project-1 .slick-slide img,
 .project-2 .slick-slide img {
   display: block;
-  height: 138px;
+  height: 138px !important;
   width: 264px !important;
   object-fit: cover;
   object-position: top;
