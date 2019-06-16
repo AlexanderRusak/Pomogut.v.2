@@ -53,8 +53,10 @@ margin-right: auto;
   display: block;
   height: 138px !important;
   width: 264px !important;
-  object-fit: cover;
-  object-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 
 .project-1-title {
@@ -120,7 +122,9 @@ header .row .header-logo .btn-write {
   line-height: 27px;
   /* identical to box height */
   margin-bottom: 0;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   color: #FFFFFF;
   overflow-y: hidden;
@@ -243,8 +247,12 @@ header .row .header-logo .btn-write p {
   font-size: 24px !important;
   line-height: 34px;
   /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #28282B;
 }
 
@@ -279,7 +287,9 @@ header .row .header-logo .btn-write p {
   font-size: 16px;
   line-height: 22px;
   vertical-align: middle;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   color: #FFFFFF;
 }
@@ -310,11 +320,13 @@ header .row .header-logo .btn-write p {
 }
 
 .project-1-slider .main-section {
-  box-shadow: 0 4px 10px #D3ECF6;
+  -webkit-box-shadow: 0 4px 10px #D3ECF6;
+          box-shadow: 0 4px 10px #D3ECF6;
 }
 
 .project-2-slider .main-section {
-  box-shadow: 0 4px 10px #DFE1DA;
+  -webkit-box-shadow: 0 4px 10px #DFE1DA;
+          box-shadow: 0 4px 10px #DFE1DA;
 }
 
 .project-1-slider .slick-list,
@@ -407,8 +419,12 @@ header .row .header-logo .btn-write p {
   font-size: 14px;
   line-height: 25px;
   /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
@@ -426,7 +442,8 @@ header .row .header-logo .btn-write p {
   width: 264px;
   height: 300px;
   background: #FFFFFF;
-  box-shadow: 0 4px 10px #D3ECF6;
+  -webkit-box-shadow: 0 4px 10px #D3ECF6;
+          box-shadow: 0 4px 10px #D3ECF6;
   border-radius: 8px;
   outline: 0;
 }
@@ -435,7 +452,8 @@ header .row .header-logo .btn-write p {
   width: 264px;
   height: 300px;
   background: #FFFFFF;
-  box-shadow: 0 4px 10px #DFE1DA;
+  -webkit-box-shadow: 0 4px 10px #DFE1DA;
+          box-shadow: 0 4px 10px #DFE1DA;
   border-radius: 8px;
   outline: 0;
 }
@@ -487,8 +505,12 @@ header .row .header-logo .btn-write p {
   font-size: 14px;
   line-height: 25px;
   /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   color: #54A9CA;
   display: none;
@@ -503,11 +525,17 @@ header .row .header-logo .btn-write p {
   font-size: 14px;
   line-height: 25px;
   /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   color: #7CA131;
   display: none;
+  -webkit-transition: 0s display;
+  -o-transition: 0s display;
   transition: 0s display;
 }
 
@@ -516,12 +544,14 @@ header .row .header-logo .btn-write p {
   text-decoration: none;
   display: block;
   outline: 0;
-  transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+       -o-transition-delay: 1s;
+          transition-delay: 1s;
 }
 
 .project-1-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 P,
 .project-2-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 P {
-  margin-top: 66PX !important;
+  margin-top: 46PX !important;
 }
 
 .project-1-slider .main-section-wave .image-wave .under-image-wave-background,
@@ -543,7 +573,9 @@ header .row .header-logo .btn-write p {
   font-size: 24px;
   line-height: 34px;
   /* identical to box height */
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #28282B;
 }
 
@@ -586,9 +618,10 @@ header .row .header-logo .btn-write p {
   height: 68px;
   background: #ECEDF0;
   outline: 0 !important;
-  border: none; // убирает бордер
-  box-shadow: none; // убираем тень, если есть
-  color: #fff; // текст шрифта белый
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
 }
 
 .feedback .row div .form-group .input-lg[placeholder] {
@@ -597,8 +630,12 @@ header .row .header-logo .btn-write p {
   font-weight: normal;
   font-size: 14px;
   line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #28282B;
   padding-left: 30px;
 }
@@ -622,17 +659,21 @@ textarea[placeholder] {
   font-weight: normal;
   font-size: 14px;
   line-height: 25px;
-  /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 20px;
   padding-left: 30px;
   color: #28282B;
   opacity: 1 !important;
   outline: 0 !important;
-  border: none; // убирает бордер
-  box-shadow: none; // убираем тень, если есть
-  color: #fff; // текст шрифта белый
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
 }
 
 .feedback .row div .form-group .button-form {
@@ -682,8 +723,12 @@ footer .row .col-lg-5 .copyrights {
   font-size: 14px;
   line-height: 25px;
   /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #FFFFFF;
   margin-bottom: 50px;
 }
@@ -959,7 +1004,9 @@ footer .icons-social-networks a {
     font-size: 16px;
     line-height: 22px;
     /* identical to box height */
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     color: #FFFFFF;
   }
@@ -989,8 +1036,10 @@ footer .icons-social-networks a {
     margin-left: auto !important;
     margin-right: auto !important;
     margin-top: 23px;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
   }
 
   .about {
@@ -1000,7 +1049,9 @@ footer .icons-social-networks a {
   }
   .about-logos .slick-slide a img {
       margin: 0 auto;
-      transform: scale(0.97);
+      -webkit-transform: scale(0.97);
+          -ms-transform: scale(0.97);
+              transform: scale(0.97);
   }
   .slick-slider {
     margin-left: 0px;
@@ -1221,7 +1272,9 @@ footer .icons-social-networks a {
     font-size: 16px;
     line-height: 22px;
     /* identical to box height */
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     color: #FFFFFF;
   }
@@ -1453,6 +1506,21 @@ footer .icons-social-networks a {
     margin-bottom: 55px;
   }
 
+  .feedback .row div .form-group .form-control::-webkit-input-placeholder,
+  .feedback .row div .form-group .input-lg[placeholder]::-webkit-input-placeholder {
+    opacity: 0;
+  }
+
+  .feedback .row div .form-group .form-control:-ms-input-placeholder,
+  .feedback .row div .form-group .input-lg[placeholder]:-ms-input-placeholder {
+    opacity: 0;
+  }
+
+  .feedback .row div .form-group .form-control::-ms-input-placeholder,
+  .feedback .row div .form-group .input-lg[placeholder]::-ms-input-placeholder {
+    opacity: 0;
+  }
+
   .feedback .row div .form-group .form-control::placeholder,
   .feedback .row div .form-group .input-lg[placeholder]::placeholder {
     opacity: 0;
@@ -1565,7 +1633,9 @@ footer .icons-social-networks a {
   .g-recaptcha,
   .g-recaptcha div {
     width: 304px !important;
-    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+            transform: scale(0.95);
     margin-right: auto !important;
     margin-left: auto !important;
   }

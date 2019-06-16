@@ -59,13 +59,15 @@
   width: 1000px;
   padding: 3px 1em 3px 0.4em;
   /* pre-existing css */
-  padding-left: 0 !important;
+  padding-left: 0px !important;
   color: #000;
   /* new css */
   background: #fff;
   /* new css */
 }
-
+.ui-menu .ui-menu-item-wrapper {
+    padding-left: 25px!important;
+}
 :focus,
 :hover,
 input:active {
@@ -82,13 +84,15 @@ input:active {
   width: 1000px;
   padding: 3px 1em 3px 0.4em;
   /* pre-existing css */
-  padding-left: 0 !important;
+  padding-left: 25px !important;
   color: #000;
   /* new css */
   background: #f2f2f2;
   /* new css */
 }
-
+#ui-id-1{
+  margin-left: 25px;
+}
 .ui-autocomplete,
 .ui-autocomplete:hover,
 .ui-menu .ui-menu-item a,
@@ -112,7 +116,6 @@ input:active {
   border: 0;
   border-collapse: collapse;
   width: 945px !important;
-  left: 170px;
 }
 
 .search-result {
@@ -127,7 +130,6 @@ input:active {
 
 .search-header-result {
   color: #00AEEF;
-  margin-left: 10px;
 }
 
 .search-text a,{
@@ -162,12 +164,10 @@ input:active {
   font-size: 17px;
   line-height: normal;
   background: #f2f2f2;
-  margin-right: 50px;
+  margin-right: 0px;
 }
 
-.ui-menu .ui-menu-item-wrapper {
-  padding-left: 25px !important;
-}
+
 
 form {
   margin-top: 35px;
@@ -233,7 +233,7 @@ form div:nth-child(1) input {
   .ui-widget-header .ui-state-focus,
   .ui-widget-header .ui-state-hover {
     background: #ffffff none no-repeat;
-    padding: 0;
+    padding-left: 0;
     margin: 0;
     display: block;
     border: 0;
