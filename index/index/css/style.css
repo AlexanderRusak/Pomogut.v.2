@@ -181,7 +181,7 @@ div .inside-block-section p {
 .sections .container .row .section-parents a .inside-block-section p {
   position: relative;
   z-index: 50;
-  bottom: 50px !important;
+  bottom: 65px !important;
   left: 30px;
   height: 30px; }
 
@@ -470,7 +470,9 @@ div .inside-block-section p {
     object-position: center; }
   .block-1 {
     margin-top: 100px;
-    margin-bottom: 60px; }
+    margin-bottom: 70px; }
+  .block-1 .container div:nth-child(2) a .block-1-button {
+    margin-bottom: 0px; }
   .block-1 .container {
     width: 558px !important;
     padding: 0 !important; }
@@ -532,7 +534,10 @@ div .inside-block-section p {
     width: 264px !important; }
   .block-2 .container {
     width: 264px !important;
-    padding: 0; }
+    padding: 0;
+    margin-bottom: 100px !important; }
+  .block-2 .container div a .block-1-button {
+    margin-bottom: 0px !important; }
   .block-2 .container div:nth-child(2) {
     width: 264PX !important;
     margin-left: auto !important;
@@ -609,7 +614,7 @@ div .inside-block-section p {
 
 @media screen and (max-width: 660px) {
   .block-1 .container {
-    width: 360px !important; }
+    width: 264px !important; }
   .block-1 .container div:nth-child(2) a .block-1-button {
     width: 264px !important; }
   .block-1 .col .block-1-img {
@@ -651,7 +656,7 @@ div .inside-block-section p {
   background-repeat: repeat-x; }
 
 .block-2-img {
-  border-radius: 5px; }
+  padding: 0; }
 
 .block-2 .container {
   padding-left: 0;

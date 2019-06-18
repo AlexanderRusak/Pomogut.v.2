@@ -122,6 +122,7 @@ input:active {
   color: #00AEEF; }
 
 .search-text a {
+  margin-bottom: 20px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;

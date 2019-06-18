@@ -50,7 +50,7 @@
   text-align: center;
   color: #EB3450;
   margin-top: 35px;
-  margin-bottom: 15px;
+  margin-bottom: 15px !important;
 }
 
 .single-column .row div h3 {
@@ -176,6 +176,9 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .single-column {
+    margin-bottom: 0px !important;
+}
   .single-column .row div h2{
     margin-top: 35px;
   }
