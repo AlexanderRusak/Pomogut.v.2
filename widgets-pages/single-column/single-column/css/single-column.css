@@ -44,7 +44,7 @@
   text-align: center;
   color: #EB3450;
   margin-top: 35px;
-  margin-bottom: 15px !important; }
+  margin-bottom: 50px; }
 
 .single-column .row div h3 {
   font-family: Amatic SC;
@@ -115,6 +115,8 @@
   top: 5px; }
 
 @media screen and (max-width: 1200px) {
+  .single-column .row div h2 {
+    margin-bottom: 15px; }
   .single-column {
     width: 558px; }
   .single-column .row {
@@ -163,7 +165,8 @@
     height: 215px; }
   .single-column .row div .single-column-image img {
     width: 264px;
-    height: 153px; }
+    height: 153px;
+    margin-top: 15px; }
   .single-column .row {
     width: 264px;
     margin-left: auto;

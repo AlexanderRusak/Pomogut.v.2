@@ -101,7 +101,16 @@
   margin-bottom: 0 !important;
   margin-left: 1px;
 }
-@media screen and (max-width: 1201px) {
+@media screen and (max-width: 1200px) {
+  .questions .row div .questions-question:nth-child(2) {
+    width: 460px;
+    padding: 0;
+}
+.questions .row div div h3 {
+  left: 0px;
+}
+}
+@media screen and (max-width: 991px) {
   .questions {
     width: 558px;
     margin-left: auto;

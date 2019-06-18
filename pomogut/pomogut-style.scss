@@ -365,6 +365,7 @@ header .row .header-logo .btn-write p {
   margin-right: 90px;
 }
 
+
 .project-2-slider .main-section:hover .title-link-2 a {
   display: block !important;
   margin-right: 90px;
@@ -403,13 +404,6 @@ header .row .header-logo .btn-write p {
   margin-top: 90px;
 }
 
-.project-1-slider .main-section:hover .title-link-1 {
-  margin-top: 0 !important;
-}
-
-.project-2-slider .main-section:hover .title-link-2 {
-  margin-top: 0 !important;
-}
 
 .project-1-slider .main-section .title-link-1 a,
 .project-2-slider .main-section .title-link-2 a {
@@ -487,7 +481,7 @@ header .row .header-logo .btn-write p {
 .project-1-slider .main-section-wave .image-wave .image-wave-background .title-link-1 p,
 .project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1 p {
   font-weight: 500;
-  margin-top: 95PX !important;
+  margin-top: 95PX ;
   width:264px;
   padding-left: 15px;
   padding-right: 15px;
@@ -550,12 +544,14 @@ header .row .header-logo .btn-write p {
   -webkit-transition-delay: 1s;
        -o-transition-delay: 1s;
           transition-delay: 1s;
+
+}
+.project-1-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 ,
+.project-2-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1  {
+
+    bottom: 144px !important;
 }
 
-.project-1-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 p a ,
-.project-2-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 p a  {
-  margin-top: 66PX !important;
-}
 
 .project-1-slider .main-section-wave .image-wave .under-image-wave-background,
 .project-2-slider .main-section-wave .image-wave .under-image-wave-background {

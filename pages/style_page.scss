@@ -39,7 +39,7 @@
 
 .categories {
   margin-top: 10px;
-  margin-bottom: 90px;
+  margin-bottom: 85px;
 }
 
 .categories-block h1 {
@@ -421,7 +421,7 @@ a:hover {
   margin-top: 14px;
   width: 155px;
   float: right;
-  margin-right: 15px;
+  margin-right: 25px;
 }
 
 .articles .breakdown-articles-buttons .message {
@@ -523,7 +523,7 @@ a:hover {
     position: relative;
     width: 42px;
     height: 40px;
-    left: 0;
+    left: 10px;
     z-index: 2;
     top: 122px;
   }
@@ -628,6 +628,17 @@ a:hover {
   }
 }
 @media screen and (max-width: 991px) {
+
+  .articles .breakdown-articles-buttons .phone-number {
+    width: 254px;
+    height: 60px;
+    border: 5px solid #FFD456;
+    border-radius: 35px;
+    overflow-y: hidden;
+    background: #FFC005;
+    margin: 0px;
+  }
+
   .articles a div:nth-child(2) h3 {
     margin: 0;
     text-align: center;
@@ -791,7 +802,7 @@ a:hover {
   }
 
   .breakdown-articles p {
-    width: auto !important;
+    width: 422px!important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
@@ -803,6 +814,9 @@ a:hover {
   }
 }
 @media screen and (max-width: 767px) {
+  .articles {
+    margin-bottom: 70px;
+  }
   .row .articles{
     margin-bottom: 100px;
   }
@@ -836,7 +850,7 @@ a:hover {
 
   .categories {
     margin-top: 37px;
-    margin-bottom: 94px;
+    margin-bottom: 55px;
     left: -8px;
     padding-left: 20px;
   }
@@ -1173,7 +1187,7 @@ a:hover {
 
   .categories_data {
     width: 314px;
-    margin-top: 17px;
+    margin-top: 40px;
   }
 
   .categories_data .row div h2 {

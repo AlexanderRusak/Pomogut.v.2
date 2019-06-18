@@ -3,9 +3,6 @@
 * {
   overflow-x: hidden; }
 
-.non-visible {
-  display: none; }
-
 a {
   text-decoration: none !important; }
 
@@ -268,7 +265,8 @@ div .inside-block-section p {
     padding-left: 98px;
     height: auto; }
   .block-2 .container div:nth-child(2) {
-    padding: 0; }
+    padding: 0;
+    margin-top: 20px; }
   .sections .container .section-adults {
     top: 13px;
     left: -17px !important; }
@@ -427,7 +425,8 @@ div .inside-block-section p {
   float: right; }
 
 .block-1 .container .center-block div:nth-child(2) h2 {
-  margin: 0; }
+  margin: 0;
+  margin-top: 30px; }
 
 .block-1 div .block-1-img {
   width: 558px;
@@ -513,7 +512,8 @@ div .inside-block-section p {
     padding-top: 15px; }
   .block-1 div .block-1-img {
     padding-left: 0;
-    padding-right: 0; }
+    padding-right: 0;
+    overflow-y: hidden; }
   .block-1 .container .center-block div {
     padding-left: 0;
     padding-right: 0; }
@@ -687,7 +687,7 @@ div .inside-block-section p {
 .block-2 .container {
   padding: 0;
   margin-top: 100px;
-  margin-bottom: 50px; }
+  margin-bottom: 100px; }
 
 .block-2 .container div a .block-1-button {
   margin-left: 20px;
@@ -704,8 +704,7 @@ div .inside-block-section p {
   font-size: 17px;
   line-height: normal;
   text-align: center;
-  padding-top: 14px;
-  margin-bottom: 50px; }
+  padding-top: 14px; }
 
 .block-2 .container div p {
   font-family: "Roboto", sans-serif;
@@ -718,7 +717,7 @@ div .inside-block-section p {
   margin-bottom: 37px; }
 
 .block-2 .container div h2 {
-  margin-top: 0px;
+  margin-top: 30px;
   margin-left: 0;
   font-size: 30px;
   font-family: 'Amatic SC', cursive;

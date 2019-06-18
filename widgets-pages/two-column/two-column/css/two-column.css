@@ -20,6 +20,7 @@
   object-position: center; }
 
 .two-column-title {
+  margin-top: 35px;
   font-family: Amatic SC;
   font-style: normal;
   font-weight: bold;
@@ -27,8 +28,7 @@
   line-height: 42px;
   text-align: center;
   color: #000000;
-  margin-bottom: 50px;
-  margin-top: 35px; }
+  margin-bottom: 50px; }
 
 .img-signature {
   margin-top: 10PX;
@@ -60,7 +60,6 @@
 
 @media screen and (max-width: 1200px) {
   .two-column .row div .two-column-image {
-    margin-top: 35px;
     width: auto !important;
     height: 296px; }
   .two-column-image img {
@@ -125,7 +124,6 @@
   .two-column .fake-block {
     display: block; }
   .two-column .row div .two-column-image {
-    margin-top: 35px;
     width: 264px !important;
     height: 172px; }
   .two-column-article {

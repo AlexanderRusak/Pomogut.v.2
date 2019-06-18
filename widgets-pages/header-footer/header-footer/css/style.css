@@ -149,6 +149,8 @@ nav .container .navbar-collapse {
 @media screen and (max-width: 1200px) {
   .navbar-right {
     margin-right: 0; }
+  .header-buttons-section {
+    padding-left: 58px !important; }
   .navbar-nav:first-child > li > a {
     padding-left: 15px;
     padding-right: 15px; } }
@@ -279,6 +281,8 @@ nav .container .navbar-collapse {
   .header .img-logo-tablet {
     display: block;
     padding-left: 80px; }
+  .header-buttons-section {
+    padding-left: 30px !important; }
   .header .img-logo-desktop {
     display: none; }
   .header-phone-button {

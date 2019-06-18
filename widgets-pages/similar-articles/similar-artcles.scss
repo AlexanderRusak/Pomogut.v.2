@@ -57,7 +57,7 @@ ul{
   color: #000000;
 }
 .similar-articles .row ul li{
-  margin-top: 35px;
+  margin-top: 55px;
 }
 .similar-articles .row ul li div h3 {
 
@@ -124,6 +124,9 @@ ul{
 }
 
 @media screen and (max-width: 767px) {
+  .similar-articles .row ul li{
+    margin-top: 35px;
+  }
   .similar-articles-title {
     margin-top: 35px;}
   .similar-articles {
