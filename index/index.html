@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="./index/script/index.js">  </script>
+  <script type="text/javascript" src="./index/script/index.js"> </script>
   <link rel="stylesheet" href="./index/css/style.min.css">
 
 </head>
@@ -22,7 +22,36 @@
   <div class="row sections">
     <div class="container center-block">
       <div class="row   col col-lg-12 col-md-12 col-sm-6">
-        <div class="  col col-lg-5 col-lg-offset-2 col-md-3 col-md-offset-2 section-teenagers  sections-pattern_two"><a href="#"><img  src="./index/images/sections/teenagers/pink.svg" alt=""/><div class="inside-block-section center-block"><img src="./index/images/sections/teenagers/logo-section.svg" alt=""/><p>Подростки 13-17 </p></div></a></div>
+        <div class="  col col-lg-5 col-lg-offset-2 col-md-3 col-md-offset-2 section-teenagers  sections-pattern_two">
+          <a href="#">
+
+
+            <svg width="264" height="274"  class="svg visible">
+                  <g mask="url(#mask-circles)">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#s-flower-m"></use>
+                  </g>
+              </svg>
+                </a>
+              <svg width="264" height="274" x="0" y="0"   class="svg non-visible">
+                    <symbol id="s-mask-circles">
+                        <g stroke="gray" stroke-width="12"  >
+                            <image xlink:href="./index/images/sections/teenagers/white.svg" width="264" height="274" />
+                        </g>
+                    </symbol>
+                    <mask id="mask-circles">
+                        <use xlink:href="#s-mask-circles" />
+                    </mask>
+                    <symbol id="s-flower-m"  >
+                        <image xlink:href="./index/images/sections/teenagers/3.svg"  x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice "  />
+                    </symbol>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#s-flower-m"></use>
+                </svg>
+              <svg width="264" height="274" class="svg non-visible">
+                    <rect y="0" fill="black" />
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#s-mask-circles"></use>
+                </svg>
+
+        </div>
         <!--дОБАВИЛ НОВЫЙ БЛОК С КАРТИНКОЙ И ТЕКСТОМ для всех-->
         <div class="col col-lg-5 col-lg-offset-2 col-md-3 col-md-offset-1 section-parents   sections-pattern_three"><a href="#"><img src="./index/images/sections/parents/red.svg" alt=""><div class="inside-block-section center-block"><img src="./index/images/sections/parents/logo-section.svg" alt=""/><p>Родители</p></div></a></div>
       </div>
@@ -52,12 +81,12 @@
 
     </div>
   </div>
-  <div class="row under-section">  </div>
-    <div class="row block-1  ">
-      <div class="container ">
-        <div class="center-block">
-          <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12 block-1-img  ">
-            <img class="block-1-img" width="100%" src="./index/images/block-1/3.jpg" alt="">
+  <div class="under-section"> </div>
+  <div class="row block-1  ">
+    <div class="container ">
+      <div class="center-block">
+        <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12 block-1-img  ">
+          <img class="block-1-img" width="100%" src="./index/images/block-1/3.jpg" alt="">
           </div>
           <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12  ">
             <h2>Как защитить свои личные данные</h2>
@@ -74,10 +103,10 @@
     </div>
     <div class="row  block-2">
       <div class="container">
-        <div class="col-lg-5 block-2-img   col-lg-push-7 col-sm-12 text-center">
-       <img src="./index/images/block-2/3.jpg" alt="">
+        <div class="col-lg-6 block-2-img   col-lg-push-6 col-sm-12 text-center">
+          <img src="./index/images/block-2/3.jpg" alt="">
         </div>
-          <div class="col col-lg-6  col-lg-pull-5 col-sm-12 ">
+          <div class="col col-lg-6  col-lg-pull-6 col-sm-12 ">
             <h2>Как защитить свои личные данные</h2>
             <p id="personal_data_block-2">Личные данные это любая информация, позволяющая идентифицировать тебя.
               <!--id="personal_data_block-2"-->
@@ -91,7 +120,7 @@
         </div>
       </div>
 
-      </div>
+    </div>
 
 </body>
 

@@ -4,7 +4,9 @@
 * {
   overflow-x: hidden;
 }
-
+.non-visible{
+  display: none;
+}
 a {
   text-decoration: none !important;
 }
@@ -12,7 +14,7 @@ a {
 .footer {
   margin-top: 0 !important;
   background-color: #00AEEF;
-}  
+}
 
 .stripe_under-header {
   display: none !important;
@@ -28,12 +30,14 @@ a {
 }
 
 .block-2-img img {
-  width: 538px;
+  width: 558px;
   height: 350px;
   object-fit: cover;
   object-position: center;
 }
-
+.block-2 .container div:nth-child(2){
+  padding-left: 0px;
+}
 .sections .container {
   margin-top: 100px !important;
 }
@@ -53,7 +57,7 @@ a {
 }
 
 .block-1 .container {
-  padding-left: 0 !important;
+  padding:0;
 }
 
 .sections-pattern_two {
@@ -307,7 +311,9 @@ div .inside-block-section p {
     padding-left: 98px;
     height: auto;
   }
-
+  .block-2 .container div:nth-child(2){
+    padding: 0;
+  }
   .sections .container .section-adults {
     top: 13px;
     left: -17px !important;
@@ -326,7 +332,7 @@ div .inside-block-section p {
   }
 
   .sections .container {
-    margin-bottom: 51px;
+    margin-bottom: 25px;
   }
 
   .sections-pattern_two {
@@ -344,7 +350,9 @@ div .inside-block-section p {
   .sections .container {
     margin-top: 35px;
   }
-
+  .sections .container {
+    margin-top: 70px !important;
+  }
   .sections .container .row:first-child {
     display: none;
   }
@@ -479,7 +487,7 @@ div .inside-block-section p {
 }
 
 .block-1 .container div:nth-child(2) h2 {
-  margin-top: 28px;
+  margin-top: 41px;
   margin-left: 8px;
   font-size: 30px;
   font-family: 'Amatic SC', cursive;
@@ -496,7 +504,6 @@ div .inside-block-section p {
 
 .block-1 .container div:nth-child(2) p {
   width: 558px;
-  margin-left: 7px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -507,7 +514,6 @@ div .inside-block-section p {
 }
 
 .block-1 .container div:nth-child(2) a .block-1-button {
-  margin-left: 10px;
   border: 5px solid #f17185;
   border-radius: 30px;
   width: 250px;
@@ -529,11 +535,17 @@ div .inside-block-section p {
   margin-top: 10px;
   margin-left: 12px;
 }
-
+.block-1 .container .center-block div:nth-child(2){
+  padding-right: 0px !important;
+  float: right;
+}
+.block-1 .container .center-block div:nth-child(2) h2{
+  margin: 0;
+}
 .block-1 div .block-1-img {
   width: 558px;
   height: 350px;
-  padding-left: 5px;
+  padding-left: 0px;
   padding-right: 15px;
 }
 
@@ -547,7 +559,7 @@ div .inside-block-section p {
   .block-1 div .block-1-img {
     width: 477px;
     height: 350px;
-    margin-top: 25px;
+    margin-top: 0px;
     background-color: transparent;
     padding-left: 0;
     padding-right: 0;
@@ -585,18 +597,23 @@ div .inside-block-section p {
     margin-top: 0;
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 30px;
   }
-
+  .block-2-img {
+      padding-left: 0px !important;
+      padding-right: 0;
+  }
   .block-1 div .block-1-img img {
     width: 558px;
     height: 363px;
     object-fit: cover;
     object-position: center;
+
   }
 
   .block-1 {
     margin-top: 100px;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
   }
 .block-1 .container div:nth-child(2) a .block-1-button{
   margin-bottom: 0px;
@@ -610,7 +627,7 @@ div .inside-block-section p {
     margin-left: 10px;
     border: 5px solid #f17185;
     border-radius: 30px;
-    width: 250px;
+    width: 264px;
     height: 60px;
     margin-top: 37px;
     background-color: #eb3450;
@@ -683,11 +700,15 @@ div .inside-block-section p {
     width: 264px !important;
   }
 
+  .block-1 {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
 
   .block-2 .container {
     width: 264px !important;
     padding: 0;
-    margin-bottom: 100px !important;
+    margin-bottom: 70px !important;
   }
 .block-2 .container div a .block-1-button {
   margin-bottom: 0px !important;
@@ -837,26 +858,29 @@ div .inside-block-section p {
 
 .under-section {
   background-image: url("../images/sections/Polygon.svg");
+  object-fit: cover;
+  object-position: center;
   background-repeat: repeat-x;
   height: 15px;
-  width: 107%;
 }
 ////////
 
 .block-2 {
   background-color: #00A9E8;
   background-image: url("../images/block-2/pattern.svg");
-  background-repeat: repeat-x;
+  background-repeat: repeat;
 }
 
 .block-2-img {
-  padding: 0;
+  padding-left: 27px;
+  padding-right: 0px;
 }
 
 .block-2 .container {
-  padding-left: 0;
-  margin-top: 105px;
+  padding: 0;
+  margin-top: 100px;
   margin-bottom: 50px;
+
 }
 
 .block-2 .container div a .block-1-button {
@@ -875,7 +899,7 @@ div .inside-block-section p {
   line-height: normal;
   text-align: center;
   padding-top: 14px;
-  margin-bottom: 83px;
+  margin-bottom: 50px;
 }
 
 .block-2 .container div p {
@@ -885,11 +909,12 @@ div .inside-block-section p {
   font-size: 15px;
   line-height: 28px;
   color: #fff;
-  margin-top: 15px;
+  margin-top: 20px;
   margin-bottom: 37px;
 }
 
 .block-2 .container div h2 {
+  margin-top: 0px;
   margin-left: 0;
   font-size: 30px;
   font-family: 'Amatic SC', cursive;

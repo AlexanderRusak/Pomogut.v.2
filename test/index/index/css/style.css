@@ -1,14 +1,16 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700&subset=cyrillic,hebrew,latin-ext,vietnamese");
 * {
   overflow-x: hidden; }
 
+.non-visible {
+  display: none; }
+
 a {
   text-decoration: none !important; }
 
 .footer {
-  margin-top: 0px !important;
+  margin-top: 0 !important;
   background-color: #00AEEF; }
 
 .stripe_under-header {
@@ -18,15 +20,18 @@ a {
   background-color: #F2F2F2; }
 
 .block-2 {
-  margin-bottom: 0px; }
+  margin-bottom: 0; }
 
 .block-2-img img {
-  width: 362px;
+  width: 558px;
   height: 350px;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center;
   object-position: center; }
+
+.block-2 .container div:nth-child(2) {
+  padding-left: 0px; }
 
 .sections .container {
   margin-top: 100px !important; }
@@ -46,7 +51,7 @@ a {
   object-position: center; }
 
 .block-1 .container {
-  padding-left: 0 !important; }
+  padding: 0; }
 
 .sections-pattern_two {
   width: 264px;
@@ -182,7 +187,7 @@ div .inside-block-section p {
 .sections .container .row .section-parents a .inside-block-section p {
   position: relative;
   z-index: 50;
-  bottom: 50px !important;
+  bottom: 65px !important;
   left: 30px;
   height: 30px; }
 
@@ -262,6 +267,8 @@ div .inside-block-section p {
     bottom: 43px;
     padding-left: 98px;
     height: auto; }
+  .block-2 .container div:nth-child(2) {
+    padding: 0; }
   .sections .container .section-adults {
     top: 13px;
     left: -17px !important; }
@@ -274,7 +281,7 @@ div .inside-block-section p {
     margin-right: 80px;
     margin-top: 45px; }
   .sections .container {
-    margin-bottom: 51px; }
+    margin-bottom: 25px; }
   .sections-pattern_two {
     width: 264px;
     height: 323px;
@@ -286,6 +293,8 @@ div .inside-block-section p {
 @media screen and (max-width: 768px) {
   .sections .container {
     margin-top: 35px; }
+  .sections .container {
+    margin-top: 70px !important; }
   .sections .container .row:first-child {
     display: none; }
   .block-1 .container div:nth-child(2) a .block-1-button {
@@ -369,7 +378,7 @@ div .inside-block-section p {
   padding-right: 0 !important; }
 
 .block-1 .container div:nth-child(2) h2 {
-  margin-top: 28px;
+  margin-top: 41px;
   margin-left: 8px;
   font-size: 30px;
   font-family: 'Amatic SC', cursive;
@@ -384,7 +393,6 @@ div .inside-block-section p {
 
 .block-1 .container div:nth-child(2) p {
   width: 558px;
-  margin-left: 7px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -394,7 +402,6 @@ div .inside-block-section p {
   margin-top: 14px; }
 
 .block-1 .container div:nth-child(2) a .block-1-button {
-  margin-left: 10px;
   border: 5px solid #f17185;
   border-radius: 30px;
   width: 250px;
@@ -415,10 +422,17 @@ div .inside-block-section p {
   margin-top: 10px;
   margin-left: 12px; }
 
+.block-1 .container .center-block div:nth-child(2) {
+  padding-right: 0px !important;
+  float: right; }
+
+.block-1 .container .center-block div:nth-child(2) h2 {
+  margin: 0; }
+
 .block-1 div .block-1-img {
   width: 558px;
   height: 350px;
-  padding-left: 5px;
+  padding-left: 0px;
   padding-right: 15px; }
 
 .block-1 div .block-1-img img {
@@ -431,14 +445,14 @@ div .inside-block-section p {
 
 @media screen and (max-width: 1200px) {
   .block-1 div .block-1-img {
-    width: 432px;
+    width: 477px;
     height: 350px;
-    margin-top: 25px;
+    margin-top: 0px;
     background-color: transparent;
-    padding-left: 0px;
-    padding-right: 0px; }
+    padding-left: 0;
+    padding-right: 0; }
   .block-1 div .block-1-img img {
-    width: 432px;
+    width: 477px;
     height: 320px;
     -o-object-fit: cover;
     object-fit: cover;
@@ -446,11 +460,9 @@ div .inside-block-section p {
     object-position: center; }
   .block-1 .container div:nth-child(2) {
     padding-left: 45px;
-    padding-right: 0px; }
+    padding-right: 0; }
   .block-1 .container div:nth-child(2) p {
     width: auto; }
-  .block-2 .container div p {
-    width: auto !important; }
   .block-1 .col div:nth-child(2) {
     margin-left: 10px; }
   .block-1 .col div:nth-child(2) h2 {
@@ -461,9 +473,13 @@ div .inside-block-section p {
     width: 558px;
     height: 363px;
     background-color: transparent;
-    margin-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px; }
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 30px; }
+  .block-2-img {
+    padding-left: 0px !important;
+    padding-right: 0; }
   .block-1 div .block-1-img img {
     width: 558px;
     height: 363px;
@@ -473,7 +489,9 @@ div .inside-block-section p {
     object-position: center; }
   .block-1 {
     margin-top: 100px;
-    margin-bottom: 60px; }
+    margin-bottom: 100px; }
+  .block-1 .container div:nth-child(2) a .block-1-button {
+    margin-bottom: 0px; }
   .block-1 .container {
     width: 558px !important;
     padding: 0 !important; }
@@ -481,7 +499,7 @@ div .inside-block-section p {
     margin-left: 10px;
     border: 5px solid #f17185;
     border-radius: 30px;
-    width: 250px;
+    width: 264px;
     height: 60px;
     margin-top: 37px;
     background-color: #eb3450;
@@ -525,21 +543,54 @@ div .inside-block-section p {
   .block-2 .container div a .block-1-button,
   .block-2 .container div h2,
   .block-2 .container div p {
-    margin-left: 0 !important; } }
+    margin-left: 0 !important; }
+  .block-2 .container {
+    width: 558px !important;
+    padding: 0; } }
 
 @media screen and (max-width: 767px) {
   .block-1 .container {
     width: 264px !important; }
-  .block-1 div .block-1-img {
-    width: 264px;
-    height: 172px;
+  .block-1 {
+    margin-top: 70px;
+    margin-bottom: 70px; }
+  .block-2 .container {
+    width: 264px !important;
+    padding: 0;
+    margin-bottom: 70px !important; }
+  .block-2 .container div a .block-1-button {
+    margin-bottom: 0px !important; }
+  .block-2 .container div:nth-child(2) {
+    width: 264PX !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0; }
+  .block-2 .container div p {
+    width: 264px; }
+  .block-2 div .block-2-img {
+    width: 264px !important;
+    height: 255px !important;
     background-color: transparent;
-    margin-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px; }
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0; }
+  .block-2 div .block-2-img img {
+    width: 264px !important;
+    height: 255px !important;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center; }
+  .block-1 div .block-1-img {
+    width: 264px !important;
+    height: 172px !important;
+    background-color: transparent;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0; }
   .block-1 div .block-1-img img {
-    width: 264px;
-    height: 172px;
+    width: 264px !important;
+    height: 172px !important;
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: center;
@@ -585,10 +636,9 @@ div .inside-block-section p {
 
 @media screen and (max-width: 660px) {
   .block-1 .container {
-    width: 360px !important; }
+    width: 264px !important; }
   .block-1 .container div:nth-child(2) a .block-1-button {
-    width: 264px !important;
-    height: 264px; }
+    width: 264px !important; }
   .block-1 .col .block-1-img {
     width: 264px !important;
     height: auto;
@@ -618,24 +668,25 @@ div .inside-block-section p {
 
 .under-section {
   background-image: url("../images/sections/Polygon.svg");
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
   background-repeat: repeat-x;
-  height: 15px;
-  width: 107%; }
+  height: 15px; }
 
 .block-2 {
   background-color: #00A9E8;
   background-image: url("../images/block-2/pattern.svg");
-  background-repeat: repeat-x; }
+  background-repeat: repeat; }
 
 .block-2-img {
-  border-radius: 5px;
-  /* Радиус скругления */
-  padding: 2%;
-  /* Поля */ }
+  padding-left: 27px;
+  padding-right: 0px; }
 
 .block-2 .container {
-  padding-left: 0;
-  margin-top: 105px;
+  padding: 0;
+  margin-top: 100px;
   margin-bottom: 50px; }
 
 .block-2 .container div a .block-1-button {
@@ -654,21 +705,20 @@ div .inside-block-section p {
   line-height: normal;
   text-align: center;
   padding-top: 14px;
-  margin-bottom: 83px; }
+  margin-bottom: 50px; }
 
 .block-2 .container div p {
-  width: 558px;
-  margin-left: 0;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 28px;
   color: #fff;
-  margin-top: 15px;
+  margin-top: 20px;
   margin-bottom: 37px; }
 
 .block-2 .container div h2 {
+  margin-top: 0px;
   margin-left: 0;
   font-size: 30px;
   font-family: 'Amatic SC', cursive;
@@ -698,19 +748,9 @@ div .inside-block-section p {
 .block-2 .container div a {
   text-decoration: none; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .block-2 .container {
-    width: 600px; } }
-
-@media screen and (max-width: 660px) {
-  .block-2 .container {
-    width: 297px; }
-  .block-2 .container {
-    margin-top: 65px !important; }
-  .block-2 .container .block-2-img {
-    width: 100%; }
-  .block-2 .container .block-2-img img {
-    width: 264px; }
+    margin-top: 70px !important; }
   .block-2 .container div a .block-1-button {
     width: 264px;
     margin-left: auto;

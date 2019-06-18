@@ -307,8 +307,10 @@ header .row .header-logo .btn-write p {
 }
 
 .buttons-chat img {
-  margin-top: 12px;
-  margin-left: 9px;
+  width: 34px;
+    margin-top: 14px;
+    margin-left: 12px;
+    height: 26px
 }
 
 .project-1-slider .main-section,
@@ -484,6 +486,7 @@ header .row .header-logo .btn-write p {
 
 .project-1-slider .main-section-wave .image-wave .image-wave-background .title-link-1 p,
 .project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1 p {
+  font-weight: 500;
   margin-top: 95PX !important;
   width:264px;
   padding-left: 15px;
@@ -549,9 +552,9 @@ header .row .header-logo .btn-write p {
           transition-delay: 1s;
 }
 
-.project-1-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 P,
-.project-2-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 P {
-  margin-top: 46PX !important;
+.project-1-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 p a ,
+.project-2-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 p a  {
+  margin-top: 66PX !important;
 }
 
 .project-1-slider .main-section-wave .image-wave .under-image-wave-background,
@@ -602,8 +605,17 @@ header .row .header-logo .btn-write p {
 }
 
 .feedback .row div form textarea {
-  width: 558px!important;
-  height: 259px;
+  font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 25px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+color: #28282B;
 }
 
 .has-feedback label~.form-control-feedback {
@@ -616,12 +628,13 @@ header .row .header-logo .btn-write p {
 
 .feedback .row div .form-group .input-lg {
   height: 68px;
+  font-size: 16px;
   background: #ECEDF0;
   outline: 0 !important;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: #fff;
+  color: #28282B;
 }
 
 .feedback .row div .form-group .input-lg[placeholder] {
@@ -636,10 +649,12 @@ header .row .header-logo .btn-write p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #28282B;
+  color: #000;
   padding-left: 30px;
 }
-
+.feedback .row div .form-group .input-lg[text]{
+    color: #000;
+}
 textarea {
   background-color: #ECEDF0 !important;
   outline: 0 !important;
@@ -653,28 +668,7 @@ textarea {
   outline: 0 !important;
 }
 
-textarea[placeholder] {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 20px;
-  padding-left: 30px;
-  color: #28282B;
-  opacity: 1 !important;
-  outline: 0 !important;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: #fff;
-}
+
 
 .feedback .row div .form-group .button-form {
   padding: 0;
