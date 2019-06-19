@@ -266,7 +266,7 @@ div .inside-block-section p {
     height: auto; }
   .block-2 .container div:nth-child(2) {
     padding: 0;
-    margin-top: 20px; }
+    margin-top: 30px; }
   .sections .container .section-adults {
     top: 13px;
     left: -17px !important; }
@@ -387,7 +387,7 @@ div .inside-block-section p {
   color: #000000; }
 
 .block-1 {
-  margin-bottom: 97px; }
+  margin-bottom: 100px; }
 
 .block-1 .container div:nth-child(2) p {
   width: 558px;
@@ -425,7 +425,7 @@ div .inside-block-section p {
 
 .block-1 .container .center-block div:nth-child(2) h2 {
   margin: 0;
-  margin-top: 30px; }
+  margin-top: 0px; }
 
 .block-1 div .block-1-img {
   width: 558px;
@@ -535,7 +535,7 @@ div .inside-block-section p {
     margin-left: 0; }
   .block-1 .col div div:nth-child(2) {
     margin-left: 0;
-    margin-top: 20px; }
+    margin-top: 30px; }
   .block-1 .container div a .block-1-button,
   .block-1 .container div h2,
   .block-1 .container div p,
@@ -716,7 +716,7 @@ div .inside-block-section p {
   margin-bottom: 37px; }
 
 .block-2 .container div h2 {
-  margin-top: 30px;
+  margin-top: 0px;
   margin-left: 0;
   font-size: 30px;
   font-family: 'Amatic SC', cursive;

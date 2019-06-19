@@ -93,7 +93,7 @@ header .row .header-logo h3 {
   margin-right: auto; }
 
 header .row .header-logo .btn-write {
-  margin-top: 70px;
+  margin-top: 88px;
   color: #fff;
   width: 264px;
   height: 56px;
@@ -404,10 +404,13 @@ header .row .header-logo .btn-write p {
 .project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1 {
   position: relative;
   z-index: 5;
-  bottom: 100px; }
+  bottom: 35px; }
 
 .project-1-slider .main-section-wave .image-wave .image-wave-background .title-link-1 p,
 .project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1 p {
+  height: 58px;
+  display: table-cell;
+  vertical-align: bottom;
   font-weight: 500;
   margin-top: 95PX;
   width: 264px;
@@ -422,6 +425,7 @@ header .row .header-logo .btn-write p {
   color: #28282B; }
 
 .project-1-slider .main-section-wave .image-wave .image-wave-background .title-link-1 a {
+  padding-top: 15px;
   margin-left: 0;
   font-family: Open Sans;
   font-style: normal;
@@ -440,6 +444,7 @@ header .row .header-logo .btn-write p {
   display: none; }
 
 .project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1 a {
+  padding-top: 15px;
   margin-left: 0;
   outline: 0;
   font-family: Open Sans;
@@ -472,7 +477,7 @@ header .row .header-logo .btn-write p {
 
 .project-1-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1,
 .project-2-slider .main-section-wave:hover .image-wave .image-wave-background .title-link-1 {
-  bottom: 144px !important; }
+  bottom: 65px !important; }
 
 .project-1-slider .main-section-wave .image-wave .under-image-wave-background,
 .project-2-slider .main-section-wave .image-wave .under-image-wave-background {
@@ -856,7 +861,7 @@ footer .icons-social-networks a {
     -ms-transform: scale(0.97);
     transform: scale(0.97); }
   .slick-slider {
-    margin-left: 0px; }
+    margin-left: 0; }
   .about-logos .slick-list {
     width: 353px;
     margin-left: 12%;

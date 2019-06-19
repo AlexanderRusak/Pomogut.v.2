@@ -33,6 +33,7 @@ margin-bottom: 35px;
     margin-right: auto;
 }
 .feedback .container .row div form div label {
+  left: 550px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -288,7 +289,8 @@ margin-left: auto;
 .modal-window h1,
 .modal-window h2 {
   width: 438px;
-  margin-left: 60px;
+  margin-left: auto !important;
+  margin-right: auto !important;
   margin-top: 50px;
   margin-right: 50px;
   font-family: Roboto;
@@ -312,7 +314,7 @@ margin-left: auto;
 .modal-window label {
   padding-top: 0;
   position: absolute;
-  bottom: 220px;
+  bottom: 210px;
   left: 520px;
 }
 @media screen and (max-width:768px) {
