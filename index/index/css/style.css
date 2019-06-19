@@ -20,7 +20,7 @@ a {
   margin-bottom: 0; }
 
 .block-2-img img {
-  width: 558px;
+  width: 467px;
   height: 350px;
   -o-object-fit: cover;
   object-fit: cover;
@@ -244,6 +244,8 @@ div .inside-block-section p {
   left: 20px; }
 
 @media screen and (max-width: 1200px) {
+  .block-2 .container div:nth-child(2) {
+    margin-top: 30px; }
   .sections .container .section-adults {
     top: 13px;
     left: 0 !important; }
@@ -447,10 +449,10 @@ div .inside-block-section p {
     height: 350px;
     margin-top: 0px;
     background-color: transparent;
-    padding-left: 0;
+    padding-left: 10px;
     padding-right: 0; }
   .block-1 div .block-1-img img {
-    width: 477px;
+    width: 467px;
     height: 320px;
     -o-object-fit: cover;
     object-fit: cover;
