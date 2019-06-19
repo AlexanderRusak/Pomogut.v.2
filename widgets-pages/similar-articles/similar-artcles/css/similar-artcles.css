@@ -113,6 +113,8 @@ ul {
 @media screen and (max-width: 767px) {
   .similar-articles .row ul li {
     margin-top: 35px; }
+  .similar-articles {
+    margin-bottom: 5px; }
   .similar-articles-title {
     margin-top: 35px; }
   .similar-articles {
