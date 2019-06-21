@@ -24,8 +24,12 @@
 
 .three-column .row .three-column-group {
   margin-top: 15px;
+  margin-bottom: 25px;
 }
-
+.three-column .row .three-column-group:last-child {
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
 .three-column .row:nth-child(2) div {
   margin-top: 20px;
 }
@@ -42,7 +46,7 @@
   line-height: 28px;
   text-align: center;
   color: #292424;
-  margin-top: 26px;
+  margin-top: 20px;
   margin-bottom: 0;
   width: 264px;
   margin-left: auto;

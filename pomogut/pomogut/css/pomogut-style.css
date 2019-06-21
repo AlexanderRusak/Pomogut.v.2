@@ -532,7 +532,9 @@ header .row .header-logo .btn-write p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #28282B; }
+  color: #28282B;
+  padding-top: 10px;
+  padding-left: 16px; }
 
 .has-feedback label ~ .form-control-feedback {
   top: 42px !important; }
@@ -542,7 +544,18 @@ header .row .header-logo .btn-write p {
 
 .feedback .row div .form-group .input-lg {
   height: 68px;
-  font-size: 16px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: #ECEDF0;
   outline: 0 !important;
   border: none;

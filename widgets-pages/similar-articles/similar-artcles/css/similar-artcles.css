@@ -114,7 +114,7 @@ ul {
   .similar-articles .row ul li {
     margin-top: 35px; }
   .similar-articles {
-    margin-bottom: 5px; }
+    margin-bottom: 5px !important; }
   .similar-articles-title {
     margin-top: 35px; }
   .similar-articles {

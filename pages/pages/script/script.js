@@ -128,7 +128,10 @@ $(document).on('ready', function() {
     var width = screen.width;
 
     var $count = $(this).index();
+    $(".categories div a").css("border", "3px solid #f2f2f2");
+    $(this).find("a ").css("border", "3px solid #EB3450");
     alert($(this).attr("id"));
+    console.log($(this).find("a"));
     if (width < '590') {
       $('.categories_data .tags').css("display", "none");
     }
@@ -149,10 +152,12 @@ $(document).on('ready', function() {
 
   });
   $(".tag-primary ").click(function() {
+
     /////////////////////////////////////////////////////////////// styles
     $(".tag-primary").css("background-color", "#fff");
-    $(this).css("background-color", "#EB3450");
-    alert($(this).attr("id"));
+    //$(this).css("border-width", "0");
+    //$(this).css("border", "3px solid #EB3450");
+  //  alert($(this).attr("id"));
     ///////////////////////////////////////////////////////////////
     //  alert($(this).attr("id"));
   });

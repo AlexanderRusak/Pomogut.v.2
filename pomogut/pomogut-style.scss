@@ -482,7 +482,6 @@ header .row .header-logo .btn-write p {
 
 .project-1-slider .main-section-wave .image-wave .image-wave-background .title-link-1 p,
 .project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1 p {
-
   height: 58px;
   display: table-cell;
   vertical-align: bottom;
@@ -501,7 +500,7 @@ header .row .header-logo .btn-write p {
 }
 
 .project-1-slider .main-section-wave .image-wave .image-wave-background .title-link-1 a {
-    padding-top: 15px;
+  padding-top: 15px;
   margin-left: 0;
   font-family: Open Sans;
   font-style: normal;
@@ -521,7 +520,7 @@ header .row .header-logo .btn-write p {
 }
 
 .project-2-slider .main-section-wave .image-wave .image-wave-background .title-link-1 a {
-      padding-top: 15px;
+  padding-top: 15px;
   margin-left: 0;
   outline: 0;
   font-family: Open Sans;
@@ -608,14 +607,19 @@ header .row .header-logo .btn-write p {
 
 .feedback .row div form textarea {
   font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 25px;
-  /* identical to box height */
-  display: flex;
-  align-items: center;
-  color: #28282B;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 25px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+color: #28282B;
+
+  padding-top: 10px;
+  padding-left: 16px;
 }
 
 .has-feedback label~.form-control-feedback {
@@ -628,12 +632,19 @@ header .row .header-logo .btn-write p {
 
 .feedback .row div .form-group .input-lg {
   height: 68px;
-  font-size: 16px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
   background: #ECEDF0;
   outline: 0 !important;
   border: none;
   -webkit-box-shadow: none;
-  box-shadow: none;
+  box-shadow: none;   
   color: #28282B;
 }
 

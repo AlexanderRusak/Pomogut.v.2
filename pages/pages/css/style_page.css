@@ -94,15 +94,9 @@
 
 .categories div a {
   display: block;
-  border: 3px solid #f2f2f2 !important;
+  border: 3px solid #f2f2f2;
   border-radius: 80px;
   padding: 3px;
-  position: relative; }
-
-.categories div a:focus {
-  display: block;
-  border: 3px solid #EB3450 !important;
-  border-radius: 80px;
   position: relative; }
 
 .categories div p {

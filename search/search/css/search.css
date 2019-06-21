@@ -262,6 +262,10 @@ form div:nth-child(1) input {
     width: 370px !important; } }
 
 @media screen and (max-width: 767px) {
+  .search-text a:last-child {
+    margin-bottom: 0px; }
+  form {
+    margin-bottom: 5px; }
   .search-page {
     width: 264px; }
   .search-page div:nth-child(2) {

@@ -99,9 +99,10 @@
     padding: 0;
   }
 
-  .two-column .row {
+  .two-column .row:first-child {
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 50px;
   }
 
   .two-column .original-block {
@@ -133,9 +134,12 @@
     font-size: 15px;
     line-height: 28px;
   }
+
+    .two-column .row div {
+      padding: 0 !important;
+    }
 }
 @media screen and (max-width: 767px) {
-
 
   .two-column-image img {
     width: 264px;
@@ -152,7 +156,8 @@
   }
 
   .two-column .row div {
-    padding: 0;
+    padding: 0 !important;
+
   }
 
   .two-column .row {
@@ -181,5 +186,6 @@
 
   .img-signature {
     width: 267px;
+    margin-bottom: 20px;
   }
 }

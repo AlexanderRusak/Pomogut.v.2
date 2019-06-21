@@ -81,9 +81,10 @@
   .two-column {
     width: 558px;
     padding: 0; }
-  .two-column .row {
+  .two-column .row:first-child {
     margin-left: 0;
-    margin-right: 0; }
+    margin-right: 0;
+    margin-bottom: 50px; }
   .two-column .original-block {
     display: none; }
   .two-column .fake-block {
@@ -101,7 +102,9 @@
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
-    line-height: 28px; } }
+    line-height: 28px; }
+  .two-column .row div {
+    padding: 0 !important; } }
 
 @media screen and (max-width: 767px) {
   .two-column-image img {
@@ -115,7 +118,7 @@
     width: 264px;
     padding: 0; }
   .two-column .row div {
-    padding: 0; }
+    padding: 0 !important; }
   .two-column .row {
     margin-left: 0;
     margin-right: 0; }
@@ -131,4 +134,5 @@
     height: auto !important;
     display: block !important; }
   .img-signature {
-    width: 267px; } }
+    width: 267px;
+    margin-bottom: 20px; } }

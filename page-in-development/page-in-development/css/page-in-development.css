@@ -50,7 +50,8 @@
     margin-right: auto;
     padding: 0px; }
   .page-in-developement {
-    margin-top: 70px; }
+    margin-top: 5px !important;
+    margin-bottom: 5px !important; }
   .page-in-developement .col {
     margin-left: 0px;
     margin-right: 0px;

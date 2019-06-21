@@ -175,7 +175,7 @@
   text-align: center;
   width: 850px;
   margin-top: 40px;
-  margin-bottom: 53px;
+  margin-bottom: 40px;
 }
 //////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////
@@ -246,9 +246,12 @@
   }
 }
 @media screen and (max-width: 767px) {
-  .title {
-    margin-top: 70px;
+  .single-item {
+
+      margin-bottom: 5px!important;
   }
+
+
   .slider-img-container {
     width: 264px;
     height: 241px;
@@ -303,7 +306,8 @@
   }
 
   .title {
-    margin-top: 35px !important;
+    margin-top: 5px !important;
+    margin-bottom: 15px !important;
   }
 
   .title-text-style {
@@ -322,7 +326,7 @@
 
   .slick-next,
   .slick-prev {
-    top: 37% !important;
+    top: 31% !important;
   }
 
   .single-item div div h3 {

@@ -16,3 +16,10 @@
   margin-top: 35px;
   margin-bottom: 35px;
 }
+@media screen and (max-width: 767px) {
+  .single-column .row div h2 {
+
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+}
