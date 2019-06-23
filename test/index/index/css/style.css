@@ -418,6 +418,10 @@ div .inside-block-section p {
     margin-top: -20px; } }
 
 @media screen and (max-width: 767px) {
+  .sections {
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: #f2f2f2; }
   .section-adults img:last-child,
   .section-kids img:last-child,
   .section-parents img:last-child,
