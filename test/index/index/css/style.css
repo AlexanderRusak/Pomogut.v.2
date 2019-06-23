@@ -3,9 +3,6 @@
 * {
   overflow-x: hidden; }
 
-.non-visible {
-  display: none; }
-
 a {
   text-decoration: none !important; }
 
@@ -19,6 +16,9 @@ a {
 .sections {
   background-color: #F2F2F2; }
 
+.sections .container {
+  padding: 0; }
+
 .block-2 {
   margin-bottom: 0; }
 
@@ -31,7 +31,8 @@ a {
   object-position: center; }
 
 .block-2 .container div:nth-child(2) {
-  padding-left: 0px; }
+  padding-right: 24px;
+  padding-left: 0; }
 
 .sections .container {
   margin-top: 100px !important; }
@@ -42,30 +43,132 @@ a {
   padding-left: 0;
   padding-right: 0; }
 
-.sections-pattern_two .inside-block-section img {
-  width: 220px;
-  height: 193px;
+.sections-pattern_one .girls-links,
+.sections-pattern_three .girls-links,
+.sections-pattern_two .girls-links {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.girls-links-text {
+  width: 171px;
+  height: 42px;
+  position: relative;
+  z-index: 98;
+  font-family: Amatic SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  text-align: center;
+  color: #000000;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  word-break: break-word; }
+
+.section-kids .girls-links-text {
+  margin-top: 111px;
+  margin-left: 10px; }
+
+.section-teenagers .girls-links-text {
+  margin-right: 25px;
+  margin-top: 145px; }
+
+.section-adults .girls-links-text {
+  margin-top: 111px;
+  margin-right: 10px; }
+
+.section-parents .girls-links-text {
+  margin-top: 110px;
+  margin-left: 10px; }
+
+.section-schools .girls-links-text {
+  margin-top: 155px;
+  margin-right: 8px; }
+
+.section-kids {
+  background: url("../images/sections/backgrounds/kids.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative; }
+
+.section-adults img:last-child,
+.section-kids img:last-child,
+.section-parents img:last-child,
+.section-schools img:last-child,
+.section-teenagers img:last-child {
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+  position: absolute;
+  z-index: 98;
+  width: 100%;
+  height: 100%; }
+
+.section-teenagers a {
+  background: url("../images/sections/backgrounds/teens.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+.section-adults a img:first-child,
+.section-kids a img:first-child,
+.section-parents a img:first-child,
+.section-schools a img:first-child,
+.section-teenagers a img:first-child {
+  width: 130px;
+  height: 142px;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center;
-  object-position: center; }
+  object-position: center;
+  position: absolute;
+  z-index: 0; }
+
+.section-adults a {
+  background: url("../images/sections/backgrounds/youth.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+.section-parents a {
+  background: url("../images/sections/backgrounds/parents.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+.section-schools a {
+  background: url("../images/sections/backgrounds/schools.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
 
 .block-1 .container {
   padding: 0; }
 
 .sections-pattern_two {
+  bottom: 0px;
   width: 264px;
   height: 274px;
   padding-left: 0;
   padding-right: 0; }
-
-.sections-pattern_two .inside-block-section img {
-  width: 220px;
-  height: 228px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
-  object-position: center; }
 
 .sections-pattern_three {
   width: 264px;
@@ -73,23 +176,15 @@ a {
   padding-left: 0;
   padding-right: 0; }
 
-.sections-pattern_two .inside-block-section img {
-  width: 220px;
-  height: 216px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
-  object-position: center; }
-
 .sections .container .row:first-child {
   z-index: 1;
   position: relative;
-  left: 44px;
+  left: 50px;
   display: block; }
 
 .sections .container .section-kids {
   top: 13px;
-  left: -8px; }
+  left: 0px; }
 
 .sections .container .section-adults {
   top: 13px;
@@ -109,8 +204,8 @@ a {
   margin-bottom: 15px; }
 
 .sections .container .row:nth-child(2) div:nth-child(3) {
-  bottom: 30px;
-  float: right !important; }
+  bottom: 28px;
+  margin-left: 158px; }
 
 .sections .container .sections_fake {
   float: right !important; }
@@ -122,11 +217,11 @@ a {
   display: none; }
 
 .sections .container .row:nth-child(1) div:nth-child(1) {
-  right: 0;
+  right: 7px;
   overflow-y: hidden; }
 
 .sections .container .row:nth-child(1) div:nth-child(2) {
-  right: 10px;
+  right: 20px;
   overflow-y: hidden; }
 
 .sections .container .row div a {
@@ -247,6 +342,13 @@ div .inside-block-section p {
   left: 20px; }
 
 @media screen and (max-width: 1200px) {
+  .block-2 .container div:nth-child(2) {
+    margin-top: 0; }
+  .sections .container .row:nth-child(2) div:nth-child(3) {
+    bottom: 28px;
+    margin-left: 83px; }
+  .block-2 .container div:nth-child(2) {
+    padding-left: 0; }
   .sections .container .section-adults {
     top: 13px;
     left: 0 !important; }
@@ -257,6 +359,30 @@ div .inside-block-section p {
 @media screen and (max-width: 991px) {
   .sections .container .row:first-child {
     display: none; }
+  .sections-pattern_two {
+    bottom: 24px;
+    width: 264px;
+    height: 274px;
+    padding-left: 0;
+    padding-right: 0; }
+  .sections .container .row:nth-child(2) div:nth-child(3) {
+    bottom: 28px;
+    margin-left: 0px; }
+  .section-kids .girls-links-text {
+    margin-top: 110px;
+    margin-left: 10px; }
+  .section-teenagers .girls-links-text {
+    margin-right: 25px;
+    margin-top: 110px; }
+  .section-adults .girls-links-text {
+    margin-top: 110px;
+    margin-right: 10px; }
+  .section-parents .girls-links-text {
+    margin-top: 155px;
+    margin-left: 10px; }
+  .section-schools .girls-links-text {
+    margin-top: 110px;
+    margin-right: 8px; }
   .sections .container .sections_fake {
     display: block; }
   .sections .container .row:nth-child(2) {
@@ -265,18 +391,19 @@ div .inside-block-section p {
     position: relative;
     z-index: 2;
     bottom: 43px;
-    padding-left: 98px;
+    padding-left: 88px;
     height: auto; }
   .block-2 .container div:nth-child(2) {
-    padding: 0; }
+    padding: 0;
+    margin-top: 30px; }
   .sections .container .section-adults {
-    top: 13px;
-    left: -17px !important; }
+    top: 14px;
+    left: 8px !important; }
   .sections .container .row:nth-child(2) .section-adults {
     margin-top: 55px; }
   .sections .container .row:nth-child(2) div:nth-child(3) {
-    bottom: -57px;
-    left: -17px;
+    bottom: -32px;
+    left: 8px;
     float: none !important;
     margin-right: 80px;
     margin-top: 45px; }
@@ -290,7 +417,23 @@ div .inside-block-section p {
   .sections .container .row:nth-child(3) .section-parents {
     margin-top: -20px; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  .section-adults img:last-child,
+  .section-kids img:last-child,
+  .section-parents img:last-child,
+  .section-schools img:last-child,
+  .section-teenagers img:last-child {
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+    position: absolute;
+    z-index: 99;
+    width: 264px;
+    height: 100%; }
+  .sections .container .section-kids {
+    top: 0px;
+    left: 8px; }
   .sections .container {
     margin-top: 35px; }
   .sections .container {
@@ -389,7 +532,7 @@ div .inside-block-section p {
   color: #000000; }
 
 .block-1 {
-  margin-bottom: 97px; }
+  margin-bottom: 100px; }
 
 .block-1 .container div:nth-child(2) p {
   width: 558px;
@@ -415,15 +558,14 @@ div .inside-block-section p {
   font-size: 17px;
   line-height: normal;
   text-align: center;
-  padding-top: 15px;
-  margin-bottom: 33px; }
+  padding-top: 15px; }
 
 .block-1 .col div div:nth-child(2) {
   margin-top: 10px;
   margin-left: 12px; }
 
 .block-1 .container .center-block div:nth-child(2) {
-  padding-right: 0px !important;
+  padding-right: 0 !important;
   float: right; }
 
 .block-1 .container .center-block div:nth-child(2) h2 {
@@ -432,7 +574,7 @@ div .inside-block-section p {
 .block-1 div .block-1-img {
   width: 558px;
   height: 350px;
-  padding-left: 0px;
+  padding-left: 0;
   padding-right: 15px; }
 
 .block-1 div .block-1-img img {
@@ -444,22 +586,32 @@ div .inside-block-section p {
   object-position: center; }
 
 @media screen and (max-width: 1200px) {
+  .block-2 .container div:nth-child(2) {
+    width: 485px;
+    padding-left: 10px; }
   .block-1 div .block-1-img {
     width: 477px;
     height: 350px;
-    margin-top: 0px;
+    margin-top: 0;
     background-color: transparent;
-    padding-left: 0;
+    padding-left: 5px;
     padding-right: 0; }
+  .block-2-img img {
+    width: 467px;
+    height: 350px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center; }
   .block-1 div .block-1-img img {
-    width: 477px;
-    height: 320px;
+    width: 467px;
+    height: 350px;
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: center;
     object-position: center; }
   .block-1 .container div:nth-child(2) {
-    padding-left: 45px;
+    padding-left: 25px;
     padding-right: 0; }
   .block-1 .container div:nth-child(2) p {
     width: auto; }
@@ -477,8 +629,21 @@ div .inside-block-section p {
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 30px; }
+  .sections .container .section-kids {
+    top: 13px;
+    left: 8px; }
+  .block-2-img img {
+    width: 558px;
+    height: 350px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center; }
+  .block-2 .container div:nth-child(2) {
+    width: 565px;
+    padding-left: 0; }
   .block-2-img {
-    padding-left: 0px !important;
+    padding-left: 0 !important;
     padding-right: 0; }
   .block-1 div .block-1-img img {
     width: 558px;
@@ -491,7 +656,7 @@ div .inside-block-section p {
     margin-top: 100px;
     margin-bottom: 100px; }
   .block-1 .container div:nth-child(2) a .block-1-button {
-    margin-bottom: 0px; }
+    margin-bottom: 0; }
   .block-1 .container {
     width: 558px !important;
     padding: 0 !important; }
@@ -513,7 +678,8 @@ div .inside-block-section p {
     padding-top: 15px; }
   .block-1 div .block-1-img {
     padding-left: 0;
-    padding-right: 0; }
+    padding-right: 0;
+    overflow-y: hidden; }
   .block-1 .container .center-block div {
     padding-left: 0;
     padding-right: 0; }
@@ -536,7 +702,7 @@ div .inside-block-section p {
     margin-left: 0; }
   .block-1 .col div div:nth-child(2) {
     margin-left: 0;
-    margin-top: 20px; }
+    margin-top: 30px; }
   .block-1 .container div a .block-1-button,
   .block-1 .container div h2,
   .block-1 .container div p,
@@ -554,12 +720,14 @@ div .inside-block-section p {
   .block-1 {
     margin-top: 70px;
     margin-bottom: 70px; }
+  .sections .container .section-kids {
+    left: 0px; }
   .block-2 .container {
     width: 264px !important;
     padding: 0;
     margin-bottom: 70px !important; }
   .block-2 .container div a .block-1-button {
-    margin-bottom: 0px !important; }
+    margin-bottom: 0 !important; }
   .block-2 .container div:nth-child(2) {
     width: 264PX !important;
     margin-left: auto !important;
@@ -569,14 +737,14 @@ div .inside-block-section p {
     width: 264px; }
   .block-2 div .block-2-img {
     width: 264px !important;
-    height: 255px !important;
+    height: 172px !important;
     background-color: transparent;
     margin-top: 0;
     padding-left: 0;
     padding-right: 0; }
   .block-2 div .block-2-img img {
     width: 264px !important;
-    height: 255px !important;
+    height: 172px !important;
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: center;
@@ -681,13 +849,13 @@ div .inside-block-section p {
   background-repeat: repeat; }
 
 .block-2-img {
-  padding-left: 27px;
-  padding-right: 0px; }
+  padding-left: 26px;
+  padding-right: 0; }
 
 .block-2 .container {
   padding: 0;
   margin-top: 100px;
-  margin-bottom: 50px; }
+  margin-bottom: 100px; }
 
 .block-2 .container div a .block-1-button {
   margin-left: 20px;
@@ -704,8 +872,7 @@ div .inside-block-section p {
   font-size: 17px;
   line-height: normal;
   text-align: center;
-  padding-top: 14px;
-  margin-bottom: 50px; }
+  padding-top: 14px; }
 
 .block-2 .container div p {
   font-family: "Roboto", sans-serif;
@@ -718,7 +885,7 @@ div .inside-block-section p {
   margin-bottom: 37px; }
 
 .block-2 .container div h2 {
-  margin-top: 0px;
+  margin-top: 0;
   margin-left: 0;
   font-size: 30px;
   font-family: 'Amatic SC', cursive;
