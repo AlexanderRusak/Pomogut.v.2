@@ -68,7 +68,7 @@ a {
   width: 171px;
   height: 42px;
   position: relative;
-  z-index: 98;
+  z-index: 99;
   font-family: Amatic SC;
   font-style: normal;
   font-weight: bold;
@@ -98,7 +98,7 @@ a {
 }
 
 .section-parents .girls-links-text {
-  margin-top: 110px;
+  margin-top: 155px;
   margin-left: 10px;
 }
 
@@ -145,7 +145,7 @@ a {
   object-fit: cover;
   object-position: center;
   position: absolute;
-  z-index: 0;
+  z-index: 98;
 }
 
 .section-adults a {
@@ -174,7 +174,7 @@ a {
 }
 
 .sections-pattern_two {
-  bottom: 0px;
+  bottom: 0;
   width: 264px;
   height: 274px;
   padding-left: 0;
@@ -197,7 +197,7 @@ a {
 
 .sections .container .section-kids {
   top: 13px;
-  left: 0px;
+  left: 0;
 }
 
 .sections .container .section-adults {
@@ -410,6 +410,7 @@ div .inside-block-section p {
   .sections .container .row:first-child {
     display: none;
   }
+
   .sections-pattern_two {
     bottom: 24px;
     width: 264px;
@@ -417,9 +418,10 @@ div .inside-block-section p {
     padding-left: 0;
     padding-right: 0;
   }
+
   .sections .container .row:nth-child(2) div:nth-child(3) {
     bottom: 28px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .section-kids .girls-links-text {
@@ -429,7 +431,7 @@ div .inside-block-section p {
 
   .section-teenagers .girls-links-text {
     margin-right: 25px;
-    margin-top: 110px;
+    margin-top: 65px;
   }
 
   .section-adults .girls-links-text {
@@ -438,7 +440,7 @@ div .inside-block-section p {
   }
 
   .section-parents .girls-links-text {
-    margin-top: 155px;
+    margin-top: 80px !important;
     margin-left: 10px;
   }
 
@@ -446,6 +448,7 @@ div .inside-block-section p {
     margin-top: 110px;
     margin-right: 8px;
   }
+
   .sections .container .sections_fake {
     display: block;
   }
@@ -501,7 +504,24 @@ div .inside-block-section p {
   .sections {
     position: sticky;
     background-color: #f2f2f2;
+  }
+  .section-teenagers .girls-links-text {
+    margin-right: 25px;
+    margin-top: 140px;
 }
+.section-parents .girls-links-text {
+    margin-top: 155px;
+    margin-left: 15px;
+}
+.section-schools .girls-links-text {
+    margin-top: 170px;
+    margin-right: 8px;
+}
+  .sections .container .section-kids {
+    top: 0;
+    left: 8px;
+  }
+
   .section-adults img:last-child,
   .section-kids img:last-child,
   .section-parents img:last-child,
@@ -514,10 +534,12 @@ div .inside-block-section p {
     width: 264px;
     height: 100%;
   }
+
   .sections .container .section-kids {
-    top: 0px;
+    top: 0;
     left: 8px;
   }
+
   .sections .container {
     margin-top: 35px;
   }
@@ -615,7 +637,8 @@ div .inside-block-section p {
   .sections .container .section-fake_xs {
     display: block;
     overflow-y: hidden;
-}
+  }
+
   .sections .container .row:first-child {
     display: none;
   }
@@ -792,10 +815,12 @@ div .inside-block-section p {
     padding-right: 0;
     margin-bottom: 30px;
   }
+
   .sections .container .section-kids {
     top: 13px;
     left: 8px;
   }
+
   .block-2-img img {
     width: 558px;
     height: 350px;
@@ -913,17 +938,21 @@ div .inside-block-section p {
   .block-1 .container {
     width: 264px !important;
   }
+
   .sections .container .section-fake_xs {
-      display: block;
-      overflow-y: hidden;
+    display: block;
+    overflow-y: hidden;
   }
+
   .block-1 {
     margin-top: 70px;
     margin-bottom: 70px;
   }
-.sections .container .section-kids {
-  left:0px;
-}
+
+  .sections .container .section-kids {
+    left: 0;
+  }
+
   .block-2 .container {
     width: 264px !important;
     padding: 0;

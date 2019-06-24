@@ -496,6 +496,9 @@ div .inside-block-section p {
     display: block; } }
 
 @media screen and (max-width: 375px) {
+  .sections .container .section-fake_xs {
+    display: block;
+    overflow-y: hidden; }
   .sections .container .row:first-child {
     display: none; }
   .sections .container .row:nth-child(2) {
@@ -721,6 +724,9 @@ div .inside-block-section p {
 @media screen and (max-width: 767px) {
   .block-1 .container {
     width: 264px !important; }
+  .sections .container .section-fake_xs {
+    display: block;
+    overflow-y: hidden; }
   .block-1 {
     margin-top: 70px;
     margin-bottom: 70px; }
